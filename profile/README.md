@@ -1,6 +1,9 @@
-# ellmos - Extra Large Language Model Operating Systems
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos logo" width="300">
+</p>
 
-*From a spring to a stream -- LLM operating systems that flow.*
+<h3 align="center">Extra Large Language Model Operating Systems</h3>
+<p align="center"><i>From a spring to a stream -- LLM operating systems that flow.</i></p>
 
 **ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.
 
