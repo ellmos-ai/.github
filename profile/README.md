@@ -76,9 +76,9 @@ Standalone GUI for n8n workflow creation
 </td>
 <td align="center" width="50%">
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-recludos.jpg" width="200"><br>
-<b>recludOS</b><br>
+<b><a href="https://github.com/lukisch/recludos-legacy">recludOS</a></b><br>
 <i>Archived predecessor to BACH</i><br>
-Historical reference (coming soon)
+Historical reference
 </td>
 </tr>
 </table>
