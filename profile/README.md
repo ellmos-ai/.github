@@ -93,6 +93,20 @@ These modules can be integrated into any OS or used standalone:
 
 All projects: **Python 3.10+** | **SQLite** | **MIT License** | **Zero or minimal dependencies**
 
+## Pluggable Skills
+
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="200"><br>
+<b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
+<i>Pluggable Skill Library</i><br>
+Reusable agent skills that slot into any ellmos OS.<br>
+Development, research, education, infrastructure -- pick what you need.
+</td>
+</tr>
+</table>
+
 ---
 
 ## MCP Servers
@@ -130,6 +144,7 @@ n8n workflow automation<br>
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | 5 parallel LLM coordination patterns (Stigmergy, Consensus, ...) |
 | **[n8n Workflow Manager](https://github.com/ellmos-ai/n8n-workflow-manager)** | Standalone GUI for n8n workflow creation |
 | **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Self-hosted AI stack (Docker, Ollama, n8n) |
+| **[skills](https://github.com/ellmos-ai/skills)** | Pluggable skill library (dev, research, education, infrastructure) |
 
 ## Legacy
 
