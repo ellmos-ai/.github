@@ -9,105 +9,50 @@
 
 ## The ellmos Family
 
-All projects follow a **water metaphor** -- growing from a spring to a stream:
+Three operating systems -- different philosophies, same goal:
 
 <table>
 <tr>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-usmc.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/usmc">USMC</a></b><br>
-<i>The spring</i><br>
-Shared memory for multi-agent coordination
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-rinnsal.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/rinnsal">Rinnsal</a></b><br>
-<i>The trickle</i><br>
-USMC + LLM chain orchestration
-</td>
 <td align="center" width="33%">
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/bach">BACH</a></b><br>
 <i>The stream that unites everything</i><br>
 Full LLM-OS: 109+ handlers, 932+ skills, agents, GUI
 </td>
-</tr>
-</table>
-
-## MCP Servers & Tools
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach-codecommander.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-codecommander-mcp">CodeCommander</a></b><br>
-Code analysis & refactoring<br>
-<code>npm i -g bach-codecommander-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach-filecommander.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-filecommander-mcp">FileCommander</a></b><br>
-File management & batch ops<br>
-<code>npm i -g bach-filecommander-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-manager-mcp.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/n8n-manager-mcp">n8n Manager</a></b><br>
-n8n workflow automation<br>
-<code>npm i -g n8n-manager-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/MarbleRun">MarbleRun</a></b><br>
-Autonomous agent chains<br>
-for Claude Code
-</td>
-</tr>
-</table>
-
-## More
-
-<table>
-<tr>
 <td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/n8n-workflow-manager">n8n Workflow Manager</a></b><br>
-Standalone GUI for n8n workflow creation
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-rinnsal.jpg" width="200"><br>
+<b><a href="https://github.com/ellmos-ai/rinnsal">Rinnsal</a></b><br>
+<i>The trickle</i><br>
+Lightweight LLM infra: memory, tasks, connectors, chains. Zero dependencies.
 </td>
 <td align="center" width="33%">
-<b><a href="https://github.com/ellmos-ai/gardener">Gardener</a></b><br>
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" width="200"><br>
+<b><a href="https://github.com/ellmos-ai/gardener">gardener</a></b><br>
 <i>The zen garden</i><br>
-LLM-native OS: 1 table, 4 functions, FTS5 search
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-recludos.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/recludos-legacy">recludOS</a></b><br>
-<i>Archived predecessor to BACH</i><br>
-Historical reference
+LLM-native OS: 1 table, 4 functions, FTS5 search. Everything is searchable.
 </td>
 </tr>
 </table>
 
-## Architecture: 3 Operating Systems + Pluggable Modules
+## Architecture: 3 OS Layers + Pluggable Modules
 
-The ellmos ecosystem consists of **three OS layers** (different philosophies, same goal) and **four pluggable modules** that can be integrated into any OS.
+The ellmos ecosystem consists of **three OS layers** and **pluggable modules** that can be integrated into any OS -- or used standalone.
 
 ### Operating Systems
 
-| | **BACH** | **Gardener** | **Rinnsal** |
+| | **BACH** | **Rinnsal** | **gardener** |
 |---|---|---|---|
-| **Philosophy** | Maximalist: everything integrated | Minimalist: 1 table, 4 functions | Lightweight: zero dependencies |
-| **Database** | SQLite (145+ tables) | SQLite (1 table `everything` + FTS5) | SQLite (structured) |
-| **Memory** | 5-type cognitive model | Unified (memo/lesson/recall + decay) | Facts/Notes/Lessons/Sessions |
-| **Tasks** | Full GTD (priority, deadline, tags) | type='task' in everything | Priority + Status + Agent assignment |
-| **Tools** | 373+ specialized tools | 6 bridge+skin tools (extensible) | CLI commands |
-| **Skills/Agents** | 932 skills, 5 boss agents, 28 experts | None (the LLM is the agent) | None |
-| **Connectors** | Telegram, Email, WhatsApp | Planned (v0.2+) | Telegram, Discord, Home Assistant |
+| **Philosophy** | Maximalist: everything integrated | Lightweight: zero dependencies | Minimalist: 1 table, 4 functions |
+| **Database** | SQLite (145+ tables) | SQLite (structured) | SQLite (1 table `everything` + FTS5) |
+| **Memory** | 5-type cognitive model | Facts/Notes/Lessons/Sessions | Unified (memo/lesson/recall + decay) |
+| **Tasks** | Full GTD (priority, deadline, tags) | Priority + Status + Agent assignment | type='task' in everything |
+| **Tools** | 373+ specialized tools | CLI commands | 6 bridge+skin tools (extensible) |
+| **Skills/Agents** | 932 skills, 5 boss agents, 28 experts | None | None (the LLM is the agent) |
+| **Connectors** | Telegram, Email, WhatsApp | Telegram, Discord, Home Assistant | Planned (v0.2+) |
 | **GUI** | PySide6 Desktop + Web | CLI only | CLI only |
 | **Self-Extension** | `bach skills create` | No | No |
-| **MCP** | 2 servers (CodeCommander, FileCommander) | Planned (v0.3+) | No |
-| **Codebase** | ~50,000+ lines | ~1,600 lines | ~2,000 lines |
-| **Best for** | Power users, all-in-one | Minimalists, LLM-native experiments | Developers wanting light infra |
+| **Codebase** | ~50,000+ lines | ~2,000 lines | ~1,600 lines |
+| **Best for** | Power users, all-in-one | Developers wanting light infra | Minimalists, LLM-native experiments |
 
 ### Pluggable Modules
 
@@ -115,10 +60,10 @@ These modules can be integrated into any OS or used standalone:
 
 | Module | Purpose | Key Feature |
 |---|---|---|
+| **[USMC](https://github.com/ellmos-ai/usmc)** | Cross-agent shared memory | Confidence-based conflict resolution, change tracking |
 | **[clutch](https://github.com/ellmos-ai/clutch)** | Provider-neutral model routing | Auto-learning which model fits which task, budget zones |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration | Autonomous multi-round agent loops with context handoff |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination | 5 patterns: Epstein, Hierarchy, Stigmergy, Consensus, Specialist |
-| **[USMC](https://github.com/ellmos-ai/usmc)** | Cross-agent shared memory | Confidence-based conflict resolution, change tracking |
 
 ### How They Fit Together
 
@@ -126,27 +71,84 @@ These modules can be integrated into any OS or used standalone:
 ┌─────────────────────────────────────────────────┐
 │              Choose Your OS Layer               │
 │                                                 │
-│   BACH (full)   Gardener (minimal)   Rinnsal    │
-│   ┌─────────┐   ┌──────────────┐   ┌────────┐  │
-│   │ 932     │   │ 1 table      │   │ Zero   │  │
-│   │ skills  │   │ 4 functions  │   │ deps   │  │
-│   │ 5 boss  │   │ FTS5 search  │   │ Events │  │
-│   │ agents  │   │ = everything │   │ + LLM  │  │
-│   └────┬────┘   └──────┬───────┘   └───┬────┘  │
-│        └───────────────┼────────────────┘       │
-│                        │                        │
-│         ┌──────────────┼──────────────┐         │
-│         │    Pluggable Modules        │         │
-│         │                             │         │
-│         │  clutch   ── model routing  │         │
-│         │  MarbleRun ── agent chains  │         │
-│         │  swarm-ai ── parallel LLMs  │         │
-│         │  USMC     ── shared memory  │         │
-│         └─────────────────────────────┘         │
+│   BACH (full)   Rinnsal (light)  gardener (min) │
+│   ┌─────────┐   ┌────────────┐   ┌──────────┐  │
+│   │ 932     │   │ Zero deps  │   │ 1 table   │  │
+│   │ skills  │   │ Connectors │   │ 4 funcs   │  │
+│   │ 5 boss  │   │ Chains     │   │ FTS5      │  │
+│   │ agents  │   │ Events     │   │ = search  │  │
+│   └────┬────┘   └─────┬──────┘   └─────┬────┘  │
+│        └──────────────┼─────────────────┘       │
+│                       │                         │
+│        ┌──────────────┼──────────────┐          │
+│        │    Pluggable Modules        │          │
+│        │                             │          │
+│        │  USMC     ── shared memory  │          │
+│        │  clutch   ── model routing  │          │
+│        │  MarbleRun ── agent chains  │          │
+│        │  swarm-ai ── parallel LLMs  │          │
+│        └─────────────────────────────┘          │
 └─────────────────────────────────────────────────┘
 ```
 
 All projects: **Python 3.10+** | **SQLite** | **MIT License** | **Zero or minimal dependencies**
+
+---
+
+## MCP Servers
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach-codecommander.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/ellmos-codecommander-mcp">CodeCommander</a></b><br>
+Code analysis & refactoring<br>
+<code>npm i -g bach-codecommander-mcp</code>
+</td>
+<td align="center" width="33%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach-filecommander.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/ellmos-filecommander-mcp">FileCommander</a></b><br>
+File management & batch ops<br>
+<code>npm i -g bach-filecommander-mcp</code>
+</td>
+<td align="center" width="33%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-manager-mcp.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/n8n-manager-mcp">n8n Manager</a></b><br>
+n8n workflow automation<br>
+<code>npm i -g n8n-manager-mcp</code>
+</td>
+</tr>
+</table>
+
+## Tools & More
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/MarbleRun">MarbleRun</a></b><br>
+Autonomous agent chains for Claude Code
+</td>
+<td align="center" width="50%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/n8n-workflow-manager">n8n Workflow Manager</a></b><br>
+Standalone GUI for n8n workflow creation
+</td>
+</tr>
+</table>
+
+## Legacy
+
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-recludos.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/recludos-legacy">recludOS</a></b><br>
+<i>Archived predecessor to BACH</i><br>
+Historical reference
+</td>
+</tr>
+</table>
 
 ---
 
