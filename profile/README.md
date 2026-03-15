@@ -120,22 +120,16 @@ n8n workflow automation<br>
 </tr>
 </table>
 
-## Tools & More
+## Modules & More
 
-<table>
-<tr>
-<td align="center" width="50%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/MarbleRun">MarbleRun</a></b><br>
-Autonomous agent chains for Claude Code
-</td>
-<td align="center" width="50%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/n8n-workflow-manager">n8n Workflow Manager</a></b><br>
-Standalone GUI for n8n workflow creation
-</td>
-</tr>
-</table>
+| Project | Description |
+|---|---|
+| **[USMC](https://github.com/ellmos-ai/usmc)** | Cross-agent shared memory with confidence-based conflict resolution |
+| **[clutch](https://github.com/ellmos-ai/clutch)** | Provider-neutral model routing with auto-learning and budget zones |
+| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Autonomous multi-round agent chains for Claude Code |
+| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | 5 parallel LLM coordination patterns (Stigmergy, Consensus, ...) |
+| **[n8n Workflow Manager](https://github.com/ellmos-ai/n8n-workflow-manager)** | Standalone GUI for n8n workflow creation |
+| **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Self-hosted AI stack (Docker, Ollama, n8n) |
 
 ## Legacy
 
