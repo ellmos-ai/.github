@@ -126,6 +126,7 @@ File management & batch ops<br>
 <code>npm i -g bach-filecommander-mcp</code>
 </td>
 <td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-clatcher.jpg" width="160"><br>
 <b><a href="https://github.com/ellmos-ai/ellmos-clatcher-mcp">Clatcher</a></b><br>
 Utility tools: file repair, format conversion, duplicate detection, batch operations<br>
 <code>npm i -g ellmos-clatcher-mcp</code>
