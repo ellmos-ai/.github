@@ -114,16 +114,16 @@ Development, research, education, infrastructure -- pick what you need.
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach-codecommander.jpg" width="160"><br>
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-codecommander.jpg" width="160"><br>
 <b><a href="https://github.com/ellmos-ai/ellmos-codecommander-mcp">CodeCommander</a></b><br>
 Code analysis & refactoring<br>
-<code>npm i -g bach-codecommander-mcp</code>
+<code>npm i -g ellmos-codecommander-mcp</code>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach-filecommander.jpg" width="160"><br>
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-filecommander.jpg" width="160"><br>
 <b><a href="https://github.com/ellmos-ai/ellmos-filecommander-mcp">FileCommander</a></b><br>
 File management & batch ops<br>
-<code>npm i -g bach-filecommander-mcp</code>
+<code>npm i -g ellmos-filecommander-mcp</code>
 </td>
 <td align="center" width="25%">
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-clatcher.jpg" width="160"><br>
