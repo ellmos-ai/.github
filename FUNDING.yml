@@ -1,6 +1,2 @@
-# ellmos-ai Funding Configuration
-# Gilt fuer alle Repos der Organisation ohne eigene FUNDING.yml
-# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
-
-# github: [lukisch]  # Reaktivieren wenn GitHub Sponsors eingerichtet
+github: [lukisch]
 custom: ["https://paypal.me/lukasgeiger2507"]
