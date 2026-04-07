@@ -3,13 +3,14 @@
 </p>
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
-<p align="center"><i>From a spring to a stream -- LLM operating systems that flow.</i></p>
+<p align="center"><i>From a spring to a stream — LLM operating systems that flow.</i></p>
+<p align="center"><b>🇩🇪 <a href="https://github.com/ellmos-ai/.github/blob/master/profile/README_de.md">Deutsche Version</a></b></p>
 
 **ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.
 
 ## The ellmos Family
 
-Three operating systems -- different philosophies, same goal:
+Three operating systems — different philosophies, same goal:
 
 <table>
 <tr>
@@ -36,7 +37,7 @@ LLM-native OS: 1 table, 4 functions, FTS5 search. Everything is searchable.
 
 ## Architecture: 3 OS Layers + Pluggable Modules
 
-The ellmos ecosystem consists of **three OS layers** and **pluggable modules** that can be integrated into any OS -- or used standalone.
+The ellmos ecosystem consists of **three OS layers** and **pluggable modules** that can be integrated into any OS — or used standalone.
 
 ### Operating Systems
 
@@ -78,7 +79,7 @@ These modules can be integrated into any OS or used standalone:
 │   │ 5 boss  │   │ Chains     │   │ FTS5      │  │
 │   │ agents  │   │ Events     │   │ = search  │  │
 │   └────┬────┘   └─────┬──────┘   └─────┬────┘  │
-│        └──────────────┼─────────────────┘       │
+│        └────────────┼─────────────────┘       │
 │                       │                         │
 │        ┌──────────────┼──────────────┐          │
 │        │    Pluggable Modules        │          │
@@ -102,7 +103,7 @@ All projects: **Python 3.10+** | **SQLite** | **MIT License** | **Zero or minima
 <b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
 <i>Pluggable Skill Library</i><br>
 Reusable agent skills that slot into any ellmos OS.<br>
-Development, research, education, infrastructure -- pick what you need.
+Development, research, education, infrastructure — pick what you need.
 </td>
 </tr>
 </table>
