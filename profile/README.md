@@ -139,6 +139,17 @@ n8n workflow automation<br>
 <code>npm i -g n8n-manager-mcp</code>
 </td>
 </tr>
+<tr>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-controlcenter.jpg" width="160"><br>
+<b><a href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp">ControlCenter</a></b><br>
+MCP profile dashboard, capability bundles & policy audits<br>
+<code>npm i -g ellmos-controlcenter-mcp</code>
+</td>
+<td width="25%"></td>
+<td width="25%"></td>
+<td width="25%"></td>
+</tr>
 </table>
 
 ## Modules & More
