@@ -8,6 +8,18 @@
 
 **ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.
 
+## Start Here
+
+| You want to... | Start with |
+|---|---|
+| Run a full personal LLM operating system with GUI, memory, tools and agents | **[BACH](https://github.com/ellmos-ai/bach)** |
+| Add lightweight local memory, tasks and connectors to an agent project | **[Rinnsal](https://github.com/ellmos-ai/rinnsal)** |
+| Experiment with a minimal searchable LLM-native OS core | **[gardener](https://github.com/ellmos-ai/gardener)** |
+| Give Claude Desktop or other MCP clients local file, code, n8n or profile tools | **[MCP Servers](#mcp-servers)** |
+| Reuse agent skills, shared memory, routing or swarm patterns in your own stack | **[Pluggable Modules](#pluggable-modules)** and **[skills](https://github.com/ellmos-ai/skills)** |
+
+For machine-readable ecosystem context, see **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
+
 ## The ellmos Family
 
 Three operating systems — different philosophies, same goal:
