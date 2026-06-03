@@ -5,6 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-03; archived repositories are marked.
 
 ## Primary entry points
 
@@ -14,6 +15,8 @@ The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with ze
   Lightweight zero-dependency LLM infrastructure for memory, tasks, connectors and chains.
 - gardener: https://github.com/ellmos-ai/gardener
   Minimal searchable LLM-native OS core with a single SQLite table and FTS5.
+- ellmos: https://github.com/ellmos-ai/ellmos
+  Family-level text-based operating-system documentation and infrastructure context.
 
 ## MCP servers
 
@@ -38,9 +41,22 @@ The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with ze
   Autonomous multi-round agent chains for Claude Code.
 - swarm-ai: https://github.com/ellmos-ai/swarm-ai
   Parallel LLM coordination patterns including stigmergy, consensus and specialist workflows.
+- n8n Workflow Manager: https://github.com/ellmos-ai/n8n-workflow-manager
+  Local-first GUI, REST API and CLI for n8n workflow creation, viewing and sync.
+- ellmos-stack: https://github.com/ellmos-ai/ellmos-stack
+  Self-hosted AI research and knowledge stack with Ollama, n8n, Rinnsal and KnowledgeDigest.
 - skills: https://github.com/ellmos-ai/skills
   Reusable agent skill library for development, research, education and infrastructure.
 
+## Organization and maintenance
+
+- .github: https://github.com/ellmos-ai/.github
+  Organization profile, shared community health files and this llms.txt context file.
+- ellmos-tests: https://github.com/ellmos-ai/ellmos-tests
+  B/O/E evaluation framework for SKILL.md-based LLM operating systems and agent hubs.
+- recludos-legacy: https://github.com/ellmos-ai/recludos-legacy
+  Archived predecessor to BACH; kept as a historical reference.
+
 ## Search phrases
 
-ellmos-ai, ellmos, XLLM-OS, LLM operating system, local-first AI tools, agent memory, Model Context Protocol, MCP server, BACH, Rinnsal, gardener, CodeCommander, FileCommander, USMC, clutch, MarbleRun, swarm-ai.
+ellmos-ai, ellmos, XLLM-OS, LLM operating system, local-first AI tools, agent memory, Model Context Protocol, MCP server, BACH, Rinnsal, gardener, ellmos-stack, CodeCommander, FileCommander, Clatcher, ControlCenter, n8n Manager MCP, n8n Workflow Manager, USMC, clutch, MarbleRun, swarm-ai, ellmos-tests, recludOS.
