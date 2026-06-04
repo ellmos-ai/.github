@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-03; archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-05; archived repositories are marked.
 
 ## Primary entry points
 
@@ -30,6 +30,10 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   MCP access to n8n workflow automation.
 - ControlCenter: https://github.com/ellmos-ai/ellmos-controlcenter-mcp
   MCP profile dashboard, capability bundles and policy audits.
+- Homebase: https://github.com/ellmos-ai/ellmos-homebase-mcp
+  Local LLM memory, knowledge, persistent state, routing, tests and orchestration tools.
+- ServerCommander: https://github.com/ellmos-ai/ellmos-servercommander-mcp
+  Server operations via MCP: HTTP health checks, access-log analysis, deployment dry-runs and mail status.
 
 ## Reusable modules
 
@@ -59,4 +63,4 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
 
 ## Search phrases
 
-ellmos-ai, ellmos, XLLM-OS, LLM operating system, local-first AI tools, agent memory, Model Context Protocol, MCP server, BACH, Rinnsal, gardener, ellmos-stack, CodeCommander, FileCommander, Clatcher, ControlCenter, n8n Manager MCP, n8n Workflow Manager, USMC, clutch, MarbleRun, swarm-ai, ellmos-tests, recludOS.
+ellmos-ai, ellmos, XLLM-OS, LLM operating system, local-first AI tools, agent memory, Model Context Protocol, MCP server, BACH, Rinnsal, gardener, ellmos-stack, CodeCommander, FileCommander, Clatcher, ControlCenter, Homebase MCP, ServerCommander MCP, n8n Manager MCP, n8n Workflow Manager, USMC, clutch, MarbleRun, swarm-ai, ellmos-tests, recludOS.
