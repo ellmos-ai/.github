@@ -174,7 +174,7 @@ MCP-Profil-Dashboard, Fähigkeits-Bundles & Rechte-Audits<br>
 <code>npm i -g ellmos-controlcenter-mcp</code>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" width="160"><br>
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" width="240"><br>
 <b><a href="https://github.com/ellmos-ai/ellmos-homebase-mcp">Homebase</a></b><br>
 Lokales LLM-Memory, Wissen, State & Orchestrierung<br>
 <code>npm i -g ellmos-homebase-mcp</code>
