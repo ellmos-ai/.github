@@ -49,7 +49,7 @@ Full LLM-OS: 109+ handlers, 932+ skills, agents, GUI
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-rinnsal.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/rinnsal">Rinnsal</a></b><br>
 <i>The trickle</i><br>
-Lightweight LLM infra: memory, tasks, connectors, chains. Zero dependencies.
+Lightweight LLM infra: memory, tasks, connectors, chains, i18n. Zero dependencies.
 </td>
 <td align="center" width="33%">
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" width="200"><br>

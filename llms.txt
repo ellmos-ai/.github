@@ -5,14 +5,14 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-05; archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-10; archived repositories are marked.
 
 ## Primary entry points
 
 - BACH: https://github.com/ellmos-ai/bach
   Full personal LLM operating system with GUI, memory, tools, skills and agents.
 - Rinnsal: https://github.com/ellmos-ai/rinnsal
-  Lightweight zero-dependency LLM infrastructure for memory, tasks, connectors and chains.
+  Lightweight zero-dependency LLM infrastructure for memory, tasks, connectors, chains and i18n.
 - gardener: https://github.com/ellmos-ai/gardener
   Minimal searchable LLM-native OS core with a single SQLite table and FTS5.
 - ellmos: https://github.com/ellmos-ai/ellmos
