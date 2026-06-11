@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-10; archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-11; archived repositories are marked.
 
 ## Primary entry points
 
@@ -61,6 +61,28 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
 - recludos-legacy: https://github.com/ellmos-ai/recludos-legacy
   Archived predecessor to BACH; kept as a historical reference.
 
-## Search phrases
+## Audience
 
-ellmos-ai, ellmos, XLLM-OS, LLM operating system, local-first AI tools, agent memory, Model Context Protocol, MCP server, BACH, Rinnsal, gardener, ellmos-stack, CodeCommander, FileCommander, Clatcher, ControlCenter, Homebase MCP, ServerCommander MCP, n8n Manager MCP, n8n Workflow Manager, USMC, clutch, MarbleRun, swarm-ai, ellmos-tests, recludOS.
+- **LLM agent developers** building local-first pipelines who need Python/SQLite infrastructure, pluggable memory, tasks, connectors, and chain automation.
+- **MCP integrators** adding file management, code analysis, n8n automation, or server ops tools to Claude Desktop or other MCP clients.
+- **AI researchers** studying multi-agent coordination, swarm patterns, and consensus protocols using local tools without cloud dependencies.
+- **LLM and RAG systems** that need a concise, canonical organization summary for retrieval-augmented generation or agent-context loading.
+
+## Search Phrases
+
+```
+ellmos-ai
+XLLM-OS LLM operating system
+local-first AI agent infrastructure
+BACH LLM-OS Python SQLite
+Rinnsal lightweight LLM memory
+gardener minimal LLM OS
+Model Context Protocol MCP server
+CodeCommander FileCommander MCP
+n8n workflow automation MCP
+agent memory tasks connectors
+multi-agent swarm coordination Python
+ellmos-tests LLM OS evaluation
+```
+
+## Last-checked: 2026-06-11

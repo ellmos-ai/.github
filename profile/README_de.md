@@ -45,7 +45,7 @@ Drei Betriebssysteme — verschiedene Philosophien, selbes Ziel:
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/bach">BACH</a></b><br>
 <i>Der Strom der alles vereint</i><br>
-Volles LLM-OS: 109+ Handler, 932+ Skills, Agenten, GUI
+Volles LLM-OS: 113+ Handler, 1870+ Skills, Agenten, GUI
 </td>
 <td align="center" width="33%">
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-rinnsal.jpg" width="200"><br>
@@ -74,8 +74,8 @@ Das ellmos-Ökosystem besteht aus **drei OS-Schichten** und **steckbaren Modulen
 | **Datenbank** | SQLite (145+ Tabellen) | SQLite (strukturiert) | SQLite (1 Tabelle `everything` + FTS5) |
 | **Memory** | 5-Typen kognitives Modell | Facts/Notes/Lessons/Sessions | Vereinheitlicht (memo/lesson/recall + Decay) |
 | **Tasks** | Volles GTD (Priorität, Deadline, Tags) | Priorität + Status + Agent-Zuweisung | type='task' in everything |
-| **Tools** | 373+ spezialisierte Tools | CLI-Befehle | 6 Bridge+Skin-Tools (erweiterbar) |
-| **Skills/Agenten** | 932 Skills, 5 Boss-Agenten, 28 Experten | Keine | Keine (das LLM ist der Agent) |
+| **Tools** | 550+ spezialisierte Tools | CLI-Befehle | 6 Bridge+Skin-Tools (erweiterbar) |
+| **Skills/Agenten** | 1870+ Skills, 5 Boss-Agenten, 28 Experten | Keine | Keine (das LLM ist der Agent) |
 | **Connectors** | Telegram, E-Mail, WhatsApp | Telegram, Discord, Home Assistant | Geplant (v0.2+) |
 | **GUI** | PySide6 Desktop + Web | Nur CLI | Nur CLI |
 | **Selbsterweiterung** | `bach skills create` | Nein | Nein |
@@ -101,7 +101,7 @@ Diese Module können in jedes OS integriert oder eigenständig genutzt werden:
 │                                                 │
 │   BACH (voll)   Rinnsal (leicht)  gardener (min) │
 │   ┌─────────┐   ┌────────────┐   ┌──────────┐  │
-│   │ 932     │   │ Keine Deps │   │ 1 Tabelle │  │
+│   │ 1870+   │   │ Keine Deps │   │ 1 Tabelle │  │
 │   │ Skills  │   │ Connectors │   │ 4 Funkt.  │  │
 │   │ 5 Boss  │   │ Chains     │   │ FTS5      │  │
 │   │ Agenten │   │ Events     │   │ = Suche   │  │

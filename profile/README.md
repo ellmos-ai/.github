@@ -43,7 +43,7 @@ Three operating systems — different philosophies, same goal:
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/bach">BACH</a></b><br>
 <i>The stream that unites everything</i><br>
-Full LLM-OS: 109+ handlers, 932+ skills, agents, GUI
+Full LLM-OS: 113+ handlers, 1870+ skills, agents, GUI
 </td>
 <td align="center" width="33%">
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-rinnsal.jpg" width="200"><br>
@@ -72,8 +72,8 @@ The ellmos ecosystem consists of **three OS layers** and **pluggable modules** t
 | **Database** | SQLite (145+ tables) | SQLite (structured) | SQLite (1 table `everything` + FTS5) |
 | **Memory** | 5-type cognitive model | Facts/Notes/Lessons/Sessions | Unified (memo/lesson/recall + decay) |
 | **Tasks** | Full GTD (priority, deadline, tags) | Priority + Status + Agent assignment | type='task' in everything |
-| **Tools** | 373+ specialized tools | CLI commands | 6 bridge+skin tools (extensible) |
-| **Skills/Agents** | 932 skills, 5 boss agents, 28 experts | None | None (the LLM is the agent) |
+| **Tools** | 550+ specialized tools | CLI commands | 6 bridge+skin tools (extensible) |
+| **Skills/Agents** | 1870+ skills, 5 boss agents, 28 experts | None | None (the LLM is the agent) |
 | **Connectors** | Telegram, Email, WhatsApp | Telegram, Discord, Home Assistant | Planned (v0.2+) |
 | **GUI** | PySide6 Desktop + Web | CLI only | CLI only |
 | **Self-Extension** | `bach skills create` | No | No |
@@ -99,7 +99,7 @@ These modules can be integrated into any OS or used standalone:
 │                                                 │
 │   BACH (full)   Rinnsal (light)  gardener (min) │
 │   ┌─────────┐   ┌────────────┐   ┌──────────┐  │
-│   │ 932     │   │ Zero deps  │   │ 1 table   │  │
+│   │ 1870+   │   │ Zero deps  │   │ 1 table   │  │
 │   │ skills  │   │ Connectors │   │ 4 funcs   │  │
 │   │ 5 boss  │   │ Chains     │   │ FTS5      │  │
 │   │ agents  │   │ Events     │   │ = search  │  │
