@@ -93,28 +93,22 @@ These modules can be integrated into any OS or used standalone:
 
 ### How They Fit Together
 
-```
-┌─────────────────────────────────────────────────┐
-│              Choose Your OS Layer               │
-│                                                 │
-│   BACH (full)   Rinnsal (light)  gardener (min) │
-│   ┌─────────┐   ┌────────────┐   ┌──────────┐  │
-│   │ 1870+   │   │ Zero deps  │   │ 1 table   │  │
-│   │ skills  │   │ Connectors │   │ 4 funcs   │  │
-│   │ 5 boss  │   │ Chains     │   │ FTS5      │  │
-│   │ agents  │   │ Events     │   │ = search  │  │
-│   └────┬────┘   └─────┬──────┘   └─────┬────┘  │
-│        └────────────┼─────────────────┘       │
-│                       │                         │
-│        ┌──────────────┼──────────────┐          │
-│        │    Pluggable Modules        │          │
-│        │                             │          │
-│        │  USMC     ── shared memory  │          │
-│        │  clutch   ── model routing  │          │
-│        │  MarbleRun ── agent chains  │          │
-│        │  swarm-ai ── parallel LLMs  │          │
-│        └─────────────────────────────┘          │
-└─────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+  subgraph OS["Choose Your OS Layer"]
+    BACH["BACH (full)<br/>1870+ skills · 5 boss agents"]
+    RIN["Rinnsal (light)<br/>Zero deps · Connectors · Chains · Events"]
+    GAR["gardener (min)<br/>1 table · 4 funcs · FTS5 search"]
+  end
+  subgraph MOD["Pluggable Modules"]
+    USMC["USMC — shared memory"]
+    CLUTCH["clutch — model routing"]
+    MARBLE["MarbleRun — agent chains"]
+    SWARM["swarm-ai — parallel LLMs"]
+  end
+  BACH --- MOD
+  RIN --- MOD
+  GAR --- MOD
 ```
 
 All projects: **Python 3.10+** | **SQLite** | **MIT License** | **Zero or minimal dependencies**
