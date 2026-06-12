@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos logo" width="648">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos logo" width="300">
 </p>
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
@@ -72,24 +72,30 @@ The ellmos ecosystem consists of **three OS layers** and **pluggable modules** t
 
 These modules and skills can be integrated into any OS or used standalone:
 
+<table>
+<tr>
+<td valign="top" width="55%">
+
 **Modules**
 
-| Module | Purpose | Key Feature |
-|---|---|---|
-| **[USMC](https://github.com/ellmos-ai/usmc)** | Cross-agent shared memory | Confidence-based conflict resolution, change tracking |
-| **[clutch](https://github.com/ellmos-ai/clutch)** | Provider-neutral model routing | Auto-learning which model fits which task, budget zones |
-| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration | Autonomous multi-round agent loops with context handoff |
-| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination | 5 patterns: Epstein, Hierarchy, Stigmergy, Consensus, Specialist |
+| Module | Purpose |
+|---|---|
+| **[USMC](https://github.com/ellmos-ai/usmc)** | Cross-agent shared memory |
+| **[clutch](https://github.com/ellmos-ai/clutch)** | Provider-neutral model routing |
+| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration |
+| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination |
+
+</td>
+<td valign="top" width="45%" align="center">
 
 **Skills**
 
-<table>
-<tr>
-<td align="center" width="340">
-<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="300"></a><br>
-<b><a href="https://github.com/ellmos-ai/skills">skills</a></b> &mdash; <i>Pluggable Skill Library</i><br>
+<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="220"></a><br>
+<b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
+<i>Pluggable Skill Library</i><br>
 Reusable agent skills that slot into any ellmos OS.<br>
 Development, research, education, infrastructure &mdash; pick what you need.
+
 </td>
 </tr>
 </table>
