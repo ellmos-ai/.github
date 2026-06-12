@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos Logo" width="300">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos Logo" width="648">
 </p>
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
@@ -8,19 +8,7 @@
 
 > **Hinweis:** Die englische Version dieser Seite ist die maßgebliche Referenz. Diese deutsche Übersetzung kann veraltet sein. Im Zweifelsfall gilt die [englische Version](README.md).
 
-**ellmos** (XLLM-OS) ist eine Familie textbasierter Betriebssysteme, die Large Language Models befähigen, autonom zu arbeiten, zu lernen und sich selbst zu organisieren.
-
-## Einstieg
-
-| Du möchtest... | Starte mit |
-|---|---|
-| Ein vollständiges persönliches LLM-Betriebssystem mit GUI, Memory, Tools und Agenten nutzen | **[BACH](https://github.com/ellmos-ai/bach)** |
-| Leichtgewichtige lokale Memory-, Task- und Connector-Infrastruktur in ein Agentenprojekt einbauen | **[Rinnsal](https://github.com/ellmos-ai/rinnsal)** |
-| Mit einem minimalen, durchsuchbaren LLM-nativen OS-Kern experimentieren | **[gardener](https://github.com/ellmos-ai/gardener)** |
-| Claude Desktop oder andere MCP-Clients mit lokalen Datei-, Code-, n8n- oder Profilwerkzeugen erweitern | **[MCP-Server](#mcp-server)** |
-| Agenten-Skills, Shared Memory, Routing oder Schwarmmuster im eigenen Stack wiederverwenden | **[Steckbare Module](#steckbare-module)** und **[skills](https://github.com/ellmos-ai/skills)** |
-
-Für maschinenlesbaren Ökosystem-Kontext siehe **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
+**ellmos** (XLLM-OS) ist eine Familie textbasierter Betriebssysteme, die Large Language Models befähigen, autonom zu arbeiten, zu lernen und sich selbst zu organisieren. Für maschinenlesbaren Ökosystem-Kontext siehe **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
 
 ## Öffentliches Repository-Verzeichnis
 
@@ -82,9 +70,11 @@ Das ellmos-Ökosystem besteht aus **drei OS-Schichten** und **steckbaren Modulen
 | **Codebasis** | ~50.000+ Zeilen | ~2.000 Zeilen | ~1.600 Zeilen |
 | **Ideal für** | Power-User, All-in-one | Entwickler die leichte Infra wollen | Minimalisten, LLM-native Experimente |
 
-### Steckbare Module
+### Steckbare Module & Skills
 
-Diese Module können in jedes OS integriert oder eigenständig genutzt werden:
+Diese Module und Skills können in jedes OS integriert oder eigenständig genutzt werden:
+
+**Module**
 
 | Modul | Zweck | Kernfeature |
 |---|---|---|
@@ -93,47 +83,40 @@ Diese Module können in jedes OS integriert oder eigenständig genutzt werden:
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung | Autonome Multi-Runden-Agenten-Schleifen mit Kontext-Übergabe |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination | 5 Muster: Epstein, Hierarchie, Stigmergie, Konsens, Spezialist |
 
-### Wie alles zusammenpasst
-
-```
-┌─────────────────────────────────────────────────┐
-│              Wähle deine OS-Schicht              │
-│                                                 │
-│   BACH (voll)   Rinnsal (leicht)  gardener (min) │
-│   ┌─────────┐   ┌────────────┐   ┌──────────┐  │
-│   │ 1870+   │   │ Keine Deps │   │ 1 Tabelle │  │
-│   │ Skills  │   │ Connectors │   │ 4 Funkt.  │  │
-│   │ 5 Boss  │   │ Chains     │   │ FTS5      │  │
-│   │ Agenten │   │ Events     │   │ = Suche   │  │
-│   └────┬────┘   └─────┬──────┘   └─────┬────┘  │
-│        └────────────┼─────────────────┘       │
-│                       │                         │
-│        ┌──────────────┼──────────────┐          │
-│        │    Steckbare Module         │          │
-│        │                             │          │
-│        │  USMC     ── Shared Memory  │          │
-│        │  clutch   ── Modell-Routing │          │
-│        │  MarbleRun ── Agent-Chains  │          │
-│        │  swarm-ai ── Parallele LLMs │          │
-│        └─────────────────────────────┘          │
-└─────────────────────────────────────────────────┘
-```
-
-Alle Projekte: **Python 3.10+** | **SQLite** | **MIT-Lizenz** | **Keine oder minimale Abhängigkeiten**
-
-## Steckbare Skills
+**Skills**
 
 <table>
 <tr>
-<td align="center" width="100%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
-<i>Steckbare Skill-Bibliothek</i><br>
+<td align="center" width="340">
+<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="300"></a><br>
+<b><a href="https://github.com/ellmos-ai/skills">skills</a></b> &mdash; <i>Steckbare Skill-Bibliothek</i><br>
 Wiederverwendbare Agenten-Skills die sich in jedes ellmos-OS einfügen.<br>
-Entwicklung, Forschung, Bildung, Infrastruktur — nimm was du brauchst.
+Entwicklung, Forschung, Bildung, Infrastruktur &mdash; nimm was du brauchst.
 </td>
 </tr>
 </table>
+
+### Wie alles zusammenpasst
+
+```mermaid
+flowchart TD
+  subgraph OS["Wähle deine OS-Schicht"]
+    BACH["BACH (voll)<br/>1870+ Skills · 5 Boss-Agenten"]
+    RIN["Rinnsal (leicht)<br/>Keine Deps · Connectors · Chains · Events"]
+    GAR["gardener (min)<br/>1 Tabelle · 4 Funktionen · FTS5-Suche"]
+  end
+  subgraph MOD["Steckbare Module"]
+    USMC["USMC — Shared Memory"]
+    CLUTCH["clutch — Modell-Routing"]
+    MARBLE["MarbleRun — Agent-Chains"]
+    SWARM["swarm-ai — Parallele LLMs"]
+  end
+  BACH --- MOD
+  RIN --- MOD
+  GAR --- MOD
+```
+
+Alle Projekte: **Python 3.10+** | **SQLite** | **MIT-Lizenz** | **Keine oder minimale Abhängigkeiten**
 
 ---
 
@@ -174,7 +157,7 @@ MCP-Profil-Dashboard, Fähigkeits-Bundles & Rechte-Audits<br>
 <code>npm i -g ellmos-controlcenter-mcp</code>
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" width="293"><br>
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" width="160"><br>
 <b><a href="https://github.com/ellmos-ai/ellmos-homebase-mcp">Homebase</a></b><br>
 Lokales LLM-Memory, Wissen, State & Orchestrierung<br>
 <code>npm i -g ellmos-homebase-mcp</code>
@@ -188,18 +171,6 @@ Server-Health-Checks, Log-Analyse, Deploy-Dry-runs & Mail-Status<br>
 <td width="25%"></td>
 </tr>
 </table>
-
-## Module & Mehr
-
-| Projekt | Beschreibung |
-|---|---|
-| **[USMC](https://github.com/ellmos-ai/usmc)** | Agentenübergreifendes Shared Memory mit konfidenzbasierter Konfliktlösung |
-| **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing mit Auto-Learning und Budget-Zonen |
-| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Autonome Multi-Runden-Agenten-Chains für Claude Code |
-| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | 5 parallele LLM-Koordinationsmuster (Stigmergie, Konsens, ...) |
-| **[n8n Workflow Manager](https://github.com/ellmos-ai/n8n-workflow-manager)** | Eigenständige GUI für n8n-Workflow-Erstellung |
-| **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Selbst gehosteter KI-Stack (Docker, Ollama, n8n) |
-| **[skills](https://github.com/ellmos-ai/skills)** | Steckbare Skill-Bibliothek (Entwicklung, Forschung, Bildung, Infrastruktur) |
 
 ## Legacy
 
