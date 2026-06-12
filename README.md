@@ -9,6 +9,7 @@ This repository maintains the public GitHub organization profile for **[ellmos-a
 | [`profile/README.md`](profile/README.md) | Public organization start page shown on `github.com/ellmos-ai` |
 | [`profile/README_de.md`](profile/README_de.md) | German profile translation; the English version is authoritative |
 | [`llms.txt`](llms.txt) | Machine-readable ecosystem and repository index |
+| [`.github/workflows/`](.github/workflows/) | Organization profile maintenance workflows |
 | [`ISSUE_TEMPLATE/`](ISSUE_TEMPLATE/) | Shared issue templates for ellmos-ai repositories |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Organization-wide community conduct rules |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Shared contribution guidance |
@@ -17,3 +18,5 @@ This repository maintains the public GitHub organization profile for **[ellmos-a
 ## Maintenance
 
 When a public repository is added to `ellmos-ai`, update the public repository index in `profile/README.md`, `profile/README_de.md` and `llms.txt` in the same change.
+
+When community workflows are refreshed centrally, keep this profile repository aligned with the current `actions/stale` and `actions/first-interaction` majors.
