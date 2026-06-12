@@ -1,24 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos logo" width="300">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos logo" width="648">
 </p>
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
 <p align="center"><i>From a spring to a stream — LLM operating systems that flow.</i></p>
 <p align="center"><b>🇩🇪 <a href="https://github.com/ellmos-ai/.github/blob/master/profile/README_de.md">Deutsche Version</a></b></p>
 
-**ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.
-
-## Start Here
-
-| You want to... | Start with |
-|---|---|
-| Run a full personal LLM operating system with GUI, memory, tools and agents | **[BACH](https://github.com/ellmos-ai/bach)** |
-| Add lightweight local memory, tasks and connectors to an agent project | **[Rinnsal](https://github.com/ellmos-ai/rinnsal)** |
-| Experiment with a minimal searchable LLM-native OS core | **[gardener](https://github.com/ellmos-ai/gardener)** |
-| Give Claude Desktop or other MCP clients local file, code, n8n or profile tools | **[MCP Servers](#mcp-servers)** |
-| Reuse agent skills, shared memory, routing or swarm patterns in your own stack | **[Pluggable Modules & Skills](#pluggable-modules--skills)** and **[skills](https://github.com/ellmos-ai/skills)** |
-
-For machine-readable ecosystem context, see **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
+**ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize. For machine-readable ecosystem context, see **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
 
 ## Public Repository Index
 
@@ -84,10 +72,6 @@ The ellmos ecosystem consists of **three OS layers** and **pluggable modules** t
 
 These modules and skills can be integrated into any OS or used standalone:
 
-<table>
-<tr>
-<td valign="top" width="62%">
-
 **Modules**
 
 | Module | Purpose | Key Feature |
@@ -97,17 +81,15 @@ These modules and skills can be integrated into any OS or used standalone:
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration | Autonomous multi-round agent loops with context handoff |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination | 5 patterns: Epstein, Hierarchy, Stigmergy, Consensus, Specialist |
 
-</td>
-<td valign="top" width="38%" align="center">
-
 **Skills**
 
-<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="180"></a><br>
-<b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
-<i>Pluggable Skill Library</i><br>
+<table>
+<tr>
+<td align="center" width="340">
+<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="300"></a><br>
+<b><a href="https://github.com/ellmos-ai/skills">skills</a></b> &mdash; <i>Pluggable Skill Library</i><br>
 Reusable agent skills that slot into any ellmos OS.<br>
 Development, research, education, infrastructure &mdash; pick what you need.
-
 </td>
 </tr>
 </table>
