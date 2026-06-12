@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos Logo" width="648">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos Logo" width="300">
 </p>
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
@@ -74,24 +74,30 @@ Das ellmos-Ökosystem besteht aus **drei OS-Schichten** und **steckbaren Modulen
 
 Diese Module und Skills können in jedes OS integriert oder eigenständig genutzt werden:
 
+<table>
+<tr>
+<td valign="top" width="55%">
+
 **Module**
 
-| Modul | Zweck | Kernfeature |
-|---|---|---|
-| **[USMC](https://github.com/ellmos-ai/usmc)** | Agentenübergreifendes Shared Memory | Konfidenzbasierte Konfliktlösung, Änderungstracking |
-| **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing | Auto-Learning welches Modell zu welcher Aufgabe passt, Budget-Zonen |
-| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung | Autonome Multi-Runden-Agenten-Schleifen mit Kontext-Übergabe |
-| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination | 5 Muster: Epstein, Hierarchie, Stigmergie, Konsens, Spezialist |
+| Modul | Zweck |
+|---|---|
+| **[USMC](https://github.com/ellmos-ai/usmc)** | Agentenübergreifendes Shared Memory |
+| **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing |
+| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
+| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
+
+</td>
+<td valign="top" width="45%" align="center">
 
 **Skills**
 
-<table>
-<tr>
-<td align="center" width="340">
-<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="300"></a><br>
-<b><a href="https://github.com/ellmos-ai/skills">skills</a></b> &mdash; <i>Steckbare Skill-Bibliothek</i><br>
+<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="220"></a><br>
+<b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
+<i>Steckbare Skill-Bibliothek</i><br>
 Wiederverwendbare Agenten-Skills die sich in jedes ellmos-OS einfügen.<br>
 Entwicklung, Forschung, Bildung, Infrastruktur &mdash; nimm was du brauchst.
+
 </td>
 </tr>
 </table>
