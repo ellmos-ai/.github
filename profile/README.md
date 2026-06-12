@@ -16,7 +16,7 @@
 | Add lightweight local memory, tasks and connectors to an agent project | **[Rinnsal](https://github.com/ellmos-ai/rinnsal)** |
 | Experiment with a minimal searchable LLM-native OS core | **[gardener](https://github.com/ellmos-ai/gardener)** |
 | Give Claude Desktop or other MCP clients local file, code, n8n or profile tools | **[MCP Servers](#mcp-servers)** |
-| Reuse agent skills, shared memory, routing or swarm patterns in your own stack | **[Pluggable Modules](#pluggable-modules)** and **[skills](https://github.com/ellmos-ai/skills)** |
+| Reuse agent skills, shared memory, routing or swarm patterns in your own stack | **[Pluggable Modules & Skills](#pluggable-modules--skills)** and **[skills](https://github.com/ellmos-ai/skills)** |
 
 For machine-readable ecosystem context, see **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
 
