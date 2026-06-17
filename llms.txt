@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-12; archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-18; archived repositories are marked.
 
 ## Primary entry points
 
@@ -51,6 +51,8 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Self-hosted AI research and knowledge stack with Ollama, n8n, Rinnsal and KnowledgeDigest.
 - skills: https://github.com/ellmos-ai/skills
   Reusable agent skill library for development, research, education and infrastructure.
+- llm-note: https://github.com/doc-bricks/llm-note
+  Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
 
 ## Organization and maintenance
 
@@ -82,7 +84,8 @@ CodeCommander FileCommander MCP
 n8n workflow automation MCP
 agent memory tasks connectors
 multi-agent swarm coordination Python
+local-first LLM agent notes llm-note
 ellmos-tests LLM OS evaluation
 ```
 
-## Last-checked: 2026-06-12
+## Last-checked: 2026-06-18

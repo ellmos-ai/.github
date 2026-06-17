@@ -86,6 +86,7 @@ Diese Module und Skills können in jedes OS integriert oder eigenständig genutz
 | **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
+| **[llm-note](https://github.com/doc-bricks/llm-note)** | Lokale Notizen und Notizbücher für LLM-Agenten |
 
 </td>
 <td valign="top" width="45%" align="center">
