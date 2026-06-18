@@ -10,7 +10,7 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories. Archived repositories are marked explicitly.
+This index is complete for the public `ellmos-ai` repositories. Archived repositories are marked explicitly. Last checked against GitHub: 2026-06-18.
 
 | Area | Repositories |
 |---|---|
@@ -18,6 +18,7 @@ This index is complete for the public `ellmos-ai` repositories. Archived reposit
 | LLM operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** |
 | MCP servers | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)** |
 | Agent modules and orchestration | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** |
+| Media and content workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - local AI video, audio and podcast editing with local transcription, transcript-based cuts, Hyperframes motion graphics and agent-driven creative edits |
 | Evaluation and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)** |
 | Legacy archive | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archived predecessor to BACH |
 
@@ -101,6 +102,12 @@ Development, research, education, infrastructure &mdash; pick what you need.
 </td>
 </tr>
 </table>
+
+### Media and Content Workflows
+
+| Project | Purpose |
+|---|---|
+| **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** | Local AI media-editing orchestrator for video, audio and podcasts: local STT with faster-whisper or WhisperX, Scribe-compatible transcript JSON, video-use transcript cuts, Hyperframes motion graphics and agent-guided creative edits. |
 
 ### How They Fit Together
 

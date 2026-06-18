@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
-<p align="center"><i>Von der Quelle zum Strom — LLM-Betriebssysteme die fließen.</i></p>
+<p align="center"><i>Von der Quelle zum Strom — LLM-Betriebssysteme, die fließen.</i></p>
 <p align="center"><b>🇬🇧 <a href="README.md">English Version</a></b> (maßgeblich)</p>
 
 > **Hinweis:** Die englische Version dieser Seite ist die maßgebliche Referenz. Diese deutsche Übersetzung kann veraltet sein. Im Zweifelsfall gilt die [englische Version](README.md).
@@ -12,14 +12,15 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories. Archivierte Repositories sind ausdrücklich markiert.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories. Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-06-18.
 
 | Bereich | Repositories |
 |---|---|
 | Organisationsprofil | **[.github](https://github.com/ellmos-ai/.github)** - Org-Profil, Community-Health-Dateien und `llms.txt` |
 | LLM-Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)** |
-| Agenten-Module und Orchestrierung | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)** |
+| Agenten-Module und Orchestrierung | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** |
+| Medien- und Content-Workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - lokaler AI-Video-, Audio- und Podcast-Editor mit lokaler Transkription, transkriptbasierten Schnitten, Hyperframes-Bewegtgrafik und agentengesteuerten kreativen Edits |
 | Evaluation und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)** |
 | Legacy-Archiv | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archivierter Vorgänger von BACH |
 
@@ -84,9 +85,10 @@ Diese Module und Skills können in jedes OS integriert oder eigenständig genutz
 |---|---|
 | **[USMC](https://github.com/ellmos-ai/usmc)** | Agentenübergreifendes Shared Memory |
 | **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing |
+| **[connectors](https://github.com/ellmos-ai/connectors)** | Portable Messaging-Connectors für AI-Agenten: Telegram, Discord, Signal, WhatsApp, Home Assistant und Webhook |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
-| **[llm-note](https://github.com/doc-bricks/llm-note)** | Lokale Notizen und Notizbücher für LLM-Agenten |
+| **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Nutzer-Modellierung und Theory-of-Mind-Rezept für persönliche Entscheidungsavatare aus Interaktionslogs |
 
 </td>
 <td valign="top" width="45%" align="center">
@@ -102,6 +104,12 @@ Entwicklung, Forschung, Bildung, Infrastruktur &mdash; nimm was du brauchst.
 </td>
 </tr>
 </table>
+
+### Medien- und Content-Workflows
+
+| Projekt | Zweck |
+|---|---|
+| **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** | Lokaler AI-Medien-Editor für Video, Audio und Podcasts: lokale Spracherkennung mit faster-whisper oder WhisperX, Scribe-kompatibles Transcript-JSON, video-use-Schnittlogik, Hyperframes-Bewegtgrafik und agentengeführte kreative Edits. |
 
 ### Wie alles zusammenpasst
 
@@ -202,6 +210,7 @@ Diese Projekte liegen in Schwester-Organisationen, sind aber besonders relevant 
 |---|---|---|
 | **[ticket-master](https://github.com/dev-bricks/ticket-master)** | dev-bricks | Cross-platform-Ticket-Router und Triage-Konsole — strukturiert Tickets und leitet sie an den passenden KI-Anbieter oder Sub-Agenten weiter |
 | **[lock-master](https://github.com/dev-bricks/lock-master)** | dev-bricks | Portables Multi-Agenten-Dateisperr-System — LOCK*.txt-basiertes Projekt-/Komponenten-Locking mit Scopes, Ablaufzeit, Stale-Cleanup und schnellem Übersichts-Cache; besonders relevant für Multi-Agenten-Koordination |
+| **[llm-note](https://github.com/doc-bricks/llm-note)** | doc-bricks | Lokale Notizen und Notizbücher für LLM-Agenten — aus BACH-Notizblock-/Denkarium-Mustern extrahiert, mit SQLite, Klartext-Notizbüchern und sechs Sprachen |
 | **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Lokale Wissensdatenbank mit LLM-Vorverarbeitung — Dokumente ohne Cloud-Abhängigkeiten einlesen, strukturieren und abfragen |
 
 ---

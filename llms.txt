@@ -41,6 +41,8 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Cross-agent shared memory with confidence-based conflict resolution.
 - clutch: https://github.com/ellmos-ai/clutch
   Provider-neutral model routing with auto-learning and budget zones.
+- connectors: https://github.com/ellmos-ai/connectors
+  Portable messaging connectors for AI agents: Telegram, Discord, Signal, WhatsApp, Home Assistant and Webhook; framework-decoupled via SecretAdapter.
 - MarbleRun: https://github.com/ellmos-ai/MarbleRun
   Autonomous multi-round agent chains for Claude Code.
 - swarm-ai: https://github.com/ellmos-ai/swarm-ai
@@ -51,8 +53,15 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Self-hosted AI research and knowledge stack with Ollama, n8n, Rinnsal and KnowledgeDigest.
 - skills: https://github.com/ellmos-ai/skills
   Reusable agent skill library for development, research, education and infrastructure.
+- build-your-users-mind: https://github.com/ellmos-ai/build-your-users-mind
+  Recipe for any AI agent to build a self-improving theory-of-mind model of its user from interaction logs.
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
+
+## Media and content workflows
+
+- ai-media-editor: https://github.com/ellmos-ai/ai-media-editor
+  Local AI media-editing orchestrator for video, audio and podcasts with faster-whisper or WhisperX transcription, Scribe-compatible transcript JSON, video-use cuts, Hyperframes motion graphics and agent-guided edits.
 
 ## Organization and maintenance
 
@@ -86,6 +95,11 @@ agent memory tasks connectors
 multi-agent swarm coordination Python
 local-first LLM agent notes llm-note
 ellmos-tests LLM OS evaluation
+ai-media-editor local AI media editor
+local transcription faster-whisper WhisperX video-use
+Hyperframes AI video podcast editor
+AI agent messaging connectors Telegram Discord WhatsApp
+build-your-users-mind theory of mind user model
 ```
 
 ## Last-checked: 2026-06-18
