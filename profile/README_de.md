@@ -12,16 +12,16 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories. Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-06-18.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories. Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-01.
 
 | Bereich | Repositories |
 |---|---|
 | Organisationsprofil | **[.github](https://github.com/ellmos-ai/.github)** - Org-Profil, Community-Health-Dateien und `llms.txt` |
 | LLM-Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)** |
-| Agenten-Module und Orchestrierung | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** |
+| Agenten-Module und Orchestrierung | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)** |
 | Medien- und Content-Workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - lokaler AI-Video-, Audio- und Podcast-Editor mit lokaler Transkription, transkriptbasierten Schnitten, Hyperframes-Bewegtgrafik und agentengesteuerten kreativen Edits |
-| Evaluation und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)** |
+| Evaluation, Vorlagen und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichtem Tooling und LLM-freundlichem Projektgedächtnis |
 | Legacy-Archiv | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archivierter Vorgänger von BACH |
 
 ## Die ellmos-Familie
@@ -89,6 +89,8 @@ Diese Module und Skills können in jedes OS integriert oder eigenständig genutz
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Nutzer-Modellierung und Theory-of-Mind-Rezept für persönliche Entscheidungsavatare aus Interaktionslogs |
+| **[open-compute](https://github.com/ellmos-ai/open-compute)** | Modellagnostischer Computer-Use-Kern für Claude, OpenAI CUA und Mock-Backends mit normalisierten Koordinaten, kanonischem Action-Schema und zentralem Safety-Gate |
+| **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** | Agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichten Checks und LLM-freundlichem Projektgedächtnis |
 
 </td>
 <td valign="top" width="45%" align="center">
@@ -125,6 +127,7 @@ flowchart TD
     CLUTCH["clutch — Modell-Routing"]
     MARBLE["MarbleRun — Agent-Chains"]
     SWARM["swarm-ai — Parallele LLMs"]
+    OCOMP["open-compute — Computer Use"]
   end
   BACH --- MOD
   RIN --- MOD

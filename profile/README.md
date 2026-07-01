@@ -10,16 +10,16 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories. Archived repositories are marked explicitly. Last checked against GitHub: 2026-06-18.
+This index is complete for the public `ellmos-ai` repositories. Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-01.
 
 | Area | Repositories |
 |---|---|
 | Organization profile | **[.github](https://github.com/ellmos-ai/.github)** - org profile, community health files and `llms.txt` |
 | LLM operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** |
 | MCP servers | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)** |
-| Agent modules and orchestration | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)** - model-agnostic computer-use core |
+| Agent modules and orchestration | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)** |
 | Media and content workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - local AI video, audio and podcast editing with local transcription, transcript-based cuts, Hyperframes motion graphics and agent-driven creative edits |
-| Evaluation and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)** |
+| Evaluation, templates and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory |
 | Legacy archive | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archived predecessor to BACH |
 
 ## The ellmos Family
@@ -86,7 +86,9 @@ These modules and skills can be integrated into any OS or used standalone:
 | **[connectors](https://github.com/ellmos-ai/connectors)** | Portable messaging connectors for AI agents - Telegram, Discord, Signal, WhatsApp, Home Assistant, Webhook; BACH-decoupled via SecretAdapter. |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination |
-| **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)** - model-agnostic computer-use core | Per-user theory of mind: a decision avatar built from interaction logs (feedback precognition) |
+| **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Per-user theory of mind: a decision avatar built from interaction logs (feedback precognition) |
+| **[open-compute](https://github.com/ellmos-ai/open-compute)** | Model-agnostic computer-use core for Claude, OpenAI CUA and mock backends with normalized coordinates, canonical actions and a central safety gate |
+| **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** | Agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight checks and LLM-friendly project memory |
 
 </td>
 <td valign="top" width="45%" align="center">
@@ -123,6 +125,7 @@ flowchart TD
     CLUTCH["clutch — model routing"]
     MARBLE["MarbleRun — agent chains"]
     SWARM["swarm-ai — parallel LLMs"]
+    OCOMP["open-compute — computer use"]
   end
   BACH --- MOD
   RIN --- MOD

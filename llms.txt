@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-06-18; archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-01; archived repositories are marked.
 
 ## Primary entry points
 
@@ -55,6 +55,10 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Reusable agent skill library for development, research, education and infrastructure.
 - build-your-users-mind: https://github.com/ellmos-ai/build-your-users-mind
   Recipe for any AI agent to build a self-improving theory-of-mind model of its user from interaction logs.
+- open-compute: https://github.com/ellmos-ai/open-compute
+  Model-agnostic computer-use core for Claude, OpenAI CUA and mock backends with normalized coordinates, canonical actions and a central safety gate.
+- project-docs-template: https://github.com/ellmos-ai/project-docs-template
+  Agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory.
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
 
@@ -100,6 +104,10 @@ local transcription faster-whisper WhisperX video-use
 Hyperframes AI video podcast editor
 AI agent messaging connectors Telegram Discord WhatsApp
 build-your-users-mind theory of mind user model
+open-compute model agnostic computer use
+Claude OpenAI CUA normalized action schema
+project-docs-template agent ready project docs
+START STATE TODO DONE LLM project memory
 ```
 
-## Last-checked: 2026-06-18
+## Last-checked: 2026-07-01
