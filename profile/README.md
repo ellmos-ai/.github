@@ -184,7 +184,12 @@ Local LLM memory, knowledge, state & orchestration<br>
 Server health checks, log analysis, deploy dry-runs & mail status<br>
 <code>npm i -g ellmos-servercommander-mcp</code>
 </td>
-<td width="25%"></td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-blender-use.jpg" width="160"><br>
+<b><a href="https://github.com/ellmos-ai/ellmos-blender-use-mcp">Blender Use</a></b><br>
+Headless Blender asset QA: background runs & FBX reimport checks<br>
+<code>npm i -g ellmos-blender-use-mcp</code>
+</td>
 </tr>
 </table>
 
