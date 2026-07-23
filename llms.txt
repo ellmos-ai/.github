@@ -45,6 +45,8 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Server operations via MCP: HTTP health checks, access-log analysis, deployment dry-runs and mail status.
 - Blender Use: https://github.com/ellmos-ai/ellmos-blender-use-mcp
   Headless Blender asset QA: background script runs and FBX reimport verification. No add-on, no TCP port.
+- Open Compute: https://github.com/ellmos-ai/open-compute-mcp
+  npm launcher for the open-compute MCP server: model-agnostic computer-use (screen capture, safety-gated actions, Windows UIA) over MCP.
 
 ## Reusable modules
 
