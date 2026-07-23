@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-03; archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-23 (35 repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -13,10 +13,19 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Full personal LLM operating system with GUI, memory, tools, skills and agents.
 - Rinnsal: https://github.com/ellmos-ai/rinnsal
   Lightweight zero-dependency LLM infrastructure for memory, tasks, connectors, chains and i18n.
-- gardener: https://github.com/ellmos-ai/gardener
-  Minimal searchable LLM-native OS core with a single SQLite table and FTS5.
 - ellmos: https://github.com/ellmos-ai/ellmos
   Family-level text-based operating-system documentation and infrastructure context.
+
+## Memory pillar (.MEMORY)
+
+ellmos memory is a family of three modules, importable as a dependency by any OS layer instead of each one rebuilding its own memory/task system:
+
+- usmc: https://github.com/ellmos-ai/usmc
+  Curated session/core memory; the facade and entry point of the memory system (push model).
+- gardener: https://github.com/ellmos-ai/gardener
+  Memory supplier: organic absorb/decay plus a federated cross-source FTS5 index via observe() that cites back to source (pull model). Primarily a memory module; secondarily usable as a minimal, searchable LLM-native OS core with a single SQLite table.
+- taskplan: https://github.com/ellmos-ai/taskplan
+  Standalone SQLite task module, kept separate from knowledge memory. Zero dependencies.
 
 ## MCP servers
 
@@ -39,8 +48,6 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
 
 ## Reusable modules
 
-- USMC: https://github.com/ellmos-ai/usmc
-  Cross-agent shared memory with confidence-based conflict resolution.
 - clutch: https://github.com/ellmos-ai/clutch
   Provider-neutral model routing with auto-learning and budget zones.
 - connectors: https://github.com/ellmos-ai/connectors
@@ -61,8 +68,30 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Model-agnostic computer-use core for Claude, OpenAI CUA and mock backends with normalized coordinates, canonical actions and a central safety gate.
 - project-docs-template: https://github.com/ellmos-ai/project-docs-template
   Agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory.
+- web-scraper: https://github.com/ellmos-ai/web-scraper
+  Standalone web scraper extracted from BACH: get/links/forms/headers/extract/screenshot, Python stdlib core with optional extras and an SSRF guard.
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
+- knowledgedigest: https://github.com/file-bricks/knowledgedigest
+  Related file-bricks module: local-first knowledge base with LLM preprocessing to ingest, structure and query documents without cloud dependencies; core module of ellmos-stack.
+
+## Stacks
+
+Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only declared components.
+
+- stacks: https://github.com/ellmos-ai/stacks
+  Catalog and shared manifest schema for every stack in the ellmos-ai family.
+- ellmos-stack: https://github.com/ellmos-ai/ellmos-stack
+  Self-hosted local-first AI research stack: Ollama, n8n, Rinnsal memory, KnowledgeDigest (file-bricks) search, and Docker Compose automation.
+- agent-ops-stack: https://github.com/ellmos-ai/agent-ops-stack
+  Manifest-driven composition of the local agent-ops ecosystem: ticket-master and lock-master and sync-master (dev-bricks), build-your-users-mind, skills, and an MCP control plane for CLI coding agents.
+
+## Domain tools
+
+- law-checker: https://github.com/ellmos-ai/law-checker
+  Source-grounded AI first-look legal assessments for German law (Erstorientierung, not a substitute for a lawyer): statute registry, embodiment agents, web-verified case law.
+- worksheet-generator: https://github.com/ellmos-ai/worksheet-generator
+  Generates structured, ICF-aware worksheets for pedagogical and therapeutic professionals from a local LLM agent, rendered to Markdown, HTML or DOCX.
 
 ## Media and content workflows
 
@@ -75,6 +104,8 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
   Organization profile, shared community health files and this llms.txt context file.
 - ellmos-tests: https://github.com/ellmos-ai/ellmos-tests
   B/O/E evaluation framework for SKILL.md-based LLM operating systems and agent hubs.
+- clirec: https://github.com/ellmos-ai/clirec
+  Human-readable GUI demonstration recordings for CLI and agent workflows.
 - recludos-legacy: https://github.com/ellmos-ai/recludos-legacy
   Archived predecessor to BACH; kept as a historical reference.
 
@@ -110,6 +141,14 @@ open-compute model agnostic computer use
 Claude OpenAI CUA normalized action schema
 project-docs-template agent ready project docs
 START STATE TODO DONE LLM project memory
+usmc gardener taskplan memory pillar
+gardener cross-source federated FTS5 index observe
+taskplan standalone SQLite task module
+ellmos-stack agent-ops-stack manifest-driven stack composition
+law-checker German legal AI first-look assessment
+worksheet-generator ICF pedagogical therapeutic worksheets
+web-scraper SSRF guard get links forms extract screenshot
+clirec CLI agent GUI demonstration recordings
 ```
 
-## Last-checked: 2026-07-03
+## Last-checked: 2026-07-23

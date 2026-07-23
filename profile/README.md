@@ -10,22 +10,24 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories. Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-04.
+This index is complete for the public `ellmos-ai` repositories (35 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-23.
 
 | Area | Repositories |
 |---|---|
 | Organization profile | **[.github](https://github.com/ellmos-ai/.github)** - org profile, community health files and `llms.txt` |
 | Stack catalog | **[stacks](https://github.com/ellmos-ai/stacks)** - catalog and shared manifest schema for every stack in the ellmos-ai family |
-| LLM operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** |
+| Operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - see [The .MEMORY Pillar](#the-memory-pillar) below for gardener |
+| Memory pillar | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[taskplan](https://github.com/ellmos-ai/taskplan)** - curated session memory, organic cross-source index, and task tracking; see [The .MEMORY Pillar](#the-memory-pillar) |
 | MCP servers | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
-| Agent modules and orchestration | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)** |
+| Agent modules and orchestration | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - standalone web scraper (get/links/forms/headers/extract/screenshot) extracted from BACH, with an SSRF guard |
+| Domain tools | **[law-checker](https://github.com/ellmos-ai/law-checker)** - source-grounded AI first-look legal assessments for German law (Erstorientierung, no substitute for a lawyer), statute registry and embodiment agents; **[worksheet-generator](https://github.com/ellmos-ai/worksheet-generator)** - generates structured, ICF-aware worksheets for pedagogical and therapeutic use, rendered to Markdown/HTML/DOCX |
 | Media and content workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - local AI video, audio and podcast editing with local transcription, transcript-based cuts, Hyperframes motion graphics and agent-driven creative edits |
-| Evaluation, templates and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory |
+| Evaluation, templates and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory; **[clirec](https://github.com/ellmos-ai/clirec)** - human-readable GUI demonstration recordings for CLI and agent workflows |
 | Legacy archive | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archived predecessor to BACH |
 
 ## The ellmos Family
 
-Three operating systems — different philosophies, same goal:
+Two operating systems — different philosophies, same goal — plus a memory pillar either one can plug into:
 
 <table>
 <tr>
@@ -45,18 +47,30 @@ Lightweight LLM infra: memory, tasks, connectors, chains, i18n. Zero dependencie
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/gardener">gardener</a></b><br>
 <i>The zen garden</i><br>
-LLM-native OS: 1 table, 4 functions, FTS5 search. Everything is searchable.
+Primarily the ellmos <b>memory module</b> (organic cross-source index) — doubles as a minimal, LLM-native OS: 1 table, 4 functions, FTS5 search.
 </td>
 </tr>
 </table>
 
-## Architecture: 3 OS Layers + Pluggable Modules
+gardener's first job today is supplying the [.MEMORY pillar](#the-memory-pillar) below; its standalone-OS capability remains fully usable but is the secondary role.
 
-The ellmos ecosystem consists of **three OS layers** and **pluggable modules** that can be integrated into any OS — or used standalone.
+## The .MEMORY Pillar
+
+ellmos memory isn't one repo — it's three focused modules that combine into the family's standard memory stack, importable as a dependency by any OS layer (BACH, Rinnsal) instead of each one rebuilding its own memory/task system:
+
+| Module | Role |
+|---|---|
+| **[usmc](https://github.com/ellmos-ai/usmc)** | Curated session/core memory — the **facade and entry point** of the memory system. Push model: "what I consciously remember." |
+| **[gardener](https://github.com/ellmos-ai/gardener)** | Memory **supplier**: organic growth via absorb/decay, plus a federated cross-source FTS5 index via `observe()` that cites results back to their source. Pull model: "index what's already there." |
+| **[taskplan](https://github.com/ellmos-ai/taskplan)** | Standalone SQLite task module — tasks stay separate from knowledge memory. Zero dependencies. |
+
+## Architecture: OS Layers, Memory Pillar & Pluggable Modules
+
+The ellmos ecosystem consists of **operating systems**, the **.MEMORY pillar**, and **pluggable modules** that can be integrated into any OS — or used standalone.
 
 ### Operating Systems
 
-| | **BACH** | **Rinnsal** | **gardener** |
+| | **BACH** | **Rinnsal** | **gardener** *(memory pillar primary, OS secondary)* |
 |---|---|---|---|
 | **Philosophy** | Maximalist: everything integrated | Lightweight: zero dependencies | Minimalist: 1 table, 4 functions |
 | **Database** | SQLite (145+ tables) | SQLite (structured) | SQLite (1 table `everything` + FTS5) |
@@ -68,7 +82,7 @@ The ellmos ecosystem consists of **three OS layers** and **pluggable modules** t
 | **GUI** | PySide6 Desktop + Web | CLI only | CLI only |
 | **Self-Extension** | `bach skills create` | No | No |
 | **Codebase** | ~50,000+ lines | ~2,000 lines | ~1,600 lines |
-| **Best for** | Power users, all-in-one | Developers wanting light infra | Minimalists, LLM-native experiments |
+| **Best for** | Power users, all-in-one | Developers wanting light infra | Minimalists, LLM-native experiments; standalone use of the .MEMORY pillar |
 
 ### Pluggable Modules & Skills
 
@@ -80,15 +94,17 @@ These modules and skills can be integrated into any OS or used standalone:
 
 **Modules**
 
+*(USMC, gardener and taskplan now live in the [.MEMORY pillar](#the-memory-pillar) above.)*
+
 | Module | Purpose |
 |---|---|
-| **[USMC](https://github.com/ellmos-ai/usmc)** | Cross-agent shared memory |
 | **[clutch](https://github.com/ellmos-ai/clutch)** | Provider-neutral model routing |
 | **[connectors](https://github.com/ellmos-ai/connectors)** | Portable messaging connectors for AI agents - Telegram, Discord, Signal, WhatsApp, Home Assistant, Webhook; BACH-decoupled via SecretAdapter. |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination |
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Per-user theory of mind: a decision avatar built from interaction logs (feedback precognition) |
 | **[open-compute](https://github.com/ellmos-ai/open-compute)** | Model-agnostic computer-use core for Claude, OpenAI CUA and mock backends with normalized coordinates, canonical actions and a central safety gate |
+| **[web-scraper](https://github.com/ellmos-ai/web-scraper)** | Standalone web scraper extracted from BACH — get/links/forms/headers/extract/screenshot, with an SSRF guard |
 | **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** | Agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight checks and LLM-friendly project memory |
 
 </td>
@@ -119,21 +135,39 @@ flowchart TD
   subgraph OS["Choose Your OS Layer"]
     BACH["BACH (full)<br/>1870+ skills · 5 boss agents"]
     RIN["Rinnsal (light)<br/>Zero deps · Connectors · Chains · Events"]
-    GAR["gardener (min)<br/>1 table · 4 funcs · FTS5 search"]
+  end
+  subgraph MEM[".MEMORY Pillar"]
+    GAR["gardener — organic index (also: minimal OS)"]
+    USMC["usmc — curated memory"]
+    TASK["taskplan — tasks"]
   end
   subgraph MOD["Pluggable Modules"]
-    USMC["USMC — shared memory"]
     CLUTCH["clutch — model routing"]
     MARBLE["MarbleRun — agent chains"]
     SWARM["swarm-ai — parallel LLMs"]
     OCOMP["open-compute — computer use"]
   end
+  BACH --- MEM
+  RIN --- MEM
   BACH --- MOD
   RIN --- MOD
-  GAR --- MOD
 ```
 
 All projects: **Python 3.10+** | **SQLite** | **MIT License** | **Zero or minimal dependencies**
+
+---
+
+## Stacks
+
+Stacks are manifest-driven compositions (`ellmos.stack.v2`) — no code copies, just declared components. Two active public stacks anchor the family, catalogued in a third:
+
+| Stack | Purpose | Core modules |
+|---|---|---|
+| **[stacks](https://github.com/ellmos-ai/stacks)** | Catalog and shared manifest schema for every stack in the ellmos-ai family | — |
+| **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Self-hosted, local-first AI research base: Ollama, n8n, Rinnsal memory, Docker Compose automation | Rinnsal · **[KnowledgeDigest](https://github.com/file-bricks/knowledgedigest)** (file-bricks) · Ollama · n8n |
+| **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Coordination layer for CLI coding agents: ticket routing, file locking, decision-avatar, MCP control plane | **[ticket-master](https://github.com/dev-bricks/ticket-master)** (dev-bricks) · **[lock-master](https://github.com/dev-bricks/lock-master)** (dev-bricks) · **[sync-master](https://github.com/dev-bricks/sync-master)** (dev-bricks) · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
+
+A number of these modules are deliberately **both**: standalone dev tools you can adopt individually, and stack components you get automatically by installing the stack. That also applies to **[llm-note](https://github.com/doc-bricks/llm-note)** (doc-bricks) — local-first notebooks for LLM agents, built as a pluggable module for stack composition.
 
 ---
 
@@ -228,7 +262,7 @@ These projects live in sibling organizations but are particularly relevant to th
 | **[sync-master](https://github.com/dev-bricks/sync-master)** | dev-bricks | Serverless cross-machine sync yard for multi-agent setups — slot-per-host write ownership, a gated daily sync ritual, message channels and a bootstrap runbook; the transport layer that keeps several machines and their agents in step |
 | **[companion-for-agy](https://github.com/dev-bricks/companion-for-agy)** | dev-bricks | PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction — lets Claude Code, Codex and CI pipelines read Gemini output reliably |
 | **[llm-note](https://github.com/doc-bricks/llm-note)** | doc-bricks | Local-first notes and notebook inboxes for LLM agents — extracted from BACH Notizblock/Denkarium patterns with SQLite, plain-text notebooks and six locales |
-| **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Local-first knowledge base with LLM preprocessing — ingest, structure and query documents without cloud dependencies |
+| **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Local-first knowledge base with LLM preprocessing — ingest, structure and query documents without cloud dependencies; core module of [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack) |
 
 ---
 

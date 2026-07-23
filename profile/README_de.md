@@ -12,22 +12,24 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories. Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-04.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (35 Repos, davon 1 archiviert). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-23.
 
 | Bereich | Repositories |
 |---|---|
 | Organisationsprofil | **[.github](https://github.com/ellmos-ai/.github)** - Org-Profil, Community-Health-Dateien und `llms.txt` |
 | Stack-Katalog | **[stacks](https://github.com/ellmos-ai/stacks)** - Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie |
-| LLM-Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** |
+| Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - gardener siehe [Die .MEMORY-Säule](#die-memory-säule) unten |
+| Gedächtnis-Säule | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[taskplan](https://github.com/ellmos-ai/taskplan)** - kuratiertes Session-Gedächtnis, organischer Cross-Source-Index und Task-Tracking; siehe [Die .MEMORY-Säule](#die-memory-säule) |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
-| Agenten-Module und Orchestrierung | **[usmc](https://github.com/ellmos-ai/usmc)**, **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)** |
+| Agenten-Module und Orchestrierung | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - eigenständiger, aus BACH extrahierter Web-Scraper (get/links/forms/headers/extract/screenshot) mit SSRF-Schutz |
+| Fachanwendungen | **[law-checker](https://github.com/ellmos-ai/law-checker)** - quellenbasierte KI-Ersteinschätzungen für deutsches Recht (Erstorientierung, kein Anwaltsersatz), Gesetzes-Registry und Verkörperungs-Agenten; **[worksheet-generator](https://github.com/ellmos-ai/worksheet-generator)** - erzeugt strukturierte, ICF-gestützte Arbeitsblätter für pädagogische und therapeutische Zwecke, gerendert nach Markdown/HTML/DOCX |
 | Medien- und Content-Workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - lokaler AI-Video-, Audio- und Podcast-Editor mit lokaler Transkription, transkriptbasierten Schnitten, Hyperframes-Bewegtgrafik und agentengesteuerten kreativen Edits |
-| Evaluation, Vorlagen und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichtem Tooling und LLM-freundlichem Projektgedächtnis |
+| Evaluation, Vorlagen und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichtem Tooling und LLM-freundlichem Projektgedächtnis; **[clirec](https://github.com/ellmos-ai/clirec)** - menschenlesbare GUI-Demo-Aufzeichnungen für CLI- und Agenten-Workflows |
 | Legacy-Archiv | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archivierter Vorgänger von BACH |
 
 ## Die ellmos-Familie
 
-Drei Betriebssysteme — verschiedene Philosophien, selbes Ziel:
+Zwei Betriebssysteme — verschiedene Philosophien, selbes Ziel — plus eine Gedächtnis-Säule, in die sich beide einklinken können:
 
 <table>
 <tr>
@@ -47,18 +49,30 @@ Leichtgewichtige LLM-Infrastruktur: Memory, Tasks, Connectors, Chains. Keine Abh
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/gardener">gardener</a></b><br>
 <i>Der Zen-Garten</i><br>
-LLM-natives OS: 1 Tabelle, 4 Funktionen, FTS5-Suche. Alles ist durchsuchbar.
+In erster Linie das <b>Gedächtnis-Modul</b> von ellmos (organischer Cross-Source-Index) — funktioniert daneben als minimalistisches, LLM-natives OS: 1 Tabelle, 4 Funktionen, FTS5-Suche.
 </td>
 </tr>
 </table>
 
-## Architektur: 3 OS-Schichten + steckbare Module
+gardeners primäre Aufgabe ist heute die Zulieferung der [.MEMORY-Säule](#die-memory-säule) unten; die eigenständige OS-Fähigkeit bleibt voll nutzbar, ist aber die zweite Rolle.
 
-Das ellmos-Ökosystem besteht aus **drei OS-Schichten** und **steckbaren Modulen**, die in jedes OS integriert — oder eigenständig genutzt werden können.
+## Die .MEMORY-Säule
+
+ellmos-Gedächtnis ist nicht ein Repo, sondern drei fokussierte Module, die sich zum Standard-Gedächtnisstack der Familie zusammenfügen — importierbar als Abhängigkeit von jeder OS-Schicht (BACH, Rinnsal), statt dass jede ihr eigenes Memory-/Task-System baut:
+
+| Modul | Rolle |
+|---|---|
+| **[usmc](https://github.com/ellmos-ai/usmc)** | Kuratiertes Session-/Kern-Gedächtnis — die **Fassade und der Einstiegspunkt** des Gedächtnissystems. Push-Modell: „was ich bewusst merke". |
+| **[gardener](https://github.com/ellmos-ai/gardener)** | Gedächtnis-**Zulieferer**: organisches Wachstum via absorb/decay, plus ein föderierter Cross-Source-FTS5-Index über `observe()`, der Treffer zur Quelle zurückzitiert. Pull-Modell: „indexieren, was ohnehin da ist". |
+| **[taskplan](https://github.com/ellmos-ai/taskplan)** | Eigenständiges SQLite-Task-Modul — Tasks bleiben vom Wissens-Gedächtnis getrennt. Keine Abhängigkeiten. |
+
+## Architektur: OS-Schichten, Gedächtnis-Säule & steckbare Module
+
+Das ellmos-Ökosystem besteht aus **Betriebssystemen**, der **.MEMORY-Säule** und **steckbaren Modulen**, die in jedes OS integriert — oder eigenständig genutzt werden können.
 
 ### Betriebssysteme
 
-| | **BACH** | **Rinnsal** | **gardener** |
+| | **BACH** | **Rinnsal** | **gardener** *(Gedächtnis-Säule primär, OS sekundär)* |
 |---|---|---|---|
 | **Philosophie** | Maximalistisch: alles integriert | Leichtgewichtig: keine Abhängigkeiten | Minimalistisch: 1 Tabelle, 4 Funktionen |
 | **Datenbank** | SQLite (145+ Tabellen) | SQLite (strukturiert) | SQLite (1 Tabelle `everything` + FTS5) |
@@ -70,7 +84,7 @@ Das ellmos-Ökosystem besteht aus **drei OS-Schichten** und **steckbaren Modulen
 | **GUI** | PySide6 Desktop + Web | Nur CLI | Nur CLI |
 | **Selbsterweiterung** | `bach skills create` | Nein | Nein |
 | **Codebasis** | ~50.000+ Zeilen | ~2.000 Zeilen | ~1.600 Zeilen |
-| **Ideal für** | Power-User, All-in-one | Entwickler die leichte Infra wollen | Minimalisten, LLM-native Experimente |
+| **Ideal für** | Power-User, All-in-one | Entwickler die leichte Infra wollen | Minimalisten, LLM-native Experimente; eigenständige Nutzung der .MEMORY-Säule |
 
 ### Steckbare Module & Skills
 
@@ -82,15 +96,17 @@ Diese Module und Skills können in jedes OS integriert oder eigenständig genutz
 
 **Module**
 
+*(USMC, gardener und taskplan leben jetzt in der [.MEMORY-Säule](#die-memory-säule) oben.)*
+
 | Modul | Zweck |
 |---|---|
-| **[USMC](https://github.com/ellmos-ai/usmc)** | Agentenübergreifendes Shared Memory |
 | **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing |
 | **[connectors](https://github.com/ellmos-ai/connectors)** | Portable Messaging-Connectors für AI-Agenten: Telegram, Discord, Signal, WhatsApp, Home Assistant und Webhook |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Nutzer-Modellierung und Theory-of-Mind-Rezept für persönliche Entscheidungsavatare aus Interaktionslogs |
 | **[open-compute](https://github.com/ellmos-ai/open-compute)** | Modellagnostischer Computer-Use-Kern für Claude, OpenAI CUA und Mock-Backends mit normalisierten Koordinaten, kanonischem Action-Schema und zentralem Safety-Gate |
+| **[web-scraper](https://github.com/ellmos-ai/web-scraper)** | Eigenständiger, aus BACH extrahierter Web-Scraper — get/links/forms/headers/extract/screenshot, mit SSRF-Schutz |
 | **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** | Agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichten Checks und LLM-freundlichem Projektgedächtnis |
 
 </td>
@@ -121,21 +137,39 @@ flowchart TD
   subgraph OS["Wähle deine OS-Schicht"]
     BACH["BACH (voll)<br/>1870+ Skills · 5 Boss-Agenten"]
     RIN["Rinnsal (leicht)<br/>Keine Deps · Connectors · Chains · Events"]
-    GAR["gardener (min)<br/>1 Tabelle · 4 Funktionen · FTS5-Suche"]
+  end
+  subgraph MEM[".MEMORY-Säule"]
+    GAR["gardener — organischer Index (auch: minimales OS)"]
+    USMC["usmc — kuratiertes Gedächtnis"]
+    TASK["taskplan — Tasks"]
   end
   subgraph MOD["Steckbare Module"]
-    USMC["USMC — Shared Memory"]
     CLUTCH["clutch — Modell-Routing"]
     MARBLE["MarbleRun — Agent-Chains"]
     SWARM["swarm-ai — Parallele LLMs"]
     OCOMP["open-compute — Computer Use"]
   end
+  BACH --- MEM
+  RIN --- MEM
   BACH --- MOD
   RIN --- MOD
-  GAR --- MOD
 ```
 
 Alle Projekte: **Python 3.10+** | **SQLite** | **MIT-Lizenz** | **Keine oder minimale Abhängigkeiten**
+
+---
+
+## Stacks
+
+Stacks sind manifestgesteuerte Kompositionen (`ellmos.stack.v2`) — keine Code-Kopien, sondern deklarierte Komponenten. Zwei aktive öffentliche Stacks bilden den Kern der Familie, katalogisiert in einem dritten:
+
+| Stack | Zweck | Kernmodule |
+|---|---|---|
+| **[stacks](https://github.com/ellmos-ai/stacks)** | Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie | — |
+| **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Selbstgehostete, lokale KI-Forschungsbasis: Ollama, n8n, Rinnsal-Memory, Docker-Compose-Automatisierung | Rinnsal · **[KnowledgeDigest](https://github.com/file-bricks/knowledgedigest)** (file-bricks) · Ollama · n8n |
+| **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Koordinationsschicht für CLI-Coding-Agenten: Ticket-Routing, Datei-Locking, Entscheidungs-Avatar, MCP-Control-Plane | **[ticket-master](https://github.com/dev-bricks/ticket-master)** (dev-bricks) · **[lock-master](https://github.com/dev-bricks/lock-master)** (dev-bricks) · **[sync-master](https://github.com/dev-bricks/sync-master)** (dev-bricks) · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
+
+Etliche dieser Module sind bewusst **beides**: eigenständige Dev-Tools, die man einzeln nutzen kann, und Stack-Komponenten, die man automatisch mit der Stack-Installation erhält. Das gilt auch für **[llm-note](https://github.com/doc-bricks/llm-note)** (doc-bricks) — lokale Notizbücher für LLM-Agenten, gebaut als steckbares Modul für Stack-Kompositionen.
 
 ---
 
@@ -230,7 +264,7 @@ Diese Projekte liegen in Schwester-Organisationen, sind aber besonders relevant 
 | **[sync-master](https://github.com/dev-bricks/sync-master)** | dev-bricks | Serverloser Cross-Machine-Sync-Yard für Multi-Agenten-Setups — ein Schreib-Slot pro Rechner, getaktetes Tagesritual, Nachrichtenkanäle und Bootstrap-Runbook; die Transportschicht, die mehrere Rechner und ihre Agenten synchron hält |
 | **[companion-for-agy](https://github.com/dev-bricks/companion-for-agy)** | dev-bricks | PTY-Wrapper, der agy-Antworten (Gemini CLI) über ANSI-Farb-Extraktion einfängt — macht Gemini-Ausgaben für Claude Code, Codex und CI-Pipelines zuverlässig lesbar |
 | **[llm-note](https://github.com/doc-bricks/llm-note)** | doc-bricks | Lokale Notizen und Notizbücher für LLM-Agenten — aus BACH-Notizblock-/Denkarium-Mustern extrahiert, mit SQLite, Klartext-Notizbüchern und sechs Sprachen |
-| **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Lokale Wissensdatenbank mit LLM-Vorverarbeitung — Dokumente ohne Cloud-Abhängigkeiten einlesen, strukturieren und abfragen |
+| **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Lokale Wissensdatenbank mit LLM-Vorverarbeitung — Dokumente ohne Cloud-Abhängigkeiten einlesen, strukturieren und abfragen; Kernmodul von [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack) |
 
 ---
 
