@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-23 (35 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-24 (38 repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -70,6 +70,10 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Model-agnostic computer-use core for Claude, OpenAI CUA and mock backends with normalized coordinates, canonical actions and a central safety gate.
 - project-docs-template: https://github.com/ellmos-ai/project-docs-template
   Agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory.
+- anonymizer: https://github.com/ellmos-ai/anonymizer
+  Local-first pseudonymization of documents: fail-closed NER, authenticated key encryption, all-or-nothing publication contract.
+- report-forge: https://github.com/ellmos-ai/report-forge
+  Domain-neutral core for anonymizable report pipelines: extract sources, build a schema-bound LLM prompt, fill a Word template.
 - web-scraper: https://github.com/ellmos-ai/web-scraper
   Standalone web scraper extracted from BACH: get/links/forms/headers/extract/screenshot, Python stdlib core with optional extras and an SSRF guard.
 - llm-note: https://github.com/doc-bricks/llm-note
@@ -92,6 +96,8 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 
 - law-checker: https://github.com/ellmos-ai/law-checker
   Source-grounded AI first-look legal assessments for German law (Erstorientierung, not a substitute for a lawyer): statute registry, embodiment agents, web-verified case law.
+- steuer-assistent: https://github.com/ellmos-ai/steuer-assistent
+  Offline-first local worksheet for German employee income-related expenses (Werbungskosten): guided collection, plausibility checks, no cloud upload.
 - worksheet-generator: https://github.com/ellmos-ai/worksheet-generator
   Generates structured, ICF-aware worksheets for pedagogical and therapeutic professionals from a local LLM agent, rendered to Markdown, HTML or DOCX.
 
@@ -148,6 +154,9 @@ gardener cross-source federated FTS5 index observe
 taskplan standalone SQLite task module
 ellmos-stack agent-ops-stack manifest-driven stack composition
 law-checker German legal AI first-look assessment
+steuer-assistent German Werbungskosten offline tax worksheet
+anonymizer pseudonymization fail-closed NER GDPR
+report-forge anonymizable report pipeline docx schema
 worksheet-generator ICF pedagogical therapeutic worksheets
 web-scraper SSRF guard get links forms extract screenshot
 clirec CLI agent GUI demonstration recordings
