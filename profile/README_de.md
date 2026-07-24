@@ -18,7 +18,7 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 |---|---|
 | Organisationsprofil | **[.github](https://github.com/ellmos-ai/.github)** - Org-Profil, Community-Health-Dateien und `llms.txt` |
 | Stack-Katalog | **[stacks](https://github.com/ellmos-ai/stacks)** - Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie |
-| Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - gardener siehe [Die .MEMORY-Säule](#die-memory-säule) unten |
+| Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - dazu **[gardener](https://github.com/ellmos-ai/gardener)** als minimale OS-Stufe im eigenständigen Betrieb; verzeichnet ist es unter [Die .MEMORY-Säule](#die-memory-säule) unten |
 | Gedächtnis-Säule | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[taskplan](https://github.com/ellmos-ai/taskplan)** - kuratiertes Session-Gedächtnis, organischer Cross-Source-Index und Task-Tracking; siehe [Die .MEMORY-Säule](#die-memory-säule) |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
 | Agenten-Module und Orchestrierung | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - eigenständiger, aus BACH extrahierter Web-Scraper (get/links/forms/headers/extract/screenshot) mit SSRF-Schutz; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - lokale Dokument-Pseudonymisierung mit fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domänenneutraler Kern für anonymisierbare Berichts-Pipelines |
@@ -49,12 +49,12 @@ Leichtgewichtige LLM-Infrastruktur: Memory, Tasks, Connectors, Chains. Keine Abh
 <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" width="200"><br>
 <b><a href="https://github.com/ellmos-ai/gardener">gardener</a></b><br>
 <i>Der Zen-Garten</i><br>
-In erster Linie das <b>Gedächtnis-Modul</b> von ellmos (organischer Cross-Source-Index) — funktioniert daneben als minimalistisches, LLM-natives OS: 1 Tabelle, 4 Funktionen, FTS5-Suche.
+Zwei gleichrangige Rollen: das <b>Gedächtnis-Modul</b> von ellmos (organischer Cross-Source-Index), sobald es in die Säule komponiert wird — und ein minimalistisches, LLM-natives <b>OS</b>, wenn es eigenständig läuft: 1 Tabelle, 4 Funktionen, FTS5-Suche.
 </td>
 </tr>
 </table>
 
-gardeners primäre Aufgabe ist heute die Zulieferung der [.MEMORY-Säule](#die-memory-säule) unten; die eigenständige OS-Fähigkeit bleibt voll nutzbar, ist aber die zweite Rolle.
+Welche Rolle greift, ist eine Frage des Einsatzes, keine Rangordnung: in die [.MEMORY-Säule](#die-memory-säule) unten komponiert, ist gardener deren organischer Cross-Source-Index; eigenständig betrieben, ist es die minimale OS-Stufe. Beides wird vollständig unterstützt.
 
 ## Die .MEMORY-Säule
 
@@ -72,7 +72,7 @@ Das ellmos-Ökosystem besteht aus **Betriebssystemen**, der **.MEMORY-Säule** u
 
 ### Betriebssysteme
 
-| | **BACH** | **Rinnsal** | **gardener** *(Gedächtnis-Säule primär, OS sekundär)* |
+| | **BACH** | **Rinnsal** | **gardener** *(eigenständig als OS, komponiert als Gedächtnis-Modul)* |
 |---|---|---|---|
 | **Philosophie** | Maximalistisch: alles integriert | Leichtgewichtig: keine Abhängigkeiten | Minimalistisch: 1 Tabelle, 4 Funktionen |
 | **Datenbank** | SQLite (145+ Tabellen) | SQLite (strukturiert) | SQLite (1 Tabelle `everything` + FTS5) |

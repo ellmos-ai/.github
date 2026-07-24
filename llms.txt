@@ -23,7 +23,7 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
 - usmc: https://github.com/ellmos-ai/usmc
   Curated session/core memory; the facade and entry point of the memory system (push model).
 - gardener: https://github.com/ellmos-ai/gardener
-  Memory supplier: organic absorb/decay plus a federated cross-source FTS5 index via observe() that cites back to source (pull model). Primarily a memory module; secondarily usable as a minimal, searchable LLM-native OS core with a single SQLite table.
+  Memory supplier: organic absorb/decay plus a federated cross-source FTS5 index via observe() that cites back to source (pull model). Two equally current roles: a memory module when composed into the .MEMORY pillar, and a minimal, searchable LLM-native OS core with a single SQLite table when run standalone.
 - taskplan: https://github.com/ellmos-ai/taskplan
   Standalone SQLite task module, kept separate from knowledge memory. Zero dependencies.
 
