@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-24 (38 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-25 (38 repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -162,4 +162,4 @@ web-scraper SSRF guard get links forms extract screenshot
 clirec CLI agent GUI demonstration recordings
 ```
 
-## Last-checked: 2026-07-23
+## Last-checked: 2026-07-25

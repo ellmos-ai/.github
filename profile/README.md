@@ -6,11 +6,23 @@
 <p align="center"><i>From a spring to a stream — LLM operating systems that flow.</i></p>
 <p align="center"><b>🇩🇪 <a href="https://github.com/ellmos-ai/.github/blob/master/profile/README_de.md">Deutsche Version</a></b></p>
 
-**ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize. For machine-readable ecosystem context, see **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
+<p align="center">
+  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Public_Repos-38-blue?style=flat-square&logo=github" alt="Public Repos"></a>
+  <a href="https://github.com/ellmos-ai/bach/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License MIT"></a>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Architecture-Local--First-orange?style=flat-square" alt="Local-First">
+  <img src="https://img.shields.io/badge/MCP-Enabled-purple?style=flat-square" alt="MCP Enabled">
+  <img src="https://img.shields.io/badge/Memory-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite Memory">
+</p>
+
+> [!NOTE]
+> **Ecosystem & Machine Discovery Index:** For machine-readable context, agent-context loading, and comprehensive repository routing, see **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**. All active software projects in the ellmos-ai organization operate under local-first principles with SQLite persistence, minimal external dependencies, and transparent component composability.
+
+**ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories (38 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-24.
+This index is complete for the public `ellmos-ai` repositories (38 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-25.
 
 | Area | Repositories |
 |---|---|

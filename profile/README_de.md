@@ -6,13 +6,25 @@
 <p align="center"><i>Von der Quelle zum Strom — LLM-Betriebssysteme, die fließen.</i></p>
 <p align="center"><b>🇬🇧 <a href="README.md">English Version</a></b> (maßgeblich)</p>
 
+<p align="center">
+  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Öffentliche_Repos-38-blue?style=flat-square&logo=github" alt="Öffentliche Repos"></a>
+  <a href="https://github.com/ellmos-ai/bach/blob/main/LICENSE"><img src="https://img.shields.io/badge/Lizenz-MIT-green?style=flat-square" alt="Lizenz MIT"></a>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Architektur-Local--First-orange?style=flat-square" alt="Local-First">
+  <img src="https://img.shields.io/badge/MCP-Aktiviert-purple?style=flat-square" alt="MCP Aktiviert">
+  <img src="https://img.shields.io/badge/Gedächtnis-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite Gedächtnis">
+</p>
+
 > **Hinweis:** Die englische Version dieser Seite ist die maßgebliche Referenz. Diese deutsche Übersetzung kann veraltet sein. Im Zweifelsfall gilt die [englische Version](README.md).
 
-**ellmos** (XLLM-OS) ist eine Familie textbasierter Betriebssysteme, die Large Language Models befähigen, autonom zu arbeiten, zu lernen und sich selbst zu organisieren. Für maschinenlesbaren Ökosystem-Kontext siehe **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**.
+> [!NOTE]
+> **Ökosystem & Maschinen-Index:** Für maschinenlesbaren Kontext, Agent-Kontext-Laden und vollständige Repository-Orchestrierung siehe **[llms.txt](https://github.com/ellmos-ai/.github/blob/master/llms.txt)**. Alle aktiven Software-Projekte in der ellmos-ai Organisation arbeiten nach Local-First-Prinzipien mit SQLite-Persistenz, minimalen externen Abhängigkeiten und transparenter Komponenten-Struktur.
+
+**ellmos** (XLLM-OS) ist eine Familie textbasierter Betriebssysteme, die Large Language Models befähigen, autonom zu arbeiten, zu lernen und sich selbst zu organisieren.
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (38 Repos, davon 1 archiviert). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-24.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (38 Repos, davon 1 archiviert). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-25.
 
 | Bereich | Repositories |
 |---|---|
