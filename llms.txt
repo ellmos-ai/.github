@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-25 (38 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-26 (38 repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -105,6 +105,8 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 
 - ai-media-editor: https://github.com/ellmos-ai/ai-media-editor
   Local AI media-editing orchestrator for video, audio and podcasts with faster-whisper or WhisperX transcription, Scribe-compatible transcript JSON, video-use cuts, Hyperframes motion graphics and agent-guided edits.
+- workflowhooker: https://github.com/ellmos-ai/workflowhooker
+  Git hook and webhook event trigger automation engine.
 
 ## Organization and maintenance
 
@@ -162,4 +164,4 @@ web-scraper SSRF guard get links forms extract screenshot
 clirec CLI agent GUI demonstration recordings
 ```
 
-## Last-checked: 2026-07-25
+## Last-checked: 2026-07-26
