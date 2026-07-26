@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-07-27
+
+### Added
+- Added newly published repository **[task-master](https://github.com/ellmos-ai/task-master)** (deterministic task selection for LLM agents) to `README.md`, `profile/README.md`, `profile/README_de.md` and `llms.txt`.
+
+### Maintenance & Hygiene
+- Synchronized organization repository index timestamps to `2026-07-27` across `README.md`, `profile/README.md`, `profile/README_de.md` and `llms.txt`.
+- Verified 100% public repository coverage (38 repositories, 1 archived).
+
 ## [1.0.1] - 2026-07-26
 
 ### Maintenance & Hygiene
