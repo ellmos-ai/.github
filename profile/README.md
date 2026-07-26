@@ -22,7 +22,7 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories (38 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-25.
+This index is complete for the public `ellmos-ai` repositories (38 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-26.
 
 | Area | Repositories |
 |---|---|
