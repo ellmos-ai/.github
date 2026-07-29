@@ -192,6 +192,29 @@ Etliche dieser Module sind bewusst **beides**: eigenständige Dev-Tools, die man
 
 ---
 
+## Kompositionsmodell
+
+ellmos hält Implementierungseinheiten klein und einzeln nutzbar, macht aber größere, reproduzierbare Zusammensetzungen ausdrücklich sichtbar:
+
+```text
+Modul → Bundle → Stack → System → Fleet
+```
+
+- Ein **Modul** ist unabhängig versioniert und kann einzeln aufgenommen werden. Öffentliche Module bleiben als einzelne, in der Regel frei verfügbare Bausteine nutzbar.
+- Ein **Bundle** ist eine versionierte, kompatibilitätsgeprüfte Zusammenstellung von Modulen und typisierten Partnern, bei Bedarf einschließlich wiederverwendbarer Skills.
+- Ein **Stack** verdrahtet ein oder mehrere Bundles für einen konkreten Betriebszweck.
+- Ein **System** kombiniert Stacks für eine Installation oder Produktedition; eine **Fleet** koordiniert mehrere Systeminstanzen.
+
+Bundle-, Stack- und Systemmanifeste beschreiben Zusammensetzung, kompatible Versionen, deklarierte Schnittstellen und optionale Lockfiles. Sie kopieren keinen Modulquellcode. Öffentliche Rezepte können offen geteilt werden; private oder kommerzielle Rezepte dürfen öffentliche und private Komponenten verbinden, ohne ihre geschützte Verdrahtung, Profile oder Kundenkonfiguration offenzulegen. Die geplanten Manifestebenen `.BUNDLES` und `.SYSTEMS` machen diese Grenzen auffindbar, ohne dass dieses öffentliche Profil zu einem privaten Konfigurationsregister wird. Installer-Implementierungen und Runtime-Aktivierung bleiben release- und deploymentspezifisch; diese Seite behauptet nicht, dass ein bestimmter Installer oder eine Runtime bereits verfügbar ist.
+
+Skills sind erstklassige, typisierte Bundlepartner und werden über die Skills-Registry aufgelöst — nicht als unversionierter Fließtext an ein Deployment angehängt. Ein Self-Care-Skill wie `automation-self-care` kann von einem Automationsbundle für eine sichere, standardmäßig deaktivierte Beschaffung und Prüfung deklariert werden; seine Deklaration aktiviert weder still einen Scheduler noch verändert sie eine Automation oder gewährt Zugang zu Credentials.
+
+### Zugangsflächen sind keine funktionalen Owner
+
+MCP-Server sind Zugangsflächen — auch MCP-Stacks genannt — für Menschen und LLM-Clients. Sie legen Fähigkeiten offen, die von zugrunde liegenden Modulen und Policies bereitgestellt werden; ein MCP-Endpunkt ist nicht automatisch Owner einer Funktion oder ihrer Daten. **ControlCenter MCP** behält seine veröffentlichte Identität als Zugangsfläche. **ControlRoom** ist die operatororientierte Zusammensetzung, die Kontroll-, Health-, Policy- und Evidenzansichten zusammenführen kann, ohne die funktionalen Owner zu ersetzen. Für Homebase gilt dieselbe Trennung: Eine Zugangsfläche kann auf eine Fähigkeit routen, während das referenzierte Modul, die Policy oder das Systemmanifest autoritativ bleibt.
+
+---
+
 ## MCP-Server
 
 <table>
