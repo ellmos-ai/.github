@@ -190,6 +190,29 @@ A number of these modules are deliberately **both**: standalone dev tools you ca
 
 ---
 
+## Composition Model
+
+ellmos keeps implementation units small and independently useful, while making larger, reproducible compositions explicit:
+
+```text
+Module → Bundle → Stack → System → Fleet
+```
+
+- A **module** is independently versioned and can be adopted on its own. Public modules remain useful as individual, generally freely available building blocks.
+- A **bundle** is a versioned, compatibility-checked set of modules and typed partners, including reusable skills where appropriate.
+- A **stack** wires one or more bundles for a specific operational purpose.
+- A **system** combines stacks for one installation or product edition; a **fleet** coordinates multiple system instances.
+
+Bundle, stack, and system manifests describe composition, compatible versions, declared interfaces, and optional lockfiles. They do not copy module source code. Public recipes can be shared openly; private or commercial recipes may combine public and private components without exposing their protected wiring, profiles, or customer configuration. The planned `.BUNDLES` and `.SYSTEMS` manifest layers make these boundaries discoverable without turning this public profile into a private configuration registry. Installer implementations and runtime activation remain release- and deployment-specific; this page does not imply that a particular installer or runtime is available.
+
+Skills are first-class, typed bundle partners resolved through the skills registry, not unversioned prose appended to a deployment. A self-care skill such as `automation-self-care` may be declared by an automation bundle for safe, disabled-by-default acquisition and review; declaring it never silently enables a scheduler, changes an automation, or grants access to credentials.
+
+### Access Surfaces Are Not Functional Owners
+
+MCP servers are access surfaces — also called MCP stacks — for people and LLM clients. They expose capabilities provided by underlying modules and policies; an MCP endpoint is not automatically the owner of the function or its data. **ControlCenter MCP** retains its published identity as an access surface. **ControlRoom** is the operator-oriented composition that can bring together control, health, policy, and evidence views without replacing the functional owners. Homebase follows the same separation: an access surface may route to a capability, while the referenced module, policy, or system manifest remains authoritative.
+
+---
+
 ## MCP Servers
 
 <table>
