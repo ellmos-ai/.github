@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-27 (38 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-29 (41 active repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -58,6 +58,16 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Autonomous multi-round agent chains for Claude Code.
 - swarm-ai: https://github.com/ellmos-ai/swarm-ai
   Parallel LLM coordination patterns including stigmergy, consensus and specialist workflows.
+- roshambo: https://github.com/ellmos-ai/roshambo
+  Multi-agent coordinator: serializable leases + outcome memory (failures included) on CockroachDB for decoupled agents.
+- workflowhooker: https://github.com/ellmos-ai/workflowhooker
+  Standardized workflow lifecycle hooker middleware & execution tracking for LLM agent workflows — step hooks, state transitions, and audit trails.
+- memoryhooker: https://github.com/ellmos-ai/memoryhooker
+  Standardized lifecycle memory hooker middleware & event listeners for LLM agent sessions — session hooks, memory injection, and event tracking.
+- policy-registry: https://github.com/ellmos-ai/policy-registry
+  Local-first policy registry & guardrails — metadata index and canonical pointers for policies, governance rules, and operational bounds.
+- ellmos-core: https://github.com/ellmos-ai/ellmos-core
+  Foundational core runtime abstractions, web console (FastAPI + HTMX) and base interfaces for the ellmos-ai local-first agent ecosystem.
 - n8n Workflow Manager: https://github.com/ellmos-ai/n8n-workflow-manager
   Local-first GUI, REST API and CLI for n8n workflow creation, viewing and sync.
 - ellmos-stack: https://github.com/ellmos-ai/ellmos-stack
@@ -107,8 +117,6 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 
 - ai-media-editor: https://github.com/ellmos-ai/ai-media-editor
   Local AI media-editing orchestrator for video, audio and podcasts with faster-whisper or WhisperX transcription, Scribe-compatible transcript JSON, video-use cuts, Hyperframes motion graphics and agent-guided edits.
-- workflowhooker: https://github.com/ellmos-ai/workflowhooker
-  Git hook and webhook event trigger automation engine.
 
 ## Organization and maintenance
 
@@ -164,6 +172,11 @@ report-forge anonymizable report pipeline docx schema
 worksheet-generator ICF pedagogical therapeutic worksheets
 clirec CLI agent GUI demonstration recordings
 task-master deterministic task selection backlog selector
+ellmos-core core runtime web console FastAPI HTMX
+memoryhooker agent session lifecycle memory middleware
+workflowhooker agent workflow lifecycle execution tracking
+policy-registry local first policy guardrail registry
+roshambo multi agent coordinator CockroachDB leases
 ```
 
-## Last-checked: 2026-07-27
+## Last-checked: 2026-07-29
