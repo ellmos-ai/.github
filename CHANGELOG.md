@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-07-30
+
+### Maintenance & Hygiene
+- Synchronized repository index: updated `taskplan` links to renamed `task-master` repository across `profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`, and diagrams.
+- Verified 38 active public repositories in the `ellmos-ai` organization profile.
+
 ## [1.0.1] - 2026-07-26
 
 ### Maintenance & Hygiene
