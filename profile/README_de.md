@@ -246,7 +246,7 @@ Headless Blender-Asset-QA: Background-Läufe & FBX-Reimport-Prüfungen<br>
 </tr>
 <tr>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/seal-open-compute-mcp.png" width="160"><br>
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/wappen-open-compute-mcp.jpg" width="160"><br>
 <b><a href="https://github.com/ellmos-ai/open-compute-mcp">open-compute-mcp</a></b><br>
 Computer-Use: Screenshot, safety-gated Aktionen & Windows-UIA-Zielen<br>
 <code>npx open-compute-mcp</code>
