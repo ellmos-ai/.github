@@ -4,6 +4,7 @@
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
 <p align="center"><i>Von der Quelle zum Strom — LLM-Betriebssysteme, die fließen.</i></p>
+<p align="center"><b>Module ergeben komponiert etwas Neues — build your stack.</b></p>
 <p align="center"><b>🇬🇧 <a href="README.md">English Version</a></b> (maßgeblich)</p>
 
 <p align="center">
@@ -172,6 +173,32 @@ flowchart TD
 ```
 
 Alle Projekte: **Python 3.10+** | **SQLite** | **MIT-Lizenz** | **Keine oder minimale Abhängigkeiten**
+
+---
+
+## Das Kompositionsmodell — Build Your Stack
+
+Ein Gedanke zieht sich durch das gesamte Ökosystem: **Module ergeben komponiert etwas Neues.** Such dir die Bausteine, die du brauchst, verdrahte sie auf deine Weise — heraus kommt dein eigener Stack, keine fest vorgegebene Produktedition.
+
+```mermaid
+flowchart TD
+  FLEET["FLEET — dieselben System-Instanzen, hostübergreifend gruppiert"]
+  SYS["SYSTEM / OS — Governance-Rahmen über den Stacks"]
+  STACK["STACK — betreibbare Komposition mit Grenzen"]
+  BUNDLE["BUNDLE — Dependency-Tree aus Bausteinen"]
+  MOD["MODUL — eigenständiger Baustein"]
+  FLEET --> SYS --> STACK --> BUNDLE --> MOD
+```
+
+| Ebene | Definition | Öffentliches Beispiel |
+|---|---|---|
+| **Modul** | Ein Baustein: eine eigenständige Fähigkeit, unabhängig versioniert und für sich allein nützlich. | [gardener](https://github.com/ellmos-ai/gardener), [clutch](https://github.com/ellmos-ai/clutch), jeder [MCP-Server](#mcp-server) |
+| **Bundle** | Der Dependency-Tree aus Bausteinen — deklariert *was zusammengehört*, als versionierte, kompatibilitätsgeprüfte Menge. | Die [.MEMORY-Säule](#die-memory-säule): usmc + gardener + task-master |
+| **Stack** | Eine betreibbare Komposition mit Grenzen — deklariert *wie es zusammenläuft*: Daten, Netz, Mandanten, Ausführung. Größenklassen: `bundle`, `core`, `full`, `os-stack`. | [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack), [agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack) |
+| **System / OS** | Der Governance-Rahmen über den Stacks: Policies, Identität und Lebenszyklus für eine Installation oder Edition. | [bach](https://github.com/ellmos-ai/bach), [rinnsal](https://github.com/ellmos-ai/rinnsal), [ellmos](https://github.com/ellmos-ai/ellmos) |
+| **Fleet** | Die Multi-Host-Gruppierung derselben System-Instanzen — ein System, viele Maschinen, synchron gehalten. | [roshambo](https://github.com/ellmos-ai/roshambo) mit [sync-master](https://github.com/dev-bricks/sync-master) |
+
+Stacks deklarieren Komposition, statt Modul-Code zu kopieren — darum lässt sich jede Komposition zu etwas Neuem umverdrahten. Ein „Control Room" für den Betrieb ist etwa kein eigenes Produkt, sondern ein Stack, der die vorhandenen MCP-Zugangsflächen ([ControlCenter](https://github.com/ellmos-ai/ellmos-controlcenter-mcp), [ServerCommander](https://github.com/ellmos-ai/ellmos-servercommander-mcp), [Homebase](https://github.com/ellmos-ai/ellmos-homebase-mcp)) zu einer gemeinsamen Betriebssicht verbindet. Gleiche Module, neues Ganzes.
 
 ---
 

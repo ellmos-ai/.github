@@ -4,6 +4,7 @@
 
 <h3 align="center">Extra Large Language Model Operating Systems</h3>
 <p align="center"><i>From a spring to a stream — LLM operating systems that flow.</i></p>
+<p align="center"><b>Modules compose into something new — build your stack.</b></p>
 <p align="center"><b>🇩🇪 <a href="https://github.com/ellmos-ai/.github/blob/master/profile/README_de.md">Deutsche Version</a></b></p>
 
 <p align="center">
@@ -170,6 +171,32 @@ flowchart TD
 ```
 
 All projects: **Python 3.10+** | **SQLite** | **MIT License** | **Zero or minimal dependencies**
+
+---
+
+## The Composition Model — Build Your Stack
+
+One idea runs through everything in this ecosystem: **modules compose into something new.** Pick the building blocks you need, wire them your way, and the result is your own stack — not a fixed product edition.
+
+```mermaid
+flowchart TD
+  FLEET["FLEET — same system instances, grouped across hosts"]
+  SYS["SYSTEM / OS — governance frame above the stacks"]
+  STACK["STACK — operable composition with boundaries"]
+  BUNDLE["BUNDLE — dependency tree of modules"]
+  MOD["MODULE — standalone building block"]
+  FLEET --> SYS --> STACK --> BUNDLE --> MOD
+```
+
+| Layer | Definition | Public example |
+|---|---|---|
+| **Module** | A building block: one standalone capability, independently versioned and useful on its own. | [gardener](https://github.com/ellmos-ai/gardener), [clutch](https://github.com/ellmos-ai/clutch), every [MCP server](#mcp-servers) |
+| **Bundle** | The dependency tree of modules — declares *what belongs together*, as a versioned, compatibility-checked set. | The [.MEMORY pillar](#the-memory-pillar): usmc + gardener + task-master |
+| **Stack** | An operable composition with boundaries — declares *how it runs together*: data, network, tenants, execution. Size classes: `bundle`, `core`, `full`, `os-stack`. | [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack), [agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack) |
+| **System / OS** | The governance frame above the stacks: policies, identity and lifecycle for one installation or edition. | [bach](https://github.com/ellmos-ai/bach), [rinnsal](https://github.com/ellmos-ai/rinnsal), [ellmos](https://github.com/ellmos-ai/ellmos) |
+| **Fleet** | A multi-host grouping of the same system instances — one system, many machines, kept in step. | [roshambo](https://github.com/ellmos-ai/roshambo) with [sync-master](https://github.com/dev-bricks/sync-master) |
+
+Stacks declare composition instead of copying module code — so any composition can be re-wired into something new. An operator "control room", for instance, is not a separate product: it is a stack that wires the existing MCP access surfaces ([ControlCenter](https://github.com/ellmos-ai/ellmos-controlcenter-mcp), [ServerCommander](https://github.com/ellmos-ai/ellmos-servercommander-mcp), [Homebase](https://github.com/ellmos-ai/ellmos-homebase-mcp)) into a single operations view. Same modules, new whole.
 
 ---
 
