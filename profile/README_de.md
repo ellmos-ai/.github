@@ -68,10 +68,10 @@ Unsere Empfehlungen — Bausteine, die sich in jedes ellmos-OS einfügen oder al
 </p>
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/master/logo.jpg" alt="clutch" width="220"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" alt="MarbleRun" width="220"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" alt="n8n-workflow-manager" width="220"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/wappen.jpg" alt="open-compute" width="220"></a><br>
+  <a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/master/logo.jpg" alt="clutch" width="195"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" alt="MarbleRun" width="195"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" alt="n8n-workflow-manager" width="195"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/wappen.jpg" alt="open-compute" width="195"></a><br>
   <i><b>clutch</b> — anbieter-neutrales Modell-Routing · <b>MarbleRun</b> — Chain-Orchestrierung · <b>n8n-workflow-manager</b> — lokale n8n-Verwaltung · <b>open-compute</b> — Computer-Use-Kern mit Safety-Gate</i>
 </p>
 
