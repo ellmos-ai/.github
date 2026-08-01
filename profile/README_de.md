@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/fireflies.svg" alt="ellmos-ai — neon fireflies" width="100%">
-</p>
-
-<p align="center">
   <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/banner-ellmos-top.svg" alt="ellmos-ai — textbasierte Betriebssysteme für LLMs" width="100%">
 </p>
 

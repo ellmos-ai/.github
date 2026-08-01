@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
     <!-- Fonts -->
-    <style>
+    <style><![CDATA[
       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
 
       .wordmark {
@@ -28,7 +28,156 @@
         font-size: 12px;
         letter-spacing: 2px;
       }
-    </style>
+
+      /* --- Organic Firefly Flight Path Keyframes --- */
+      @keyframes fly-1 {
+        0% { transform: translate(0px, 0px); }
+        15% { transform: translate(35px, -25px); }
+        30% { transform: translate(60px, -10px); }
+        45% { transform: translate(40px, 20px); }
+        60% { transform: translate(-15px, 30px); }
+        75% { transform: translate(-35px, 10px); }
+        90% { transform: translate(-20px, -20px); }
+        100% { transform: translate(0px, 0px); }
+      }
+
+      @keyframes fly-2 {
+        0% { transform: translate(0px, 0px); }
+        20% { transform: translate(-40px, 30px); }
+        40% { transform: translate(-20px, -35px); }
+        55% { transform: translate(30px, -40px); }
+        70% { transform: translate(50px, -5px); }
+        85% { transform: translate(20px, 25px); }
+        100% { transform: translate(0px, 0px); }
+      }
+
+      @keyframes fly-3 {
+        0% { transform: translate(0px, 0px); }
+        18% { transform: translate(25px, 35px); }
+        38% { transform: translate(-30px, 40px); }
+        58% { transform: translate(-45px, -18px); }
+        78% { transform: translate(15px, -35px); }
+        100% { transform: translate(0px, 0px); }
+      }
+
+      @keyframes fly-4 {
+        0% { transform: translate(0px, 0px); }
+        25% { transform: translate(-35px, -30px); }
+        50% { transform: translate(45px, -45px); }
+        75% { transform: translate(30px, 35px); }
+        100% { transform: translate(0px, 0px); }
+      }
+
+      @keyframes fly-5 {
+        0% { transform: translate(0px, 0px); }
+        15% { transform: translate(45px, 20px); }
+        35% { transform: translate(60px, -30px); }
+        60% { transform: translate(20px, -40px); }
+        80% { transform: translate(-30px, -12px); }
+        100% { transform: translate(0px, 0px); }
+      }
+
+      /* --- Realistic Firefly Glowing & Flash Pulse Keyframes --- */
+      @keyframes pulse-flash-a {
+        0%, 100% { opacity: 0.25; transform: scale(0.7); }
+        15% { opacity: 0.40; transform: scale(0.85); }
+        25% { opacity: 1.00; transform: scale(1.35); }
+        35% { opacity: 0.65; transform: scale(1.05); }
+        48% { opacity: 0.95; transform: scale(1.30); }
+        62% { opacity: 0.35; transform: scale(0.85); }
+        80% { opacity: 0.20; transform: scale(0.65); }
+      }
+
+      @keyframes pulse-flash-b {
+        0%, 100% { opacity: 0.20; transform: scale(0.65); }
+        12% { opacity: 0.35; transform: scale(0.80); }
+        22% { opacity: 0.98; transform: scale(1.40); }
+        30% { opacity: 0.50; transform: scale(0.95); }
+        42% { opacity: 0.90; transform: scale(1.25); }
+        58% { opacity: 0.30; transform: scale(0.75); }
+        78% { opacity: 0.18; transform: scale(0.60); }
+      }
+
+      @keyframes pulse-flash-c {
+        0%, 100% { opacity: 0.18; transform: scale(0.60); }
+        25% { opacity: 0.30; transform: scale(0.75); }
+        38% { opacity: 1.00; transform: scale(1.38); }
+        48% { opacity: 0.85; transform: scale(1.20); }
+        62% { opacity: 0.35; transform: scale(0.80); }
+        82% { opacity: 0.15; transform: scale(0.55); }
+      }
+
+      /* Base Firefly Classes */
+      .ff-flight {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+      .ff-light {
+        transform-box: fill-box;
+        transform-origin: center;
+      }
+
+      /* Individual Swarm Animations */
+      .ff-1 { animation: fly-1 14s ease-in-out infinite -1.5s; }
+      .ff-1 .ff-light { animation: pulse-flash-a 4.2s ease-in-out infinite -0.8s; }
+
+      .ff-2 { animation: fly-2 18s ease-in-out infinite -3.2s; }
+      .ff-2 .ff-light { animation: pulse-flash-b 5.1s ease-in-out infinite -2.4s; }
+
+      .ff-3 { animation: fly-3 16s ease-in-out infinite -0.4s; }
+      .ff-3 .ff-light { animation: pulse-flash-c 4.8s ease-in-out infinite -1.1s; }
+
+      .ff-4 { animation: fly-4 20s ease-in-out infinite -4.1s; }
+      .ff-4 .ff-light { animation: pulse-flash-a 5.7s ease-in-out infinite -3.6s; }
+
+      .ff-5 { animation: fly-5 15s ease-in-out infinite -2.0s; }
+      .ff-5 .ff-light { animation: pulse-flash-b 4.5s ease-in-out infinite -0.3s; }
+
+      .ff-6 { animation: fly-1 19s ease-in-out infinite -5.5s; }
+      .ff-6 .ff-light { animation: pulse-flash-c 6.2s ease-in-out infinite -4.0s; }
+
+      .ff-7 { animation: fly-3 13s ease-in-out infinite -1.1s; }
+      .ff-7 .ff-light { animation: pulse-flash-a 3.9s ease-in-out infinite -1.7s; }
+
+      .ff-8 { animation: fly-2 17s ease-in-out infinite -6.0s; }
+      .ff-8 .ff-light { animation: pulse-flash-b 5.4s ease-in-out infinite -4.8s; }
+
+      .ff-9 { animation: fly-5 21s ease-in-out infinite -3.8s; }
+      .ff-9 .ff-light { animation: pulse-flash-c 4.6s ease-in-out infinite -2.9s; }
+
+      .ff-10 { animation: fly-4 15s ease-in-out infinite -0.9s; }
+      .ff-10 .ff-light { animation: pulse-flash-a 5.0s ease-in-out infinite -1.2s; }
+
+      .ff-11 { animation: fly-1 17.5s ease-in-out infinite -7.2s; }
+      .ff-11 .ff-light { animation: pulse-flash-b 4.3s ease-in-out infinite -3.1s; }
+
+      .ff-12 { animation: fly-3 14.5s ease-in-out infinite -4.4s; }
+      .ff-12 .ff-light { animation: pulse-flash-c 5.8s ease-in-out infinite -0.7s; }
+
+      .ff-13 { animation: fly-2 16.5s ease-in-out infinite -2.7s; }
+      .ff-13 .ff-light { animation: pulse-flash-a 4.9s ease-in-out infinite -4.2s; }
+
+      .ff-14 { animation: fly-5 18.5s ease-in-out infinite -8.1s; }
+      .ff-14 .ff-light { animation: pulse-flash-b 5.3s ease-in-out infinite -1.9s; }
+
+      .ff-15 { animation: fly-4 13.5s ease-in-out infinite -3.3s; }
+      .ff-15 .ff-light { animation: pulse-flash-c 4.1s ease-in-out infinite -2.5s; }
+
+      .ff-16 { animation: fly-1 22s ease-in-out infinite -9.0s; }
+      .ff-16 .ff-light { animation: pulse-flash-a 6.0s ease-in-out infinite -5.0s; }
+
+      .ff-17 { animation: fly-3 15.5s ease-in-out infinite -1.8s; }
+      .ff-17 .ff-light { animation: pulse-flash-b 4.7s ease-in-out infinite -3.5s; }
+
+      .ff-18 { animation: fly-5 19.5s ease-in-out infinite -4.9s; }
+      .ff-18 .ff-light { animation: pulse-flash-c 5.2s ease-in-out infinite -1.4s; }
+
+      .ff-19 { animation: fly-2 16.0s ease-in-out infinite -6.5s; }
+      .ff-19 .ff-light { animation: pulse-flash-a 4.4s ease-in-out infinite -0.6s; }
+
+      .ff-20 { animation: fly-4 18.0s ease-in-out infinite -2.2s; }
+      .ff-20 .ff-light { animation: pulse-flash-b 5.6s ease-in-out infinite -4.1s; }
+    ]]></style>
 
     <!-- Background Gradients -->
     <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -132,6 +281,32 @@
     <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
+
+    <!-- Neon Pink Firefly Gradients & Glow Filter -->
+    <radialGradient id="firefly-glow-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="20%" stop-color="#ff007f" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#ff1493" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff00a0" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ambient-pink-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff007f" stop-opacity="0.14"/>
+      <stop offset="50%" stop-color="#d946ef" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="neon-pink-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur1"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"/>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blur3"/>
+      <feMerge>
+        <feMergeNode in="blur3"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
   <!-- 1. Background Fill & Grid Layers -->
@@ -142,6 +317,7 @@
   <!-- 2. Large Background Ambient Glow Spheres -->
   <circle cx="330" cy="315" r="320" fill="url(#globe-glow)"/>
   <circle cx="850" cy="280" r="350" fill="url(#right-glow)"/>
+  <circle cx="600" cy="315" r="450" fill="url(#ambient-pink-glow)"/>
 
   <!-- 3. Flowing Water Curves / River Streams (Brand Motto: From a spring to a stream) -->
   <!-- Spring origin point glowing near bottom-left -->
@@ -323,6 +499,169 @@
     <g transform="translate(480, 455)" stroke="#38bdf8" stroke-width="1.2" opacity="0.6">
       <path d="M 0 0 L 15 0 L 15 15" fill="none"/>
       <circle cx="15" cy="15" r="2" fill="#5ff2e0"/>
+    </g>
+  </g>
+
+  <!-- 7. NEON-PINK FIREFLIES SWARM (Dezenter Glühwürmchen-Schwarm in Neon-Pink) -->
+  <g id="neon-pink-fireflies">
+    <g class="ff-flight ff-1" transform="translate(110, 140)">
+      <g class="ff-light">
+        <circle r="18" fill="url(#firefly-glow-grad)" opacity="0.85"/>
+        <circle r="5" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="2" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-2" transform="translate(220, 480)">
+      <g class="ff-light">
+        <circle r="22" fill="url(#firefly-glow-grad)" opacity="0.88"/>
+        <circle r="6" fill="#ff1493" filter="url(#neon-pink-glow)"/>
+        <circle r="2.5" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-3" transform="translate(340, 100)">
+      <g class="ff-light">
+        <circle r="16" fill="url(#firefly-glow-grad)" opacity="0.80"/>
+        <circle r="4.5" fill="#ff00a0" filter="url(#neon-pink-glow)"/>
+        <circle r="1.8" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-4" transform="translate(470, 520)">
+      <g class="ff-light">
+        <circle r="20" fill="url(#firefly-glow-grad)" opacity="0.90"/>
+        <circle r="5.5" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="2.2" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-5" transform="translate(580, 120)">
+      <g class="ff-light">
+        <circle r="15" fill="url(#firefly-glow-grad)" opacity="0.82"/>
+        <circle r="4" fill="#ff33aa" filter="url(#neon-pink-glow)"/>
+        <circle r="1.8" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-6" transform="translate(690, 530)">
+      <g class="ff-light">
+        <circle r="24" fill="url(#firefly-glow-grad)" opacity="0.88"/>
+        <circle r="6" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="2.5" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-7" transform="translate(780, 130)">
+      <g class="ff-light">
+        <circle r="18" fill="url(#firefly-glow-grad)" opacity="0.85"/>
+        <circle r="5" fill="#ff1493" filter="url(#neon-pink-glow)"/>
+        <circle r="2" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-8" transform="translate(890, 490)">
+      <g class="ff-light">
+        <circle r="20" fill="url(#firefly-glow-grad)" opacity="0.82"/>
+        <circle r="5.5" fill="#ff00a0" filter="url(#neon-pink-glow)"/>
+        <circle r="2.2" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-9" transform="translate(1010, 150)">
+      <g class="ff-light">
+        <circle r="16" fill="url(#firefly-glow-grad)" opacity="0.80"/>
+        <circle r="4.5" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="1.8" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-10" transform="translate(1090, 480)">
+      <g class="ff-light">
+        <circle r="22" fill="url(#firefly-glow-grad)" opacity="0.90"/>
+        <circle r="6" fill="#ff1493" filter="url(#neon-pink-glow)"/>
+        <circle r="2.5" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-11" transform="translate(160, 310)">
+      <g class="ff-light">
+        <circle r="17" fill="url(#firefly-glow-grad)" opacity="0.82"/>
+        <circle r="4.8" fill="#ff33aa" filter="url(#neon-pink-glow)"/>
+        <circle r="1.9" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-12" transform="translate(430, 240)">
+      <g class="ff-light">
+        <circle r="19" fill="url(#firefly-glow-grad)" opacity="0.85"/>
+        <circle r="5.2" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="2.1" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-13" transform="translate(650, 360)">
+      <g class="ff-light">
+        <circle r="16" fill="url(#firefly-glow-grad)" opacity="0.80"/>
+        <circle r="4.2" fill="#ff1493" filter="url(#neon-pink-glow)"/>
+        <circle r="1.8" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-14" transform="translate(840, 290)">
+      <g class="ff-light">
+        <circle r="21" fill="url(#firefly-glow-grad)" opacity="0.88"/>
+        <circle r="5.8" fill="#ff00a0" filter="url(#neon-pink-glow)"/>
+        <circle r="2.3" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-15" transform="translate(1050, 320)">
+      <g class="ff-light">
+        <circle r="18" fill="url(#firefly-glow-grad)" opacity="0.84"/>
+        <circle r="5" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="2.0" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-16" transform="translate(80, 520)">
+      <g class="ff-light">
+        <circle r="20" fill="url(#firefly-glow-grad)" opacity="0.85"/>
+        <circle r="5.5" fill="#ff1493" filter="url(#neon-pink-glow)"/>
+        <circle r="2.2" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-17" transform="translate(510, 390)">
+      <g class="ff-light">
+        <circle r="17" fill="url(#firefly-glow-grad)" opacity="0.83"/>
+        <circle r="4.8" fill="#ff33aa" filter="url(#neon-pink-glow)"/>
+        <circle r="1.9" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-18" transform="translate(940, 220)">
+      <g class="ff-light">
+        <circle r="19" fill="url(#firefly-glow-grad)" opacity="0.86"/>
+        <circle r="5.2" fill="#ff007f" filter="url(#neon-pink-glow)"/>
+        <circle r="2.1" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-19" transform="translate(290, 570)">
+      <g class="ff-light">
+        <circle r="18" fill="url(#firefly-glow-grad)" opacity="0.82"/>
+        <circle r="5" fill="#ff1493" filter="url(#neon-pink-glow)"/>
+        <circle r="2.0" fill="#ffffff"/>
+      </g>
+    </g>
+
+    <g class="ff-flight ff-20" transform="translate(730, 70)">
+      <g class="ff-light">
+        <circle r="16" fill="url(#firefly-glow-grad)" opacity="0.80"/>
+        <circle r="4.5" fill="#ff00a0" filter="url(#neon-pink-glow)"/>
+        <circle r="1.8" fill="#ffffff"/>
+      </g>
     </g>
   </g>
 
