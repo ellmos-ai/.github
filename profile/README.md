@@ -103,7 +103,14 @@ Stacks declare composition instead of copying module code — so any composition
 
 Some compositions outgrow the stack layer: they are governed systems with their own identity, policies and lifecycle. Two of them are public — the banners are the links:
 
-<p align="center"><a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="720" style="border:2px solid #22d3ee;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — the trickle" width="720" style="border:2px solid #60a5fa;border-radius:8px;display:block;margin:0 auto"></a></p>
+<p align="center" style="margin:16px 0;">
+  <a href="https://github.com/ellmos-ai/bach" style="display:block;width:100%;margin-bottom:14px;">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(0, 212, 255, 0.3);background-color:rgba(0, 102, 204, 0.3);box-shadow:0 0 16px rgba(0, 212, 255, 0.3);border-radius:8px;box-sizing:border-box;">
+  </a>
+  <a href="https://github.com/ellmos-ai/rinnsal" style="display:block;width:100%;">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — the trickle" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(255, 0, 127, 0.3);background-color:rgba(255, 0, 127, 0.3);box-shadow:0 0 16px rgba(255, 0, 127, 0.3);border-radius:8px;box-sizing:border-box;">
+  </a>
+</p>
 
 | System | What it is |
 |---|---|
