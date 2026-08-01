@@ -10,7 +10,7 @@ os.makedirs(assets_dir, exist_ok=True)
 # 2x Supersampled resolution for ultra-sharp organic ink lineart
 SCALE = 2
 WIDTH = 1400 * SCALE
-HEIGHT = 1350 * SCALE
+HEIGHT = 1400 * SCALE
 
 # 1. Base Canvas - Transparent with crisp rounded Light Panel (#ffffff / #f8fafc)
 # Transparent PNG outer canvas allows native embedding; light card container provides contrast on both Light & Dark themes
@@ -109,17 +109,17 @@ subtitle_text = "Bottom-Up Evolution: Älteste Server unten (2026-02) → Jüngs
 
 tb = font_title.getbbox(title_text)
 tw = tb[2] - tb[0]
-draw.text(((WIDTH - tw)//2, 40 * SCALE), title_text, fill=(15, 23, 42, 255), font=font_title)
+draw.text(((WIDTH - tw)//2, 36 * SCALE), title_text, fill=(15, 23, 42, 255), font=font_title)
 
 sb = font_subtitle.getbbox(subtitle_text)
 sw = sb[2] - sb[0]
-draw.text(((WIDTH - sw)//2, 78 * SCALE), subtitle_text, fill=(2, 132, 199, 255), font=font_subtitle)
+draw.text(((WIDTH - sw)//2, 72 * SCALE), subtitle_text, fill=(2, 132, 199, 255), font=font_subtitle)
 
 # --- 2. TIMELINE HORIZON GUIDES ---
 level_guides = [
-    (1020, 1070, "UNTEN · ÄLTESTE MCP-SERVER (#1 — #4 · 2026-02 — 2026-03)", (5, 150, 105)),    # Emerald 600
-    (640, 430, "MITTE · EXPANSION & CONTROL PLANE (#5 — #7 · 2026-05 — 2026-06)", (2, 132, 199)),   # Sky 600
-    (280, 106, "OBEN · JÜNGSTE ZWEIGE (#8 — #9 · 2026-07)", (147, 51, 234))                        # Purple 600
+    (1140, 1180, "UNTEN · ÄLTESTE MCP-SERVER (#1 — #4 · 2026-02 — 2026-03)", (5, 150, 105)),    # Emerald 600
+    (750, 500, "MITTE · EXPANSION & CONTROL PLANE (#5 — #7 · 2026-05 — 2026-06)", (2, 132, 199)),   # Sky 600
+    (360, 115, "OBEN · JÜNGSTE ZWEIGE (#8 — #9 · 2026-07)", (147, 51, 234))                        # Purple 600
 ]
 
 for ly, label_y, ltxt, lcolor in level_guides:
@@ -132,64 +132,62 @@ for ly, label_y, ltxt, lcolor in level_guides:
 
 # --- 3. BARE TREE SILHOUETTE (SCHWARZE TUSCHE STAMM & ÄSTE) ---
 
-# Roots at ground (Y = 1310..1350)
+# Roots at ground (Y = 1340..1380)
 roots = [
-    [(700, 1310), (620, 1330), (500, 1345)],
-    [(700, 1310), (780, 1330), (900, 1345)],
-    [(700, 1310), (660, 1335), (590, 1350)],
-    [(700, 1310), (740, 1335), (810, 1350)],
+    [(700, 1340), (620, 1360), (500, 1375)],
+    [(700, 1340), (780, 1360), (900, 1375)],
+    [(700, 1340), (660, 1365), (590, 1380)],
+    [(700, 1340), (740, 1365), (810, 1380)],
 ]
 for rpt in roots:
     draw_ink_curve(draw, rpt, 24, 5, INK_MAIN, opacity=200, num_strokes=12)
 
-# MAIN TRUNK (Stamm Y=1310 up to Y=980)
-draw_ink_curve(draw, [(700, 1310), (692, 1200), (708, 1100), (700, 980)], 42, 28, INK_MAIN, opacity=240, num_strokes=22)
-draw_ink_curve(draw, [(696, 1310), (688, 1200), (704, 1100), (696, 980)], 22, 14, INK_SHADOW, opacity=160, num_strokes=12)
+# MAIN TRUNK (Stamm Y=1340 up to Y=1070)
+draw_ink_curve(draw, [(700, 1340), (692, 1250), (708, 1160), (700, 1070)], 42, 28, INK_MAIN, opacity=240, num_strokes=22)
+draw_ink_curve(draw, [(696, 1340), (688, 1250), (704, 1160), (696, 1070)], 22, 14, INK_SHADOW, opacity=160, num_strokes=12)
 
-# BOTTOM BRANCHES (Y ≈ 980 -> Nodes #1, #2, #3, #4)
-draw_ink_curve(draw, [(700, 980), (600, 950), (500, 930)], 20, 12, INK_MAIN, num_strokes=14)
-draw_ink_curve(draw, [(500, 930), (340, 940), (180, 970)], 12, 6, INK_MAIN, num_strokes=10)
+# BOTTOM BRANCHES (Y ≈ 1070 -> Nodes #1, #2, #3, #4)
+draw_ink_curve(draw, [(700, 1070), (590, 1070), (480, 1070)], 20, 12, INK_MAIN, num_strokes=14)
+draw_ink_curve(draw, [(480, 1070), (325, 1105), (170, 1140)], 12, 6, INK_MAIN, num_strokes=10)
 
-draw_ink_curve(draw, [(700, 980), (800, 950), (900, 930)], 20, 12, INK_MAIN, num_strokes=14)
-draw_ink_curve(draw, [(900, 930), (1060, 940), (1220, 970)], 12, 6, INK_MAIN, num_strokes=10)
+draw_ink_curve(draw, [(700, 1070), (810, 1070), (920, 1070)], 20, 12, INK_MAIN, num_strokes=14)
+draw_ink_curve(draw, [(920, 1070), (1075, 1105), (1230, 1140)], 12, 6, INK_MAIN, num_strokes=10)
 
-# MID TRUNK CONTINUATION (Y=980 up to Y=640)
-draw_ink_curve(draw, [(700, 980), (712, 860), (688, 740), (700, 640)], 26, 18, INK_MAIN, opacity=240, num_strokes=18)
-draw_ink_curve(draw, [(696, 980), (708, 860), (684, 740), (696, 640)], 14, 9, INK_SHADOW, opacity=150, num_strokes=10)
+# MID TRUNK CONTINUATION (Y=1070 up to Y=750)
+draw_ink_curve(draw, [(700, 1070), (712, 960), (688, 850), (700, 750)], 26, 18, INK_MAIN, opacity=240, num_strokes=18)
+draw_ink_curve(draw, [(696, 1070), (708, 960), (684, 850), (696, 750)], 14, 9, INK_SHADOW, opacity=150, num_strokes=10)
 
-# MID BRANCHES (Y ≈ 640 -> Nodes #5, #6, #7)
-draw_ink_curve(draw, [(700, 640), (490, 610), (280, 590)], 18, 8, INK_MAIN, num_strokes=14)
-draw_ink_curve(draw, [(700, 640), (690, 570), (700, 510)], 16, 8, INK_MAIN, num_strokes=12)
-draw_ink_curve(draw, [(700, 640), (910, 610), (1120, 590)], 18, 8, INK_MAIN, num_strokes=14)
+# MID BRANCHES (Y ≈ 750 -> Nodes #5, #6, #7)
+draw_ink_curve(draw, [(700, 750), (475, 750), (250, 750)], 18, 8, INK_MAIN, num_strokes=14)
+draw_ink_curve(draw, [(700, 750), (690, 710), (700, 680)], 16, 8, INK_MAIN, num_strokes=12)
+draw_ink_curve(draw, [(700, 750), (925, 750), (1150, 750)], 18, 8, INK_MAIN, num_strokes=14)
 
-# UPPER TRUNK CONTINUATION (Y=640 up to Y=320)
-draw_ink_curve(draw, [(700, 640), (708, 520), (694, 420), (700, 320)], 16, 9, INK_MAIN, opacity=230, num_strokes=14)
+# UPPER TRUNK CONTINUATION (Y=750 up to Y=360)
+draw_ink_curve(draw, [(700, 750), (708, 620), (694, 480), (700, 360)], 16, 9, INK_MAIN, opacity=230, num_strokes=14)
 
-# TOP CROWN BRANCHES (Y ≈ 320 -> Nodes #8, #9 & Bare Twigs)
-draw_ink_curve(draw, [(700, 320), (560, 280), (420, 250)], 12, 6, INK_MAIN, num_strokes=10)
-draw_ink_curve(draw, [(700, 320), (840, 280), (980, 250)], 12, 6, INK_MAIN, num_strokes=10)
+# TOP CROWN BRANCHES (Y ≈ 360 -> Nodes #8, #9 & Bare Twigs)
+draw_ink_curve(draw, [(700, 360), (525, 360), (350, 360)], 12, 6, INK_MAIN, num_strokes=10)
+draw_ink_curve(draw, [(700, 360), (875, 360), (1050, 360)], 12, 6, INK_MAIN, num_strokes=10)
 
 # BARE CROWN TWIGS
 bare_twigs = [
     # Top Crown bare twigs
-    [(700, 320), (680, 240), (660, 170)],
-    [(700, 320), (720, 240), (740, 170)],
-    [(680, 240), (700, 190), (690, 140)],
-    [(720, 240), (700, 190), (710, 140)],
-    [(420, 250), (380, 210), (350, 170)],
-    [(980, 250), (1020, 210), (1050, 170)],
+    [(700, 360), (680, 270), (660, 200)],
+    [(700, 360), (720, 270), (740, 200)],
+    [(680, 270), (700, 220), (690, 170)],
+    [(720, 270), (700, 220), (710, 170)],
+    [(350, 360), (310, 310), (280, 260)],
+    [(1050, 360), (1090, 310), (1120, 260)],
     # Mid-height bare sub-twigs
-    [(490, 610), (430, 570), (380, 540)],
-    [(910, 610), (970, 570), (1020, 540)],
-    [(690, 570), (630, 540), (590, 510)],
-    [(690, 570), (750, 540), (790, 510)],
+    [(475, 750), (410, 700), (360, 660)],
+    [(925, 750), (990, 700), (1040, 660)],
+    [(690, 710), (630, 670), (590, 630)],
+    [(690, 710), (750, 670), (790, 630)],
     # Lower bare sub-twigs
-    [(600, 950), (530, 910), (480, 870)],
-    [(800, 950), (870, 910), (920, 870)],
-    [(340, 940), (280, 900), (230, 870)],
-    [(1060, 940), (1120, 900), (1170, 870)],
-    [(708, 1100), (630, 1070), (560, 1050)],
-    [(708, 1100), (770, 1070), (840, 1050)]
+    [(590, 1070), (520, 1030), (470, 990)],
+    [(810, 1070), (880, 1030), (930, 990)],
+    [(325, 1105), (265, 1065), (215, 1025)],
+    [(1075, 1105), (1135, 1065), (1185, 1025)]
 ]
 
 for twg in bare_twigs:
@@ -205,8 +203,8 @@ servers = [
         'date': '2026-02',
         'logo': 'logo-ellmos-filecommander.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-filecommander-mcp',
-        'x': 180,
-        'y': 970,
+        'x': 170,
+        'y': 1140,
         'level': 'bottom'
     },
     {
@@ -216,8 +214,8 @@ servers = [
         'date': '2026-02',
         'logo': 'logo-ellmos-codecommander.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-codecommander-mcp',
-        'x': 500,
-        'y': 930,
+        'x': 480,
+        'y': 1070,
         'level': 'bottom'
     },
     {
@@ -227,8 +225,8 @@ servers = [
         'date': '2026-02',
         'logo': 'logo-n8n-manager-mcp.jpg',
         'link': 'https://github.com/ellmos-ai/n8n-manager-mcp',
-        'x': 900,
-        'y': 930,
+        'x': 920,
+        'y': 1070,
         'level': 'bottom'
     },
     {
@@ -238,8 +236,8 @@ servers = [
         'date': '2026-03',
         'logo': 'logo-clatcher.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-clatcher-mcp',
-        'x': 1220,
-        'y': 970,
+        'x': 1230,
+        'y': 1140,
         'level': 'bottom'
     },
     # MITTE (Middle - 2026-05 .. 2026-06)
@@ -250,8 +248,8 @@ servers = [
         'date': '2026-05',
         'logo': 'logo-ellmos-controlcenter.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-controlcenter-mcp',
-        'x': 280,
-        'y': 590,
+        'x': 250,
+        'y': 750,
         'level': 'mid'
     },
     {
@@ -262,7 +260,7 @@ servers = [
         'logo': 'logo-ellmos-homebase.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-homebase-mcp',
         'x': 700,
-        'y': 510,
+        'y': 680,
         'level': 'mid'
     },
     {
@@ -272,8 +270,8 @@ servers = [
         'date': '2026-06',
         'logo': 'logo-ellmos-servercommander.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-servercommander-mcp',
-        'x': 1120,
-        'y': 590,
+        'x': 1150,
+        'y': 750,
         'level': 'mid'
     },
     # OBEN (Top - Jüngste 2026-07)
@@ -284,8 +282,8 @@ servers = [
         'date': '2026-07',
         'logo': 'logo-ellmos-blender-use.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-blender-use-mcp',
-        'x': 420,
-        'y': 250,
+        'x': 350,
+        'y': 360,
         'level': 'top'
     },
     {
@@ -295,8 +293,8 @@ servers = [
         'date': '2026-07',
         'logo': 'wappen-open-compute-mcp.jpg',
         'link': 'https://github.com/ellmos-ai/open-compute-mcp',
-        'x': 980,
-        'y': 250,
+        'x': 1050,
+        'y': 360,
         'level': 'top'
     }
 ]
@@ -304,9 +302,9 @@ servers = [
 image_map_coords = []
 
 # --- 5. COMPOSITE ENLARGED FRUIT LOGO NODES & BADGES ---
-# Fruit box enlarged to 144px at 1x resolution (1.5x enlargement from 96px)
-BOX_SIZE = 144 * SCALE
-INNER_SIZE = 118 * SCALE
+# Fruit box enlarged to 210px at 1x resolution (~1.46x enlargement from 144px, ~2.18x from original 96px)
+BOX_SIZE = 210 * SCALE
+INNER_SIZE = 175 * SCALE
 
 for s in servers:
     nx, ny = int(s['x'] * SCALE), int(s['y'] * SCALE)
@@ -333,7 +331,7 @@ for s in servers:
         border_col = (168, 85, 247, 255)   # Purple 500
         glow_col = (168, 85, 247, 40)
         
-    # Fruit Node Frame (Enlarged 1.5x: 144x144 px at 1x)
+    # Fruit Node Frame (Enlarged to 210x210 px at 1x)
     box_w, box_h = BOX_SIZE, BOX_SIZE
     fruit_canvas = Image.new('RGBA', (box_w, box_h), (0, 0, 0, 0))
     fruit_draw = ImageDraw.Draw(fruit_canvas)
@@ -341,7 +339,7 @@ for s in servers:
     # Soft drop shadow / glow behind fruit frame
     fruit_draw.rounded_rectangle(
         [3*SCALE, 3*SCALE, box_w-3*SCALE, box_h-3*SCALE],
-        radius=26 * SCALE,
+        radius=32 * SCALE,
         fill=glow_col,
         outline=None
     )
@@ -349,30 +347,33 @@ for s in servers:
     # Fruit Emblem Frame
     fruit_draw.rounded_rectangle(
         [2*SCALE, 2*SCALE, box_w-4*SCALE, box_h-4*SCALE],
-        radius=24 * SCALE,
+        radius=28 * SCALE,
         fill=(255, 255, 255, 255),
         outline=border_col,
-        width=4 * SCALE
+        width=5 * SCALE
     )
     
-    # Inner logo fitting (118x118 px at 1x scale)
+    # Inner logo fitting (175x175 px at 1x scale)
     logo_img.thumbnail((INNER_SIZE, INNER_SIZE), Image.Resampling.LANCZOS)
     
     mask = Image.new('L', logo_img.size, 0)
     mask_draw = ImageDraw.Draw(mask)
-    mask_draw.rounded_rectangle([0, 0, logo_img.size[0], logo_img.size[1]], radius=16 * SCALE, fill=255)
+    mask_draw.rounded_rectangle([0, 0, logo_img.size[0], logo_img.size[1]], radius=20 * SCALE, fill=255)
     
     px = (box_w - logo_img.size[0]) // 2
     py = (box_h - logo_img.size[1]) // 2
     fruit_canvas.paste(logo_img, (px, py), mask)
     
-    # Stem line attaching fruit to branch node
-    fruit_top_y = ny - 50 * SCALE
-    draw.line([(nx, ny), (nx, fruit_top_y)], fill=border_col, width=4 * SCALE)
+    # Stem line attaching fruit to branch node (fruit bottom sits 20px above node)
+    stem_gap = 20 * SCALE
+    fruit_bottom_y = ny - stem_gap
+    fruit_top_y = fruit_bottom_y - box_h
+    
+    draw.line([(nx, ny), (nx, fruit_bottom_y)], fill=border_col, width=5 * SCALE)
     
     # Paste fruit onto main canvas
     fruit_left = nx - box_w//2
-    fruit_top = fruit_top_y - box_h//2
+    fruit_top = fruit_top_y
     base.paste(fruit_canvas, (fruit_left, fruit_top), fruit_canvas)
     
     # Label Badge below fruit
@@ -385,11 +386,11 @@ for s in servers:
     bs_box = font_badge_sub.getbbox(badge_sub)
     bs_w = bs_box[2] - bs_box[0]
     
-    badge_w = max(bt_w + bs_w + 20 * SCALE, 140 * SCALE)
-    badge_h = 32 * SCALE
+    badge_w = max(bt_w + bs_w + 24 * SCALE, 160 * SCALE)
+    badge_h = 34 * SCALE
     
     badge_center_x = nx
-    badge_center_y = fruit_top + box_h + 20 * SCALE
+    badge_center_y = fruit_bottom_y + 24 * SCALE
     
     bx1 = badge_center_x - badge_w // 2
     by1 = badge_center_y - badge_h // 2
@@ -399,7 +400,7 @@ for s in servers:
     # Badge container (light slate card with border)
     draw.rounded_rectangle(
         [bx1, by1, bx2, by2],
-        radius=10 * SCALE,
+        radius=12 * SCALE,
         fill=(248, 250, 252, 255),
         outline=(203, 213, 225, 255),
         width=int(1.5 * SCALE)
@@ -409,8 +410,8 @@ for s in servers:
     total_text_w = bt_w + 6 * SCALE + bs_w
     start_tx = badge_center_x - total_text_w // 2
     
-    draw.text((start_tx, by1 + 6 * SCALE), badge_title, fill=(15, 23, 42, 255), font=font_badge_title)
-    draw.text((start_tx + bt_w + 6 * SCALE, by1 + 7 * SCALE), badge_sub, fill=border_col[:3] + (255,), font=font_badge_sub)
+    draw.text((start_tx, by1 + 7 * SCALE), badge_title, fill=(15, 23, 42, 255), font=font_badge_title)
+    draw.text((start_tx + bt_w + 6 * SCALE, by1 + 8 * SCALE), badge_sub, fill=border_col[:3] + (255,), font=font_badge_sub)
 
     # Save 1x scaled bounding box for HTML area map (covering fruit node + badge)
     top_y_1x = fruit_top / SCALE
@@ -425,18 +426,14 @@ for s in servers:
     
     image_map_coords.append((s['id'], s['name'], s['badge_name'], s['date'], s['link'], map_x1, map_y1, map_x2, map_y2))
 
-# Resample down 2x with LANCZOS to 1400x1350 for crisp anti-aliased output
-final_img = base.resize((1400, 1350), Image.Resampling.LANCZOS)
+# Resample down 2x with LANCZOS to 1400x1400 for crisp anti-aliased output
+final_img = base.resize((1400, 1400), Image.Resampling.LANCZOS)
 
 # Save to profile/assets/mcp-stammbaum.png
 out_png = os.path.join(assets_dir, 'mcp-stammbaum.png')
 final_img.save(out_png, 'PNG', optimize=True)
 
-# Also save to profile/mcp-stammbaum.png
-out_png_root = os.path.join('profile', 'mcp-stammbaum.png')
-final_img.save(out_png_root, 'PNG', optimize=True)
-
-print(f"Generated {out_png} and {out_png_root} successfully!")
+print(f"Generated {out_png} successfully!")
 
 print("\nGenerated Image Map HTML:")
 for mc in image_map_coords:
