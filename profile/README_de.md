@@ -33,47 +33,28 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 ## Skills
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — steckbare Skill-Bibliothek" width="720"></a>
+  <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — steckbare Skill-Bibliothek" width="720" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a>
 </p>
 
 ---
 
 ## Module
 
-Unsere Empfehlungen — Bausteine, die sich in jedes ellmos-OS einfügen oder allein stehen. Ganz ohne Tabelle; die Banner sind die Links:
+Unsere Empfehlungen — Bausteine, die sich in jedes ellmos-OS einfügen oder allein stehen. Die Banner sind die Links; Details in der Tabelle darunter:
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/swarm-ai"><img src="https://raw.githubusercontent.com/ellmos-ai/swarm-ai/master/assets/banner.png" alt="swarm-ai" width="680"></a><br>
-  <i>Parallele LLM-Koordination</i>
-</p>
+<p align="center"><a href="https://github.com/ellmos-ai/swarm-ai"><img src="https://raw.githubusercontent.com/ellmos-ai/swarm-ai/master/assets/banner.png" alt="swarm-ai" width="680" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/build-your-users-mind/master/assets/banner.svg" alt="build-your-users-mind" width="680" style="border:2px solid #f472b6;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="680" style="border:2px solid #2dd4bf;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.png" alt="report-forge" width="680" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="680" style="border:2px solid #e879f9;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/master/logo.jpg" alt="clutch" width="195" style="border:2px solid #a3e635;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" alt="MarbleRun" width="195" style="border:2px solid #fb923c;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" alt="n8n-workflow-manager" width="195" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/wappen.jpg" alt="open-compute" width="195" style="border:2px solid #f87171;border-radius:8px;margin:0"></a></p>
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/build-your-users-mind/master/assets/banner.svg" alt="build-your-users-mind" width="680"></a><br>
-  <i>Nutzer-Theory-of-Mind: Entscheidungsavatare aus Interaktionslogs</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="680"></a><br>
-  <i>Fetchen, extrahieren, strukturieren — eigenständiger Scraper mit SSRF-Schutz</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.png" alt="report-forge" width="680"></a><br>
-  <i>Domänenneutraler Kern für anonymisierbare Berichts-Pipelines</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="680"></a><br>
-  <i>Medien- und Content-Workflows: lokaler AI-Video-, Audio- und Podcast-Editor mit transkriptbasierten Schnitten</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/master/logo.jpg" alt="clutch" width="195"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" alt="MarbleRun" width="195"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" alt="n8n-workflow-manager" width="195"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/wappen.jpg" alt="open-compute" width="195"></a><br>
-  <i><b>clutch</b> — anbieter-neutrales Modell-Routing · <b>MarbleRun</b> — Chain-Orchestrierung · <b>n8n-workflow-manager</b> — lokale n8n-Verwaltung · <b>open-compute</b> — Computer-Use-Kern mit Safety-Gate</i>
-</p>
+| Modul | Fokus |
+|---|---|
+| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
+| **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Nutzer-Theory-of-Mind: Entscheidungsavatare aus Interaktionslogs |
+| **[web-scraper](https://github.com/ellmos-ai/web-scraper)** | Fetchen, extrahieren, strukturieren — eigenständiger Scraper mit SSRF-Schutz |
+| **[report-forge](https://github.com/ellmos-ai/report-forge)** | Domänenneutraler Kern für anonymisierbare Berichts-Pipelines |
+| **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** | Lokaler AI-Video-, Audio- und Podcast-Editor mit transkriptbasierten Schnitten |
+| **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing |
+| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
+| **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)** | Lokale n8n-Verwaltung |
+| **[open-compute](https://github.com/ellmos-ai/open-compute)** | Computer-Use-Kern mit Safety-Gate |
 
 Weitere Module, noch ohne eigenes Artwork: **[connectors](https://github.com/ellmos-ai/connectors)** (portable Messaging-Connectors) · **[anonymizer](https://github.com/ellmos-ai/anonymizer)** (Dokument-Pseudonymisierung mit fail-closed NER) · **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** (agentenfreundliche Projektdokumentation)
 
@@ -123,15 +104,12 @@ Stacks deklarieren Komposition, statt Modul-Code zu kopieren — darum lässt si
 
 Manche Kompositionen wachsen über die Stack-Ebene hinaus: Sie sind governierte Systeme mit eigener Identität, Policies und Lebenszyklus. Zwei davon sind öffentlich — die Banner sind die Links:
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — der Strom der alles vereint" width="720"></a><br>
-  <b>BACH</b> — <i>der Strom, der alles vereint</i>: das volle LLM-OS mit 113+ Handlern, 1870+ Skills, Boss-Agenten und GUI.
-</p>
+<p align="center"><a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — der Strom der alles vereint" width="720" style="border:2px solid #22d3ee;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner.png" alt="Rinnsal — das Rinnsal" width="720" style="border:2px solid #60a5fa;border-radius:8px;display:block;margin:0 auto"></a></p>
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner.png" alt="Rinnsal — das Rinnsal" width="720"></a><br>
-  <b>Rinnsal</b> — <i>das Rinnsal</i>: leichtgewichtige LLM-Infrastruktur — Memory, Tasks, Connectors, Chains, i18n. Keine Abhängigkeiten.
-</p>
+| System | Was es ist |
+|---|---|
+| **[BACH](https://github.com/ellmos-ai/bach)** | *Der Strom, der alles vereint*: das volle LLM-OS mit 113+ Handlern, 1870+ Skills, Boss-Agenten und GUI. |
+| **[Rinnsal](https://github.com/ellmos-ai/rinnsal)** | *Das Rinnsal*: leichtgewichtige LLM-Infrastruktur — Memory, Tasks, Connectors, Chains, i18n. Keine Abhängigkeiten. |
 
 Verschiedene Philosophien, selbes Ziel — und [gardener](https://github.com/ellmos-ai/gardener) ist im eigenständigen Betrieb zugleich die minimale OS-Stufe (siehe [Memory und Kontrolle](#memory-and-control)).
 
@@ -139,16 +117,7 @@ Verschiedene Philosophien, selbes Ziel — und [gardener](https://github.com/ell
 
 ## Stacks
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/stacks"><img src="https://raw.githubusercontent.com/ellmos-ai/stacks/main/assets/banner.png" alt="stacks — der Stack-Katalog" width="560"></a><br>
-  <i>Der Katalog und das gemeinsame Manifest-Schema</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/ellmos-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner.png" alt="ellmos-stack" width="560"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/agent-ops-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="560"></a><br>
-  <i>Die zwei aktiven öffentlichen Stacks: selbstgehostete Forschungsbasis & Agenten-Betrieb</i>
-</p>
+<p align="center"><a href="https://github.com/ellmos-ai/stacks"><img src="https://raw.githubusercontent.com/ellmos-ai/stacks/main/assets/banner.png" alt="stacks — der Stack-Katalog" width="560" style="border:2px solid #8b5cf6;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ellmos-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner.png" alt="ellmos-stack" width="440" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/agent-ops-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="440" style="border:2px solid #fbbf24;border-radius:8px;margin:0"></a></p>
 
 Stacks sind manifestgesteuerte Kompositionen (`ellmos.stack.v2`) — keine Code-Kopien, sondern deklarierte Komponenten. Zwei aktive öffentliche Stacks bilden den Kern der Familie, katalogisiert in einem dritten:
 
@@ -206,36 +175,7 @@ Neun MCP-Server, eine Control-Plane — arrangiert als Baum um seinen Stamm: **C
 
 Die Gedächtnis-Säule der Familie und ihre Koordinations- & Kontrollmodule — zuerst ihre Banner, dann die Details:
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="560"></a><br>
-  <i>Kuratiertes Session-Gedächtnis — die Fassade des Gedächtnissystems</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/gardener"><img src="https://raw.githubusercontent.com/ellmos-ai/gardener/master/assets/banner.png" alt="gardener" width="560"></a><br>
-  <i>Der Zen-Garten — organischer Cross-Source-Index (und minimales OS, eigenständig)</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="560"></a><br>
-  <i>Eigenständiges SQLite-Task-Modul, null Abhängigkeiten</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/dev-bricks/ticket-master"><img src="https://raw.githubusercontent.com/dev-bricks/ticket-master/main/assets/banner.png" alt="ticket-master" width="560"></a><br>
-  <i>Strukturierte Tickets, geroutet an den passenden Agenten oder Provider</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/dev-bricks/lock-master"><img src="https://raw.githubusercontent.com/dev-bricks/lock-master/main/assets/banner.png" alt="lock-master" width="560"></a><br>
-  <i>Portables Multi-Agenten-Datei-Locking</i>
-</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="560"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/workflowhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="560"></a><br>
-  <i>Agent-Lifecycle-Hooks — Gedächtnis-Recall und Workflow-Gates</i>
-</p>
+<p align="center"><a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="560" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/gardener"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" alt="gardener" width="320" style="border:2px solid #4ade80;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="560" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/dev-bricks/ticket-master"><img src="https://raw.githubusercontent.com/dev-bricks/ticket-master/main/assets/banner.png" alt="ticket-master" width="560" style="border:2px solid #fb923c;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/dev-bricks/lock-master"><img src="https://raw.githubusercontent.com/dev-bricks/lock-master/main/assets/banner.png" alt="lock-master" width="560" style="border:2px solid #f87171;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="440" style="border:2px solid #f472b6;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/workflowhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="440" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a></p>
 
 | Modul | Rolle |
 |---|---|
