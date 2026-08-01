@@ -7,7 +7,7 @@
 <p align="center"><b>🇬🇧 <a href="README.md">English Version</a></b> (maßgeblich)</p>
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Öffentliche_Repos-38-blue?style=flat-square&logo=github" alt="Öffentliche Repos"></a>
+  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Öffentliche_Repos-41-blue?style=flat-square&logo=github" alt="Öffentliche Repos"></a>
   <a href="https://github.com/ellmos-ai/bach/blob/main/LICENSE"><img src="https://img.shields.io/badge/Lizenz-MIT-green?style=flat-square" alt="Lizenz MIT"></a>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/Architektur-Local--First-orange?style=flat-square" alt="Local-First">
@@ -24,7 +24,7 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (38 Repos, davon 1 archiviert). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-26.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (41 aktive Repos, 1 archiviert). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-07-29.
 
 | Bereich | Repositories |
 |---|---|
@@ -33,7 +33,7 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 | Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - dazu **[gardener](https://github.com/ellmos-ai/gardener)** als minimale OS-Stufe im eigenständigen Betrieb; verzeichnet ist es unter [Die .MEMORY-Säule](#die-memory-säule) unten |
 | Gedächtnis-Säule | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[taskplan](https://github.com/ellmos-ai/taskplan)** - kuratiertes Session-Gedächtnis, organischer Cross-Source-Index und Task-Tracking; siehe [Die .MEMORY-Säule](#die-memory-säule) |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
-| Agenten-Module und Orchestrierung | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - eigenständiger, aus BACH extrahierter Web-Scraper (get/links/forms/headers/extract/screenshot) mit SSRF-Schutz; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - lokale Dokument-Pseudonymisierung mit fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domänenneutraler Kern für anonymisierbare Berichts-Pipelines |
+| Agenten-Module und Orchestrierung | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[roshambo](https://github.com/ellmos-ai/roshambo)** - Multi-Agenten-Koordinator (serialisierbare Leases + Outcome-Memory); **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[workflowhooker](https://github.com/ellmos-ai/workflowhooker)** - Workflow-Lifecycle-Hooker-Middleware; **[memoryhooker](https://github.com/ellmos-ai/memoryhooker)** - Session-Lifecycle-Memory-Hooker-Middleware; **[policy-registry](https://github.com/ellmos-ai/policy-registry)** - Local-First Policy- & Guardrail-Register; **[ellmos-core](https://github.com/ellmos-ai/ellmos-core)** - Grundlegendes Core-Framework & Web-Konsole; **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - eigenständiger, aus BACH extrahierter Web-Scraper (get/links/forms/headers/extract/screenshot) mit SSRF-Schutz; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - lokale Dokument-Pseudonymisierung mit fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domänenneutraler Kern für anonymisierbare Berichts-Pipelines; **[task-master](https://github.com/ellmos-ai/task-master)** - deterministische Task-Auswahl für LLM-Agenten (code-seitiger Selektor, Backlog-Durchsetzung, keine Abhängigkeiten) |
 | Fachanwendungen | **[law-checker](https://github.com/ellmos-ai/law-checker)** - quellenbasierte KI-Ersteinschätzungen für deutsches Recht (Erstorientierung, kein Anwaltsersatz), Gesetzes-Registry und Verkörperungs-Agenten; **[worksheet-generator](https://github.com/ellmos-ai/worksheet-generator)** - erzeugt strukturierte, ICF-gestützte Arbeitsblätter für pädagogische und therapeutische Zwecke, gerendert nach Markdown/HTML/DOCX; **[steuer-assistent](https://github.com/ellmos-ai/steuer-assistent)** - offline-first Arbeitsblatt für Werbungskosten von Arbeitnehmern: geführte Erfassung, Plausibilitätsprüfungen, kein Cloud-Upload |
 | Medien- und Content-Workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - lokaler AI-Video-, Audio- und Podcast-Editor mit lokaler Transkription, transkriptbasierten Schnitten, Hyperframes-Bewegtgrafik und agentengesteuerten kreativen Edits |
 | Evaluation, Vorlagen und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichtem Tooling und LLM-freundlichem Projektgedächtnis; **[clirec](https://github.com/ellmos-ai/clirec)** - menschenlesbare GUI-Demo-Aufzeichnungen für CLI- und Agenten-Workflows |
@@ -116,6 +116,11 @@ Diese Module und Skills können in jedes OS integriert oder eigenständig genutz
 | **[connectors](https://github.com/ellmos-ai/connectors)** | Portable Messaging-Connectors für AI-Agenten: Telegram, Discord, Signal, WhatsApp, Home Assistant und Webhook |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
+| **[roshambo](https://github.com/ellmos-ai/roshambo)** | Multi-Agenten-Koordinator: serialisierbare Leases + Outcome-Memory auf CockroachDB |
+| **[workflowhooker](https://github.com/ellmos-ai/workflowhooker)** | Workflow-Lifecycle-Hooker-Middleware & Ausführungs-Tracking für LLM-Agenten-Workflows |
+| **[memoryhooker](https://github.com/ellmos-ai/memoryhooker)** | Lifecycle-Memory-Hooker-Middleware & Event-Listener für LLM-Agenten-Sessions |
+| **[policy-registry](https://github.com/ellmos-ai/policy-registry)** | Local-First Policy-Register & Guardrail-Durchsetzungsschemata |
+| **[ellmos-core](https://github.com/ellmos-ai/ellmos-core)** | Grundlegendes Core-Framework, Web-Konsole & Agenten-Schnittstellen (FastAPI + HTMX) |
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Nutzer-Modellierung und Theory-of-Mind-Rezept für persönliche Entscheidungsavatare aus Interaktionslogs |
 | **[open-compute](https://github.com/ellmos-ai/open-compute)** | Modellagnostischer Computer-Use-Kern für Claude, OpenAI CUA und Mock-Backends mit normalisierten Koordinaten, kanonischem Action-Schema und zentralem Safety-Gate |
 | **[web-scraper](https://github.com/ellmos-ai/web-scraper)** | Eigenständiger, aus BACH extrahierter Web-Scraper — get/links/forms/headers/extract/screenshot, mit SSRF-Schutz |
@@ -184,6 +189,29 @@ Stacks sind manifestgesteuerte Kompositionen (`ellmos.stack.v2`) — keine Code-
 | **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Koordinationsschicht für CLI-Coding-Agenten: Ticket-Routing, Datei-Locking, maschinenübergreifende Synchronisation, Entscheidungs-Avatar, MCP-Control-Plane | **[ticket-master](https://github.com/dev-bricks/ticket-master)** (dev-bricks) · **[lock-master](https://github.com/dev-bricks/lock-master)** (dev-bricks) · **[sync-master](https://github.com/dev-bricks/sync-master)** (dev-bricks) · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
 
 Etliche dieser Module sind bewusst **beides**: eigenständige Dev-Tools, die man einzeln nutzen kann, und Stack-Komponenten, die man automatisch mit der Stack-Installation erhält. Das gilt auch für **[llm-note](https://github.com/doc-bricks/llm-note)** (doc-bricks) — lokale Notizbücher für LLM-Agenten, gebaut als steckbares Modul für Stack-Kompositionen.
+
+---
+
+## Kompositionsmodell
+
+ellmos hält Implementierungseinheiten klein und einzeln nutzbar, macht aber größere, reproduzierbare Zusammensetzungen ausdrücklich sichtbar:
+
+```text
+Modul → Bundle → Stack → System → Fleet
+```
+
+- Ein **Modul** ist unabhängig versioniert und kann einzeln aufgenommen werden. Öffentliche Module bleiben als einzelne, in der Regel frei verfügbare Bausteine nutzbar.
+- Ein **Bundle** ist eine versionierte, kompatibilitätsgeprüfte Zusammenstellung von Modulen und typisierten Partnern, bei Bedarf einschließlich wiederverwendbarer Skills.
+- Ein **Stack** verdrahtet ein oder mehrere Bundles für einen konkreten Betriebszweck.
+- Ein **System** kombiniert Stacks für eine Installation oder Produktedition; eine **Fleet** koordiniert mehrere Systeminstanzen.
+
+Bundle-, Stack- und Systemmanifeste beschreiben Zusammensetzung, kompatible Versionen, deklarierte Schnittstellen und optionale Lockfiles. Sie kopieren keinen Modulquellcode. Öffentliche Rezepte können offen geteilt werden; private oder kommerzielle Rezepte dürfen öffentliche und private Komponenten verbinden, ohne ihre geschützte Verdrahtung, Profile oder Kundenkonfiguration offenzulegen. Die geplanten Manifestebenen `.BUNDLES` und `.SYSTEMS` machen diese Grenzen auffindbar, ohne dass dieses öffentliche Profil zu einem privaten Konfigurationsregister wird. Installer-Implementierungen und Runtime-Aktivierung bleiben release- und deploymentspezifisch; diese Seite behauptet nicht, dass ein bestimmter Installer oder eine Runtime bereits verfügbar ist.
+
+Skills sind erstklassige, typisierte Bundlepartner und werden über die Skills-Registry aufgelöst — nicht als unversionierter Fließtext an ein Deployment angehängt. Ein Self-Care-Skill wie `automation-self-care` kann von einem Automationsbundle für eine sichere, standardmäßig deaktivierte Beschaffung und Prüfung deklariert werden; seine Deklaration aktiviert weder still einen Scheduler noch verändert sie eine Automation oder gewährt Zugang zu Credentials.
+
+### Zugangsflächen sind keine funktionalen Owner
+
+MCP-Server sind Zugangsflächen — auch MCP-Stacks genannt — für Menschen und LLM-Clients. Sie legen Fähigkeiten offen, die von zugrunde liegenden Modulen und Policies bereitgestellt werden; ein MCP-Endpunkt ist nicht automatisch Owner einer Funktion oder ihrer Daten. **ControlCenter MCP** behält seine veröffentlichte Identität als Zugangsfläche. **ControlRoom** ist die operatororientierte Zusammensetzung, die Kontroll-, Health-, Policy- und Evidenzansichten zusammenführen kann, ohne die funktionalen Owner zu ersetzen. Für Homebase gilt dieselbe Trennung: Eine Zugangsfläche kann auf eine Fähigkeit routen, während das referenzierte Modul, die Policy oder das Systemmanifest autoritativ bleibt.
 
 ---
 

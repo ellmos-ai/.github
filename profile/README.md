@@ -7,7 +7,7 @@
 <p align="center"><b>🇩🇪 <a href="https://github.com/ellmos-ai/.github/blob/master/profile/README_de.md">Deutsche Version</a></b></p>
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Public_Repos-38-blue?style=flat-square&logo=github" alt="Public Repos"></a>
+  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Public_Repos-41-blue?style=flat-square&logo=github" alt="Public Repos"></a>
   <a href="https://github.com/ellmos-ai/bach/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License MIT"></a>
   <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/Architecture-Local--First-orange?style=flat-square" alt="Local-First">
@@ -22,7 +22,7 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories (38 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-26.
+This index is complete for the public `ellmos-ai` repositories (41 active repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-29.
 
 | Area | Repositories |
 |---|---|
@@ -31,7 +31,7 @@ This index is complete for the public `ellmos-ai` repositories (38 repos, 1 arch
 | Operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - plus **[gardener](https://github.com/ellmos-ai/gardener)** as the minimal OS tier when run standalone; it is indexed under [The .MEMORY Pillar](#the-memory-pillar) below |
 | Memory pillar | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[taskplan](https://github.com/ellmos-ai/taskplan)** - curated session memory, organic cross-source index, and task tracking; see [The .MEMORY Pillar](#the-memory-pillar) |
 | MCP servers | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
-| Agent modules and orchestration | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - standalone web scraper (get/links/forms/headers/extract/screenshot) extracted from BACH, with an SSRF guard; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - local-first document pseudonymization with fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domain-neutral core for anonymizable report pipelines |
+| Agent modules and orchestration | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[roshambo](https://github.com/ellmos-ai/roshambo)** - multi-agent coordinator (serializable leases + outcome memory); **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[workflowhooker](https://github.com/ellmos-ai/workflowhooker)** - workflow lifecycle hooker middleware; **[memoryhooker](https://github.com/ellmos-ai/memoryhooker)** - session lifecycle memory hooker middleware; **[policy-registry](https://github.com/ellmos-ai/policy-registry)** - local-first policy & guardrail registry; **[ellmos-core](https://github.com/ellmos-ai/ellmos-core)** - foundational core runtime & web console; **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - standalone web scraper (get/links/forms/headers/extract/screenshot) extracted from BACH, with an SSRF guard; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - local-first document pseudonymization with fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domain-neutral core for anonymizable report pipelines; **[task-master](https://github.com/ellmos-ai/task-master)** - deterministic task selection for LLM agents (code-side selector, backlog enforcement, zero dependencies) |
 | Domain tools | **[law-checker](https://github.com/ellmos-ai/law-checker)** - source-grounded AI first-look legal assessments for German law (Erstorientierung, no substitute for a lawyer), statute registry and embodiment agents; **[worksheet-generator](https://github.com/ellmos-ai/worksheet-generator)** - generates structured, ICF-aware worksheets for pedagogical and therapeutic use, rendered to Markdown/HTML/DOCX; **[steuer-assistent](https://github.com/ellmos-ai/steuer-assistent)** - offline-first worksheet for German employee income-related expenses (Werbungskosten), with guided collection and plausibility checks and no cloud upload |
 | Media and content workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - local AI video, audio and podcast editing with local transcription, transcript-based cuts, Hyperframes motion graphics and agent-driven creative edits |
 | Evaluation, templates and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory; **[clirec](https://github.com/ellmos-ai/clirec)** - human-readable GUI demonstration recordings for CLI and agent workflows |
@@ -114,6 +114,11 @@ These modules and skills can be integrated into any OS or used standalone:
 | **[connectors](https://github.com/ellmos-ai/connectors)** | Portable messaging connectors for AI agents - Telegram, Discord, Signal, WhatsApp, Home Assistant, Webhook; BACH-decoupled via SecretAdapter. |
 | **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain orchestration |
 | **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallel LLM coordination |
+| **[roshambo](https://github.com/ellmos-ai/roshambo)** | Multi-agent coordinator: serializable leases + outcome memory on CockroachDB |
+| **[workflowhooker](https://github.com/ellmos-ai/workflowhooker)** | Workflow lifecycle hooker middleware & execution tracking for LLM agent workflows |
+| **[memoryhooker](https://github.com/ellmos-ai/memoryhooker)** | Lifecycle memory hooker middleware & event listeners for LLM agent sessions |
+| **[policy-registry](https://github.com/ellmos-ai/policy-registry)** | Local-first policy registry & guardrail enforcement schemas |
+| **[ellmos-core](https://github.com/ellmos-ai/ellmos-core)** | Foundational core runtime, web console & agent interface contracts (FastAPI + HTMX) |
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Per-user theory of mind: a decision avatar built from interaction logs (feedback precognition) |
 | **[open-compute](https://github.com/ellmos-ai/open-compute)** | Model-agnostic computer-use core for Claude, OpenAI CUA and mock backends with normalized coordinates, canonical actions and a central safety gate |
 | **[web-scraper](https://github.com/ellmos-ai/web-scraper)** | Standalone web scraper extracted from BACH — get/links/forms/headers/extract/screenshot, with an SSRF guard |
@@ -182,6 +187,29 @@ Stacks are manifest-driven compositions (`ellmos.stack.v2`) — no code copies, 
 | **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Coordination layer for CLI coding agents: ticket routing, file locking, cross-machine sync, decision-avatar, MCP control plane | **[ticket-master](https://github.com/dev-bricks/ticket-master)** (dev-bricks) · **[lock-master](https://github.com/dev-bricks/lock-master)** (dev-bricks) · **[sync-master](https://github.com/dev-bricks/sync-master)** (dev-bricks) · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
 
 A number of these modules are deliberately **both**: standalone dev tools you can adopt individually, and stack components you get automatically by installing the stack. That also applies to **[llm-note](https://github.com/doc-bricks/llm-note)** (doc-bricks) — local-first notebooks for LLM agents, built as a pluggable module for stack composition.
+
+---
+
+## Composition Model
+
+ellmos keeps implementation units small and independently useful, while making larger, reproducible compositions explicit:
+
+```text
+Module → Bundle → Stack → System → Fleet
+```
+
+- A **module** is independently versioned and can be adopted on its own. Public modules remain useful as individual, generally freely available building blocks.
+- A **bundle** is a versioned, compatibility-checked set of modules and typed partners, including reusable skills where appropriate.
+- A **stack** wires one or more bundles for a specific operational purpose.
+- A **system** combines stacks for one installation or product edition; a **fleet** coordinates multiple system instances.
+
+Bundle, stack, and system manifests describe composition, compatible versions, declared interfaces, and optional lockfiles. They do not copy module source code. Public recipes can be shared openly; private or commercial recipes may combine public and private components without exposing their protected wiring, profiles, or customer configuration. The planned `.BUNDLES` and `.SYSTEMS` manifest layers make these boundaries discoverable without turning this public profile into a private configuration registry. Installer implementations and runtime activation remain release- and deployment-specific; this page does not imply that a particular installer or runtime is available.
+
+Skills are first-class, typed bundle partners resolved through the skills registry, not unversioned prose appended to a deployment. A self-care skill such as `automation-self-care` may be declared by an automation bundle for safe, disabled-by-default acquisition and review; declaring it never silently enables a scheduler, changes an automation, or grants access to credentials.
+
+### Access Surfaces Are Not Functional Owners
+
+MCP servers are access surfaces — also called MCP stacks — for people and LLM clients. They expose capabilities provided by underlying modules and policies; an MCP endpoint is not automatically the owner of the function or its data. **ControlCenter MCP** retains its published identity as an access surface. **ControlRoom** is the operator-oriented composition that can bring together control, health, policy, and evidence views without replacing the functional owners. Homebase follows the same separation: an access surface may route to a capability, while the referenced module, policy, or system manifest remains authoritative.
 
 ---
 
