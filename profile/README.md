@@ -103,7 +103,7 @@ Stacks declare composition instead of copying module code — so any composition
 
 Some compositions outgrow the stack layer: they are governed systems with their own identity, policies and lifecycle. Two of them are public — the banners are the links:
 
-<p align="center"><a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="720" style="border:2px solid #22d3ee;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner.png" alt="Rinnsal — the trickle" width="720" style="border:2px solid #60a5fa;border-radius:8px;display:block;margin:0 auto"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="720" style="border:2px solid #22d3ee;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — the trickle" width="720" style="border:2px solid #60a5fa;border-radius:8px;display:block;margin:0 auto"></a></p>
 
 | System | What it is |
 |---|---|
@@ -134,20 +134,20 @@ A number of these modules are deliberately **both**: standalone dev tools you ca
 
 ## MCP Servers — *Stacks that talk*
 
-Nine MCP servers, one control plane — arranged as a dynamic tree: **Trunk on the left**, main branch sweeping right, side branches ordered by **creation time** (early left → late right) with logos hanging as leaves.
+Nine MCP servers, one control plane — arranged as a vertical **family tree (Stammbaum)**: **Root & main trunk at the bottom** (earliest servers, 2026-02), branching upwards through mid-tier infrastructure (2026-05 to 2026-06) to the **youngest twigs at the top** (2026-07) with server logos hanging as fruits on the branches.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/mcp-tree.png" usemap="#mcp-tree-map" alt="MCP Server Tree — arranged by creation time" width="100%">
-  <map name="mcp-tree-map">
-    <area shape="rect" coords="96,87,234,243" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — #1 · 2026-02">
-    <area shape="rect" coords="235,162,385,318" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — #2 · 2026-02">
-    <area shape="rect" coords="396,87,514,243" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — #3 · 2026-02">
-    <area shape="rect" coords="545,162,655,318" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — #4 · 2026-03">
-    <area shape="rect" coords="681,87,809,243" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — #5 · 2026-05">
-    <area shape="rect" coords="835,162,945,318" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — #6 · 2026-06">
-    <area shape="rect" coords="956,87,1114,243" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — #7 · 2026-06">
-    <area shape="rect" coords="1125,162,1235,318" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — #8 · 2026-07">
-    <area shape="rect" coords="1256,87,1384,243" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — #9 · 2026-07">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/mcp-stammbaum.png" usemap="#mcp-stammbaum-map" alt="MCP Server Stammbaum — bottom-up evolution tree" width="100%">
+  <map name="mcp-stammbaum-map">
+    <area shape="rect" coords="123,870,318,1012" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — #1 filecommander · 2026-02">
+    <area shape="rect" coords="357,830,564,972" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — #2 codecommander · 2026-02">
+    <area shape="rect" coords="849,830,1032,972" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — #3 n8n-manager · 2026-02">
+    <area shape="rect" coords="1107,870,1253,1012" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — #4 clatcher · 2026-03">
+    <area shape="rect" coords="169,480,352,622" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — #5 controlcenter · 2026-05">
+    <area shape="rect" coords="619,400,781,542" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — #6 homebase · 2026-06">
+    <area shape="rect" coords="1032,480,1248,622" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — #7 servercommander · 2026-06">
+    <area shape="rect" coords="314,140,487,282" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — #8 blender-use · 2026-07">
+    <area shape="rect" coords="904,140,1096,282" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — #9 open-compute · 2026-07">
   </map>
 </p>
 
