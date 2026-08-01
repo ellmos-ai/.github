@@ -1,19 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/ellmos-logo.jpg" alt="ellmos Logo" width="300">
-</p>
-
-<h3 align="center">Extra Large Language Model Operating Systems</h3>
-<p align="center"><i>Von der Quelle zum Strom — LLM-Betriebssysteme, die fließen.</i></p>
-<p align="center"><b>Module ergeben komponiert etwas Neues — build your stack.</b></p>
-<p align="center"><b>🇬🇧 <a href="README.md">English Version</a></b> (maßgeblich)</p>
-
-<p align="center">
-  <a href="https://github.com/ellmos-ai"><img src="https://img.shields.io/badge/Öffentliche_Repos-48-blue?style=flat-square&logo=github" alt="Öffentliche Repos"></a>
-  <a href="https://github.com/ellmos-ai/bach/blob/main/LICENSE"><img src="https://img.shields.io/badge/Lizenz-MIT-green?style=flat-square" alt="Lizenz MIT"></a>
-  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
-  <img src="https://img.shields.io/badge/Architektur-Local--First-orange?style=flat-square" alt="Local-First">
-  <img src="https://img.shields.io/badge/MCP-Aktiviert-purple?style=flat-square" alt="MCP Aktiviert">
-  <img src="https://img.shields.io/badge/Gedächtnis-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite Gedächtnis">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/banner-ellmos-top.svg" alt="ellmos-ai — textbasierte Betriebssysteme für LLMs" width="100%">
 </p>
 
 > **Hinweis:** Die englische Version dieser Seite ist die maßgebliche Referenz. Diese deutsche Übersetzung kann veraltet sein. Im Zweifelsfall gilt die [englische Version](README.md).
@@ -31,8 +17,8 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 |---|---|
 | Organisationsprofil | **[.github](https://github.com/ellmos-ai/.github)** - Org-Profil, Community-Health-Dateien und `llms.txt` |
 | Stack-Katalog | **[stacks](https://github.com/ellmos-ai/stacks)** - Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie |
-| Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - dazu **[gardener](https://github.com/ellmos-ai/gardener)** als minimale OS-Stufe im eigenständigen Betrieb; verzeichnet ist es unter [Die .MEMORY-Säule](#die-memory-säule) unten |
-| Gedächtnis-Säule | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[task-master](https://github.com/ellmos-ai/task-master)** - kuratiertes Session-Gedächtnis, organischer Cross-Source-Index und Task-Tracking; siehe [Die .MEMORY-Säule](#die-memory-säule) |
+| Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - dazu **[gardener](https://github.com/ellmos-ai/gardener)** als minimale OS-Stufe im eigenständigen Betrieb; verzeichnet ist es unter [Memory und Kontrolle](#memory-and-control) unten |
+| Gedächtnis-Säule | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/gardener)**, **[task-master](https://github.com/ellmos-ai/task-master)** - kuratiertes Session-Gedächtnis, organischer Cross-Source-Index und Task-Tracking; siehe [Memory und Kontrolle](#memory-and-control) |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
 | Agenten-Module und Orchestrierung | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - eigenständiger, aus BACH extrahierter Web-Scraper (get/links/forms/headers/extract/screenshot) mit SSRF-Schutz; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - lokale Dokument-Pseudonymisierung mit fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domänenneutraler Kern für anonymisierbare Berichts-Pipelines |
 | Agenten-Hooks, Evidenz und Koordination | **[memoryhooker](https://github.com/ellmos-ai/memoryhooker)** - verbindet lokale Gedächtnisquellen mit Coding-Agent-Lifecycle-Hooks (kein Netzwerk); **[workflowhooker](https://github.com/ellmos-ai/workflowhooker)** - konfigurierbare Workflow-Prüfungen an Agent-Lifecycle-Events, null Abhängigkeiten; **[memoryhooker-provenance](https://github.com/ellmos-ai/memoryhooker-provenance)** / **[workflowhooker-provenance](https://github.com/ellmos-ai/workflowhooker-provenance)** - Provenance-Varianten; **[prompt-evidence-collector](https://github.com/ellmos-ai/prompt-evidence-collector)** - lokaler Prompt-/Workflow-Evidenz-Speicher (aus ellmos-core extrahiert); **[roshambo](https://github.com/ellmos-ai/roshambo)** - Multi-Agenten-Koordinator: serialisierbare Leases + Outcome-Gedächtnis auf CockroachDB; **[roshambo-starmap](https://github.com/ellmos-ai/roshambo-starmap)** - gemeinsame Himmelskarte zu roshambo |
@@ -42,137 +28,64 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 | Evaluation, Vorlagen und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)**, **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichtem Tooling und LLM-freundlichem Projektgedächtnis; **[clirec](https://github.com/ellmos-ai/clirec)** - menschenlesbare GUI-Demo-Aufzeichnungen für CLI- und Agenten-Workflows |
 | Legacy-Archiv | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archivierter Vorgänger von BACH |
 
-## Die ellmos-Familie
+---
 
-Zwei Betriebssysteme — verschiedene Philosophien, selbes Ziel — plus eine Gedächtnis-Säule, in die sich beide einklinken können:
+## Skills
 
-<table>
-<tr>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-bach.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/bach">BACH</a></b><br>
-<i>Der Strom der alles vereint</i><br>
-Volles LLM-OS: 113+ Handler, 1870+ Skills, Agenten, GUI
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-rinnsal.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/rinnsal">Rinnsal</a></b><br>
-<i>Das Rinnsal</i><br>
-Leichtgewichtige LLM-Infrastruktur: Memory, Tasks, Connectors, Chains. Keine Abhängigkeiten.
-</td>
-<td align="center" width="33%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" width="200"><br>
-<b><a href="https://github.com/ellmos-ai/gardener">gardener</a></b><br>
-<i>Der Zen-Garten</i><br>
-Zwei gleichrangige Rollen: das <b>Gedächtnis-Modul</b> von ellmos (organischer Cross-Source-Index), sobald es in die Säule komponiert wird — und ein minimalistisches, LLM-natives <b>OS</b>, wenn es eigenständig läuft: 1 Tabelle, 4 Funktionen, FTS5-Suche.
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — steckbare Skill-Bibliothek" width="720"></a>
+</p>
 
-Welche Rolle greift, ist eine Frage des Einsatzes, keine Rangordnung: in die [.MEMORY-Säule](#die-memory-säule) unten komponiert, ist gardener deren organischer Cross-Source-Index; eigenständig betrieben, ist es die minimale OS-Stufe. Beides wird vollständig unterstützt.
+---
 
-## Die .MEMORY-Säule
+## Module
 
-ellmos-Gedächtnis ist nicht ein Repo, sondern drei fokussierte Module, die sich zum Standard-Gedächtnisstack der Familie zusammenfügen — importierbar als Abhängigkeit von jeder OS-Schicht (BACH, Rinnsal), statt dass jede ihr eigenes Memory-/Task-System baut:
+Unsere Empfehlungen — Bausteine, die sich in jedes ellmos-OS einfügen oder allein stehen. Ganz ohne Tabelle; die Banner sind die Links:
 
-| Modul | Rolle |
-|---|---|
-| **[usmc](https://github.com/ellmos-ai/usmc)** | Kuratiertes Session-/Kern-Gedächtnis — die **Fassade und der Einstiegspunkt** des Gedächtnissystems. Push-Modell: „was ich bewusst merke". |
-| **[gardener](https://github.com/ellmos-ai/gardener)** | Gedächtnis-**Zulieferer**: organisches Wachstum via absorb/decay, plus ein föderierter Cross-Source-FTS5-Index über `observe()`, der Treffer zur Quelle zurückzitiert. Pull-Modell: „indexieren, was ohnehin da ist". |
-| **[task-master](https://github.com/ellmos-ai/task-master)** | Eigenständiges SQLite-Task-Modul — Tasks bleiben vom Wissens-Gedächtnis getrennt. Keine Abhängigkeiten. |
+<p align="center">
+  <a href="https://github.com/ellmos-ai/swarm-ai"><img src="https://raw.githubusercontent.com/ellmos-ai/swarm-ai/master/assets/banner.png" alt="swarm-ai" width="680"></a><br>
+  <i>Parallele LLM-Koordination</i>
+</p>
 
-## Architektur: OS-Schichten, Gedächtnis-Säule & steckbare Module
+<p align="center">
+  <a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/build-your-users-mind/master/assets/banner.svg" alt="build-your-users-mind" width="680"></a><br>
+  <i>Nutzer-Theory-of-Mind: Entscheidungsavatare aus Interaktionslogs</i>
+</p>
 
-Das ellmos-Ökosystem besteht aus **Betriebssystemen**, der **.MEMORY-Säule** und **steckbaren Modulen**, die in jedes OS integriert — oder eigenständig genutzt werden können.
+<p align="center">
+  <a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="680"></a><br>
+  <i>Fetchen, extrahieren, strukturieren — eigenständiger Scraper mit SSRF-Schutz</i>
+</p>
 
-### Betriebssysteme
+<p align="center">
+  <a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.png" alt="report-forge" width="680"></a><br>
+  <i>Domänenneutraler Kern für anonymisierbare Berichts-Pipelines</i>
+</p>
 
-| | **BACH** | **Rinnsal** | **gardener** *(eigenständig als OS, komponiert als Gedächtnis-Modul)* |
-|---|---|---|---|
-| **Philosophie** | Maximalistisch: alles integriert | Leichtgewichtig: keine Abhängigkeiten | Minimalistisch: 1 Tabelle, 4 Funktionen |
-| **Datenbank** | SQLite (145+ Tabellen) | SQLite (strukturiert) | SQLite (1 Tabelle `everything` + FTS5) |
-| **Memory** | 5-Typen kognitives Modell | Facts/Notes/Lessons/Sessions | Vereinheitlicht (memo/lesson/recall + Decay) |
-| **Tasks** | Volles GTD (Priorität, Deadline, Tags) | Priorität + Status + Agent-Zuweisung | type='task' in everything |
-| **Tools** | 550+ spezialisierte Tools | CLI-Befehle | 6 Bridge+Skin-Tools (erweiterbar) |
-| **Skills/Agenten** | 1870+ Skills, 5 Boss-Agenten, 28 Experten | Keine | Keine (das LLM ist der Agent) |
-| **Connectors** | Telegram, E-Mail, WhatsApp | Telegram, Discord, Home Assistant | Geplant (v0.2+) |
-| **GUI** | PySide6 Desktop + Web | Nur CLI | Nur CLI |
-| **Selbsterweiterung** | `bach skills create` | Nein | Nein |
-| **Codebasis** | ~50.000+ Zeilen | ~2.000 Zeilen | ~1.600 Zeilen |
-| **Ideal für** | Power-User, All-in-one | Entwickler die leichte Infra wollen | Minimalisten, LLM-native Experimente; eigenständige Nutzung der .MEMORY-Säule |
+<p align="center">
+  <a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="680"></a><br>
+  <i>Medien- und Content-Workflows: lokaler AI-Video-, Audio- und Podcast-Editor mit transkriptbasierten Schnitten</i>
+</p>
 
-### Steckbare Module & Skills
+<p align="center">
+  <a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/master/logo.jpg" alt="clutch" width="220"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-marblerun.jpg" alt="MarbleRun" width="220"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-workflow-manager.jpg" alt="n8n-workflow-manager" width="220"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/wappen.jpg" alt="open-compute" width="220"></a><br>
+  <i><b>clutch</b> — anbieter-neutrales Modell-Routing · <b>MarbleRun</b> — Chain-Orchestrierung · <b>n8n-workflow-manager</b> — lokale n8n-Verwaltung · <b>open-compute</b> — Computer-Use-Kern mit Safety-Gate</i>
+</p>
 
-Diese Module und Skills können in jedes OS integriert oder eigenständig genutzt werden:
+Weitere Module, noch ohne eigenes Artwork: **[connectors](https://github.com/ellmos-ai/connectors)** (portable Messaging-Connectors) · **[anonymizer](https://github.com/ellmos-ai/anonymizer)** (Dokument-Pseudonymisierung mit fail-closed NER) · **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** (agentenfreundliche Projektdokumentation)
 
-<table>
-<tr>
-<td valign="top" width="55%">
+---
 
-**Module**
+## Bundles
 
-*(USMC, gardener und task-master leben jetzt in der [.MEMORY-Säule](#die-memory-säule) oben.)*
+Bundles deklarieren *welche Modulversionen zusammengehören*: versionierte, kompatibilitätsgeprüfte Dependency-Trees.
 
-| Modul | Zweck |
-|---|---|
-| **[clutch](https://github.com/ellmos-ai/clutch)** | Anbieter-neutrales Modell-Routing |
-| **[connectors](https://github.com/ellmos-ai/connectors)** | Portable Messaging-Connectors für AI-Agenten: Telegram, Discord, Signal, WhatsApp, Home Assistant und Webhook |
-| **[MarbleRun](https://github.com/ellmos-ai/MarbleRun)** | Chain-Orchestrierung |
-| **[swarm-ai](https://github.com/ellmos-ai/swarm-ai)** | Parallele LLM-Koordination |
-| **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Nutzer-Modellierung und Theory-of-Mind-Rezept für persönliche Entscheidungsavatare aus Interaktionslogs |
-| **[open-compute](https://github.com/ellmos-ai/open-compute)** | Modellagnostischer Computer-Use-Kern für Claude, OpenAI CUA und Mock-Backends mit normalisierten Koordinaten, kanonischem Action-Schema und zentralem Safety-Gate |
-| **[web-scraper](https://github.com/ellmos-ai/web-scraper)** | Eigenständiger, aus BACH extrahierter Web-Scraper — get/links/forms/headers/extract/screenshot, mit SSRF-Schutz |
-| **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** | Agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichten Checks und LLM-freundlichem Projektgedächtnis |
-| **[anonymizer](https://github.com/ellmos-ai/anonymizer)** | Lokale Dokument-Pseudonymisierung: fail-closed NER, authentifizierte Schlüsselverschlüsselung, Alles-oder-nichts-Veröffentlichungsvertrag |
-| **[report-forge](https://github.com/ellmos-ai/report-forge)** | Domänenneutraler Kern für anonymisierbare Berichts-Pipelines: Quellen extrahieren, schemagebundenen LLM-Prompt bauen, Word-Vorlage befüllen |
+Unsere ersten Bundle-Manifeste sind registriert, aber noch **rein deklarativ** (Draft-Lebenszyklus, keine Laufzeit-Autorität) — darum ist diese Sektion eine Vorschau. Erster öffentlicher Kandidat: das .MEMORY-Säulen-Set `usmc + gardener + task-master`.
 
-</td>
-<td valign="top" width="45%" align="center">
-
-**Skills**
-
-<a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-skills.jpg" width="220"></a><br>
-<b><a href="https://github.com/ellmos-ai/skills">skills</a></b><br>
-<i>Steckbare Skill-Bibliothek</i><br>
-Wiederverwendbare Agenten-Skills die sich in jedes ellmos-OS einfügen.<br>
-Entwicklung, Forschung, Bildung, Infrastruktur &mdash; nimm was du brauchst.
-
-</td>
-</tr>
-</table>
-
-### Medien- und Content-Workflows
-
-| Projekt | Zweck |
-|---|---|
-| **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** | Lokaler AI-Medien-Editor für Video, Audio und Podcasts: lokale Spracherkennung mit faster-whisper oder WhisperX, Scribe-kompatibles Transcript-JSON, video-use-Schnittlogik, Hyperframes-Bewegtgrafik und agentengeführte kreative Edits. |
-
-### Wie alles zusammenpasst
-
-```mermaid
-flowchart TD
-  subgraph OS["Wähle deine OS-Schicht"]
-    BACH["BACH (voll)<br/>1870+ Skills · 5 Boss-Agenten"]
-    RIN["Rinnsal (leicht)<br/>Keine Deps · Connectors · Chains · Events"]
-  end
-  subgraph MEM[".MEMORY-Säule"]
-    GAR["gardener — organischer Index (auch: minimales OS)"]
-    USMC["usmc — kuratiertes Gedächtnis"]
-    TASK["task-master — Tasks"]
-  end
-  subgraph MOD["Steckbare Module"]
-    CLUTCH["clutch — Modell-Routing"]
-    MARBLE["MarbleRun — Agent-Chains"]
-    SWARM["swarm-ai — Parallele LLMs"]
-    OCOMP["open-compute — Computer Use"]
-  end
-  BACH --- MEM
-  RIN --- MEM
-  BACH --- MOD
-  RIN --- MOD
-```
-
-Alle Projekte: **Python 3.10+** | **SQLite** | **MIT-Lizenz** | **Keine oder minimale Abhängigkeiten**
+**Coming soon.**
 
 ---
 
@@ -192,17 +105,50 @@ flowchart TD
 
 | Ebene | Definition | Öffentliches Beispiel |
 |---|---|---|
-| **Modul** | Ein Baustein: eine eigenständige Fähigkeit, unabhängig versioniert und für sich allein nützlich. | [gardener](https://github.com/ellmos-ai/gardener), [clutch](https://github.com/ellmos-ai/clutch), jeder [MCP-Server](#mcp-server) |
-| **Bundle** | Der Dependency-Tree aus Bausteinen — deklariert *was zusammengehört*, als versionierte, kompatibilitätsgeprüfte Menge. | Die [.MEMORY-Säule](#die-memory-säule): usmc + gardener + task-master |
+| **Modul** | Ein Baustein: eine eigenständige Fähigkeit, unabhängig versioniert und für sich allein nützlich. | [gardener](https://github.com/ellmos-ai/gardener), [clutch](https://github.com/ellmos-ai/clutch), jeder [MCP-Server](#mcp-servers) |
+| **Bundle** | Der Dependency-Tree aus Bausteinen — deklariert *was zusammengehört*, als versionierte, kompatibilitätsgeprüfte Menge. | Das .MEMORY-Säulen-Set: usmc + gardener + task-master ([Memory und Kontrolle](#memory-and-control)) |
 | **Stack** | Eine betreibbare Komposition mit Grenzen — deklariert *wie es zusammenläuft*: Daten, Netz, Mandanten, Ausführung. Größenklassen: `bundle`, `core`, `full`, `os-stack`. | [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack), [agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack) |
 | **System / OS** | Der Governance-Rahmen über den Stacks: Policies, Identität und Lebenszyklus für eine Installation oder Edition. | [bach](https://github.com/ellmos-ai/bach), [rinnsal](https://github.com/ellmos-ai/rinnsal), [ellmos](https://github.com/ellmos-ai/ellmos) |
 | **Fleet** | Die Multi-Host-Gruppierung derselben System-Instanzen — ein System, viele Maschinen, synchron gehalten. | [roshambo](https://github.com/ellmos-ai/roshambo) mit [sync-master](https://github.com/dev-bricks/sync-master) |
+
+**Skills spielen auf allen Ebenen eine Rolle**: Sie werden als steckbare Module ausgeliefert, in Bundles versioniert, in Stacks verdrahtet und von Systemen ihren Agenten bereitgestellt — eine Skill-Bibliothek, nützlich vom einzelnen Modul bis zur ganzen Fleet.
 
 Stacks deklarieren Komposition, statt Modul-Code zu kopieren — darum lässt sich jede Komposition zu etwas Neuem umverdrahten. Ein „Control Room" für den Betrieb ist etwa kein eigenes Produkt, sondern ein Stack, der die vorhandenen MCP-Zugangsflächen ([ControlCenter](https://github.com/ellmos-ai/ellmos-controlcenter-mcp), [ServerCommander](https://github.com/ellmos-ai/ellmos-servercommander-mcp), [Homebase](https://github.com/ellmos-ai/ellmos-homebase-mcp)) zu einer gemeinsamen Betriebssicht verbindet. Gleiche Module, neues Ganzes.
 
 ---
 
+## Unsere Premium-Systeme
+
+*more than a stack*
+
+Manche Kompositionen wachsen über die Stack-Ebene hinaus: Sie sind governierte Systeme mit eigener Identität, Policies und Lebenszyklus. Zwei davon sind öffentlich — die Banner sind die Links:
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — der Strom der alles vereint" width="720"></a><br>
+  <b>BACH</b> — <i>der Strom, der alles vereint</i>: das volle LLM-OS mit 113+ Handlern, 1870+ Skills, Boss-Agenten und GUI.
+</p>
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner.png" alt="Rinnsal — das Rinnsal" width="720"></a><br>
+  <b>Rinnsal</b> — <i>das Rinnsal</i>: leichtgewichtige LLM-Infrastruktur — Memory, Tasks, Connectors, Chains, i18n. Keine Abhängigkeiten.
+</p>
+
+Verschiedene Philosophien, selbes Ziel — und [gardener](https://github.com/ellmos-ai/gardener) ist im eigenständigen Betrieb zugleich die minimale OS-Stufe (siehe [Memory und Kontrolle](#memory-and-control)).
+
+---
+
 ## Stacks
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/stacks"><img src="https://raw.githubusercontent.com/ellmos-ai/stacks/main/assets/banner.png" alt="stacks — der Stack-Katalog" width="560"></a><br>
+  <i>Der Katalog und das gemeinsame Manifest-Schema</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/ellmos-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner.png" alt="ellmos-stack" width="560"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/agent-ops-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="560"></a><br>
+  <i>Die zwei aktiven öffentlichen Stacks: selbstgehostete Forschungsbasis & Agenten-Betrieb</i>
+</p>
 
 Stacks sind manifestgesteuerte Kompositionen (`ellmos.stack.v2`) — keine Code-Kopien, sondern deklarierte Komponenten. Zwei aktive öffentliche Stacks bilden den Kern der Familie, katalogisiert in einem dritten:
 
@@ -216,83 +162,92 @@ Etliche dieser Module sind bewusst **beides**: eigenständige Dev-Tools, die man
 
 ---
 
-## MCP-Server
+<a id="mcp-servers"></a>
 
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-codecommander.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-codecommander-mcp">CodeCommander</a></b><br>
-Code-Analyse & Refactoring<br>
-<code>npm i -g ellmos-codecommander-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-filecommander.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-filecommander-mcp">FileCommander</a></b><br>
-Dateiverwaltung & Batch-Operationen<br>
-<code>npm i -g ellmos-filecommander-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-clatcher.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-clatcher-mcp">Clatcher</a></b><br>
-Hilfswerkzeuge: Dateireparatur, Formatkonvertierung, Duplikaterkennung, Batch-Operationen<br>
-<code>npm i -g ellmos-clatcher-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-manager-mcp.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/n8n-manager-mcp">n8n Manager</a></b><br>
-n8n Workflow-Automatisierung<br>
-<code>npm i -g n8n-manager-mcp</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-controlcenter.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp">ControlCenter</a></b><br>
-MCP-Profil-Dashboard, Fähigkeits-Bundles & Rechte-Audits<br>
-<code>npm i -g ellmos-controlcenter-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-homebase-mcp">Homebase</a></b><br>
-Lokales LLM-Memory, Wissen, State & Orchestrierung<br>
-<code>npm i -g ellmos-homebase-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-servercommander.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-servercommander-mcp">ServerCommander</a></b><br>
-Server-Health-Checks, Log-Analyse, Deploy-Dry-runs & Mail-Status<br>
-<code>npm i -g ellmos-servercommander-mcp</code>
-</td>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-blender-use.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/ellmos-blender-use-mcp">Blender Use</a></b><br>
-Headless Blender-Asset-QA: Background-Läufe & FBX-Reimport-Prüfungen<br>
-<code>npm i -g ellmos-blender-use-mcp</code>
-</td>
-</tr>
-<tr>
-<td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/wappen-open-compute-mcp.jpg" width="160"><br>
-<b><a href="https://github.com/ellmos-ai/open-compute-mcp">open-compute-mcp</a></b><br>
-Computer-Use: Screenshot, safety-gated Aktionen & Windows-UIA-Zielen<br>
-<code>npx open-compute-mcp</code>
-</td>
-</tr>
-</table>
+## MCP-Server — *Stacks that talk*
 
-## Legacy
+Neun MCP-Server, eine Control-Plane — arrangiert als Baum um seinen Stamm: **ControlCenter**, das Dashboard und Audit-Zentrum, an das jeder Server berichtet.
 
-<table>
-<tr>
-<td align="center" width="100%">
-<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-recludos.jpg" width="180"><br>
-<b><a href="https://github.com/ellmos-ai/recludos-legacy">recludOS</a></b><br>
-<i>Archivierter Vorgänger von BACH</i><br>
-Historische Referenz
-</td>
-</tr>
-</table>
+<p align="center">
+  <a href="https://github.com/ellmos-ai/open-compute-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/wappen-open-compute-mcp.jpg" alt="open-compute-mcp" width="105" title="open-compute-mcp — Computer Use"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/ellmos-ai/ellmos-blender-use-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-blender-use.jpg" alt="Blender Use" width="115" title="Blender Use — Headless-Asset-QA"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/n8n-manager-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-manager-mcp.jpg" alt="n8n Manager" width="115" title="n8n Manager — Workflow-Automatisierung"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/ellmos-ai/ellmos-clatcher-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-clatcher.jpg" alt="Clatcher" width="125" title="Clatcher — Dateireparatur & Werkzeuge"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/ellmos-codecommander-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-codecommander.jpg" alt="CodeCommander" width="125" title="CodeCommander — Code-Analyse & Refactoring"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/ellmos-filecommander-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-filecommander.jpg" alt="FileCommander" width="125" title="FileCommander — Dateiverwaltung"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/ellmos-ai/ellmos-servercommander-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-servercommander.jpg" alt="ServerCommander" width="135" title="ServerCommander — Server-Gesundheit & Deploys"></a>&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/ellmos-homebase-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" alt="Homebase" width="135" title="Homebase — Memory & Orchestrierung"></a>&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-controlcenter.jpg" alt="ControlCenter" width="150" title="ControlCenter — der Stamm: MCP-Dashboard, Bundles & Rechte-Audits"></a>
+</p>
+
+| Server | Fokus | Installation |
+|---|---|---|
+| **[CodeCommander](https://github.com/ellmos-ai/ellmos-codecommander-mcp)** | Code-Analyse & Refactoring | `npm i -g ellmos-codecommander-mcp` |
+| **[FileCommander](https://github.com/ellmos-ai/ellmos-filecommander-mcp)** | Dateiverwaltung & Batch-Operationen | `npm i -g ellmos-filecommander-mcp` |
+| **[Clatcher](https://github.com/ellmos-ai/ellmos-clatcher-mcp)** | Dateireparatur, Formatkonvertierung, Duplikate | `npm i -g ellmos-clatcher-mcp` |
+| **[n8n Manager](https://github.com/ellmos-ai/n8n-manager-mcp)** | n8n Workflow-Automatisierung | `npm i -g n8n-manager-mcp` |
+| **[ControlCenter](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)** | MCP-Profil-Dashboard, Fähigkeits-Bundles & Rechte-Audits | `npm i -g ellmos-controlcenter-mcp` |
+| **[Homebase](https://github.com/ellmos-ai/ellmos-homebase-mcp)** | Lokales LLM-Memory, Wissen, State & Orchestrierung | `npm i -g ellmos-homebase-mcp` |
+| **[ServerCommander](https://github.com/ellmos-ai/ellmos-servercommander-mcp)** | Server-Health-Checks, Log-Analyse, Deploy-Dry-Runs | `npm i -g ellmos-servercommander-mcp` |
+| **[Blender Use](https://github.com/ellmos-ai/ellmos-blender-use-mcp)** | Headless Blender-Asset-QA | `npm i -g ellmos-blender-use-mcp` |
+| **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** | Computer Use: Screenshots, safety-gated Aktionen | `npx open-compute-mcp` |
+
+---
+
+<a id="memory-and-control"></a>
+
+## Memory und Kontrolle
+
+Die Gedächtnis-Säule der Familie und ihre Koordinations- & Kontrollmodule — zuerst ihre Banner, dann die Details:
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="560"></a><br>
+  <i>Kuratiertes Session-Gedächtnis — die Fassade des Gedächtnissystems</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/gardener"><img src="https://raw.githubusercontent.com/ellmos-ai/gardener/master/assets/banner.png" alt="gardener" width="560"></a><br>
+  <i>Der Zen-Garten — organischer Cross-Source-Index (und minimales OS, eigenständig)</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="560"></a><br>
+  <i>Eigenständiges SQLite-Task-Modul, null Abhängigkeiten</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/dev-bricks/ticket-master"><img src="https://raw.githubusercontent.com/dev-bricks/ticket-master/main/assets/banner.png" alt="ticket-master" width="560"></a><br>
+  <i>Strukturierte Tickets, geroutet an den passenden Agenten oder Provider</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/dev-bricks/lock-master"><img src="https://raw.githubusercontent.com/dev-bricks/lock-master/main/assets/banner.png" alt="lock-master" width="560"></a><br>
+  <i>Portables Multi-Agenten-Datei-Locking</i>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="560"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/ellmos-ai/workflowhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="560"></a><br>
+  <i>Agent-Lifecycle-Hooks — Gedächtnis-Recall und Workflow-Gates</i>
+</p>
+
+| Modul | Rolle |
+|---|---|
+| **[usmc](https://github.com/ellmos-ai/usmc)** | Kuratiertes Session-/Kern-Gedächtnis — die **Fassade und der Einstiegspunkt** des Gedächtnissystems. Push-Modell: „was ich bewusst merke". |
+| **[gardener](https://github.com/ellmos-ai/gardener)** | Gedächtnis-**Zulieferer**: organisches Wachstum via absorb/decay, plus ein föderierter Cross-Source-FTS5-Index über `observe()`, der Treffer zur Quelle zurückzitiert. Pull-Modell: „indexieren, was ohnehin da ist". Zugleich die minimale OS-Stufe im eigenständigen Betrieb. |
+| **[task-master](https://github.com/ellmos-ai/task-master)** | Eigenständiges SQLite-Task-Modul — Tasks bleiben vom Wissens-Gedächtnis getrennt. Keine Abhängigkeiten. |
+| **[ticket-master](https://github.com/dev-bricks/ticket-master)** (dev-bricks) | Cross-Platform-Ticket-Router und Triage-Konsole für mehrere Provider — strukturiert Tickets und leitet sie an den passenden KI-Anbieter oder Sub-Agenten. |
+| **[lock-master](https://github.com/dev-bricks/lock-master)** (dev-bricks) | Portables Multi-Agenten-Dateisperr-System — LOCK*.txt-basiertes Projekt-/Komponenten-Locking mit Scopes, Ablaufzeit und Stale-Cleanup. |
+| **[system-gap-master](https://github.com/ellmos-ai/system-gap-master)** | Serverloser Sync-Yard für Multi-Maschinen-, Multi-Agenten-Setups — Slot-Regel, getaktetes Tagesritual, Bootstrap-Runbook. Familie: lock-master, ticket-master. |
+| **[coma](https://github.com/ellmos-ai/coma)** | COMAS — COMmunication for Autonomous Subagents: Lebenszyklus-Schicht für Agenten (Spawn, Datei-Protokoll, Status-Polling). Null Abhängigkeiten, nur Standardbibliothek. |
+| **[memoryhooker](https://github.com/ellmos-ai/memoryhooker)** | Verbindet lokale Gedächtnisquellen mit Coding-Agent-Lifecycle-Hooks (kein Netzwerk). |
+| **[workflowhooker](https://github.com/ellmos-ai/workflowhooker)** | Konfigurierbare Workflow-Prüfungen an Agent-Lifecycle-Events, null Abhängigkeiten. |
 
 ---
 
@@ -311,4 +266,19 @@ Diese Projekte liegen in Schwester-Organisationen, sind aber besonders relevant 
 
 ---
 
-**[Vollständige Dokumentation](https://github.com/ellmos-ai/ellmos)** | **Lizenz:** MIT
+## Legacy
+
+<table>
+<tr>
+<td align="center" width="100%">
+<img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-recludos.jpg" width="180"><br>
+<b><a href="https://github.com/ellmos-ai/recludos-legacy">recludOS</a></b><br>
+<i>Archivierter Vorgänger von BACH</i><br>
+Historische Referenz
+</td>
+</tr>
+</table>
+
+---
+
+**[Vollständige Dokumentation](https://github.com/ellmos-ai/ellmos)** | **Lizenz:** MIT | **🇬🇧 [English Version](README.md)** (maßgeblich)

@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+
+      .wordmark {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 84px;
+        letter-spacing: -2px;
+      }
+      .tagline {
+        font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+        font-weight: 700;
+        font-size: 19px;
+        letter-spacing: 4px;
+      }
+      .subtext {
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 19px;
+      }
+      .badge-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+    </style>
+
+    <!-- Background Gradients -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="40%" stop-color="#0a0e1a"/>
+      <stop offset="85%" stop-color="#101828"/>
+      <stop offset="100%" stop-color="#0d1322"/>
+    </linearGradient>
+
+    <!-- Radial Ambient Glows -->
+    <radialGradient id="globe-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#0284c7" stop-opacity="0.18"/>
+      <stop offset="75%" stop-color="#3b82f6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="right-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5ff2e0" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#1d4ed8" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#050811" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Text Gradients -->
+    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f0f9ff"/>
+      <stop offset="80%" stop-color="#7dd3fc"/>
+      <stop offset="100%" stop-color="#5ff2e0"/>
+    </linearGradient>
+
+    <linearGradient id="cyan-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#5ff2e0"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </linearGradient>
+
+    <!-- Stream Gradients (Brand Motto: Spring to Stream) -->
+    <linearGradient id="stream-grad-1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.05"/>
+      <stop offset="25%" stop-color="#0284c7" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.9"/>
+      <stop offset="85%" stop-color="#5ff2e0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#7dd3fc" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="stream-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5ff2e0" stop-opacity="0.1"/>
+      <stop offset="30%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#1d4ed8" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Ring Stroke Gradients -->
+    <linearGradient id="ring-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5ff2e0" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="ring-grad-2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#0284c7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#5ff2e0" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5ff2e0" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#1e40af" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="dot-grid" x="0" y="0" width="36" height="36" patternUnits="userSpaceOnUse">
+      <circle cx="18" cy="18" r="1" fill="#38bdf8" opacity="0.12"/>
+    </pattern>
+
+    <pattern id="grid-lines" x="0" y="0" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M 72 0 L 0 0 0 72" fill="none" stroke="#1e293b" stroke-width="0.7" opacity="0.3"/>
+    </pattern>
+
+    <!-- Neon Glow Filters -->
+    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Background Fill & Grid Layers -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  <rect width="1200" height="630" fill="url(#grid-lines)"/>
+  <rect width="1200" height="630" fill="url(#dot-grid)"/>
+
+  <!-- 2. Large Background Ambient Glow Spheres -->
+  <circle cx="330" cy="315" r="320" fill="url(#globe-glow)"/>
+  <circle cx="850" cy="280" r="350" fill="url(#right-glow)"/>
+
+  <!-- 3. Flowing Water Curves / River Streams (Brand Motto: From a spring to a stream) -->
+  <!-- Spring origin point glowing near bottom-left -->
+  <circle cx="60" cy="540" r="40" fill="#22d3ee" opacity="0.08" filter="url(#neon-glow)"/>
+  <circle cx="60" cy="540" r="6" fill="#5ff2e0" opacity="0.8" filter="url(#soft-glow)"/>
+
+  <!-- Stream Ribbon 1 -->
+  <path d="M -20 580 C 120 540, 180 440, 260 380 C 330 330, 420 370, 520 310 C 640 240, 750 140, 920 120 C 1040 105, 1140 140, 1220 110" 
+        fill="none" stroke="url(#stream-grad-1)" stroke-width="3" filter="url(#soft-glow)"/>
+
+  <!-- Stream Ribbon 2 (Lower sweeping curve) -->
+  <path d="M 40 610 C 160 570, 220 480, 310 440 C 440 380, 580 430, 720 360 C 880 280, 1020 220, 1220 230" 
+        fill="none" stroke="url(#stream-grad-2)" stroke-width="2" stroke-dasharray="16 8 4 8" opacity="0.75"/>
+
+  <!-- Stream Ribbon 3 (Upper thin accent path) -->
+  <path d="M -40 500 C 90 460, 150 360, 240 310 C 320 260, 390 220, 480 200 C 620 170, 780 220, 960 160 C 1080 120, 1160 80, 1240 60" 
+        fill="none" stroke="#5ff2e0" stroke-width="1.2" stroke-dasharray="6 12 30 12" opacity="0.5" filter="url(#soft-glow)"/>
+
+  <!-- Stream Ribbon 4 (Fast dynamic flow line) -->
+  <path d="M 120 530 C 240 490, 300 400, 410 350 C 530 290, 680 340, 840 250 C 960 180, 1100 160, 1220 170" 
+        fill="none" stroke="#7dd3fc" stroke-width="1.8" opacity="0.4"/>
+
+  <!-- 4. NETWORK GLOBE MOTIF (Left of Center: CX=330, CY=315) -->
+  <g id="ellmos-globe" transform="translate(0, 0)">
+
+    <!-- Outer Motion & Orbital Rings -->
+    <ellipse cx="330" cy="315" rx="205" ry="76" transform="rotate(-28 330 315)" 
+             fill="none" stroke="url(#ring-grad-1)" stroke-width="1.8" stroke-dasharray="14 10 45 10 8 12" opacity="0.85" filter="url(#soft-glow)"/>
+             
+    <ellipse cx="330" cy="315" rx="225" ry="84" transform="rotate(34 330 315)" 
+             fill="none" stroke="url(#ring-grad-2)" stroke-width="1.4" stroke-dasharray="8 16 60 12" opacity="0.65"/>
+
+    <ellipse cx="330" cy="315" rx="175" ry="175" 
+             fill="none" stroke="#22d3ee" stroke-width="1" stroke-dasharray="3 9" opacity="0.35"/>
+
+    <!-- Orbital Motion Head Particles -->
+    <circle cx="162" cy="232" r="4.5" fill="#5ff2e0" filter="url(#neon-glow)"/>
+    <circle cx="486" cy="392" r="3.5" fill="#7dd3fc" filter="url(#soft-glow)"/>
+    <circle cx="495" cy="245" r="4" fill="#5ff2e0" filter="url(#neon-glow)"/>
+
+    <!-- Sphere Base Grid Arcs (Longitude / Latitude lines) -->
+    <g stroke="#22d3ee" fill="none" opacity="0.35" stroke-width="1.2">
+      <!-- Latitude Ellipses -->
+      <ellipse cx="330" cy="315" rx="140" ry="140" stroke="#38bdf8" stroke-width="1.5" opacity="0.5"/>
+      <ellipse cx="330" cy="315" rx="140" ry="46"/>
+      <ellipse cx="330" cy="315" rx="140" ry="92"/>
+      <ellipse cx="330" cy="315" rx="140" ry="125"/>
+
+      <!-- Longitude Ellipses -->
+      <ellipse cx="330" cy="315" rx="46" ry="140"/>
+      <ellipse cx="330" cy="315" rx="92" ry="140"/>
+      <ellipse cx="330" cy="315" rx="125" ry="140"/>
+    </g>
+
+    <!-- Network Constellation Connections & Edges -->
+    <g stroke="url(#cyan-gradient)" stroke-width="1.5" opacity="0.75">
+      <!-- Inner to outer node lines -->
+      <line x1="330" y1="175" x2="395" y2="200"/>
+      <line x1="395" y1="200" x2="445" y2="245"/>
+      <line x1="445" y1="245" x2="470" y2="315"/>
+      <line x1="470" y1="315" x2="445" y2="385"/>
+      <line x1="445" y1="385" x2="395" y2="430"/>
+      <line x1="395" y1="430" x2="330" y2="455"/>
+      <line x1="330" y1="455" x2="265" y2="430"/>
+      <line x1="265" y1="430" x2="215" y2="385"/>
+      <line x1="215" y1="385" x2="190" y2="315"/>
+      <line x1="190" y1="315" x2="215" y2="245"/>
+      <line x1="215" y1="245" x2="265" y2="200"/>
+      <line x1="265" y1="200" x2="330" y2="175"/>
+
+      <!-- Cross Network Lattice Chords -->
+      <line x1="265" y1="200" x2="330" y2="240" stroke-opacity="0.5"/>
+      <line x1="395" y1="200" x2="330" y2="240" stroke-opacity="0.5"/>
+      <line x1="445" y1="245" x2="390" y2="315" stroke-opacity="0.5"/>
+      <line x1="445" y1="385" x2="390" y2="315" stroke-opacity="0.5"/>
+      <line x1="395" y1="430" x2="330" y2="390" stroke-opacity="0.5"/>
+      <line x1="265" y1="430" x2="330" y2="390" stroke-opacity="0.5"/>
+      <line x1="215" y1="385" x2="270" y2="315" stroke-opacity="0.5"/>
+      <line x1="215" y1="245" x2="270" y2="315" stroke-opacity="0.5"/>
+
+      <!-- Radial spokes connecting to core badge -->
+      <line x1="330" y1="240" x2="330" y2="262" stroke="#5ff2e0" stroke-width="2"/>
+      <line x1="390" y1="315" x2="383" y2="315" stroke="#5ff2e0" stroke-width="2"/>
+      <line x1="330" y1="390" x2="330" y2="368" stroke="#5ff2e0" stroke-width="2"/>
+      <line x1="270" y1="315" x2="277" y2="315" stroke="#5ff2e0" stroke-width="2"/>
+    </g>
+
+    <!-- Network Nodes (Glowing Circles on Perimeter and Intersections) -->
+    <g fill="#5ff2e0" filter="url(#soft-glow)">
+      <circle cx="330" cy="175" r="5" fill="#ffffff"/>
+      <circle cx="395" cy="200" r="4.5"/>
+      <circle cx="445" cy="245" r="5" fill="#7dd3fc"/>
+      <circle cx="470" cy="315" r="5.5" fill="#ffffff"/>
+      <circle cx="445" cy="385" r="4.5"/>
+      <circle cx="395" cy="430" r="5" fill="#7dd3fc"/>
+      <circle cx="330" cy="455" r="5.5" fill="#ffffff"/>
+      <circle cx="265" cy="430" r="4.5"/>
+      <circle cx="215" cy="385" r="5" fill="#7dd3fc"/>
+      <circle cx="190" cy="315" r="5.5" fill="#ffffff"/>
+      <circle cx="215" cy="245" r="4.5"/>
+      <circle cx="265" cy="200" r="5" fill="#7dd3fc"/>
+
+      <!-- Inner Lattice Nodes -->
+      <circle cx="330" cy="240" r="4" fill="#5ff2e0"/>
+      <circle cx="390" cy="315" r="4" fill="#22d3ee"/>
+      <circle cx="330" cy="390" r="4" fill="#5ff2e0"/>
+      <circle cx="270" cy="315" r="4" fill="#22d3ee"/>
+    </g>
+
+    <!-- Central Core Badge (Dark disc with cyan glowing border & Terminal Prompt >_ ) -->
+    <!-- Outer aura ring -->
+    <circle cx="330" cy="315" r="54" fill="#081022" stroke="url(#cyan-gradient)" stroke-width="2.5" filter="url(#neon-glow)"/>
+    <!-- Inner dark container -->
+    <circle cx="330" cy="315" r="50" fill="#070c18" stroke="#1d4ed8" stroke-width="1.5"/>
+
+    <!-- Terminal Prompt Symbol >_ -->
+    <g id="terminal-prompt" filter="url(#neon-glow)">
+      <!-- Greater Than Symbol '>' -->
+      <path d="M 306 299 L 322 315 L 306 331" 
+            fill="none" stroke="#5ff2e0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- Cursor '_' -->
+      <line x1="331" y1="331" x2="350" y2="331" 
+            stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Floating Glowing Particles around Logo & Canvas -->
+  <g fill="#5ff2e0" filter="url(#soft-glow)">
+    <circle cx="140" cy="180" r="2.5" opacity="0.9"/>
+    <circle cx="100" cy="360" r="1.8" opacity="0.6"/>
+    <circle cx="220" cy="120" r="2" opacity="0.8"/>
+    <circle cx="480" cy="150" r="3" opacity="0.85"/>
+    <circle cx="520" cy="460" r="2" opacity="0.7"/>
+    <circle cx="280" cy="510" r="2.5" opacity="0.9"/>
+    <circle cx="420" cy="490" r="1.5" opacity="0.6"/>
+    <circle cx="570" cy="210" r="2.5" opacity="0.8"/>
+    <circle cx="1120" cy="390" r="2" opacity="0.7"/>
+    <circle cx="1040" cy="500" r="2.5" opacity="0.85"/>
+    <circle cx="980" cy="100" r="2" opacity="0.6"/>
+  </g>
+
+  <!-- 5. RIGHT SIDE BRANDING & WORDMARK -->
+  <g transform="translate(570, 0)">
+
+    <!-- Top Badge Header -->
+    <g transform="translate(0, 195)">
+      <!-- Badge Pillow Container -->
+      <rect x="0" y="0" width="168" height="28" rx="14" 
+            fill="#0c192e" stroke="#22d3ee" stroke-width="1.2" opacity="0.9" filter="url(#soft-glow)"/>
+      <circle cx="14" cy="14" r="4" fill="#5ff2e0" filter="url(#neon-glow)"/>
+      <text x="26" y="18" class="badge-text" fill="#7dd3fc">ELLMOS AI ORG</text>
+    </g>
+
+    <!-- Main Wordmark: ellmos-ai -->
+    <!-- Soft Glow Background Shadow for Text -->
+    <text x="-2" y="303" class="wordmark" fill="#22d3ee" opacity="0.3" filter="url(#neon-glow)">ellmos-ai</text>
+    
+    <!-- Main Gradient Text -->
+    <text x="0" y="305" class="wordmark" fill="url(#title-gradient)" filter="url(#subtle-shadow)">ellmos-ai</text>
+    
+    <!-- Decorative Glowing Dot on the 'i' or Accent Mark -->
+    <circle cx="363" cy="235" r="4.5" fill="#5ff2e0" filter="url(#neon-glow)"/>
+
+    <!-- Primary Tagline: TEXT-BASED OPERATING SYSTEMS FOR LLMs -->
+    <text x="2" y="352" class="tagline" fill="#22d3ee" filter="url(#soft-glow)">TEXT-BASED OPERATING SYSTEMS FOR LLMs</text>
+
+    <!-- Sleek Horizontal Divider -->
+    <line x1="2" y1="382" x2="520" y2="382" stroke="url(#divider-grad)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="2" cy="382" r="3" fill="#5ff2e0" filter="url(#soft-glow)"/>
+
+    <!-- Secondary Motto Line: From a spring to a stream — modules compose into something new. -->
+    <text x="2" y="422" class="subtext" fill="#94a3b8">
+      From a spring to a stream 
+      <tspan fill="#5ff2e0" font-style="normal" font-weight="600"> — </tspan> 
+      <tspan fill="#cbd5e1">modules compose into something new.</tspan>
+    </text>
+
+    <!-- Subtle Tech Accent Markers (Bottom Right Text Area) -->
+    <g transform="translate(480, 455)" stroke="#38bdf8" stroke-width="1.2" opacity="0.6">
+      <path d="M 0 0 L 15 0 L 15 15" fill="none"/>
+      <circle cx="15" cy="15" r="2" fill="#5ff2e0"/>
+    </g>
+  </g>
+
+  <!-- 6. Decorative Corner Tech Frames / Framing Elements -->
+  <!-- Top Left Corner Framing -->
+  <g transform="translate(30, 30)" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 0 25 L 0 0 L 25 0"/>
+    <circle cx="0" cy="0" r="2.5" fill="#5ff2e0"/>
+  </g>
+
+  <!-- Top Right Corner Framing & Status Indicator -->
+  <g transform="translate(1170, 30)" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 0 25 L 0 0 L -25 0"/>
+    <circle cx="0" cy="0" r="2.5" fill="#5ff2e0"/>
+  </g>
+
+  <!-- Bottom Left Corner Framing -->
+  <g transform="translate(30, 600)" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 0 -25 L 0 0 L 25 0"/>
+    <circle cx="0" cy="0" r="2.5" fill="#5ff2e0"/>
+  </g>
+
+  <!-- Bottom Right Corner Framing -->
+  <g transform="translate(1170, 600)" stroke="#22d3ee" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 0 -25 L 0 0 L -25 0"/>
+    <circle cx="0" cy="0" r="2.5" fill="#5ff2e0"/>
+  </g>
+
+</svg>
