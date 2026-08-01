@@ -12,9 +12,20 @@ SCALE = 2
 WIDTH = 1400 * SCALE
 HEIGHT = 1350 * SCALE
 
-# 1. Base Canvas - GitHub Dark Theme (#0d1117)
-base = Image.new('RGBA', (WIDTH, HEIGHT), (13, 17, 23, 255))
+# 1. Base Canvas - Transparent with crisp rounded Light Panel (#ffffff / #f8fafc)
+# Transparent PNG outer canvas allows native embedding; light card container provides contrast on both Light & Dark themes
+base = Image.new('RGBA', (WIDTH, HEIGHT), (0, 0, 0, 0))
 draw = ImageDraw.Draw(base)
+
+# Rounded white background panel for optimal presentation in GitHub Light & Dark modes
+panel_margin = 12 * SCALE
+draw.rounded_rectangle(
+    [panel_margin, panel_margin, WIDTH - panel_margin, HEIGHT - panel_margin],
+    radius=28 * SCALE,
+    fill=(255, 255, 255, 255),
+    outline=(226, 232, 240, 255),
+    width=2 * SCALE
+)
 
 # Load fonts (scaled 2x)
 try:
@@ -53,8 +64,8 @@ def get_bezier_curve(points, steps=120):
         curve.append((x * SCALE, y * SCALE))
     return curve
 
-# Helper for drawing organic ink curves (Tusche-Stil)
-def draw_ink_curve(draw_ctx, points, start_width, end_width, base_color=(230, 238, 248), opacity=220, num_strokes=10):
+# Helper for drawing organic ink curves (Tusche-Stil) - Inverted Black Ink
+def draw_ink_curve(draw_ctx, points, start_width, end_width, base_color=(15, 23, 42), opacity=220, num_strokes=10):
     curve_pts = get_bezier_curve(points, steps=120)
     r, g, b = base_color
     s_width = start_width * SCALE
@@ -74,9 +85,9 @@ def draw_ink_curve(draw_ctx, points, start_width, end_width, base_color=(230, 23
             dx2 = random.uniform(-jitter_w, jitter_w)
             dy2 = random.uniform(-jitter_w, jitter_w)
             
-            cr = max(0, min(255, int(r + random.randint(-10, 10))))
-            cg = max(0, min(255, int(g + random.randint(-10, 10))))
-            cb = max(0, min(255, int(b + random.randint(-5, 10))))
+            cr = max(0, min(255, int(r + random.randint(-8, 8))))
+            cg = max(0, min(255, int(g + random.randint(-8, 8))))
+            cb = max(0, min(255, int(b + random.randint(-5, 8))))
             co = max(30, min(255, int(opacity + random.randint(-25, 15))))
             stroke_w = max(1, int(w * random.uniform(0.35, 0.65)))
             
@@ -88,9 +99,9 @@ def draw_ink_curve(draw_ctx, points, start_width, end_width, base_color=(230, 23
 
 random.seed(20260801)
 
-# Color Palette for Bare Tree Ink Lineart
-INK_MAIN = (232, 240, 250)
-INK_SHADOW = (130, 148, 170)
+# Color Palette for Inverted Black Ink Tree Lineart
+INK_MAIN = (15, 23, 42)       # Deep slate black ink (#0f172a)
+INK_SHADOW = (71, 85, 105)    # Medium dark slate (#475569) for depth
 
 # --- 1. HEADER / TITLE ---
 title_text = "STAMMBAUM · MCP SERVER EVOLUTION"
@@ -98,29 +109,28 @@ subtitle_text = "Bottom-Up Evolution: Älteste Server unten (2026-02) → Jüngs
 
 tb = font_title.getbbox(title_text)
 tw = tb[2] - tb[0]
-draw.text(((WIDTH - tw)//2, 42 * SCALE), title_text, fill=(240, 246, 252, 255), font=font_title)
+draw.text(((WIDTH - tw)//2, 40 * SCALE), title_text, fill=(15, 23, 42, 255), font=font_title)
 
 sb = font_subtitle.getbbox(subtitle_text)
 sw = sb[2] - sb[0]
-draw.text(((WIDTH - sw)//2, 80 * SCALE), subtitle_text, fill=(56, 189, 248, 230), font=font_subtitle)
+draw.text(((WIDTH - sw)//2, 78 * SCALE), subtitle_text, fill=(2, 132, 199, 255), font=font_subtitle)
 
 # --- 2. TIMELINE HORIZON GUIDES ---
-# Non-colliding label Y coordinates
 level_guides = [
-    (1020, 1070, "UNTEN · ÄLTESTE MCP-SERVER (#1 — #4 · 2026-02 — 2026-03)", (52, 211, 153)),
-    (640, 460, "MITTE · EXPANSION & CONTROL PLANE (#5 — #7 · 2026-05 — 2026-06)", (56, 189, 248)),
-    (280, 160, "OBEN · JÜNGSTE ZWEIGE (#8 — #9 · 2026-07)", (192, 132, 252))
+    (1020, 1070, "UNTEN · ÄLTESTE MCP-SERVER (#1 — #4 · 2026-02 — 2026-03)", (5, 150, 105)),    # Emerald 600
+    (640, 430, "MITTE · EXPANSION & CONTROL PLANE (#5 — #7 · 2026-05 — 2026-06)", (2, 132, 199)),   # Sky 600
+    (280, 106, "OBEN · JÜNGSTE ZWEIGE (#8 — #9 · 2026-07)", (147, 51, 234))                        # Purple 600
 ]
 
 for ly, label_y, ltxt, lcolor in level_guides:
     # Dashed horizon line across canvas
     ly_s = ly * SCALE
-    for x in range(60 * SCALE, (1400 - 60) * SCALE, 24 * SCALE):
-        draw.line([(x, ly_s), (x + 12 * SCALE, ly_s)], fill=(lcolor[0], lcolor[1], lcolor[2], 40), width=1 * SCALE)
-    # Clean level title text
-    draw.text((70 * SCALE, label_y * SCALE), ltxt, fill=(lcolor[0], lcolor[1], lcolor[2], 210), font=font_level)
+    for x in range(50 * SCALE, (1400 - 50) * SCALE, 24 * SCALE):
+        draw.line([(x, ly_s), (x + 12 * SCALE, ly_s)], fill=(lcolor[0], lcolor[1], lcolor[2], 70), width=1 * SCALE)
+    # Clean level title text positioned with zero collision
+    draw.text((50 * SCALE, label_y * SCALE), ltxt, fill=(lcolor[0], lcolor[1], lcolor[2], 240), font=font_level)
 
-# --- 3. BARE TREE SILHOUETTE (TUSCHE-STAMM & ÄSTE) ---
+# --- 3. BARE TREE SILHOUETTE (SCHWARZE TUSCHE STAMM & ÄSTE) ---
 
 # Roots at ground (Y = 1310..1350)
 roots = [
@@ -133,7 +143,7 @@ for rpt in roots:
     draw_ink_curve(draw, rpt, 24, 5, INK_MAIN, opacity=200, num_strokes=12)
 
 # MAIN TRUNK (Stamm Y=1310 up to Y=980)
-draw_ink_curve(draw, [(700, 1310), (692, 1200), (708, 1100), (700, 980)], 42, 28, INK_MAIN, opacity=230, num_strokes=22)
+draw_ink_curve(draw, [(700, 1310), (692, 1200), (708, 1100), (700, 980)], 42, 28, INK_MAIN, opacity=240, num_strokes=22)
 draw_ink_curve(draw, [(696, 1310), (688, 1200), (704, 1100), (696, 980)], 22, 14, INK_SHADOW, opacity=160, num_strokes=12)
 
 # BOTTOM BRANCHES (Y ≈ 980 -> Nodes #1, #2, #3, #4)
@@ -144,7 +154,7 @@ draw_ink_curve(draw, [(700, 980), (800, 950), (900, 930)], 20, 12, INK_MAIN, num
 draw_ink_curve(draw, [(900, 930), (1060, 940), (1220, 970)], 12, 6, INK_MAIN, num_strokes=10)
 
 # MID TRUNK CONTINUATION (Y=980 up to Y=640)
-draw_ink_curve(draw, [(700, 980), (712, 860), (688, 740), (700, 640)], 26, 18, INK_MAIN, opacity=230, num_strokes=18)
+draw_ink_curve(draw, [(700, 980), (712, 860), (688, 740), (700, 640)], 26, 18, INK_MAIN, opacity=240, num_strokes=18)
 draw_ink_curve(draw, [(696, 980), (708, 860), (684, 740), (696, 640)], 14, 9, INK_SHADOW, opacity=150, num_strokes=10)
 
 # MID BRANCHES (Y ≈ 640 -> Nodes #5, #6, #7)
@@ -153,13 +163,13 @@ draw_ink_curve(draw, [(700, 640), (690, 570), (700, 510)], 16, 8, INK_MAIN, num_
 draw_ink_curve(draw, [(700, 640), (910, 610), (1120, 590)], 18, 8, INK_MAIN, num_strokes=14)
 
 # UPPER TRUNK CONTINUATION (Y=640 up to Y=320)
-draw_ink_curve(draw, [(700, 640), (708, 520), (694, 420), (700, 320)], 16, 9, INK_MAIN, opacity=220, num_strokes=14)
+draw_ink_curve(draw, [(700, 640), (708, 520), (694, 420), (700, 320)], 16, 9, INK_MAIN, opacity=230, num_strokes=14)
 
 # TOP CROWN BRANCHES (Y ≈ 320 -> Nodes #8, #9 & Bare Twigs)
 draw_ink_curve(draw, [(700, 320), (560, 280), (420, 250)], 12, 6, INK_MAIN, num_strokes=10)
 draw_ink_curve(draw, [(700, 320), (840, 280), (980, 250)], 12, 6, INK_MAIN, num_strokes=10)
 
-# BARE CROWN TWIGS (Kahle Zweige fanning out naturally without leaves)
+# BARE CROWN TWIGS
 bare_twigs = [
     # Top Crown bare twigs
     [(700, 320), (680, 240), (660, 170)],
@@ -183,7 +193,7 @@ bare_twigs = [
 ]
 
 for twg in bare_twigs:
-    draw_ink_curve(draw, twg, 5, 1.5, INK_MAIN, opacity=170, num_strokes=6)
+    draw_ink_curve(draw, twg, 5, 1.5, INK_MAIN, opacity=180, num_strokes=6)
 
 # --- 4. SERVER DATA (BOTTOM TO TOP ORDER) ---
 servers = [
@@ -293,13 +303,17 @@ servers = [
 
 image_map_coords = []
 
-# --- 5. COMPOSITE FRUIT LOGO NODES & BADGES ---
+# --- 5. COMPOSITE ENLARGED FRUIT LOGO NODES & BADGES ---
+# Fruit box enlarged to 144px at 1x resolution (1.5x enlargement from 96px)
+BOX_SIZE = 144 * SCALE
+INNER_SIZE = 118 * SCALE
+
 for s in servers:
     nx, ny = int(s['x'] * SCALE), int(s['y'] * SCALE)
     
     # Connection dot on branch
-    dot_r = 7 * SCALE
-    draw.ellipse([nx-dot_r, ny-dot_r, nx+dot_r, ny+dot_r], fill=(56, 189, 248, 255), outline=(240, 246, 252, 255), width=2*SCALE)
+    dot_r = 8 * SCALE
+    draw.ellipse([nx-dot_r, ny-dot_r, nx+dot_r, ny+dot_r], fill=(2, 132, 199, 255), outline=(15, 23, 42, 255), width=2*SCALE)
     
     logo_path = os.path.join('profile', s['logo'])
     if not os.path.exists(logo_path):
@@ -308,42 +322,53 @@ for s in servers:
         
     logo_img = Image.open(logo_path).convert('RGBA')
     
-    # Fruit Node Frame (Square with rounded corners / Fruit emblem)
-    box_w, box_h = 96 * SCALE, 96 * SCALE
+    # Color accents based on level
+    if s['level'] == 'bottom':
+        border_col = (16, 185, 129, 255)   # Emerald 500
+        glow_col = (16, 185, 129, 40)
+    elif s['level'] == 'mid':
+        border_col = (14, 165, 233, 255)   # Sky 500
+        glow_col = (14, 165, 233, 40)
+    else:
+        border_col = (168, 85, 247, 255)   # Purple 500
+        glow_col = (168, 85, 247, 40)
+        
+    # Fruit Node Frame (Enlarged 1.5x: 144x144 px at 1x)
+    box_w, box_h = BOX_SIZE, BOX_SIZE
     fruit_canvas = Image.new('RGBA', (box_w, box_h), (0, 0, 0, 0))
     fruit_draw = ImageDraw.Draw(fruit_canvas)
     
-    # Glow & Border based on level
-    if s['level'] == 'bottom':
-        border_col = (52, 211, 153, 255) # Emerald green
-    elif s['level'] == 'mid':
-        border_col = (56, 189, 248, 255) # Sky blue
-    else:
-        border_col = (192, 132, 252, 255) # Purple / Violet
-        
+    # Soft drop shadow / glow behind fruit frame
     fruit_draw.rounded_rectangle(
-        [2*SCALE, 2*SCALE, box_w-2*SCALE, box_h-2*SCALE],
-        radius=18 * SCALE,
-        fill=(22, 27, 34, 245),
-        outline=border_col,
-        width=3 * SCALE
+        [3*SCALE, 3*SCALE, box_w-3*SCALE, box_h-3*SCALE],
+        radius=26 * SCALE,
+        fill=glow_col,
+        outline=None
     )
     
-    # Inner logo fitting
-    inner_w, inner_h = 76 * SCALE, 76 * SCALE
-    logo_img.thumbnail((inner_w, inner_h), Image.Resampling.LANCZOS)
+    # Fruit Emblem Frame
+    fruit_draw.rounded_rectangle(
+        [2*SCALE, 2*SCALE, box_w-4*SCALE, box_h-4*SCALE],
+        radius=24 * SCALE,
+        fill=(255, 255, 255, 255),
+        outline=border_col,
+        width=4 * SCALE
+    )
+    
+    # Inner logo fitting (118x118 px at 1x scale)
+    logo_img.thumbnail((INNER_SIZE, INNER_SIZE), Image.Resampling.LANCZOS)
     
     mask = Image.new('L', logo_img.size, 0)
     mask_draw = ImageDraw.Draw(mask)
-    mask_draw.rounded_rectangle([0, 0, logo_img.size[0], logo_img.size[1]], radius=12 * SCALE, fill=255)
+    mask_draw.rounded_rectangle([0, 0, logo_img.size[0], logo_img.size[1]], radius=16 * SCALE, fill=255)
     
     px = (box_w - logo_img.size[0]) // 2
     py = (box_h - logo_img.size[1]) // 2
     fruit_canvas.paste(logo_img, (px, py), mask)
     
     # Stem line attaching fruit to branch node
-    fruit_top_y = ny - 42 * SCALE
-    draw.line([(nx, ny), (nx, fruit_top_y)], fill=border_col, width=3 * SCALE)
+    fruit_top_y = ny - 50 * SCALE
+    draw.line([(nx, ny), (nx, fruit_top_y)], fill=border_col, width=4 * SCALE)
     
     # Paste fruit onto main canvas
     fruit_left = nx - box_w//2
@@ -360,22 +385,23 @@ for s in servers:
     bs_box = font_badge_sub.getbbox(badge_sub)
     bs_w = bs_box[2] - bs_box[0]
     
-    badge_w = max(bt_w + bs_w + 16 * SCALE, 120 * SCALE)
-    badge_h = 28 * SCALE
+    badge_w = max(bt_w + bs_w + 20 * SCALE, 140 * SCALE)
+    badge_h = 32 * SCALE
     
     badge_center_x = nx
-    badge_center_y = fruit_top + box_h + 18 * SCALE
+    badge_center_y = fruit_top + box_h + 20 * SCALE
     
     bx1 = badge_center_x - badge_w // 2
     by1 = badge_center_y - badge_h // 2
     bx2 = bx1 + badge_w
     by2 = by1 + badge_h
     
+    # Badge container (light slate card with border)
     draw.rounded_rectangle(
         [bx1, by1, bx2, by2],
-        radius=8 * SCALE,
-        fill=(13, 17, 23, 245),
-        outline=(48, 54, 61, 230),
+        radius=10 * SCALE,
+        fill=(248, 250, 252, 255),
+        outline=(203, 213, 225, 255),
         width=int(1.5 * SCALE)
     )
     
@@ -383,14 +409,20 @@ for s in servers:
     total_text_w = bt_w + 6 * SCALE + bs_w
     start_tx = badge_center_x - total_text_w // 2
     
-    draw.text((start_tx, by1 + 5 * SCALE), badge_title, fill=(240, 246, 252, 255), font=font_badge_title)
-    draw.text((start_tx + bt_w + 6 * SCALE, by1 + 6 * SCALE), badge_sub, fill=border_col[:3] + (255,), font=font_badge_sub)
+    draw.text((start_tx, by1 + 6 * SCALE), badge_title, fill=(15, 23, 42, 255), font=font_badge_title)
+    draw.text((start_tx + bt_w + 6 * SCALE, by1 + 7 * SCALE), badge_sub, fill=border_col[:3] + (255,), font=font_badge_sub)
 
     # Save 1x scaled bounding box for HTML area map (covering fruit node + badge)
-    map_x1 = int((bx1 - 4 * SCALE) / SCALE)
-    map_y1 = int((fruit_top - 4 * SCALE) / SCALE)
-    map_x2 = int((bx2 + 4 * SCALE) / SCALE)
-    map_y2 = int((by2 + 4 * SCALE) / SCALE)
+    top_y_1x = fruit_top / SCALE
+    bot_y_1x = by2 / SCALE
+    left_x_1x = min(fruit_left / SCALE, bx1 / SCALE)
+    right_x_1x = max((fruit_left + box_w) / SCALE, bx2 / SCALE)
+    
+    map_x1 = int(left_x_1x - 4)
+    map_y1 = int(top_y_1x - 4)
+    map_x2 = int(right_x_1x + 4)
+    map_y2 = int(bot_y_1x + 4)
+    
     image_map_coords.append((s['id'], s['name'], s['badge_name'], s['date'], s['link'], map_x1, map_y1, map_x2, map_y2))
 
 # Resample down 2x with LANCZOS to 1400x1350 for crisp anti-aliased output
