@@ -136,24 +136,21 @@ Etliche dieser Module sind bewusst **beides**: eigenständige Dev-Tools, die man
 
 ## MCP-Server — *Stacks that talk*
 
-Neun MCP-Server, eine Control-Plane — arrangiert als Baum um seinen Stamm: **ControlCenter**, das Dashboard und Audit-Zentrum, an das jeder Server berichtet.
+Neun MCP-Server, eine Control-Plane — arrangiert als dynamischer Baum: **Stamm links**, Hauptast zweigt nach rechts ab, Nebenäste geordnet nach **Entstehungszeit** (früh links → spät rechts) mit Logos als Blätter an den Ästen.
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/open-compute-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/wappen-open-compute-mcp.jpg" alt="open-compute-mcp" width="105" title="open-compute-mcp — Computer Use"></a>
-</p>
-<p align="center">
-  <a href="https://github.com/ellmos-ai/ellmos-blender-use-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-blender-use.jpg" alt="Blender Use" width="115" title="Blender Use — Headless-Asset-QA"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/n8n-manager-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-n8n-manager-mcp.jpg" alt="n8n Manager" width="115" title="n8n Manager — Workflow-Automatisierung"></a>
-</p>
-<p align="center">
-  <a href="https://github.com/ellmos-ai/ellmos-clatcher-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-clatcher.jpg" alt="Clatcher" width="125" title="Clatcher — Dateireparatur & Werkzeuge"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/ellmos-codecommander-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-codecommander.jpg" alt="CodeCommander" width="125" title="CodeCommander — Code-Analyse & Refactoring"></a>&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/ellmos-filecommander-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-filecommander.jpg" alt="FileCommander" width="125" title="FileCommander — Dateiverwaltung"></a>
-</p>
-<p align="center">
-  <a href="https://github.com/ellmos-ai/ellmos-servercommander-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-servercommander.jpg" alt="ServerCommander" width="135" title="ServerCommander — Server-Gesundheit & Deploys"></a>&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/ellmos-homebase-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-homebase.jpg" alt="Homebase" width="135" title="Homebase — Memory & Orchestrierung"></a>&nbsp;&nbsp;
-  <a href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-ellmos-controlcenter.jpg" alt="ControlCenter" width="150" title="ControlCenter — der Stamm: MCP-Dashboard, Bundles & Rechte-Audits"></a>
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/mcp-tree.png" usemap="#mcp-tree-map" alt="MCP Server Baum — geordnet nach Entstehungszeit" width="100%">
+  <map name="mcp-tree-map">
+    <area shape="rect" coords="96,87,234,243" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — 1. Früh (2024)">
+    <area shape="rect" coords="235,162,385,318" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — 2. 2024">
+    <area shape="rect" coords="396,87,514,243" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — 3. 2024">
+    <area shape="rect" coords="545,162,655,318" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — 4. 2025">
+    <area shape="rect" coords="681,87,809,243" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — 5. 2025 (Trunk Hub)">
+    <area shape="rect" coords="835,162,945,318" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — 6. 2025">
+    <area shape="rect" coords="956,87,1114,243" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — 7. 2025">
+    <area shape="rect" coords="1125,162,1235,318" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — 8. 2026">
+    <area shape="rect" coords="1256,87,1384,243" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — 9. Spät (2026)">
+  </map>
 </p>
 
 | Server | Fokus | Installation |
