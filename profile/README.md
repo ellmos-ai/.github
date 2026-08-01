@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/fireflies.svg" alt="ellmos-ai — neon fireflies" width="100%">
+</p>
+
+<p align="center">
   <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/banner-ellmos-top.svg" alt="ellmos-ai — text-based operating systems for LLMs" width="100%">
 </p>
 
@@ -129,10 +133,10 @@ Different philosophies, same goal — and [gardener](https://github.com/ellmos-a
   </a>
   <br>
   <a href="https://github.com/ellmos-ai/ellmos-stack">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="430" style="border:2px solid #34d399;box-shadow:0 0 12px rgba(52,211,153,0.45);border-radius:8px;margin:5px">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="430" height="120" style="border:2px solid #34d399;box-shadow:0 0 12px rgba(52,211,153,0.45);border-radius:8px;margin:5px;object-fit:cover">
   </a>
   <a href="https://github.com/ellmos-ai/agent-ops-stack">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="430" style="border:2px solid #38bdf8;box-shadow:0 0 12px rgba(56,189,248,0.45);border-radius:8px;margin:5px">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="430" height="120" style="border:2px solid #38bdf8;box-shadow:0 0 12px rgba(56,189,248,0.45);border-radius:8px;margin:5px;object-fit:cover">
   </a>
 </p>
 
