@@ -116,7 +116,18 @@ Different philosophies, same goal — and [gardener](https://github.com/ellmos-a
 
 ## Stacks
 
-<p align="center"><a href="https://github.com/ellmos-ai/ellmos-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="560" style="border:2px solid #34d399;border-radius:8px;display:block;margin:0 auto 10px auto"></a><a href="https://github.com/ellmos-ai/stacks"><img src="https://raw.githubusercontent.com/ellmos-ai/stacks/main/assets/banner.png" alt="stacks — the stack catalog" width="440" style="border:2px solid #38bdf8;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/agent-ops-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="440" style="border:2px solid #a855f7;border-radius:8px;margin:0"></a></p>
+<p align="center">
+  <a href="https://github.com/ellmos-ai/stacks">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/stacks-umbrella-banner.png" alt="stacks — Umbrella Catalog &amp; Framework" width="880" style="display:block;margin:0 auto 15px auto">
+  </a>
+  <br>
+  <a href="https://github.com/ellmos-ai/ellmos-stack">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="460" style="border:2px solid #34d399;box-shadow:0 0 12px rgba(52,211,153,0.45);border-radius:8px;margin:6px">
+  </a>
+  <a href="https://github.com/ellmos-ai/agent-ops-stack">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="440" style="border:2px solid #a855f7;box-shadow:0 0 12px rgba(168,85,247,0.45);border-radius:8px;margin:6px">
+  </a>
+</p>
 
 Stacks are manifest-driven compositions (`ellmos.stack.v2`) — no code copies, just declared components. Two active public stacks anchor the family, catalogued in a third:
 

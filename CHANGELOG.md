@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Created colorful Stacks Umbrella Banner (`stacks-umbrella-banner.png` / `.svg`) with true 32-bit alpha transparency, featuring a vibrant canopy (green → blue → purple) with white typography, rain details, and a translucent rainbow protection shelter. (Ref: T-20260801-13)
+- Restructured Stacks section in `profile/README.md` and `profile/README_de.md` paritatively, placing the Umbrella Banner at the top and sheltering `ellmos-stack` and `agent-ops-stack` tiles below with neon glow frames. (Ref: T-20260801-13)
+
 ## [1.0.3] - 2026-08-01
 
 ### Fixed
