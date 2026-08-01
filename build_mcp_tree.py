@@ -151,7 +151,7 @@ servers = [
     {
         'id': 'filecommander',
         'name': 'FileCommander',
-        'date': '1. Früh (2024)',
+        'date': '2026-02',
         'logo': 'logo-ellmos-filecommander.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-filecommander-mcp',
         'x': 165,
@@ -162,7 +162,7 @@ servers = [
     {
         'id': 'codecommander',
         'name': 'CodeCommander',
-        'date': '2. 2024',
+        'date': '2026-02',
         'logo': 'logo-ellmos-codecommander.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-codecommander-mcp',
         'x': 310,
@@ -173,7 +173,7 @@ servers = [
     {
         'id': 'n8n-manager',
         'name': 'n8n Manager',
-        'date': '3. 2024',
+        'date': '2026-02',
         'logo': 'logo-n8n-manager-mcp.jpg',
         'link': 'https://github.com/ellmos-ai/n8n-manager-mcp',
         'x': 455,
@@ -184,7 +184,7 @@ servers = [
     {
         'id': 'clatcher',
         'name': 'Clatcher',
-        'date': '4. 2025',
+        'date': '2026-03',
         'logo': 'logo-clatcher.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-clatcher-mcp',
         'x': 600,
@@ -195,7 +195,7 @@ servers = [
     {
         'id': 'controlcenter',
         'name': 'ControlCenter',
-        'date': '5. 2025 (Trunk Hub)',
+        'date': '2026-05',
         'logo': 'logo-ellmos-controlcenter.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-controlcenter-mcp',
         'x': 745,
@@ -206,7 +206,7 @@ servers = [
     {
         'id': 'homebase',
         'name': 'Homebase',
-        'date': '6. 2025',
+        'date': '2026-06',
         'logo': 'logo-ellmos-homebase.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-homebase-mcp',
         'x': 890,
@@ -217,7 +217,7 @@ servers = [
     {
         'id': 'servercommander',
         'name': 'ServerCommander',
-        'date': '7. 2025',
+        'date': '2026-06',
         'logo': 'logo-ellmos-servercommander.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-servercommander-mcp',
         'x': 1035,
@@ -228,7 +228,7 @@ servers = [
     {
         'id': 'blender-use',
         'name': 'Blender Use',
-        'date': '8. 2026',
+        'date': '2026-07',
         'logo': 'logo-ellmos-blender-use.jpg',
         'link': 'https://github.com/ellmos-ai/ellmos-blender-use-mcp',
         'x': 1180,
@@ -239,7 +239,7 @@ servers = [
     {
         'id': 'open-compute',
         'name': 'open-compute',
-        'date': '9. Spät (2026)',
+        'date': '2026-07',
         'logo': 'wappen-open-compute-mcp.jpg',
         'link': 'https://github.com/ellmos-ai/open-compute-mcp',
         'x': 1320,
@@ -336,7 +336,7 @@ for idx, s in enumerate(servers):
     
     # Draw Server Title & Subtitle Badge above leaf
     title = s['name']
-    subtitle = f"#{idx+1} · {s['date'].split('.')[1].strip()}"
+    subtitle = f"#{idx+1} · {s['date']}"
     
     t_box = font_title.getbbox(title)
     t_w = t_box[2] - t_box[0]

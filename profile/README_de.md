@@ -141,15 +141,15 @@ Neun MCP-Server, eine Control-Plane — arrangiert als dynamischer Baum: **Stamm
 <p align="center">
   <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/mcp-tree.png" usemap="#mcp-tree-map" alt="MCP Server Baum — geordnet nach Entstehungszeit" width="100%">
   <map name="mcp-tree-map">
-    <area shape="rect" coords="96,87,234,243" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — 1. Früh (2024)">
-    <area shape="rect" coords="235,162,385,318" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — 2. 2024">
-    <area shape="rect" coords="396,87,514,243" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — 3. 2024">
-    <area shape="rect" coords="545,162,655,318" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — 4. 2025">
-    <area shape="rect" coords="681,87,809,243" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — 5. 2025 (Trunk Hub)">
-    <area shape="rect" coords="835,162,945,318" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — 6. 2025">
-    <area shape="rect" coords="956,87,1114,243" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — 7. 2025">
-    <area shape="rect" coords="1125,162,1235,318" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — 8. 2026">
-    <area shape="rect" coords="1256,87,1384,243" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — 9. Spät (2026)">
+    <area shape="rect" coords="96,87,234,243" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — #1 · 2026-02">
+    <area shape="rect" coords="235,162,385,318" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — #2 · 2026-02">
+    <area shape="rect" coords="396,87,514,243" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — #3 · 2026-02">
+    <area shape="rect" coords="545,162,655,318" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — #4 · 2026-03">
+    <area shape="rect" coords="681,87,809,243" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — #5 · 2026-05">
+    <area shape="rect" coords="835,162,945,318" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — #6 · 2026-06">
+    <area shape="rect" coords="956,87,1114,243" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — #7 · 2026-06">
+    <area shape="rect" coords="1125,162,1235,318" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — #8 · 2026-07">
+    <area shape="rect" coords="1256,87,1384,243" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — #9 · 2026-07">
   </map>
 </p>
 

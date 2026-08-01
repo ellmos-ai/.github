@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-08-01
+
+### Fixed
+- Corrected creation date labels on MCP tree diagram (`mcp-tree.png`) and HTML image map tooltips in `profile/README.md` & `profile/README_de.md` to verified repository creation dates (2026-02 to 2026-07). (Ref: T-20260801-13)
+
 ## [1.0.2] - 2026-07-30
 
 ### Maintenance & Hygiene
