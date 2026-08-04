@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-07-26 (38 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-04 (48 repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -76,6 +76,20 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Domain-neutral core for anonymizable report pipelines: extract sources, build a schema-bound LLM prompt, fill a Word template.
 - web-scraper: https://github.com/ellmos-ai/web-scraper
   Standalone web scraper extracted from BACH: get/links/forms/headers/extract/screenshot, Python stdlib core with optional extras and an SSRF guard.
+- coma: https://github.com/ellmos-ai/coma
+  COMAS (COMmunication for Autonomous Subagents): agent lifecycle layer (spawn, file protocol, status polling). Zero dependencies, standard library only.
+- companion-for-agy: https://github.com/ellmos-ai/companion-for-agy
+  PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction for Claude Code, Codex, and CI pipelines.
+- memoryhooker: https://github.com/ellmos-ai/memoryhooker
+  Connects local memory sources to coding-agent lifecycle hooks (no network).
+- roshambo: https://github.com/ellmos-ai/roshambo
+  Multi-agent coordinator: serializable leases + outcome memory on CockroachDB for agents that do not know about each other.
+- roshambo-starmap: https://github.com/ellmos-ai/roshambo-starmap
+  Shared sky/map companion to roshambo.
+- sqlite-transit-sync: https://github.com/ellmos-ai/sqlite-transit-sync
+  Local-first SQLite synchronization through verified snapshots and configurable row-level merge policies. Zero dependencies, Python 3.10+.
+- system-gap-master: https://github.com/ellmos-ai/system-gap-master
+  Serverless sync yard for multi-machine, multi-agent AI setups (slot rule, gated daily ritual, bootstrap runbook).
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
 - knowledgedigest: https://github.com/file-bricks/knowledgedigest
@@ -164,4 +178,4 @@ web-scraper SSRF guard get links forms extract screenshot
 clirec CLI agent GUI demonstration recordings
 ```
 
-## Last-checked: 2026-07-26
+## Last-checked: 2026-08-04
