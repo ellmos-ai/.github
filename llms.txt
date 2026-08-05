@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-04 (48 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-05 (51 repos, 1 archived); archived repositories are marked.
 
 ## Primary entry points
 
@@ -90,6 +90,10 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Local-first SQLite synchronization through verified snapshots and configurable row-level merge policies. Zero dependencies, Python 3.10+.
 - system-gap-master: https://github.com/ellmos-ai/system-gap-master
   Serverless sync yard for multi-machine, multi-agent AI setups (slot rule, gated daily ritual, bootstrap runbook).
+- ticket-master: https://github.com/ellmos-ai/ticket-master
+  Cross-platform multi-provider ticket router and triage console for CLI coding agents: files structured tickets, scores them, and routes to Claude Code, Codex and Gemini.
+- lock-master: https://github.com/ellmos-ai/lock-master
+  Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
 - knowledgedigest: https://github.com/file-bricks/knowledgedigest
@@ -104,7 +108,7 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 - ellmos-stack: https://github.com/ellmos-ai/ellmos-stack
   Self-hosted local-first AI research stack: Ollama, n8n, Rinnsal memory, KnowledgeDigest (file-bricks) search, and Docker Compose automation.
 - agent-ops-stack: https://github.com/ellmos-ai/agent-ops-stack
-  Manifest-driven composition of the local agent-ops ecosystem: ticket-master and lock-master and sync-master (dev-bricks), build-your-users-mind, skills, and an MCP control plane for CLI coding agents.
+  Manifest-driven composition of the local agent-ops ecosystem: ticket-master, lock-master, system-gap-master, build-your-users-mind, skills, and an MCP control plane for CLI coding agents.
 
 ## Domain tools
 
@@ -121,6 +125,32 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
   Local AI media-editing orchestrator for video, audio and podcasts with faster-whisper or WhisperX transcription, Scribe-compatible transcript JSON, video-use cuts, Hyperframes motion graphics and agent-guided edits.
 - workflowhooker: https://github.com/ellmos-ai/workflowhooker
   Git hook and webhook event trigger automation engine.
+
+## Agents
+
+Telephone agents built on CALL-E (https://github.com/CALLE-AI/call-e-integrations). Each takes a spoken task off a person's hands and reports what actually happened, including nonresponse.
+
+- hungrycall: https://github.com/ellmos-ai/hungrycall
+  Sequential call cascade for food delivery, table reservations and pickup: ranks candidates against the user's boundaries, calls them one after another and exits early on the first success. Ships the generalized calling cascade pattern separately from the food use case.
+- ringedingeding: https://github.com/ellmos-ai/ringedingeding
+  Multi-recipient response aggregator: asks one question to several people in your own circle and merges the replies into a single result — intersected availability for a date, or the leading tendency with countervoices and reasons. Never turns dissent into a false consensus.
+- researchcall: https://github.com/ellmos-ai/researchcall
+  Standardized telephone survey runner with methodological honesty: eight gated stations from research question to reporting, randomized sampling and time windows, one call per person by default, and nonresponse reported without collapsing distinct outcomes. Fully local dry run by default.
+
+## Competition entries
+
+Projects built for public hackathons and competitions. Listed as entries; no placement claimed.
+
+- hungrycall, ringedingeding, researchcall: CALL-E "Your Code Is Calling" (Devpost, 2026)
+  Three telephone agents on the CALL-E platform; see Agents above.
+- roshambo: https://github.com/ellmos-ai/roshambo — CockroachDB x AWS Hackathon (2026-07)
+  Multi-agent coordinator: serializable leases and outcome memory on CockroachDB, with an MCP interface.
+- roshambo-starmap: https://github.com/ellmos-ai/roshambo-starmap — CockroachDB x AWS Hackathon (2026-07)
+  Evidence artefact of the accompanying multi-vendor swarm run: a replayable field record of 27 agents coordinating through roshambo across two machines.
+- build-your-users-mind: https://github.com/ellmos-ai/build-your-users-mind — agent recipe entry
+  Recipe for any AI agent to build a self-improving theory-of-mind model of its user from interaction logs.
+- bach: https://github.com/ellmos-ai/bach — agent OS entry
+  The full local-first LLM operating system: memory, handlers, skills, agents and GUI.
 
 ## Organization and maintenance
 
@@ -176,6 +206,12 @@ report-forge anonymizable report pipeline docx schema
 worksheet-generator ICF pedagogical therapeutic worksheets
 web-scraper SSRF guard get links forms extract screenshot
 clirec CLI agent GUI demonstration recordings
+CALL-E telephone agent Your Code Is Calling
+hungrycall calling cascade food delivery reservation
+ringedingeding multi recipient response aggregator
+researchcall standardized telephone survey nonresponse
+roshambo CockroachDB serializable lease multi-agent coordinator
+ticket-master lock-master agent operations tooling
 ```
 
-## Last-checked: 2026-08-04
+## Last-checked: 2026-08-05
