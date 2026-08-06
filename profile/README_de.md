@@ -217,6 +217,10 @@ Die Gedächtnis-Säule der Familie und ihre Koordinations- & Kontrollmodule — 
 
 Telefon-Agenten auf Basis von **[CALL-E](https://github.com/CALLE-AI/call-e-integrations)** — jeder nimmt einer Person eine gesprochene Aufgabe ab und meldet zurück, was tatsächlich passiert ist, auch wenn niemand abgehoben hat.
 
+
+[![hungrycall](https://raw.githubusercontent.com/ellmos-ai/hungrycall/main/banner.png)](https://github.com/ellmos-ai/hungrycall)
+[![ringedingeding](https://raw.githubusercontent.com/ellmos-ai/ringedingeding/main/banner.png)](https://github.com/ellmos-ai/ringedingeding)
+[![researchcall](https://raw.githubusercontent.com/ellmos-ai/researchcall/main/banner.png)](https://github.com/ellmos-ai/researchcall)
 | Agent | Was er tut |
 |---|---|
 | **[hungrycall](https://github.com/ellmos-ai/hungrycall)** | Eine sequenzielle Anrufkaskade für Essenslieferung, Tischreservierung und Abholung: ordnet die in Frage kommenden Restaurants nach den Vorgaben des Nutzers, ruft sie nacheinander an und bricht beim ersten Erfolg ab. Das verallgemeinerte Kaskadenmuster ist getrennt vom Essens-Anwendungsfall dokumentiert. |

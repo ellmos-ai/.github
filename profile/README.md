@@ -215,6 +215,10 @@ The family's memory pillar and its coordination & control modules — first thei
 
 Telephone agents built on **[CALL-E](https://github.com/CALLE-AI/call-e-integrations)** — each one takes a spoken task off a person's hands and reports back what actually happened, including when nobody picked up.
 
+[![hungrycall](https://raw.githubusercontent.com/ellmos-ai/hungrycall/main/banner.png)](https://github.com/ellmos-ai/hungrycall)
+[![ringedingeding](https://raw.githubusercontent.com/ellmos-ai/ringedingeding/main/banner.png)](https://github.com/ellmos-ai/ringedingeding)
+[![researchcall](https://raw.githubusercontent.com/ellmos-ai/researchcall/main/banner.png)](https://github.com/ellmos-ai/researchcall)
+
 | Agent | What it does |
 |---|---|
 | **[hungrycall](https://github.com/ellmos-ai/hungrycall)** | A sequential call cascade for food delivery, table reservations and pickup: ranks candidate restaurants against the user's boundaries, then calls them one after another and stops at the first success. The generalized cascade pattern is documented separately from the food use case. |
