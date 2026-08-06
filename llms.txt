@@ -130,6 +130,8 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 
 Telephone agents built on CALL-E (https://github.com/CALLE-AI/call-e-integrations). Each takes a spoken task off a person's hands and reports what actually happened, including nonresponse.
 
+Agent roles also ship inside modules: ticket-master (TICKET-MASTER router/triage agent), task-master (TASKSOLVER/TASKWRITER/MAINTAINER roles), build-your-users-mind (decision avatar), law-checker (statute embodiment agents plus first-look assessment agent), ai-media-editor (agent-driven creative editing). Agent infrastructure (coordination, orchestration, lifecycle): swarm-ai, roshambo, MarbleRun, coma.
+
 - hungrycall: https://github.com/ellmos-ai/hungrycall
   Sequential call cascade for food delivery, table reservations and pickup: ranks candidates against the user's boundaries, calls them one after another and exits early on the first success. Ships the generalized calling cascade pattern separately from the food use case.
 - ringedingeding: https://github.com/ellmos-ai/ringedingeding
