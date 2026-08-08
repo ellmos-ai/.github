@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-05 (51 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists the released public ellmos-ai repositories verified on 2026-08-08 (54 indexed entries, 1 archived); archived repositories are marked. A live API scan found 54 active public repositories; `bundles` is intentionally omitted because its upstream README marks it as a private, wave-by-wave build.
 
 ## Primary entry points
 
@@ -88,6 +88,12 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Shared sky/map companion to roshambo.
 - sqlite-transit-sync: https://github.com/ellmos-ai/sqlite-transit-sync
   Local-first SQLite synchronization through verified snapshots and configurable row-level merge policies. Zero dependencies, Python 3.10+.
+- ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
+  Standalone Python scheduler and run recorder for modular ellmos stacks, with SQLite state, leases, authority receipts and strict output encoding.
+- policy-registry: https://github.com/ellmos-ai/policy-registry
+  Local-first pointer registry for policies, rules and decisions; stores metadata and SHA-256 references while canonical source text remains authoritative.
+- system-explorer: https://github.com/ellmos-ai/system-explorer
+  Evidence-based maps of desired system functions and the skills, repositories, interfaces, stacks or actors that carry them.
 - system-gap-master: https://github.com/ellmos-ai/system-gap-master
   Serverless sync yard for multi-machine, multi-agent AI setups (slot rule, gated daily ritual, bootstrap runbook).
 - ticket-master: https://github.com/ellmos-ai/ticket-master
@@ -216,4 +222,4 @@ roshambo CockroachDB serializable lease multi-agent coordinator
 ticket-master lock-master agent operations tooling
 ```
 
-## Last-checked: 2026-08-05
+## Last-checked: 2026-08-08

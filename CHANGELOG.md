@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed — 2026-08-08
+
+- Re-read the public `ellmos-ai` organization through the GitHub API: 54 active and one archived repository were visible. Added the now-public, documented modules `ellmos-scheduler`, `policy-registry` and `system-explorer` to every index surface, bringing the released index to 53 active plus one archived entry. The public `bundles` repository remains excluded because its upstream README explicitly describes a private, wave-by-wave build rather than a released project.
+- Recorded the live verification date and preserved `recludos-legacy` as the sole explicitly archived reference; no push or other public write was performed.
+
 ### Added — 2026-08-05
 
 - New **Competition Entries** section (German: *Wettbewerbsbeiträge*) in `profile/README.md`, `profile/README_de.md`, `README.md` and `llms.txt`: the three CALL-E entries, roshambo and roshambo-starmap (CockroachDB x AWS Hackathon 2026-07), build-your-users-mind and bach. Listed as entries only; no placements claimed.
@@ -14,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed — 2026-08-05
 
-- Live index reconciliation against the GitHub API: removed seven entries that are not public repositories (`memoryhooker-provenance`, `workflowhooker-provenance`, `prompt-evidence-collector`, `ellmos-core`, `ellmos-development-system`, `policy-registry`, `system-explorer`).
+- Live index reconciliation against the GitHub API at that snapshot: removed seven entries that were not public repositories (`memoryhooker-provenance`, `workflowhooker-provenance`, `prompt-evidence-collector`, `ellmos-core`, `ellmos-development-system`, `policy-registry`, `system-explorer`). The current 2026-08-08 readback re-adds the latter two after they became public.
 - Corrected stale cross-org links: `ticket-master`, `lock-master` and `companion-for-agy` now resolve inside `ellmos-ai`, and `dev-bricks/sync-master` is `ellmos-ai/system-gap-master`. Removed them from "Related Projects in Other Orgs" and added an "Agent operations tooling" row.
 - Synchronized repository counts and `Last-checked` timestamps to 50 active public repositories plus one archived (51 total), verified 2026-08-05.
 
