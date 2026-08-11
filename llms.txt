@@ -117,7 +117,7 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 - steuer-assistent: https://github.com/ellmos-ai/steuer-assistent
   Offline-first local worksheet for German employee income-related expenses (Werbungskosten): guided collection, plausibility checks, no cloud upload.
 - worksheet-generator: https://github.com/ellmos-ai/worksheet-generator
-  Generates structured, ICF-aware worksheets for pedagogical and therapeutic professionals from a local LLM agent, rendered to Markdown, HTML or DOCX.
+  Generates structured worksheets for pedagogical and therapeutic professionals from a local LLM agent - either from an ICF-aware support goal or from subject, grade and topic - rendered to Markdown, HTML or DOCX.
 
 ## Media and content workflows
 
