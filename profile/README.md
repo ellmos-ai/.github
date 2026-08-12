@@ -7,6 +7,9 @@
 
 **ellmos** (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.
 
+> [!TIP]
+> **🗺️ Interactive maps — [ellmos-ai.github.io](https://ellmos-ai.github.io):** explore the ecosystem visually. The [module circuit map](https://ellmos-ai.github.io) shows every functional area and how they work together, the [skill library](https://ellmos-ai.github.io/skills.html) lets you read and copy every public skill, and the [stack composer](https://ellmos-ai.github.io/stack-composer.html) assembles your own stack with live composition-rule checks.
+
 ## Public Repository Index
 
 This index is complete for the public `ellmos-ai` repositories (51 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-08-05.

@@ -9,6 +9,8 @@ Public repository coverage: this file lists all public ellmos-ai repositories kn
 
 ## Primary entry points
 
+- Interactive ecosystem maps: https://ellmos-ai.github.io
+  Module circuit map (functional areas + public modules), public skill library and stack composer; static self-contained pages, no tracking.
 - BACH: https://github.com/ellmos-ai/bach
   Full personal LLM operating system with GUI, memory, tools, skills and agents.
 - Rinnsal: https://github.com/ellmos-ai/rinnsal

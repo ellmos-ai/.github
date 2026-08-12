@@ -2,6 +2,9 @@
 
 This repository maintains the public GitHub organization profile for **[ellmos-ai](https://github.com/ellmos-ai)**.
 
+> [!TIP]
+> **🗺️ Interactive maps:** module circuit map, skill library and stack composer live at **[ellmos-ai.github.io](https://ellmos-ai.github.io)**.
+
 ## Current public index
 
 Last checked against GitHub: 2026-08-05. The public organization currently has 50 active public repositories plus one archived legacy repository (51 repos total).
