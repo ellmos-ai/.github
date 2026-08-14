@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-05 (51 repos, 1 archived); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-14 (55 active repos, 1 archived; 56 total); archived repositories are marked.
 
 ## Primary entry points
 
@@ -96,6 +96,14 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Cross-platform multi-provider ticket router and triage console for CLI coding agents: files structured tickets, scores them, and routes to Claude Code, Codex and Gemini.
 - lock-master: https://github.com/ellmos-ai/lock-master
   Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
+- policy-registry: https://github.com/ellmos-ai/policy-registry
+  Local-first registry for policies, rules, and governance decisions with metadata pointers to canonical sources.
+- system-explorer: https://github.com/ellmos-ai/system-explorer
+  Evidence-based topology mapping, capability bounds, and communication edge discovery for modular agent and software systems.
+- ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
+  Standalone local-first task scheduler and run recorder for modular ellmos stacks and autonomous LLM agent execution loops.
+- bundles: https://github.com/ellmos-ai/bundles
+  Recipe layer of the ellmos ecosystem: bundle manifests, catalogs, and composition knowledge.
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
 - knowledgedigest: https://github.com/file-bricks/knowledgedigest
@@ -216,6 +224,11 @@ ringedingeding multi recipient response aggregator
 researchcall standardized telephone survey nonresponse
 roshambo CockroachDB serializable lease multi-agent coordinator
 ticket-master lock-master agent operations tooling
+policy-registry local governance policy pointers
+system-explorer topology mapping capability bounds discovery
+ellmos-scheduler local task scheduler run recorder
+bundles manifest catalog composition knowledge
+sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 ```
 
-## Last-checked: 2026-08-05
+## Last-checked: 2026-08-14

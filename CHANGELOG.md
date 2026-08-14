@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-08-14
+
+### Added & Reconciled
+- 100% full repository parity verified against live GitHub API (55 active public repositories including `.github`, 1 archived legacy repository `recludos-legacy`, 56 repositories total).
+- Indexed newly public core infrastructure and governance modules across `profile/README.md`, `profile/README_de.md`, `README.md` and `llms.txt`:
+  - `ellmos-scheduler`: Standalone local-first task scheduler and run recorder for modular ellmos stacks.
+  - `policy-registry`: Local-first registry for policies, rules and governance decisions with metadata pointers to canonical sources.
+  - `system-explorer`: Evidence-based topology mapping, capability bounds and communication edge discovery.
+  - `bundles`: Recipe layer of the ellmos ecosystem (bundle manifests, catalogs and composition knowledge).
+- Updated `Last-checked` timestamps and repository counts across all profile documents (`profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`) to `2026-08-14`.
+- Enhanced search phrases and LLM discoverability index in `llms.txt`.
+
 ### Added — 2026-08-05
 
 - New **Competition Entries** section (German: *Wettbewerbsbeiträge*) in `profile/README.md`, `profile/README_de.md`, `README.md` and `llms.txt`: the three CALL-E entries, roshambo and roshambo-starmap (CockroachDB x AWS Hackathon 2026-07), build-your-users-mind and bach. Listed as entries only; no placements claimed.

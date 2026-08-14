@@ -28,8 +28,12 @@ th { background-color: #161b22; }
 <strong>Ecosystem &amp; Machine Discovery Index:</strong> For machine-readable context, agent-context loading, and comprehensive repository routing, see <strong><a href="https://github.com/ellmos-ai/.github/blob/master/llms.txt">llms.txt</a></strong>. All active software projects in the ellmos-ai organization operate under local-first principles with SQLite persistence, minimal external dependencies, and transparent component composability.</p>
 </blockquote>
 <p><strong>ellmos</strong> (XLLM-OS) is a family of text-based operating systems that empower Large Language Models to work autonomously, learn, and self-organize.</p>
+<blockquote>
+<p>[!TIP]
+<strong>🗺️ Interactive maps — <a href="https://ellmos-ai.github.io">ellmos-ai.github.io</a>:</strong> explore the ecosystem visually. The <a href="https://ellmos-ai.github.io">module circuit map</a> shows every functional area and how they work together, the <a href="https://ellmos-ai.github.io/skills.html">skill library</a> lets you read and copy every public skill, and the <a href="https://ellmos-ai.github.io/stack-composer.html">stack composer</a> assembles your own stack with live composition-rule checks.</p>
+</blockquote>
 <h2 id="public-repository-index">Public Repository Index</h2>
-<p>This index is complete for the public <code>ellmos-ai</code> repositories (48 repos, 1 archived). Archived repositories are marked explicitly. Last checked against GitHub: 2026-07-31.</p>
+<p>This index is complete for the public <code>ellmos-ai</code> repositories (55 active repos, 1 archived; 56 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-08-14.</p>
 <table>
 <thead>
 <tr>
@@ -43,8 +47,8 @@ th { background-color: #161b22; }
 <td><strong><a href="https://github.com/ellmos-ai/.github">.github</a></strong> - org profile, community health files and <code>llms.txt</code></td>
 </tr>
 <tr>
-<td>Stack catalog</td>
-<td><strong><a href="https://github.com/ellmos-ai/stacks">stacks</a></strong> - catalog and shared manifest schema for every stack in the ellmos-ai family</td>
+<td>Stack catalog &amp; recipes</td>
+<td><strong><a href="https://github.com/ellmos-ai/stacks">stacks</a></strong> - catalog and shared manifest schema for every stack in the ellmos-ai family; <strong><a href="https://github.com/ellmos-ai/bundles">bundles</a></strong> - recipe layer of the ellmos ecosystem (bundle manifests, catalogs and composition knowledge)</td>
 </tr>
 <tr>
 <td>Operating systems</td>
@@ -64,15 +68,27 @@ th { background-color: #161b22; }
 </tr>
 <tr>
 <td>Agent hooks, evidence and coordination</td>
-<td><strong><a href="https://github.com/ellmos-ai/memoryhooker">memoryhooker</a></strong> - connects local memory sources to coding-agent lifecycle hooks (no network); <strong><a href="https://github.com/ellmos-ai/workflowhooker">workflowhooker</a></strong> - configurable workflow checks at agent lifecycle events, zero dependencies; <strong><a href="https://github.com/ellmos-ai/memoryhooker-provenance">memoryhooker-provenance</a></strong> / <strong><a href="https://github.com/ellmos-ai/workflowhooker-provenance">workflowhooker-provenance</a></strong> - provenance variants; <strong><a href="https://github.com/ellmos-ai/prompt-evidence-collector">prompt-evidence-collector</a></strong> - local-first prompt/workflow evidence store (extracted from ellmos-core); <strong><a href="https://github.com/ellmos-ai/roshambo">roshambo</a></strong> - multi-agent coordinator: serializable leases + outcome memory on CockroachDB; <strong><a href="https://github.com/ellmos-ai/roshambo-starmap">roshambo-starmap</a></strong> - shared sky/map companion to roshambo</td>
+<td><strong><a href="https://github.com/ellmos-ai/memoryhooker">memoryhooker</a></strong> - connects local memory sources to coding-agent lifecycle hooks (no network); <strong><a href="https://github.com/ellmos-ai/workflowhooker">workflowhooker</a></strong> - configurable workflow checks at agent lifecycle events, zero dependencies; <strong><a href="https://github.com/ellmos-ai/roshambo">roshambo</a></strong> - multi-agent coordinator: serializable leases + outcome memory on CockroachDB; <strong><a href="https://github.com/ellmos-ai/roshambo-starmap">roshambo-starmap</a></strong> - evidence artefact of the multi-vendor swarm run coordinated by roshambo; <strong><a href="https://github.com/ellmos-ai/policy-registry">policy-registry</a></strong> - local-first registry for policies, rules and governance decisions with metadata pointers to canonical sources</td>
+</tr>
+<tr>
+<td>Agent operations tooling</td>
+<td><strong><a href="https://github.com/ellmos-ai/ticket-master">ticket-master</a></strong> - multi-provider ticket router and triage console for CLI coding agents; <strong><a href="https://github.com/ellmos-ai/lock-master">lock-master</a></strong> - portable multi-agent file-lock system; <strong><a href="https://github.com/ellmos-ai/system-gap-master">system-gap-master</a></strong> - serverless cross-machine sync yard; <strong><a href="https://github.com/ellmos-ai/coma">coma</a></strong> - agent lifecycle layer (spawn, file protocol, status polling); <strong><a href="https://github.com/ellmos-ai/companion-for-agy">companion-for-agy</a></strong> - PTY wrapper that makes agy (Gemini CLI) output readable for automation</td>
+</tr>
+<tr>
+<td>Agents</td>
+<td><strong><a href="https://github.com/ellmos-ai/hungrycall">hungrycall</a></strong>, <strong><a href="https://github.com/ellmos-ai/ringedingeding">ringedingeding</a></strong>, <strong><a href="https://github.com/ellmos-ai/researchcall">researchcall</a></strong> - telephone agents built on CALL-E; plus agent roles shipped inside <strong><a href="https://github.com/ellmos-ai/ticket-master">ticket-master</a></strong>, <strong><a href="https://github.com/ellmos-ai/task-master">task-master</a></strong>, <strong><a href="https://github.com/ellmos-ai/build-your-users-mind">build-your-users-mind</a></strong>, <strong><a href="https://github.com/ellmos-ai/law-checker">law-checker</a></strong> and <strong><a href="https://github.com/ellmos-ai/ai-media-editor">ai-media-editor</a></strong>, and as skills (research-agent, dev-soft-agent) in <strong><a href="https://github.com/ellmos-ai/skills">skills</a></strong>; see <a href="#agents">Agents</a> below</td>
+</tr>
+<tr>
+<td>Competition entries</td>
+<td><strong><a href="https://github.com/ellmos-ai/hungrycall">hungrycall</a></strong>, <strong><a href="https://github.com/ellmos-ai/ringedingeding">ringedingeding</a></strong>, <strong><a href="https://github.com/ellmos-ai/researchcall">researchcall</a></strong>, <strong><a href="https://github.com/ellmos-ai/roshambo">roshambo</a></strong>, <strong><a href="https://github.com/ellmos-ai/roshambo-starmap">roshambo-starmap</a></strong>, <strong><a href="https://github.com/ellmos-ai/build-your-users-mind">build-your-users-mind</a></strong>, <strong><a href="https://github.com/ellmos-ai/bach">bach</a></strong> - see <a href="#competition-entries">Competition Entries</a> below</td>
 </tr>
 <tr>
 <td>Core and system infrastructure</td>
-<td><strong><a href="https://github.com/ellmos-ai/ellmos-core">ellmos-core</a></strong> - core/shell + web UI for ellmos Sovereign (private alpha); <strong><a href="https://github.com/ellmos-ai/ellmos-development-system">ellmos-development-system</a></strong> - private composition recipes and development-system manifests; <strong><a href="https://github.com/ellmos-ai/policy-registry">policy-registry</a></strong> - policy registry module; <strong><a href="https://github.com/ellmos-ai/system-explorer">system-explorer</a></strong> - system exploration tooling</td>
+<td><strong><a href="https://github.com/ellmos-ai/sqlite-transit-sync">sqlite-transit-sync</a></strong> - local-first SQLite synchronization through verified snapshots and configurable row-level merge policies (Python 3.10+, zero dependencies); <strong><a href="https://github.com/ellmos-ai/ellmos-scheduler">ellmos-scheduler</a></strong> - standalone local-first task scheduler and run recorder for modular ellmos stacks</td>
 </tr>
 <tr>
 <td>Domain tools</td>
-<td><strong><a href="https://github.com/ellmos-ai/law-checker">law-checker</a></strong> - source-grounded AI first-look legal assessments for German law (Erstorientierung, no substitute for a lawyer), statute registry and embodiment agents; <strong><a href="https://github.com/ellmos-ai/worksheet-generator">worksheet-generator</a></strong> - generates structured, ICF-aware worksheets for pedagogical and therapeutic use, rendered to Markdown/HTML/DOCX; <strong><a href="https://github.com/ellmos-ai/steuer-assistent">steuer-assistent</a></strong> - offline-first worksheet for German employee income-related expenses (Werbungskosten), with guided collection and plausibility checks and no cloud upload</td>
+<td><strong><a href="https://github.com/ellmos-ai/law-checker">law-checker</a></strong> - source-grounded AI first-look legal assessments for German law (Erstorientierung, no substitute for a lawyer), statute registry and embodiment agents; <strong><a href="https://github.com/ellmos-ai/worksheet-generator">worksheet-generator</a></strong> - generates structured worksheets for pedagogical and therapeutic use, either from an ICF-aware support goal or from subject, grade and topic, rendered to Markdown/HTML/DOCX; <strong><a href="https://github.com/ellmos-ai/steuer-assistent">steuer-assistent</a></strong> - offline-first worksheet for German employee income-related expenses (Werbungskosten): records self-categorized receipts and sums them to the cent, entirely locally. It does not assess deductibility and does not file a return - not tax advice</td>
 </tr>
 <tr>
 <td>Media and content workflows</td>
@@ -80,7 +96,7 @@ th { background-color: #161b22; }
 </tr>
 <tr>
 <td>Evaluation, templates and maintenance</td>
-<td><strong><a href="https://github.com/ellmos-ai/ellmos-tests">ellmos-tests</a></strong>, <strong><a href="https://github.com/ellmos-ai/project-docs-template">project-docs-template</a></strong> - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory; <strong><a href="https://github.com/ellmos-ai/clirec">clirec</a></strong> - human-readable GUI demonstration recordings for CLI and agent workflows</td>
+<td><strong><a href="https://github.com/ellmos-ai/ellmos-tests">ellmos-tests</a></strong> - B/O/E evaluation framework for SKILL.md-based LLM operating systems and agent hubs; <strong><a href="https://github.com/ellmos-ai/project-docs-template">project-docs-template</a></strong> - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory; <strong><a href="https://github.com/ellmos-ai/system-explorer">system-explorer</a></strong> - evidence-based topology mapping, capability bounds and communication edge discovery; <strong><a href="https://github.com/ellmos-ai/clirec">clirec</a></strong> - human-readable GUI demonstration recordings for CLI and agent workflows</td>
 </tr>
 <tr>
 <td>Legacy archive</td>
@@ -97,7 +113,7 @@ th { background-color: #161b22; }
 <hr />
 <h2 id="modules">Modules</h2>
 <p>Our recommended selection — building blocks that integrate into any ellmos OS or stand on their own. The banners are the links; details in the table below:</p>
-<p align="center"><a href="https://github.com/ellmos-ai/swarm-ai"><img src="https://raw.githubusercontent.com/ellmos-ai/swarm-ai/main/assets/banner-swarm.svg" alt="swarm-ai" width="680" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/build-your-users-mind/master/assets/banner.svg" alt="build-your-users-mind" width="680" style="border:2px solid #f472b6;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="680" style="border:2px solid #2dd4bf;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.svg" alt="report-forge" width="680" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="680" style="border:2px solid #e879f9;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/main/docs/assets/banner.svg" alt="clutch" width="680" style="border:2px solid #a3e635;border-radius:8px;display:block;margin:0 auto></a><a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/MarbleRun/main/docs/assets/banner.svg" alt="MarbleRun" width="680" style="border:2px solid #fb923c;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/n8n-workflow-manager/main/assets/banner.png" alt="n8n-workflow-manager" width="680" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/banner-relief.svg" alt="open-compute" width="680" style="border:2px solid #f87171;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/connectors"><img src="https://raw.githubusercontent.com/ellmos-ai/connectors/main/assets/banner.svg" alt="connectors" width="680" style="border:2px solid #818cf8;border-radius:8px;margin:0"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/swarm-ai"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/banner-swarm.svg" alt="swarm-ai" width="680" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/byum-banner-neon.svg" alt="build-your-users-mind" width="680" style="border:2px solid #f472b6;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="680" style="border:2px solid #2dd4bf;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.svg" alt="report-forge" width="680" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="680" style="border:2px solid #e879f9;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/main/docs/assets/banner.svg" alt="clutch" width="680" style="border:2px solid #a3e635;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/MarbleRun"><img src="https://raw.githubusercontent.com/ellmos-ai/MarbleRun/main/docs/assets/banner.svg" alt="MarbleRun" width="680" style="border:2px solid #fb923c;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/n8n-workflow-manager/main/assets/banner.png" alt="n8n-workflow-manager" width="680" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/banner.png" alt="open-compute" width="680" style="border:2px solid #f87171;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/connectors"><img src="https://raw.githubusercontent.com/ellmos-ai/connectors/main/assets/banner.svg" alt="connectors" width="680" style="border:2px solid #818cf8;border-radius:8px;margin:0"></a></p>
 
 <table>
 <thead>
@@ -153,8 +169,7 @@ th { background-color: #161b22; }
 <hr />
 <h2 id="bundles">Bundles</h2>
 <p>Bundles declare <em>which module versions belong together</em>: versioned, compatibility-checked dependency trees.</p>
-<p>Our first bundle manifests are registered but still <strong>declarative</strong> (draft lifecycle, no runtime authority yet) — so this section is a preview. First public candidate: the .MEMORY pillar set <code>usmc + gardener + task-master</code>.</p>
-<p><strong>Coming soon.</strong></p>
+<p>The <strong><a href="https://github.com/ellmos-ai/bundles">bundles</a></strong> repository hosts the recipe layer of the ellmos ecosystem — bundle manifests, catalogs, and composition knowledge. Our first bundle manifests are registered and undergoing staged rollout. First public candidate: the .MEMORY pillar set <code>usmc + gardener + task-master</code>.</p>
 <hr />
 <h2 id="the-composition-model-build-your-stack">The Composition Model — Build Your Stack</h2>
 <p>One idea runs through everything in this ecosystem: <strong>modules compose into something new.</strong> Pick the building blocks you need, wire them your way, and the result is your own stack — not a fixed product edition.</p>
@@ -198,7 +213,7 @@ th { background-color: #161b22; }
 <tr>
 <td><strong>Fleet</strong></td>
 <td>A multi-host grouping of the same system instances — one system, many machines, kept in step.</td>
-<td><a href="https://github.com/ellmos-ai/roshambo">roshambo</a> with <a href="https://github.com/dev-bricks/sync-master">sync-master</a></td>
+<td><a href="https://github.com/ellmos-ai/roshambo">roshambo</a> with <a href="https://github.com/ellmos-ai/system-gap-master">system-gap-master</a></td>
 </tr>
 </tbody>
 </table>
@@ -244,10 +259,10 @@ th { background-color: #161b22; }
   </a>
   <br>
   <a href="https://github.com/ellmos-ai/ellmos-stack">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="460" style="border:2px solid #34d399;box-shadow:0 0 12px rgba(52,211,153,0.45);border-radius:8px;margin:6px">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="430" height="120" style="border:2px solid #34d399;box-shadow:0 0 12px rgba(52,211,153,0.45);border-radius:8px;margin:5px;object-fit:cover">
   </a>
   <a href="https://github.com/ellmos-ai/agent-ops-stack">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="440" style="border:2px solid #a855f7;box-shadow:0 0 12px rgba(168,85,247,0.45);border-radius:8px;margin:6px">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="430" height="120" style="border:2px solid #38bdf8;box-shadow:0 0 12px rgba(56,189,248,0.45);border-radius:8px;margin:5px;object-fit:cover">
   </a>
 </p>
 
@@ -274,7 +289,7 @@ th { background-color: #161b22; }
 <tr>
 <td><strong><a href="https://github.com/ellmos-ai/agent-ops-stack">agent-ops-stack</a></strong></td>
 <td>Coordination layer for CLI coding agents: ticket routing, file locking, cross-machine sync, decision-avatar, MCP control plane</td>
-<td><strong><a href="https://github.com/dev-bricks/ticket-master">ticket-master</a></strong> (dev-bricks) · <strong><a href="https://github.com/dev-bricks/lock-master">lock-master</a></strong> (dev-bricks) · <strong><a href="https://github.com/dev-bricks/sync-master">sync-master</a></strong> (dev-bricks) · <a href="https://github.com/ellmos-ai/build-your-users-mind">build-your-users-mind</a> · <a href="https://github.com/ellmos-ai/skills">skills</a> · ellmos-controlcenter-mcp · ellmos-homebase-mcp</td>
+<td><strong><a href="https://github.com/ellmos-ai/ticket-master">ticket-master</a></strong> · <strong><a href="https://github.com/ellmos-ai/lock-master">lock-master</a></strong> · <strong><a href="https://github.com/ellmos-ai/system-gap-master">system-gap-master</a></strong> · <a href="https://github.com/ellmos-ai/build-your-users-mind">build-your-users-mind</a> · <a href="https://github.com/ellmos-ai/skills">skills</a> · ellmos-controlcenter-mcp · ellmos-homebase-mcp</td>
 </tr>
 </tbody>
 </table>
@@ -286,15 +301,15 @@ th { background-color: #161b22; }
 <p align="center">
   <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/mcp-stammbaum.png" usemap="#mcp-stammbaum-map" alt="MCP Server Stammbaum — bottom-up evolution tree" width="100%">
   <map name="mcp-stammbaum-map">
-    <area shape="rect" coords="81,844,279,1032" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — #1 filecommander · 2026-02">
-    <area shape="rect" coords="396,804,604,992" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — #2 codecommander · 2026-02">
-    <area shape="rect" coords="806,804,993,992" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — #3 n8n-manager · 2026-02">
-    <area shape="rect" coords="1144,844,1296,1032" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — #4 clatcher · 2026-03">
-    <area shape="rect" coords="187,464,373,652" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — #5 controlcenter · 2026-05">
-    <area shape="rect" coords="617,384,783,572" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — #6 homebase · 2026-06">
-    <area shape="rect" coords="1012,464,1228,652" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — #7 servercommander · 2026-06">
-    <area shape="rect" coords="332,124,508,312" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — #8 blender-use · 2026-07">
-    <area shape="rect" coords="882,124,1077,312" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — #9 open-compute · 2026-07">
+    <area shape="rect" coords="61,906,279,1165" href="https://github.com/ellmos-ai/ellmos-filecommander-mcp" alt="FileCommander" title="FileCommander — #1 filecommander · 2026-02">
+    <area shape="rect" coords="371,836,589,1095" href="https://github.com/ellmos-ai/ellmos-codecommander-mcp" alt="CodeCommander" title="CodeCommander — #2 codecommander · 2026-02">
+    <area shape="rect" coords="811,836,1029,1095" href="https://github.com/ellmos-ai/n8n-manager-mcp" alt="n8n Manager" title="n8n Manager — #3 n8n-manager · 2026-02">
+    <area shape="rect" coords="1121,906,1339,1165" href="https://github.com/ellmos-ai/ellmos-clatcher-mcp" alt="Clatcher" title="Clatcher — #4 clatcher · 2026-03">
+    <area shape="rect" coords="141,516,359,775" href="https://github.com/ellmos-ai/ellmos-controlcenter-mcp" alt="ControlCenter" title="ControlCenter — #5 controlcenter · 2026-05">
+    <area shape="rect" coords="591,446,809,705" href="https://github.com/ellmos-ai/ellmos-homebase-mcp" alt="Homebase" title="Homebase — #6 homebase · 2026-06">
+    <area shape="rect" coords="1040,516,1260,775" href="https://github.com/ellmos-ai/ellmos-servercommander-mcp" alt="ServerCommander" title="ServerCommander — #7 servercommander · 2026-06">
+    <area shape="rect" coords="241,126,459,385" href="https://github.com/ellmos-ai/ellmos-blender-use-mcp" alt="Blender Use" title="Blender Use — #8 blender-use · 2026-07">
+    <area shape="rect" coords="941,126,1159,385" href="https://github.com/ellmos-ai/open-compute-mcp" alt="open-compute" title="open-compute — #9 open-compute · 2026-07">
   </map>
 </p>
 
@@ -358,7 +373,7 @@ th { background-color: #161b22; }
 <p><a id="memory-and-control"></a></p>
 <h2 id="memory-and-control">Memory and Control</h2>
 <p>The family's memory pillar and its coordination &amp; control modules — first their banners, then the details:</p>
-<p align="center"><a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="560" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/gardener"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" alt="gardener" width="320" style="border:2px solid #4ade80;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="560" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/dev-bricks/ticket-master"><img src="https://raw.githubusercontent.com/dev-bricks/ticket-master/main/assets/banner.png" alt="ticket-master" width="560" style="border:2px solid #fb923c;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/dev-bricks/lock-master"><img src="https://raw.githubusercontent.com/dev-bricks/lock-master/main/assets/banner.png" alt="lock-master" width="560" style="border:2px solid #f87171;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/system-gap-master"><img src="https://raw.githubusercontent.com/ellmos-ai/system-gap-master/main/docs/assets/banner.svg" alt="system-gap-master" width="560" style="border:2px solid #06b6d4;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/coma"><img src="https://raw.githubusercontent.com/ellmos-ai/coma/main/docs/assets/banner.svg" alt="coma" width="560" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="560" style="border:2px solid #f472b6;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/workflowhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="560" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="560" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/gardener"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" alt="gardener" width="320" style="border:2px solid #4ade80;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="560" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ticket-master"><img src="https://raw.githubusercontent.com/ellmos-ai/ticket-master/main/assets/banner.png" alt="ticket-master" width="560" style="border:2px solid #fb923c;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/lock-master"><img src="https://raw.githubusercontent.com/ellmos-ai/lock-master/main/assets/banner.png" alt="lock-master" width="560" style="border:2px solid #f87171;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/system-gap-master"><img src="https://raw.githubusercontent.com/ellmos-ai/system-gap-master/main/docs/assets/banner.svg" alt="system-gap-master" width="560" style="border:2px solid #06b6d4;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/coma"><img src="https://raw.githubusercontent.com/ellmos-ai/coma/main/docs/assets/banner.svg" alt="coma" width="560" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="560" style="border:2px solid #f472b6;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/workflowhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="560" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a></p>
 
 <table>
 <thead>
@@ -381,12 +396,20 @@ th { background-color: #161b22; }
 <td>Standalone SQLite task module — tasks stay separate from knowledge memory. Zero dependencies.</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/dev-bricks/ticket-master">ticket-master</a></strong> (dev-bricks)</td>
+<td><strong><a href="https://github.com/ellmos-ai/ellmos-scheduler">ellmos-scheduler</a></strong></td>
+<td>Standalone local-first task scheduler and run recorder for modular ellmos stacks and autonomous LLM agent execution loops.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/ticket-master">ticket-master</a></strong></td>
 <td>Cross-platform, multi-provider ticket router / triage console — files structured tickets and routes them to the right AI provider or sub-agent.</td>
 </tr>
 <tr>
-<td><strong><a href="https://github.com/dev-bricks/lock-master">lock-master</a></strong> (dev-bricks)</td>
+<td><strong><a href="https://github.com/ellmos-ai/lock-master">lock-master</a></strong></td>
 <td>Portable multi-agent file-lock system — LOCK*.txt-based project/component locking with scopes, expiry and stale-cleanup.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/policy-registry">policy-registry</a></strong></td>
+<td>Local-first registry for policies, rules, and governance decisions with metadata pointers to canonical sources.</td>
 </tr>
 <tr>
 <td><strong><a href="https://github.com/ellmos-ai/system-gap-master">system-gap-master</a></strong></td>
@@ -404,6 +427,123 @@ th { background-color: #161b22; }
 <td><strong><a href="https://github.com/ellmos-ai/workflowhooker">workflowhooker</a></strong></td>
 <td>Configurable workflow checks at agent lifecycle events, zero dependencies.</td>
 </tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/companion-for-agy">companion-for-agy</a></strong></td>
+<td>PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction — lets Claude Code, Codex and CI pipelines read Gemini output reliably.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a id="agents"></a></p>
+<h2 id="agents">Agents</h2>
+<p>Telephone agents built on <strong><a href="https://github.com/CALLE-AI/call-e-integrations">CALL-E</a></strong> — each one takes a spoken task off a person's hands and reports back what actually happened, including when nobody picked up.</p>
+<p><a href="https://github.com/ellmos-ai/hungrycall"><img alt="hungrycall" src="https://raw.githubusercontent.com/ellmos-ai/hungrycall/main/banner.png" /></a>
+<a href="https://github.com/ellmos-ai/ringedingeding"><img alt="ringedingeding" src="https://raw.githubusercontent.com/ellmos-ai/ringedingeding/main/banner.png" /></a>
+<a href="https://github.com/ellmos-ai/researchcall"><img alt="researchcall" src="https://raw.githubusercontent.com/ellmos-ai/researchcall/main/banner.png" /></a></p>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/hungrycall">hungrycall</a></strong></td>
+<td>A sequential call cascade for food delivery, table reservations and pickup: ranks candidate restaurants against the user's boundaries, then calls them one after another and stops at the first success. The generalized cascade pattern is documented separately from the food use case.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/ringedingeding">ringedingeding</a></strong></td>
+<td>Asks one question to several people in your own circle and merges the replies into a single result — either intersecting availability to find a date, or reporting the leading tendency together with countervoices and reasons. It does not turn dissent into a false consensus.</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/researchcall">researchcall</a></strong></td>
+<td>A standardized telephone survey runner with methodological honesty: builds the instrument from its own gated stations, draws a random sample, calls each person once by default, and reports nonresponse instead of collapsing distinct outcomes. Runs fully local as a dry run by default — no account and no real call needed.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agent-roles-inside-our-modules">Agent roles inside our modules</h3>
+<p>Beyond the telephone agents, several ellmos-ai modules ship their own agents or agent roles:</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Agent role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/ticket-master">ticket-master</a></strong></td>
+<td>TICKET-MASTER — a long-lived router/triage agent that files structured tickets and dispatches them to the right AI provider or sub-agent</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/task-master">task-master</a></strong></td>
+<td>Three operating roles shipped as agent prompts: TASKSOLVER (works the queue), TASKWRITER (captures tasks), MAINTAINER (keeps the task database healthy)</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/build-your-users-mind">build-your-users-mind</a></strong></td>
+<td>Decision avatar — an agent that learns its user's decision patterns from interaction logs and predicts or takes decisions in their spirit</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/law-checker">law-checker</a></strong></td>
+<td>Statute embodiment agents — configured statutes (e.g. the German constitution and civil code) "speak" as agents — plus a source-grounded first-look assessment agent</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/ai-media-editor">ai-media-editor</a></strong></td>
+<td>Agent-driven creative editing — performs transcript-based cuts and motion-graphics passes on local media</td>
+</tr>
+</tbody>
+</table>
+<p>Agents also ship as <strong>skills</strong> in the <a href="https://github.com/ellmos-ai/skills">skills</a> library: <strong><a href="https://github.com/ellmos-ai/skills/tree/master/skills/research/research-agent">research-agent</a></strong> — research pipeline for PubMed and arXiv with quick search and structured literature reviews, pure Python standard library, extracted from BACH's ResearchAgent — and <strong><a href="https://github.com/ellmos-ai/skills/tree/master/skills/dev/dev-soft-agent">dev-soft-agent</a></strong> — automated software-development pipeline that scans projects, prioritizes tasks and orchestrates development loops.</p>
+<p>Agent <em>infrastructure</em> — coordination, orchestration and lifecycle for agents you bring yourself — lives in <strong><a href="https://github.com/ellmos-ai/swarm-ai">swarm-ai</a></strong>, <strong><a href="https://github.com/ellmos-ai/roshambo">roshambo</a></strong>, <strong><a href="https://github.com/ellmos-ai/MarbleRun">MarbleRun</a></strong> and <strong><a href="https://github.com/ellmos-ai/coma">coma</a></strong>.</p>
+<hr />
+<p><a id="competition-entries"></a></p>
+<h2 id="competition-entries">Competition Entries</h2>
+<p>Projects built for public hackathons and competitions. Listed as entries — no placement claimed.</p>
+<table>
+<thead>
+<tr>
+<th>Entry</th>
+<th>Competition</th>
+<th>What was submitted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/hungrycall">hungrycall</a></strong></td>
+<td>CALL-E "Your Code Is Calling" (Devpost, 2026)</td>
+<td>Sequential calling cascade for food delivery and reservations, plus the generalized cascade pattern as the reusable contribution</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/ringedingeding">ringedingeding</a></strong></td>
+<td>CALL-E "Your Code Is Calling" (Devpost, 2026)</td>
+<td>Multi-recipient response aggregator: one question, several people, one merged answer</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/researchcall">researchcall</a></strong></td>
+<td>CALL-E "Your Code Is Calling" (Devpost, 2026)</td>
+<td>Standardized telephone survey runner with an eight-station research pipeline and honest nonresponse reporting</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/roshambo">roshambo</a></strong></td>
+<td>CockroachDB × AWS Hackathon (2026-07)</td>
+<td>Multi-agent coordinator: serializable leases and outcome memory on CockroachDB, with an MCP interface</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/roshambo-starmap">roshambo-starmap</a></strong></td>
+<td>CockroachDB × AWS Hackathon (2026-07)</td>
+<td>Evidence artefact of the accompanying multi-vendor swarm run — a replayable field record of 27 agents coordinating through roshambo</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/build-your-users-mind">build-your-users-mind</a></strong></td>
+<td>Agent recipe entry</td>
+<td>A recipe for any AI agent to build a self-improving theory-of-mind model of its user from interaction logs</td>
+</tr>
+<tr>
+<td><strong><a href="https://github.com/ellmos-ai/bach">bach</a></strong></td>
+<td>Agent OS entry</td>
+<td>The full local-first LLM operating system: memory, handlers, skills, agents and GUI</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -418,26 +558,6 @@ th { background-color: #161b22; }
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong><a href="https://github.com/dev-bricks/ticket-master">ticket-master</a></strong></td>
-<td>dev-bricks</td>
-<td>Cross-platform, multi-provider ticket router / triage console — files structured tickets and routes them to the right AI provider or sub-agent</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/dev-bricks/lock-master">lock-master</a></strong></td>
-<td>dev-bricks</td>
-<td>Portable multi-agent file-lock system — LOCK*.txt-based project/component locking with scopes, expiry, stale-cleanup and a fast overview cache; especially relevant for multi-agent coordination</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/dev-bricks/sync-master">sync-master</a></strong></td>
-<td>dev-bricks</td>
-<td>Serverless cross-machine sync yard for multi-agent setups — slot-per-host write ownership, a gated daily sync ritual, message channels and a bootstrap runbook; the transport layer that keeps several machines and their agents in step</td>
-</tr>
-<tr>
-<td><strong><a href="https://github.com/dev-bricks/companion-for-agy">companion-for-agy</a></strong></td>
-<td>dev-bricks</td>
-<td>PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction — lets Claude Code, Codex and CI pipelines read Gemini output reliably</td>
-</tr>
 <tr>
 <td><strong><a href="https://github.com/doc-bricks/llm-note">llm-note</a></strong></td>
 <td>doc-bricks</td>
