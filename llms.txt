@@ -93,6 +93,7 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
 - system-gap-master: https://github.com/ellmos-ai/system-gap-master
   Serverless sync yard for multi-machine, multi-agent AI setups (slot rule, gated daily ritual, bootstrap runbook).
 - ticket-master: https://github.com/ellmos-ai/ticket-master
+- system-auditor: https://github.com/ellmos-ai/system-auditor
   Cross-platform multi-provider ticket router and triage console for CLI coding agents: files structured tickets, scores them, and routes to Claude Code, Codex and Gemini.
 - lock-master: https://github.com/ellmos-ai/lock-master
   Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
@@ -224,6 +225,7 @@ ringedingeding multi recipient response aggregator
 researchcall standardized telephone survey nonresponse
 roshambo CockroachDB serializable lease multi-agent coordinator
 ticket-master lock-master agent operations tooling
+system-auditor evidence-based multi-machine audits meta-audit
 policy-registry local governance policy pointers
 system-explorer topology mapping capability bounds discovery
 ellmos-scheduler local task scheduler run recorder
