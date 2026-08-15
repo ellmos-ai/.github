@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-08-16
+
+### Added & Reconciled
+- `system-auditor` indexed across all 4 files (`README.md`, `profile/README.md`,
+  `profile/README_de.md`, `llms.txt`) under "Agent operations tooling" —
+  evidence-based system audits across machines, extracted from
+  `ticket-master`'s TICKET-WRITER role (commit `50451fd`).
+- Repository count corrected: 55/56 -> 56/57 (56 active public repositories,
+  1 archived, 57 total) — verified live against `gh api orgs/ellmos-ai/repos`.
+  `50451fd` added the `system-auditor` entry but left the summary line at the
+  pre-addition count.
+
 ## [1.0.4] - 2026-08-14
 
 ### Added & Reconciled
