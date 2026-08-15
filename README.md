@@ -7,7 +7,7 @@ This repository maintains the public GitHub organization profile for **[ellmos-a
 
 ## Current public index
 
-Last checked against GitHub: 2026-08-14. The public organization currently has 55 active public repositories (including this profile repo) plus one archived legacy repository (56 repos total).
+Last checked against GitHub: 2026-08-16. The public organization currently has 56 active public repositories (including this profile repo) plus one archived legacy repository (57 repos total).
 
 | Area | Active public repositories |
 |---|---|

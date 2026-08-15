@@ -14,7 +14,7 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (55 aktive Repos, davon 1 archiviert; 56 Repos gesamt). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-08-14.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (56 aktive Repos, davon 1 archiviert; 57 Repos gesamt). Archivierte Repositories sind ausdrücklich markiert. Zuletzt mit GitHub abgeglichen: 2026-08-16.
 
 | Bereich | Repositories |
 |---|---|

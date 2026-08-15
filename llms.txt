@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-14 (55 active repos, 1 archived; 56 total); archived repositories are marked.
+Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-16 (56 active repos, 1 archived; 57 total); archived repositories are marked.
 
 ## Primary entry points
 
@@ -233,4 +233,4 @@ bundles manifest catalog composition knowledge
 sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 ```
 
-## Last-checked: 2026-08-14
+## Last-checked: 2026-08-16
