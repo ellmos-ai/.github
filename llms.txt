@@ -95,6 +95,7 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
 - ticket-master: https://github.com/ellmos-ai/ticket-master
 - system-auditor: https://github.com/ellmos-ai/system-auditor
 - compare-race: https://github.com/ellmos-ai/compare-race
+- prompt-listener: https://github.com/ellmos-ai/prompt-listener
   Cross-platform multi-provider ticket router and triage console for CLI coding agents: files structured tickets, scores them, and routes to Claude Code, Codex and Gemini.
 - lock-master: https://github.com/ellmos-ai/lock-master
   Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
@@ -228,6 +229,7 @@ roshambo CockroachDB serializable lease multi-agent coordinator
 ticket-master lock-master agent operations tooling
 system-auditor evidence-based multi-machine audits meta-audit
 compare-race model race stopwatch judge same prompt several models
+prompt-listener fork-master template prompt analysis agent-event provenance
 policy-registry local governance policy pointers
 system-explorer topology mapping capability bounds discovery
 ellmos-scheduler local task scheduler run recorder
