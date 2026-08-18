@@ -82,6 +82,8 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   COMAS (COMmunication for Autonomous Subagents): agent lifecycle layer (spawn, file protocol, status polling). Zero dependencies, standard library only.
 - companion-for-agy: https://github.com/ellmos-ai/companion-for-agy
   PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction for Claude Code, Codex, and CI pipelines.
+- pasta-press: https://github.com/ellmos-ai/pasta-press
+  Local AI text press for Ollama: chunk-based style refinement, translation and cleanup of unintended AI-typical markers with lossless structure — paired with honest AI disclosure.
 - memoryhooker: https://github.com/ellmos-ai/memoryhooker
   Connects local memory sources to coding-agent lifecycle hooks (no network).
 - roshambo: https://github.com/ellmos-ai/roshambo
@@ -217,6 +219,7 @@ ellmos-stack agent-ops-stack manifest-driven stack composition
 law-checker German legal AI first-look assessment
 steuer-assistent German Werbungskosten offline tax worksheet
 anonymizer pseudonymization fail-closed NER GDPR
+pasta-press local text refinement Ollama AI disclosure
 report-forge anonymizable report pipeline docx schema
 worksheet-generator ICF pedagogical therapeutic worksheets
 web-scraper SSRF guard get links forms extract screenshot
