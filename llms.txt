@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists all public ellmos-ai repositories known on 2026-08-16 (56 active repos, 1 archived; 57 total); archived repositories are marked.
+Public repository coverage: updated 2026-08-18 to add grounding-seed and source-resolver (published 2026-08-18). Live count verified via gh repo list on 2026-08-18: 62 active public repos, 1 archived (63 total). Known gap, not addressed in this pass: pasta-press and sentinel-fleet are also public but not yet listed here.
 
 ## Primary entry points
 
@@ -103,6 +103,10 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
 - policy-registry: https://github.com/ellmos-ai/policy-registry
   Local-first registry for policies, rules, and governance decisions with metadata pointers to canonical sources.
+- source-resolver: https://github.com/ellmos-ai/source-resolver
+  Role-based, staged source resolution ladder for skills (user config, own module, discovery proposal, foreign provider, dialogue) instead of hard-wiring information sources.
+- grounding-seed: https://github.com/ellmos-ai/grounding-seed
+  Standalone-bootstrap template for isolated modules/skills/repos: self-knowledge, search, self-provisioning, migration on find; delegates to source-resolver when importable.
 - system-explorer: https://github.com/ellmos-ai/system-explorer
   Evidence-based topology mapping, capability bounds, and communication edge discovery for modular agent and software systems.
 - ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
@@ -234,10 +238,12 @@ system-auditor evidence-based multi-machine audits meta-audit
 compare-race model race stopwatch judge same prompt several models
 prompt-listener fork-master template prompt analysis agent-event provenance
 policy-registry local governance policy pointers
+source-resolver role-based staged source resolution ladder skills
+grounding-seed standalone bootstrap template isolated module self-provisioning
 system-explorer topology mapping capability bounds discovery
 ellmos-scheduler local task scheduler run recorder
 bundles manifest catalog composition knowledge
 sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 ```
 
-## Last-checked: 2026-08-16
+## Last-checked: 2026-08-18
