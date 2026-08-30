@@ -7,10 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Fixed — 2026-08-08
+## [1.0.5] - 2026-08-16
 
-- Re-read the public `ellmos-ai` organization through the GitHub API: 54 active and one archived repository were visible. Added the now-public, documented modules `ellmos-scheduler`, `policy-registry` and `system-explorer` to every index surface, bringing the released index to 53 active plus one archived entry. The public `bundles` repository remains excluded because its upstream README explicitly describes a private, wave-by-wave build rather than a released project.
-- Recorded the live verification date and preserved `recludos-legacy` as the sole explicitly archived reference; no push or other public write was performed.
+### Added & Reconciled
+- `system-auditor` indexed across all 4 files (`README.md`, `profile/README.md`,
+  `profile/README_de.md`, `llms.txt`) under "Agent operations tooling" —
+  evidence-based system audits across machines, extracted from
+  `ticket-master`'s TICKET-WRITER role (commit `50451fd`).
+- Repository count corrected: 55/56 -> 56/57 (56 active public repositories,
+  1 archived, 57 total) — verified live against `gh api orgs/ellmos-ai/repos`.
+  `50451fd` added the `system-auditor` entry but left the summary line at the
+  pre-addition count.
+
+## [1.0.4] - 2026-08-14
+
+### Added & Reconciled
+- 100% full repository parity verified against live GitHub API (55 active public repositories including `.github`, 1 archived legacy repository `recludos-legacy`, 56 repositories total).
+- Indexed newly public core infrastructure and governance modules across `profile/README.md`, `profile/README_de.md`, `README.md` and `llms.txt`:
+  - `ellmos-scheduler`: Standalone local-first task scheduler and run recorder for modular ellmos stacks.
+  - `policy-registry`: Local-first registry for policies, rules and governance decisions with metadata pointers to canonical sources.
+  - `system-explorer`: Evidence-based topology mapping, capability bounds and communication edge discovery.
+  - `bundles`: Recipe layer of the ellmos ecosystem (bundle manifests, catalogs and composition knowledge).
+- Updated `Last-checked` timestamps and repository counts across all profile documents (`profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`) to `2026-08-14`.
+- Enhanced search phrases and LLM discoverability index in `llms.txt`.
 
 ### Added — 2026-08-05
 
@@ -19,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed — 2026-08-05
 
-- Live index reconciliation against the GitHub API at that snapshot: removed seven entries that were not public repositories (`memoryhooker-provenance`, `workflowhooker-provenance`, `prompt-evidence-collector`, `ellmos-core`, `ellmos-development-system`, `policy-registry`, `system-explorer`). The current 2026-08-08 readback re-adds the latter two after they became public.
+- Live index reconciliation against the GitHub API: removed seven entries that are not public repositories (`memoryhooker-provenance`, `workflowhooker-provenance`, `prompt-evidence-collector`, `ellmos-core`, `ellmos-development-system`, `policy-registry`, `system-explorer`).
 - Corrected stale cross-org links: `ticket-master`, `lock-master` and `companion-for-agy` now resolve inside `ellmos-ai`, and `dev-bricks/sync-master` is `ellmos-ai/system-gap-master`. Removed them from "Related Projects in Other Orgs" and added an "Agent operations tooling" row.
 - Synchronized repository counts and `Last-checked` timestamps to 50 active public repositories plus one archived (51 total), verified 2026-08-05.
 

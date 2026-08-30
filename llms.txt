@@ -5,10 +5,12 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: this file lists the released public ellmos-ai repositories verified on 2026-08-08 (54 indexed entries, 1 archived); archived repositories are marked. A live API scan found 54 active public repositories; `bundles` is intentionally omitted because its upstream README marks it as a private, wave-by-wave build.
+Public repository coverage: updated 2026-08-18 to add grounding-seed and source-resolver (published 2026-08-18). Live count verified via gh repo list on 2026-08-18: 62 active public repos, 1 archived (63 total). Known gap, not addressed in this pass: pasta-press and sentinel-fleet are also public but not yet listed here.
 
 ## Primary entry points
 
+- Interactive ecosystem maps: https://ellmos-ai.github.io
+  Module circuit map (functional areas + public modules), public skill library and stack composer; static self-contained pages, no tracking.
 - BACH: https://github.com/ellmos-ai/bach
   Full personal LLM operating system with GUI, memory, tools, skills and agents.
 - Rinnsal: https://github.com/ellmos-ai/rinnsal
@@ -80,6 +82,8 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   COMAS (COMmunication for Autonomous Subagents): agent lifecycle layer (spawn, file protocol, status polling). Zero dependencies, standard library only.
 - companion-for-agy: https://github.com/ellmos-ai/companion-for-agy
   PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction for Claude Code, Codex, and CI pipelines.
+- pasta-press: https://github.com/ellmos-ai/pasta-press
+  Local AI text press for Ollama: chunk-based style refinement, translation and cleanup of unintended AI-typical markers with lossless structure — paired with honest AI disclosure.
 - memoryhooker: https://github.com/ellmos-ai/memoryhooker
   Connects local memory sources to coding-agent lifecycle hooks (no network).
 - roshambo: https://github.com/ellmos-ai/roshambo
@@ -88,18 +92,27 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Shared sky/map companion to roshambo.
 - sqlite-transit-sync: https://github.com/ellmos-ai/sqlite-transit-sync
   Local-first SQLite synchronization through verified snapshots and configurable row-level merge policies. Zero dependencies, Python 3.10+.
-- ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
-  Standalone Python scheduler and run recorder for modular ellmos stacks, with SQLite state, leases, authority receipts and strict output encoding.
-- policy-registry: https://github.com/ellmos-ai/policy-registry
-  Local-first pointer registry for policies, rules and decisions; stores metadata and SHA-256 references while canonical source text remains authoritative.
-- system-explorer: https://github.com/ellmos-ai/system-explorer
-  Evidence-based maps of desired system functions and the skills, repositories, interfaces, stacks or actors that carry them.
 - system-gap-master: https://github.com/ellmos-ai/system-gap-master
   Serverless sync yard for multi-machine, multi-agent AI setups (slot rule, gated daily ritual, bootstrap runbook).
 - ticket-master: https://github.com/ellmos-ai/ticket-master
+- system-auditor: https://github.com/ellmos-ai/system-auditor
+- compare-race: https://github.com/ellmos-ai/compare-race
+- prompt-listener: https://github.com/ellmos-ai/prompt-listener
   Cross-platform multi-provider ticket router and triage console for CLI coding agents: files structured tickets, scores them, and routes to Claude Code, Codex and Gemini.
 - lock-master: https://github.com/ellmos-ai/lock-master
   Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
+- policy-registry: https://github.com/ellmos-ai/policy-registry
+  Local-first registry for policies, rules, and governance decisions with metadata pointers to canonical sources.
+- source-resolver: https://github.com/ellmos-ai/source-resolver
+  Role-based, staged source resolution ladder for skills (user config, own module, discovery proposal, foreign provider, dialogue) instead of hard-wiring information sources.
+- grounding-seed: https://github.com/ellmos-ai/grounding-seed
+  Standalone-bootstrap template for isolated modules/skills/repos: self-knowledge, search, self-provisioning, migration on find; delegates to source-resolver when importable.
+- system-explorer: https://github.com/ellmos-ai/system-explorer
+  Evidence-based topology mapping, capability bounds, and communication edge discovery for modular agent and software systems.
+- ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
+  Standalone local-first task scheduler and run recorder for modular ellmos stacks and autonomous LLM agent execution loops.
+- bundles: https://github.com/ellmos-ai/bundles
+  Recipe layer of the ellmos ecosystem: bundle manifests, catalogs, and composition knowledge.
 - llm-note: https://github.com/doc-bricks/llm-note
   Related doc-bricks module extracted from BACH patterns: local-first notes and notebook inboxes for LLM agents with SQLite, plain-text notebooks, CLI/Python API, six locales and a standalone skill.
 - knowledgedigest: https://github.com/file-bricks/knowledgedigest
@@ -123,7 +136,7 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 - steuer-assistent: https://github.com/ellmos-ai/steuer-assistent
   Offline-first local worksheet for German employee income-related expenses (Werbungskosten): guided collection, plausibility checks, no cloud upload.
 - worksheet-generator: https://github.com/ellmos-ai/worksheet-generator
-  Generates structured, ICF-aware worksheets for pedagogical and therapeutic professionals from a local LLM agent, rendered to Markdown, HTML or DOCX.
+  Generates structured worksheets for pedagogical and therapeutic professionals from a local LLM agent - either from an ICF-aware support goal or from subject, grade and topic - rendered to Markdown, HTML or DOCX.
 
 ## Media and content workflows
 
@@ -210,6 +223,7 @@ ellmos-stack agent-ops-stack manifest-driven stack composition
 law-checker German legal AI first-look assessment
 steuer-assistent German Werbungskosten offline tax worksheet
 anonymizer pseudonymization fail-closed NER GDPR
+pasta-press local text refinement Ollama AI disclosure
 report-forge anonymizable report pipeline docx schema
 worksheet-generator ICF pedagogical therapeutic worksheets
 web-scraper SSRF guard get links forms extract screenshot
@@ -220,6 +234,16 @@ ringedingeding multi recipient response aggregator
 researchcall standardized telephone survey nonresponse
 roshambo CockroachDB serializable lease multi-agent coordinator
 ticket-master lock-master agent operations tooling
+system-auditor evidence-based multi-machine audits meta-audit
+compare-race model race stopwatch judge same prompt several models
+prompt-listener fork-master template prompt analysis agent-event provenance
+policy-registry local governance policy pointers
+source-resolver role-based staged source resolution ladder skills
+grounding-seed standalone bootstrap template isolated module self-provisioning
+system-explorer topology mapping capability bounds discovery
+ellmos-scheduler local task scheduler run recorder
+bundles manifest catalog composition knowledge
+sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 ```
 
-## Last-checked: 2026-08-08
+## Last-checked: 2026-08-18
