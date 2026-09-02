@@ -62,8 +62,7 @@ Our recommended selection — building blocks that integrate into any ellmos OS 
 | **[connectors](https://github.com/ellmos-ai/connectors)** | Portable messaging connectors & CLI agent bridge |
 | **[anonymizer](https://github.com/ellmos-ai/anonymizer)** | Local-first document pseudonymization with fail-closed NER |
 | **[pasta-press](https://github.com/ellmos-ai/pasta-press)** | Local AI text press via Ollama: style refinement, translation & AI-marker cleanup with honest AI disclosure |
-
-More modules without their own artwork yet: **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** (agent-ready project documentation)
+| **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** | Agent-ready project documentation scaffold with START/STATE/TODO/DONE |
 
 ---
 
