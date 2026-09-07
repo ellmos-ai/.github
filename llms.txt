@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-08-18 to add grounding-seed and source-resolver (published 2026-08-18). Live count verified via gh repo list on 2026-08-18: 62 active public repos, 1 archived (63 total). Known gap, not addressed in this pass: pasta-press and sentinel-fleet are also public but not yet listed here.
+Public repository coverage: updated 2026-09-07. Live count verified via gh repo list on 2026-09-07: 66 active public repos, 1 archived (67 total).
 
 ## Primary entry points
 
@@ -111,6 +111,8 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Evidence-based topology mapping, capability bounds, and communication edge discovery for modular agent and software systems.
 - ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
   Standalone local-first task scheduler and run recorder for modular ellmos stacks and autonomous LLM agent execution loops.
+- ellmos-voice-io: https://github.com/ellmos-ai/ellmos-voice-io
+  Local, LLM-neutral STT, TTS and wake-word pipeline for ellmos and standalone agents.
 - bundles: https://github.com/ellmos-ai/bundles
   Recipe layer of the ellmos ecosystem: bundle manifests, catalogs, and composition knowledge.
 - llm-note: https://github.com/doc-bricks/llm-note
@@ -168,6 +170,14 @@ Projects built for public hackathons and competitions. Listed as entries; no pla
   Multi-agent coordinator: serializable leases and outcome memory on CockroachDB, with an MCP interface.
 - roshambo-starmap: https://github.com/ellmos-ai/roshambo-starmap — CockroachDB x AWS Hackathon (2026-07)
   Evidence artefact of the accompanying multi-vendor swarm run: a replayable field record of 27 agents coordinating through roshambo across two machines.
+- cowork-protocol: https://github.com/ellmos-ai/cowork-protocol
+  Standardized protocol for agent-agent and human-agent co-working sessions.
+- FolderHome: https://github.com/ellmos-ai/FolderHome — Agents for Humans Hackathon
+  Folder-centric workspace environment for humans and agents.
+- NemoFold: https://github.com/ellmos-ai/NemoFold
+  Biomolecular folding and structure prediction pipeline.
+- sentinel-fleet: https://github.com/ellmos-ai/sentinel-fleet — All Things Agentic Hackathon
+  Fleet governance, guardrails and runtime health monitoring for agentic deployments.
 - build-your-users-mind: https://github.com/ellmos-ai/build-your-users-mind — agent recipe entry
   Recipe for any AI agent to build a self-improving theory-of-mind model of its user from interaction logs.
 - bach: https://github.com/ellmos-ai/bach — agent OS entry
@@ -177,6 +187,8 @@ Projects built for public hackathons and competitions. Listed as entries; no pla
 
 - .github: https://github.com/ellmos-ai/.github
   Organization profile, shared community health files and this llms.txt context file.
+- ellmos-ai.github.io: https://github.com/ellmos-ai/ellmos-ai.github.io
+  Source repository for interactive ecosystem maps, public skill library and stack composer.
 - ellmos-tests: https://github.com/ellmos-ai/ellmos-tests
   B/O/E evaluation framework for SKILL.md-based LLM operating systems and agent hubs.
 - clirec: https://github.com/ellmos-ai/clirec
