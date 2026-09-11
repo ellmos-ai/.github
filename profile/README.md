@@ -12,13 +12,13 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories (66 active repos, 1 archived; 67 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-09-07.
+This index is complete for the public `ellmos-ai` repositories (67 active repos, 1 archived; 68 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-09-11.
 
 | Area | Repositories |
 |---|---|
 | Organization profile | **[.github](https://github.com/ellmos-ai/.github)** - org profile, community health files and `llms.txt`; **[ellmos-ai.github.io](https://github.com/ellmos-ai/ellmos-ai.github.io)** - interactive maps and ecosystem explorer |
 | Stack catalog & recipes | **[stacks](https://github.com/ellmos-ai/stacks)** - catalog and shared manifest schema for every stack in the ellmos-ai family; **[bundles](https://github.com/ellmos-ai/bundles)** - recipe layer of the ellmos ecosystem (bundle manifests, catalogs and composition knowledge) |
-| Operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)** - plus **[gardener](https://github.com/ellmos-ai/GARDENER)** as the minimal OS tier when run standalone; it is indexed under [Memory and Control](#memory-and-control) below |
+| Operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)**, **[open-ocean](https://github.com/ellmos-ai/open-ocean)** - plus **[gardener](https://github.com/ellmos-ai/GARDENER)** as the minimal OS tier when run standalone; it is indexed under [Memory and Control](#memory-and-control) below |
 | Memory pillar | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/GARDENER)**, **[task-master](https://github.com/ellmos-ai/task-master)** - curated session memory, organic cross-source index, and task tracking; see [Memory and Control](#memory-and-control) |
 | MCP servers | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
 | Agent modules and orchestration | **[clutch](https://github.com/ellmos-ai/clutch)**, **[connectors](https://github.com/ellmos-ai/connectors)**, **[MarbleRun](https://github.com/ellmos-ai/marblerun)**, **[swarm-ai](https://github.com/ellmos-ai/swarm_ai)**, **[n8n-workflow-manager](https://github.com/ellmos-ai/n8n-workflow-manager)**, **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)**, **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)**, **[skills](https://github.com/ellmos-ai/skills)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[open-compute](https://github.com/ellmos-ai/open-compute)**, **[web-scraper](https://github.com/ellmos-ai/web-scraper)** - standalone web scraper (get/links/forms/headers/extract/screenshot) extracted from BACH, with an SSRF guard; **[anonymizer](https://github.com/ellmos-ai/anonymizer)** - local-first document pseudonymization with fail-closed NER; **[report-forge](https://github.com/ellmos-ai/report-forge)** - domain-neutral core for anonymizable report pipelines |
@@ -106,14 +106,17 @@ Stacks declare composition instead of copying module code — so any composition
 
 *more than a stack*
 
-Some compositions outgrow the stack layer: they are governed systems with their own identity, policies and lifecycle. Two of them are public — the banners are the links:
+Some compositions outgrow the stack layer: they are governed systems with their own identity, policies and lifecycle. Three of them form our full systems — the banners are the links:
 
 <p align="center" style="margin:16px 0;">
   <a href="https://github.com/ellmos-ai/bach" style="display:block;width:100%;margin-bottom:14px;">
     <img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(0, 212, 255, 0.3);background-color:rgba(0, 102, 204, 0.3);box-shadow:0 0 16px rgba(0, 212, 255, 0.3);border-radius:8px;box-sizing:border-box;">
   </a>
-  <a href="https://github.com/ellmos-ai/rinnsal" style="display:block;width:100%;">
+  <a href="https://github.com/ellmos-ai/rinnsal" style="display:block;width:100%;margin-bottom:14px;">
     <img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — the trickle" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(255, 0, 127, 0.3);background-color:rgba(255, 0, 127, 0.3);box-shadow:0 0 16px rgba(255, 0, 127, 0.3);border-radius:8px;box-sizing:border-box;">
+  </a>
+  <a href="https://github.com/ellmos-ai/open-ocean" style="display:block;width:100%;">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(20, 184, 166, 0.3);background-color:rgba(15, 118, 110, 0.3);box-shadow:0 0 16px rgba(20, 184, 166, 0.3);border-radius:8px;box-sizing:border-box;">
   </a>
 </p>
 
@@ -121,6 +124,7 @@ Some compositions outgrow the stack layer: they are governed systems with their 
 |---|---|
 | **[BACH](https://github.com/ellmos-ai/bach)** | *The stream that unites everything*: the full LLM-OS with 113+ handlers, 1870+ skills, boss agents and GUI. |
 | **[Rinnsal](https://github.com/ellmos-ai/rinnsal)** | *The trickle*: lightweight LLM infrastructure — memory, tasks, connectors, chains, i18n. Zero dependencies. |
+| **[open-ocean](https://github.com/ellmos-ai/open-ocean)** | *Free the ocean*: the free community full system of the ellmos ecosystem. |
 
 Different philosophies, same goal — and [gardener](https://github.com/ellmos-ai/GARDENER) doubles as the minimal OS tier when run standalone (see [Memory and Control](#memory-and-control)).
 
