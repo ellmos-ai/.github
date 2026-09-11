@@ -10,6 +10,12 @@
 > [!TIP]
 > **🗺️ Interactive maps — [ellmos-ai.github.io](https://ellmos-ai.github.io):** explore the ecosystem visually. The [module circuit map](https://ellmos-ai.github.io) shows every functional area and how they work together, the [skill library](https://ellmos-ai.github.io/skills.html) lets you read and copy every public skill, and the [stack composer](https://ellmos-ai.github.io/stack-composer.html) assembles your own stack with live composition-rule checks.
 
+<p align="center">
+  <a href="https://github.com/ellmos-ai/open-ocean" style="display:block;width:100%;">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(2, 132, 199, 0.35);background-color:rgba(2, 132, 199, 0.2);box-shadow:0 0 16px rgba(2, 132, 199, 0.35);border-radius:8px;box-sizing:border-box;">
+  </a>
+</p>
+
 ## Public Repository Index
 
 This index is complete for the public `ellmos-ai` repositories (67 active repos, 1 archived; 68 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-09-11.
