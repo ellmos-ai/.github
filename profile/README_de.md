@@ -118,7 +118,7 @@ Manche Kompositionen wachsen über die Stack-Ebene hinaus: Sie sind governierte 
     <img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — das Rinnsal" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(255, 0, 127, 0.3);background-color:rgba(255, 0, 127, 0.3);box-shadow:0 0 16px rgba(255, 0, 127, 0.3);border-radius:8px;box-sizing:border-box;">
   </a>
   <a href="https://github.com/ellmos-ai/open-ocean" style="display:block;width:100%;">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(20, 184, 166, 0.3);background-color:rgba(15, 118, 110, 0.3);box-shadow:0 0 16px rgba(20, 184, 166, 0.3);border-radius:8px;box-sizing:border-box;">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(2, 132, 199, 0.35);background-color:rgba(2, 132, 199, 0.2);box-shadow:0 0 16px rgba(2, 132, 199, 0.35);border-radius:8px;box-sizing:border-box;">
   </a>
 </p>
 
