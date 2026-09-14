@@ -14,7 +14,7 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (67 aktive Repos, 1 archiviert; 68 gesamt). Archivierte Repositories sind ausdrücklich gekennzeichnet. Zuletzt mit GitHub abgeglichen: 2026-09-11.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (68 aktive Repos, 1 archiviert; 69 gesamt). Archivierte Repositories sind ausdrücklich gekennzeichnet. Zuletzt mit GitHub abgeglichen: 2026-09-14.
 
 | Bereich | Repositories |
 |---|---|
@@ -30,7 +30,7 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 | Wettbewerbsbeiträge | **[hungrycall](https://github.com/ellmos-ai/hungrycall)**, **[ringedingeding](https://github.com/ellmos-ai/ringedingeding)**, **[researchcall](https://github.com/ellmos-ai/researchcall)**, **[roshambo](https://github.com/ellmos-ai/roshambo)**, **[roshambo-starmap](https://github.com/ellmos-ai/roshambo-starmap)**, **[cowork-protocol](https://github.com/ellmos-ai/cowork-protocol)**, **[FolderHome](https://github.com/ellmos-ai/FolderHome)**, **[NemoFold](https://github.com/ellmos-ai/NemoFold)**, **[sentinel-fleet](https://github.com/ellmos-ai/sentinel-fleet)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[bach](https://github.com/ellmos-ai/bach)** - siehe [Wettbewerbsbeiträge](#wettbewerbsbeitraege) unten |
 | Kern- und System-Infrastruktur | **[sqlite-transit-sync](https://github.com/ellmos-ai/sqlite-transit-sync)** - lokale SQLite-Synchronisation über verifizierte Snapshots und konfigurierbare Merge-Policies auf Zeilenebene (Python 3.10+, null Abhängigkeiten); **[ellmos-scheduler](https://github.com/ellmos-ai/ellmos-scheduler)** - eigenständiger lokaler Task-Scheduler und Run-Recorder für modulare ellmos-Stacks; **[ellmos-voice-io](https://github.com/ellmos-ai/ellmos-voice-io)** - lokale, LLM-neutrale STT-, TTS- und Wake-Word-Pipeline für ellmos und Standalone-Agenten |
 | Fachanwendungen | **[law-checker](https://github.com/ellmos-ai/rechtsabteilung)** - quellenbasierte KI-Ersteinschätzungen für deutsches Recht (Erstorientierung, kein Anwaltsersatz), Gesetzes-Registry und Verkörperungs-Agenten; **[worksheet-generator](https://github.com/ellmos-ai/worksheet-generator)** - erzeugt strukturierte Arbeitsblätter für pädagogische und therapeutische Zwecke, wahlweise aus einem ICF-gestützten Förderziel oder aus Fach, Klassenstufe und Thema, gerendert nach Markdown/HTML/DOCX; **[steuer-assistent](https://github.com/ellmos-ai/steuer-assistent)** - offline-first Arbeitsblatt für Werbungskosten von Arbeitnehmern: erfasst vom Nutzer selbst eingeordnete Belege und summiert sie centgenau, vollständig lokal. Keine Bewertung der Abziehbarkeit, keine Übermittlung - keine Steuerberatung; **[pasta-press](https://github.com/ellmos-ai/pasta-press)** - lokale KI-Textpresse via Ollama: Stilveredelung, Übersetzung & KI-Marker-Bereinigung mit ehrlicher AI-Disclosure |
-| Medien- und Content-Workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - lokaler AI-Video-, Audio- und Podcast-Editor mit lokaler Transkription, transkriptbasierten Schnitten, Hyperframes-Bewegtgrafik und agentengesteuerten kreativen Edits |
+| Medien- und Content-Workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - lokaler AI-Video-, Audio- und Podcast-Editor mit lokaler Transkription, transkriptbasierten Schnitten, Hyperframes-Bewegtgrafik und agentengesteuerten kreativen Edits; **[clip-storyboard-director](https://github.com/ellmos-ai/clip-storyboard-director)** - lokaler KI-Storyboard-Director und Szenen-Kontinuitäts-Orchestrator, der Videogenerierung, Chrome DevTools Protocol (CDP) und Mehrspur-Audio verbindet |
 | Evaluation, Vorlagen und Wartung | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)** - B/O/E-Evaluations-Framework für SKILL.md-basierte LLM-Betriebssysteme und Agenten-Hubs; **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agentenfreundliche Projektdokumentationsvorlage mit START/STATE/TODO/DONE, Workflows, leichtem Tooling und LLM-freundlichem Projektgedächtnis; **[system-explorer](https://github.com/ellmos-ai/system-explorer)** - evidenzbasierte Topologie-Karten, Fähigkeitsgrenzen und Kommunikationskanten für modulare Agenten- und Software-Systeme; **[clirec](https://github.com/ellmos-ai/clirec)** - menschenlesbare GUI-Demo-Aufzeichnungen für CLI- und Agenten-Workflows |
 | Legacy-Archiv | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archivierter Vorgänger von BACH |
 
@@ -251,6 +251,7 @@ Neben den Telefon-Agenten bringen mehrere ellmos-ai-Module eigene Agenten bzw. A
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Entscheidungs-Avatar — ein Agent, der die Entscheidungsmuster seines Nutzers aus Interaktionsprotokollen lernt und Entscheidungen in dessen Sinne vorhersagt oder trifft |
 | **[law-checker](https://github.com/ellmos-ai/rechtsabteilung)** | Gesetzes-Verkörperungs-Agenten — konfigurierte Gesetze (z. B. Grundgesetz und BGB) „sprechen" als Agenten — plus ein quellengestützter Ersteinschätzungs-Agent |
 | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** | Agentengetriebener kreativer Schnitt — führt transkriptbasierte Schnitte und Motion-Graphics-Durchgänge auf lokalen Medien aus |
+| **[clip-storyboard-director](https://github.com/ellmos-ai/clip-storyboard-director)** | Storyboard-Director & Szenen-Kontinuitäts-Agent — koordiniert lokale KI-Videogenerierungsläufe, Shot-Komposition, Kameraführung und Mehrspur-Audio-Synchronisation |
 
 Agenten liefern wir auch als **Skills** in der [skills](https://github.com/ellmos-ai/skills)-Bibliothek aus: **[research-agent](https://github.com/ellmos-ai/skills/tree/master/skills/research/research-agent)** — Research-Pipeline für PubMed und arXiv mit Schnellsuche und strukturierten Literatur-Reviews, reine Python-Standardbibliothek, extrahiert aus BACHs ResearchAgent — und **[dev-soft-agent](https://github.com/ellmos-ai/skills/tree/master/skills/dev/dev-soft-agent)** — automatisierte Software-Entwicklungs-Pipeline, die Projekte scannt, Aufgaben priorisiert und Entwicklungs-Loops orchestriert.
 
@@ -271,6 +272,10 @@ Projekte, die für öffentliche Hackathons und Wettbewerbe entstanden sind. Aufg
 | **[researchcall](https://github.com/ellmos-ai/researchcall)** | CALL-E „Your Code Is Calling" (Devpost, 2026) | Standardisierter Telefonumfrage-Läufer mit achtstufiger Forschungspipeline und ehrlicher Nichtteilnahme-Berichterstattung |
 | **[roshambo](https://github.com/ellmos-ai/roshambo)** | CockroachDB × AWS Hackathon (2026-07) | Multi-Agenten-Koordinator: serialisierbare Leases und Outcome-Gedächtnis auf CockroachDB, mit MCP-Schnittstelle |
 | **[roshambo-starmap](https://github.com/ellmos-ai/roshambo-starmap)** | CockroachDB × AWS Hackathon (2026-07) | Evidenz-Artefakt des begleitenden Multi-Vendor-Schwarmlaufs — ein abspielbares Feldprotokoll von 27 Agenten, die sich über roshambo koordinieren |
+| **[cowork-protocol](https://github.com/ellmos-ai/cowork-protocol)** | The WebMCP Challenge (Devpost, 2026) | Wiederverwendbares Kollaborationsprotokoll und adaptive Bridge für Menschen, WebMCP-Apps und Web-Agenten |
+| **[FolderHome](https://github.com/ellmos-ai/FolderHome)** | Agents for Humans (Devpost, 2026) | Lokaler Strands-Agent für sichere Workflows mit Haushaltsdokumenten |
+| **[NemoFold](https://github.com/ellmos-ai/NemoFold)** | Nebius Global AI Hackathon (Devpost, 2026) | Evidenzbasierter Dokumenten-Agent mit persistentem lokalem Gedächtnis |
+| **[sentinel-fleet](https://github.com/ellmos-ai/sentinel-fleet)** | All Things Agentic Hackathon (Devpost, 2026) | Autonomer Cluster für Flottensicherheit und Monitoring-Agenten |
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Agenten-Rezept-Beitrag | Ein Rezept für beliebige KI-Agenten, aus Interaktionsprotokollen ein selbstverbesserndes Theory-of-Mind-Modell ihres Nutzers zu bauen |
 | **[bach](https://github.com/ellmos-ai/bach)** | Agenten-OS-Beitrag | Das vollständige lokale LLM-Betriebssystem: Gedächtnis, Handler, Skills, Agenten und GUI |
 
@@ -284,6 +289,44 @@ Diese Projekte liegen in Schwester-Organisationen, sind aber besonders relevant 
 |---|---|---|
 | **[llm-note](https://github.com/doc-bricks/llm-note)** | doc-bricks | Lokale Notizen und Notizbücher für LLM-Agenten — aus BACH-Notizblock-/Denkarium-Mustern extrahiert, mit SQLite, Klartext-Notizbüchern und sechs Sprachen |
 | **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Lokale Wissensdatenbank mit LLM-Vorverarbeitung — Dokumente ohne Cloud-Abhängigkeiten einlesen, strukturieren und abfragen; Kernmodul von [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack) |
+
+---
+
+## Ökosystem-Netzwerk
+
+`ellmos-ai` ist die tragende Säule für KI-Infrastruktur und LLM-Betriebssysteme innerhalb unseres integrativen Open-Source-Software- und Forschungs-Ökosystems:
+
+| Organisation | Themenschwerpunkt | Wichtigste Repositories / Rolle |
+|---|---|---|
+| [open-bricks](https://github.com/open-bricks) | Dachorganisation & Zentralkatalog | Zentralkatalog aller Repositories, Tool-Matrix, Frameworks |
+| [ellmos-ai](https://github.com/ellmos-ai) | KI-Agenten-Infrastruktur & LLM-OS | `bach`, `rinnsal`, `open-ocean`, `skills`, `agent-ops-stack`, `clip-storyboard-director` |
+| [file-bricks](https://github.com/file-bricks) | Desktop-Tools & Dateiverwaltung | `ProFiler`, `ExplorerPro`, `ProSync`, `AmpelClip`, `knowledgedigest`, `WinStorePackager` |
+| [doc-bricks](https://github.com/doc-bricks) | Dokumenten- & Medienverarbeitung | `DokuReader`, `MediaBrain`, `UniversalInvoiceMail`, `CleanMarkdown`, `llm-note` |
+| [dev-bricks](https://github.com/dev-bricks) | Entwickler-Werkzeuge & Code-Tools | `DevCenter`, `ApiProber`, `app-rotator`, `CodeBox`, `WikiStub-Seed` |
+| [research-line](https://github.com/research-line) | Open Science & Mathematische Physik | `functional-stability-theory`, `crm-cosmology`, `fst-nash`, `rh-even-dominance` |
+| [biotec-line](https://github.com/biotec-line) | Bioinformatik & Genomik | `VFDistiller`, `genotype-to-vcf` |
+| [entertain-and-more](https://github.com/entertain-and-more) | Spiele, RPG & Audio-Tools | `ChatAndChess`, `rpx`, `KlangpultLight` |
+| [assistassets-ai](https://github.com/assistassets-ai) | Lokale Finanz- & Portfolioanalyse | `FinancialProof` |
+| [um-bruch](https://github.com/um-bruch) | Angewandte Medizin & Gesundheitspolitik | Klinische Risikoanalyse, Verordnungsmodelle, Systemmedizin |
+| [lukisch](https://github.com/lukisch) | Persönliches Entwickler-Profil | Developer-Portal & Flaggschiff-Projekte |
+
+---
+
+## Such- und Auffindbarkeitsbegriffe
+
+```
+ellmos-ai
+Lokale KI-Agenten-Infrastruktur
+BACH LLM Betriebssystem Python SQLite
+Rinnsal leichtgewichtiges LLM Gedächtnis
+clip-storyboard-director KI Storyboard Director Szenen Kontinuität
+ai-media-editor lokaler KI Medien Video Audio Editor
+Model Context Protocol MCP Server
+open-ocean freies Community Gesamtsystem
+roshambo CockroachDB serialisierbare Leases Multi-Agenten-Koordinator
+ticket-master lock-master Agenten Betriebswerkzeuge
+kuratiertes Session-Gedächtnis organischer Cross-Source FTS5 Index
+```
 
 ---
 

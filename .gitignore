@@ -1,2 +1,31 @@
 _archive/
 
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Operating system artifacts
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+
+# Multi-host sync and conflicted copies
+* (kopie)*
+* (Kopie)*
+* (copy)*
+* (Copy)*
+*conflicted copy*
+*-WORKSTATION*
+*-ASUS-GEI*
+*.orig
+*.rej
+
+# Local locks
+LOCK*.txt
+LOCK.*

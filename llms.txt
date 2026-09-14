@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-09-11 to include open-ocean. Live count verified via gh repo list on 2026-09-11: 67 active public repos, 1 archived (68 total).
+Public repository coverage: updated 2026-09-14 to include clip-storyboard-director. Live count verified via gh repo list on 2026-09-14: 68 active public repos, 1 archived (69 total).
 
 ## Primary entry points
 
@@ -146,6 +146,8 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 
 - ai-media-editor: https://github.com/ellmos-ai/ai-media-editor
   Local AI media-editing orchestrator for video, audio and podcasts with faster-whisper or WhisperX transcription, Scribe-compatible transcript JSON, video-use cuts, Hyperframes motion graphics and agent-guided edits.
+- clip-storyboard-director: https://github.com/ellmos-ai/clip-storyboard-director
+  Local-first AI storyboard director and scene continuity orchestrator bridging video generation, CDP, and multitrack audio.
 - workflowhooker: https://github.com/ellmos-ai/WORKFLOWHOOKER
   Git hook and webhook event trigger automation engine.
 
@@ -258,6 +260,7 @@ system-explorer topology mapping capability bounds discovery
 ellmos-scheduler local task scheduler run recorder
 bundles manifest catalog composition knowledge
 sqlite-transit-sync local SQLite synchronization snapshots row-level merge
+clip-storyboard-director local AI storyboard director scene continuity video production
 ```
 
-## Last-checked: 2026-08-18
+## Last-checked: 2026-09-14

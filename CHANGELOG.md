@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-09-14
+
+### Added & Reconciled
+- Turnusgemäßer Health- und Discoverability-Audit für `ellmos-ai` (.github) durchgeführt.
+- `clip-storyboard-director` (lokaler KI-Storyboard-Director und Szenen-Kontinuitäts-Orchestrator) in den öffentlichen Index über alle Kerndokumente (`README.md`, `profile/README.md`, `profile/README_de.md`, `llms.txt`) aufgenommen.
+- Vollständige Parität mit 68 aktiven öffentlichen Repositories und 1 archivierten Legacy-Repo (`recludos-legacy`), 69 Repositories gesamt.
+- Deutsche Profilseite `profile/README_de.md` harmonisiert und um 4 zuvor fehlende Hackathon-Beiträge (`cowork-protocol`, `FolderHome`, `NemoFold`, `sentinel-fleet`) sowie `clip-storyboard-director` ergänzt.
+- Vollständige 11-Organisationen-Ökosystem-Tabelle in `profile/README.md` und `profile/README_de.md` integriert (inklusive `um-bruch` und `lukisch`).
+- `SECURITY.md` zweisprachig modernisiert mit verbindlicher 48h Response SLA, 7-14 Tage Triage, Sicherheitsinvarianten (Zero-Egress, Non-Elevation, Integrity) und offiziellen Kontaktstellen.
+- Automatisierte Vertragstest-Suite in `tests/test_profile_parity.py` mit 9 Pruefungen und striktem Privacy-Leak-Schutz gegen alle 37 privaten Repositories implementiert.
+- `.gitignore` gegen Caches, Locks und Multi-Host-Konfliktkopien gehärtet.
+
 ## [1.0.5] - 2026-08-16
 
 ### Added & Reconciled
@@ -38,7 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed — 2026-08-05
 
-- Live index reconciliation against the GitHub API: removed seven entries that are not public repositories (`memoryhooker-provenance`, `workflowhooker-provenance`, `prompt-evidence-collector`, `ellmos-core`, `ellmos-development-system`, `policy-registry`, `system-explorer`).
+- Live index reconciliation against the GitHub API: removed seven non-public repository entries to uphold strict public-only catalog boundaries.
 - Corrected stale cross-org links: `ticket-master`, `lock-master` and `companion-for-agy` now resolve inside `ellmos-ai`, and `dev-bricks/sync-master` is `ellmos-ai/system-gap-master`. Removed them from "Related Projects in Other Orgs" and added an "Agent operations tooling" row.
 - Synchronized repository counts and `Last-checked` timestamps to 50 active public repositories plus one archived (51 total), verified 2026-08-05.
 

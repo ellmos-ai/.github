@@ -18,7 +18,7 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories (67 active repos, 1 archived; 68 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-09-11.
+This index is complete for the public `ellmos-ai` repositories (68 active repos, 1 archived; 69 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-09-14.
 
 | Area | Repositories |
 |---|---|
@@ -34,7 +34,7 @@ This index is complete for the public `ellmos-ai` repositories (67 active repos,
 | Competition entries | **[hungrycall](https://github.com/ellmos-ai/hungrycall)**, **[ringedingeding](https://github.com/ellmos-ai/ringedingeding)**, **[researchcall](https://github.com/ellmos-ai/researchcall)**, **[roshambo](https://github.com/ellmos-ai/roshambo)**, **[roshambo-starmap](https://github.com/ellmos-ai/roshambo-starmap)**, **[cowork-protocol](https://github.com/ellmos-ai/cowork-protocol)**, **[FolderHome](https://github.com/ellmos-ai/FolderHome)**, **[NemoFold](https://github.com/ellmos-ai/NemoFold)**, **[sentinel-fleet](https://github.com/ellmos-ai/sentinel-fleet)**, **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)**, **[bach](https://github.com/ellmos-ai/bach)** - see [Competition Entries](#competition-entries) below |
 | Core and system infrastructure | **[sqlite-transit-sync](https://github.com/ellmos-ai/sqlite-transit-sync)** - local-first SQLite synchronization through verified snapshots and configurable row-level merge policies (Python 3.10+, zero dependencies); **[ellmos-scheduler](https://github.com/ellmos-ai/ellmos-scheduler)** - standalone local-first task scheduler and run recorder for modular ellmos stacks; **[ellmos-voice-io](https://github.com/ellmos-ai/ellmos-voice-io)** - local-first, LLM-neutral STT, TTS, and wake-word pipeline for ellmos and standalone CLI agents |
 | Domain tools | **[law-checker](https://github.com/ellmos-ai/rechtsabteilung)** - source-grounded AI first-look legal assessments for German law (Erstorientierung, no substitute for a lawyer), statute registry and embodiment agents; **[worksheet-generator](https://github.com/ellmos-ai/worksheet-generator)** - generates structured worksheets for pedagogical and therapeutic use, either from an ICF-aware support goal or from subject, grade and topic, rendered to Markdown/HTML/DOCX; **[steuer-assistent](https://github.com/ellmos-ai/steuer-assistent)** - offline-first worksheet for German employee income-related expenses (Werbungskosten): records self-categorized receipts and sums them to the cent, entirely locally. It does not assess deductibility and does not file a return - not tax advice; **[pasta-press](https://github.com/ellmos-ai/pasta-press)** - local AI text press via Ollama: style refinement, translation & AI-marker cleanup with honest AI disclosure |
-| Media and content workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - local AI video, audio and podcast editing with local transcription, transcript-based cuts, Hyperframes motion graphics and agent-driven creative edits |
+| Media and content workflows | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** - local AI video, audio and podcast editing with local transcription, transcript-based cuts, Hyperframes motion graphics and agent-driven creative edits; **[clip-storyboard-director](https://github.com/ellmos-ai/clip-storyboard-director)** - local-first AI storyboard director and scene continuity orchestrator bridging video generation, CDP, and multitrack audio |
 | Evaluation, templates and maintenance | **[ellmos-tests](https://github.com/ellmos-ai/ellmos-tests)** - B/O/E evaluation framework for SKILL.md-based LLM operating systems and agent hubs; **[project-docs-template](https://github.com/ellmos-ai/project-docs-template)** - agent-ready project documentation template with START/STATE/TODO/DONE, workflows, lightweight tooling and LLM-friendly project memory; **[system-explorer](https://github.com/ellmos-ai/system-explorer)** - evidence-based topology mapping, capability bounds and communication edge discovery; **[clirec](https://github.com/ellmos-ai/clirec)** - human-readable GUI demonstration recordings for CLI and agent workflows |
 | Legacy archive | **[recludos-legacy](https://github.com/ellmos-ai/recludos-legacy)** - archived predecessor to BACH |
 
@@ -255,6 +255,7 @@ Beyond the telephone agents, several ellmos-ai modules ship their own agents or 
 | **[build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind)** | Decision avatar — an agent that learns its user's decision patterns from interaction logs and predicts or takes decisions in their spirit |
 | **[law-checker](https://github.com/ellmos-ai/rechtsabteilung)** | Statute embodiment agents — configured statutes (e.g. the German constitution and civil code) "speak" as agents — plus a source-grounded first-look assessment agent |
 | **[ai-media-editor](https://github.com/ellmos-ai/ai-media-editor)** | Agent-driven creative editing — performs transcript-based cuts and motion-graphics passes on local media |
+| **[clip-storyboard-director](https://github.com/ellmos-ai/clip-storyboard-director)** | Storyboard director & scene continuity agent — coordinates local AI video generation passes, shot composition, camera timing, and multitrack audio sync |
 
 Agents also ship as **skills** in the [skills](https://github.com/ellmos-ai/skills) library: **[research-agent](https://github.com/ellmos-ai/skills/tree/master/skills/research/research-agent)** — research pipeline for PubMed and arXiv with quick search and structured literature reviews, pure Python standard library, extracted from BACH's ResearchAgent — and **[dev-soft-agent](https://github.com/ellmos-ai/skills/tree/master/skills/dev/dev-soft-agent)** — automated software-development pipeline that scans projects, prioritizes tasks and orchestrates development loops.
 
@@ -292,6 +293,44 @@ These projects live in sibling organizations but are particularly relevant to th
 |---|---|---|
 | **[llm-note](https://github.com/doc-bricks/llm-note)** | doc-bricks | Local-first notes and notebook inboxes for LLM agents — extracted from BACH Notizblock/Denkarium patterns with SQLite, plain-text notebooks and six locales |
 | **[knowledgedigest](https://github.com/file-bricks/knowledgedigest)** | file-bricks | Local-first knowledge base with LLM preprocessing — ingest, structure and query documents without cloud dependencies; core module of [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack) |
+
+---
+
+## Ecosystem Network
+
+`ellmos-ai` operates as the primary AI infrastructure and LLM operating system engineering pillar within an integrated open-source software and research ecosystem:
+
+| Organization | Domain Focus | Key Repositories / Role |
+|---|---|---|
+| [open-bricks](https://github.com/open-bricks) | Umbrella / Dach-Organisation | Central catalog, open-source software umbrella, ecosystem index |
+| [ellmos-ai](https://github.com/ellmos-ai) | AI Agent Infrastructure | `bach`, `rinnsal`, `open-ocean`, `skills`, `agent-ops-stack`, `clip-storyboard-director` |
+| [file-bricks](https://github.com/file-bricks) | Desktop Data Tools | `ProFiler`, `ExplorerPro`, `ProSync`, `AmpelClip`, `knowledgedigest`, `WinStorePackager` |
+| [doc-bricks](https://github.com/doc-bricks) | Document & Media Systems | `DokuReader`, `MediaBrain`, `UniversalInvoiceMail`, `CleanMarkdown`, `llm-note` |
+| [dev-bricks](https://github.com/dev-bricks) | Developer & Code Tools | `DevCenter`, `ApiProber`, `app-rotator`, `CodeBox`, `WikiStub-Seed` |
+| [research-line](https://github.com/research-line) | Open Science & Math Physics | `functional-stability-theory`, `crm-cosmology`, `fst-nash`, `rh-even-dominance` |
+| [biotec-line](https://github.com/biotec-line) | Bioinformatics & Genomics | `VFDistiller`, `genotype-to-vcf` |
+| [entertain-and-more](https://github.com/entertain-and-more) | Games, RPG & Podcast Tools | `ChatAndChess`, `rpx`, `KlangpultLight` |
+| [assistassets-ai](https://github.com/assistassets-ai) | Local Financial Analytics | `FinancialProof` |
+| [um-bruch](https://github.com/um-bruch) | Applied Health & Public Policy | Clinical risk analysis, prescribing models, systems medicine |
+| [lukisch](https://github.com/lukisch) | Personal GitHub Profile | Developer portal & flagship showcases |
+
+---
+
+## Search & Discovery Phrases
+
+```
+ellmos-ai
+local-first AI agent infrastructure
+BACH LLM operating system Python SQLite
+Rinnsal lightweight LLM memory
+clip-storyboard-director AI storyboard director scene continuity orchestrator
+ai-media-editor local AI media video audio editing
+Model Context Protocol MCP servers
+open-ocean free community full system
+roshambo CockroachDB serializable lease multi-agent coordinator
+ticket-master lock-master agent operations tooling
+curated session memory organic cross-source FTS5 index
+```
 
 ---
 
