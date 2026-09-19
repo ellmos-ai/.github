@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/banner-ellmos-top.svg" alt="ellmos-ai — text-based operating systems for LLMs" width="100%">
+  <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/banner-ellmos-top.svg" alt="ellmos-ai — text-based operating systems for LLMs" width="680">
 </p>
 
 > [!NOTE]
@@ -11,8 +11,8 @@
 > **🗺️ Interactive maps — [ellmos-ai.github.io](https://ellmos-ai.github.io):** explore the ecosystem visually. The [module circuit map](https://ellmos-ai.github.io) shows every functional area and how they work together, the [skill library](https://ellmos-ai.github.io/skills.html) lets you read and copy every public skill, and the [stack composer](https://ellmos-ai.github.io/stack-composer.html) assembles your own stack with live composition-rule checks.
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/open-ocean" style="display:block;width:100%;">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(2, 132, 199, 0.35);background-color:rgba(2, 132, 199, 0.2);box-shadow:0 0 16px rgba(2, 132, 199, 0.35);border-radius:8px;box-sizing:border-box;">
+  <a href="https://github.com/ellmos-ai/open-ocean">
+    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="680">
   </a>
 </p>
 
@@ -43,7 +43,7 @@ This index is complete for the public `ellmos-ai` repositories (72 active repos,
 ## Skills
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — pluggable skill library" width="720" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a>
+  <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — pluggable skill library" width="680"></a>
 </p>
 
 ---
@@ -52,7 +52,12 @@ This index is complete for the public `ellmos-ai` repositories (72 active repos,
 
 Our recommended selection — building blocks that integrate into any ellmos OS or stand on their own. The banners are the links; details in the table below:
 
-<p align="center"><a href="https://github.com/ellmos-ai/swarm_ai"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/banner-swarm.svg" alt="swarm-ai" width="680" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/byum-banner-neon.svg" alt="build-your-users-mind" width="680" style="border:2px solid #f472b6;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="680" style="border:2px solid #2dd4bf;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.svg" alt="report-forge" width="680" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="680" style="border:2px solid #e879f9;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/main/docs/assets/banner.svg" alt="clutch" width="680" style="border:2px solid #a3e635;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/marblerun"><img src="https://raw.githubusercontent.com/ellmos-ai/MarbleRun/main/docs/assets/banner.svg" alt="MarbleRun" width="680" style="border:2px solid #fb923c;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/n8n-workflow-manager/main/assets/banner.png" alt="n8n-workflow-manager" width="680" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/banner.png" alt="open-compute" width="680" style="border:2px solid #f87171;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/connectors"><img src="https://raw.githubusercontent.com/ellmos-ai/connectors/main/assets/banner.svg" alt="connectors" width="680" style="border:2px solid #818cf8;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/anonymizer"><img src="https://raw.githubusercontent.com/ellmos-ai/anonymizer/main/assets/banner.png" alt="anonymizer" width="680" style="border:2px solid #22d3ee;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/pasta-press"><img src="https://raw.githubusercontent.com/ellmos-ai/pasta-press/master/docs/assets/banner.jpg" alt="pasta-press" width="680" style="border:2px solid #facc15;border-radius:8px;margin:0"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/swarm_ai"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/banner-swarm.svg" alt="swarm-ai" width="330"></a> <a href="https://github.com/ellmos-ai/build-your-users-mind"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/byum-banner-neon.svg" alt="build-your-users-mind" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/web-scraper"><img src="https://raw.githubusercontent.com/ellmos-ai/web-scraper/main/assets/banner.svg" alt="web-scraper" width="330"></a> <a href="https://github.com/ellmos-ai/report-forge"><img src="https://raw.githubusercontent.com/ellmos-ai/report-forge/main/assets/banner.svg" alt="report-forge" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/ai-media-editor"><img src="https://raw.githubusercontent.com/ellmos-ai/ai-media-editor/main/assets/banner.svg" alt="ai-media-editor" width="330"></a> <a href="https://github.com/ellmos-ai/clutch"><img src="https://raw.githubusercontent.com/ellmos-ai/clutch/main/docs/assets/banner.svg" alt="clutch" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/marblerun"><img src="https://raw.githubusercontent.com/ellmos-ai/MarbleRun/main/docs/assets/banner.svg" alt="MarbleRun" width="330"></a> <a href="https://github.com/ellmos-ai/n8n-workflow-manager"><img src="https://raw.githubusercontent.com/ellmos-ai/n8n-workflow-manager/main/assets/banner.png" alt="n8n-workflow-manager" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/open-compute"><img src="https://raw.githubusercontent.com/ellmos-ai/open-compute/master/assets/banner.png" alt="open-compute" width="330"></a> <a href="https://github.com/ellmos-ai/connectors"><img src="https://raw.githubusercontent.com/ellmos-ai/connectors/main/assets/banner.svg" alt="connectors" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/anonymizer"><img src="https://raw.githubusercontent.com/ellmos-ai/anonymizer/main/assets/banner.png" alt="anonymizer" width="330"></a> <a href="https://github.com/ellmos-ai/pasta-press"><img src="https://raw.githubusercontent.com/ellmos-ai/pasta-press/master/docs/assets/banner.jpg" alt="pasta-press" width="330"></a></p>
 
 | Module | Focus |
 |---|---|
@@ -75,7 +80,7 @@ Our recommended selection — building blocks that integrate into any ellmos OS 
 ## Bundles
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/bundles"><img src="https://raw.githubusercontent.com/ellmos-ai/bundles/main/assets/banner.png" alt="bundles — the recipe and composition layer" width="880" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a>
+  <a href="https://github.com/ellmos-ai/bundles"><img src="https://raw.githubusercontent.com/ellmos-ai/bundles/main/assets/banner.png" alt="bundles — the recipe and composition layer" width="680"></a>
 </p>
 
 Bundles declare *which module versions belong together*: versioned, compatibility-checked dependency trees.
@@ -118,17 +123,8 @@ Stacks declare composition instead of copying module code — so any composition
 
 Some compositions outgrow the stack layer: they are governed systems with their own identity, policies and lifecycle. Three of them form our full systems — the banners are the links:
 
-<p align="center" style="margin:16px 0;">
-  <a href="https://github.com/ellmos-ai/bach" style="display:block;width:100%;margin-bottom:14px;">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(0, 212, 255, 0.3);background-color:rgba(0, 102, 204, 0.3);box-shadow:0 0 16px rgba(0, 212, 255, 0.3);border-radius:8px;box-sizing:border-box;">
-  </a>
-  <a href="https://github.com/ellmos-ai/rinnsal" style="display:block;width:100%;margin-bottom:14px;">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — the trickle" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(255, 0, 127, 0.3);background-color:rgba(255, 0, 127, 0.3);box-shadow:0 0 16px rgba(255, 0, 127, 0.3);border-radius:8px;box-sizing:border-box;">
-  </a>
-  <a href="https://github.com/ellmos-ai/open-ocean" style="display:block;width:100%;">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="100%" style="width:100%;max-width:100%;display:block;border:2px solid rgba(2, 132, 199, 0.35);background-color:rgba(2, 132, 199, 0.2);box-shadow:0 0 16px rgba(2, 132, 199, 0.35);border-radius:8px;box-sizing:border-box;">
-  </a>
-</p>
+<p align="center"><a href="https://github.com/ellmos-ai/bach"><img src="https://raw.githubusercontent.com/ellmos-ai/bach/main/assets/banner_v2.png" alt="BACH — the stream that unites everything" width="330"></a> <a href="https://github.com/ellmos-ai/rinnsal"><img src="https://raw.githubusercontent.com/ellmos-ai/rinnsal/master/assets/banner_v2.png" alt="Rinnsal — the trickle" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/open-ocean"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/open-ocean-banner.png" alt="open-ocean — free the ocean" width="680"></a></p>
 
 | System | What it is |
 |---|---|
@@ -142,18 +138,8 @@ Different philosophies, same goal — and [gardener](https://github.com/ellmos-a
 
 ## Stacks
 
-<p align="center">
-  <a href="https://github.com/ellmos-ai/stacks">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/stacks-umbrella-banner.png" alt="stacks — Umbrella Catalog &amp; Framework" width="880" style="display:block;margin:0 auto 15px auto">
-  </a>
-  <br>
-  <a href="https://github.com/ellmos-ai/ellmos-stack">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="430" height="120" style="border:2px solid #34d399;box-shadow:0 0 12px rgba(52,211,153,0.45);border-radius:8px;margin:5px;object-fit:cover">
-  </a>
-  <a href="https://github.com/ellmos-ai/agent-ops-stack">
-    <img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="430" height="120" style="border:2px solid #38bdf8;box-shadow:0 0 12px rgba(56,189,248,0.45);border-radius:8px;margin:5px;object-fit:cover">
-  </a>
-</p>
+<p align="center"><a href="https://github.com/ellmos-ai/stacks"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/assets/stacks-umbrella-banner.png" alt="stacks — Umbrella Catalog &amp; Composition Framework" width="680"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/ellmos-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-stack/master/assets/banner_v2.png" alt="ellmos-stack" width="330"></a> <a href="https://github.com/ellmos-ai/agent-ops-stack"><img src="https://raw.githubusercontent.com/ellmos-ai/agent-ops-stack/main/assets/banner.png" alt="agent-ops-stack" width="330"></a></p>
 
 Stacks are manifest-driven compositions (`ellmos.stack.v2`) — no code copies, just declared components. Two active public stacks anchor the family, catalogued in a third:
 
@@ -208,7 +194,15 @@ Nine MCP servers, one control plane — arranged as a vertical **family tree (St
 
 The family's memory pillar and its coordination & control modules — first their banners, then the details:
 
-<p align="center"><a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="560" style="border:2px solid #38bdf8;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/GARDENER"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" alt="gardener" height="159" style="border:2px solid #4ade80;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="560" style="border:2px solid #fbbf24;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/ticket-master"><img src="https://raw.githubusercontent.com/ellmos-ai/ticket-master/main/assets/banner.png" alt="ticket-master" width="560" style="border:2px solid #fb923c;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/lock-master"><img src="https://raw.githubusercontent.com/ellmos-ai/lock-master/main/assets/banner.png" alt="lock-master" width="560" style="border:2px solid #f87171;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/system-gap-master"><img src="https://raw.githubusercontent.com/ellmos-ai/system-gap-master/main/docs/assets/banner.svg" alt="system-gap-master" width="560" style="border:2px solid #06b6d4;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/coma"><img src="https://raw.githubusercontent.com/ellmos-ai/coma/main/docs/assets/banner.svg" alt="coma" width="560" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a><a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="560" style="border:2px solid #f472b6;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/WORKFLOWHOOKER"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="560" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/system-auditor"><img src="https://raw.githubusercontent.com/ellmos-ai/system-auditor/master/assets/banner.png" alt="system-auditor" width="560" style="border:2px solid #22d3ee;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/compare-race"><img src="https://raw.githubusercontent.com/ellmos-ai/compare-race/master/assets/banner.png" alt="compare-race" width="560" style="border:2px solid #fb7185;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/prompt-listener"><img src="https://raw.githubusercontent.com/ellmos-ai/prompt-listener/master/assets/banner.png" alt="prompt-listener" width="560" style="border:2px solid #38bdf8;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/policy-registry"><img src="https://raw.githubusercontent.com/ellmos-ai/policy-registry/main/assets/banner.png" alt="policy-registry" width="560" style="border:2px solid #60a5fa;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/source-resolver"><img src="https://raw.githubusercontent.com/ellmos-ai/source-resolver/master/assets/banner.png" alt="source-resolver" width="560" style="border:2px solid #e879f9;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/grounding-seed"><img src="https://raw.githubusercontent.com/ellmos-ai/grounding-seed/master/assets/banner.png" alt="grounding-seed" width="560" style="border:2px solid #4ade80;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/decision-clicker"><img src="https://raw.githubusercontent.com/ellmos-ai/decision-clicker/master/assets/banner.png" alt="decision-clicker" width="560" style="border:2px solid #818cf8;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/session-checkpoint"><img src="https://raw.githubusercontent.com/ellmos-ai/session-checkpoint/main/assets/banner.png" alt="session-checkpoint" width="560" style="border:2px solid #2dd4bf;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/prompt-evidence-collector"><img src="https://raw.githubusercontent.com/ellmos-ai/prompt-evidence-collector/master/assets/banner.png" alt="prompt-evidence-collector" width="560" style="border:2px solid #34d399;border-radius:8px;margin:0"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/usmc"><img src="https://raw.githubusercontent.com/ellmos-ai/usmc/main/assets/banner.png" alt="usmc" width="330"></a> <a href="https://github.com/ellmos-ai/GARDENER"><img src="https://raw.githubusercontent.com/ellmos-ai/.github/master/profile/logo-gardener.jpg" alt="gardener" height="94"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/task-master"><img src="https://raw.githubusercontent.com/ellmos-ai/task-master/master/assets/banner-zen.svg" alt="task-master" width="330"></a> <a href="https://github.com/ellmos-ai/ticket-master"><img src="https://raw.githubusercontent.com/ellmos-ai/ticket-master/main/assets/banner.png" alt="ticket-master" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/lock-master"><img src="https://raw.githubusercontent.com/ellmos-ai/lock-master/main/assets/banner.png" alt="lock-master" width="330"></a> <a href="https://github.com/ellmos-ai/system-gap-master"><img src="https://raw.githubusercontent.com/ellmos-ai/system-gap-master/main/docs/assets/banner.svg" alt="system-gap-master" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/coma"><img src="https://raw.githubusercontent.com/ellmos-ai/coma/main/docs/assets/banner.svg" alt="coma" width="330"></a> <a href="https://github.com/ellmos-ai/memoryhooker"><img src="https://raw.githubusercontent.com/ellmos-ai/memoryhooker/main/docs/assets/banner.svg" alt="memoryhooker" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/WORKFLOWHOOKER"><img src="https://raw.githubusercontent.com/ellmos-ai/workflowhooker/main/docs/assets/banner.svg" alt="workflowhooker" width="330"></a> <a href="https://github.com/ellmos-ai/system-auditor"><img src="https://raw.githubusercontent.com/ellmos-ai/system-auditor/master/assets/banner.png" alt="system-auditor" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/compare-race"><img src="https://raw.githubusercontent.com/ellmos-ai/compare-race/master/assets/banner.png" alt="compare-race" width="330"></a> <a href="https://github.com/ellmos-ai/prompt-listener"><img src="https://raw.githubusercontent.com/ellmos-ai/prompt-listener/master/assets/banner.png" alt="prompt-listener" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/policy-registry"><img src="https://raw.githubusercontent.com/ellmos-ai/policy-registry/main/assets/banner.png" alt="policy-registry" width="330"></a> <a href="https://github.com/ellmos-ai/source-resolver"><img src="https://raw.githubusercontent.com/ellmos-ai/source-resolver/master/assets/banner.png" alt="source-resolver" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/grounding-seed"><img src="https://raw.githubusercontent.com/ellmos-ai/grounding-seed/master/assets/banner.png" alt="grounding-seed" width="330"></a> <a href="https://github.com/ellmos-ai/decision-clicker"><img src="https://raw.githubusercontent.com/ellmos-ai/decision-clicker/master/assets/banner.png" alt="decision-clicker" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/session-checkpoint"><img src="https://raw.githubusercontent.com/ellmos-ai/session-checkpoint/main/assets/banner.png" alt="session-checkpoint" width="330"></a> <a href="https://github.com/ellmos-ai/prompt-evidence-collector"><img src="https://raw.githubusercontent.com/ellmos-ai/prompt-evidence-collector/master/assets/banner.png" alt="prompt-evidence-collector" width="330"></a></p>
 
 | Module | Role |
 |---|---|
@@ -239,7 +233,9 @@ The family's memory pillar and its coordination & control modules — first thei
 
 Modules built for one concrete field rather than for the agent runtime itself — the banners are the links, details in the [Public Repository Index](#public-repository-index) above:
 
-<p align="center"><a href="https://github.com/ellmos-ai/rechtsabteilung"><img src="https://raw.githubusercontent.com/ellmos-ai/rechtsabteilung/main/assets/banner.png" alt="law-checker" width="560" style="border:2px solid #fbbf24;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/worksheet-generator"><img src="https://raw.githubusercontent.com/ellmos-ai/worksheet-generator/main/assets/banner.png" alt="worksheet-generator" width="560" style="border:2px solid #2dd4bf;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/steuer-assistent"><img src="https://raw.githubusercontent.com/ellmos-ai/steuer-assistent/main/assets/banner.png" alt="steuer-assistent" width="560" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/ellmos-voice-io"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-voice-io/main/docs/assets/banner.png" alt="ellmos-voice-io" width="350" style="border:2px solid #38bdf8;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/ellmos-tests"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-tests/master/assets/banner.png" alt="ellmos-tests" width="560" style="border:2px solid #4ade80;border-radius:8px;margin:0"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/rechtsabteilung"><img src="https://raw.githubusercontent.com/ellmos-ai/rechtsabteilung/main/assets/banner.png" alt="law-checker" width="330"></a> <a href="https://github.com/ellmos-ai/worksheet-generator"><img src="https://raw.githubusercontent.com/ellmos-ai/worksheet-generator/main/assets/banner.png" alt="worksheet-generator" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/steuer-assistent"><img src="https://raw.githubusercontent.com/ellmos-ai/steuer-assistent/main/assets/banner.png" alt="steuer-assistent" width="330"></a> <a href="https://github.com/ellmos-ai/ellmos-voice-io"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-voice-io/main/docs/assets/banner.png" alt="ellmos-voice-io" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/ellmos-tests"><img src="https://raw.githubusercontent.com/ellmos-ai/ellmos-tests/master/assets/banner.png" alt="ellmos-tests" width="330"></a></p>
 
 ---
 
@@ -249,9 +245,8 @@ Modules built for one concrete field rather than for the agent runtime itself �
 
 Telephone agents built on **[CALL-E](https://github.com/CALLE-AI/call-e-integrations)** — each one takes a spoken task off a person's hands and reports back what actually happened, including when nobody picked up.
 
-[![hungrycall](https://raw.githubusercontent.com/ellmos-ai/hungrycall/main/banner.png)](https://github.com/ellmos-ai/hungrycall)
-[![ringedingeding](https://raw.githubusercontent.com/ellmos-ai/ringedingeding/main/banner.png)](https://github.com/ellmos-ai/ringedingeding)
-[![researchcall](https://raw.githubusercontent.com/ellmos-ai/researchcall/main/banner.png)](https://github.com/ellmos-ai/researchcall)
+<p align="center"><a href="https://github.com/ellmos-ai/hungrycall"><img src="https://raw.githubusercontent.com/ellmos-ai/hungrycall/main/banner.png" alt="hungrycall" width="330"></a> <a href="https://github.com/ellmos-ai/ringedingeding"><img src="https://raw.githubusercontent.com/ellmos-ai/ringedingeding/main/banner.png" alt="ringedingeding" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/researchcall"><img src="https://raw.githubusercontent.com/ellmos-ai/researchcall/main/banner.png" alt="researchcall" width="330"></a></p>
 
 | Agent | What it does |
 |---|---|
@@ -284,7 +279,9 @@ Agent *infrastructure* — coordination, orchestration and lifecycle for agents 
 
 Projects built for public hackathons and competitions. Listed as entries — no placement claimed. The telephone agents [hungrycall](https://github.com/ellmos-ai/hungrycall), [ringedingeding](https://github.com/ellmos-ai/ringedingeding) and [researchcall](https://github.com/ellmos-ai/researchcall) are shown under [Agents](#agents) above.
 
-<p align="center"><a href="https://github.com/ellmos-ai/cowork-protocol"><img src="https://raw.githubusercontent.com/ellmos-ai/cowork-protocol/main/design/banner.svg" alt="cowork-protocol" width="560" style="border:2px solid #2dd4bf;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/FolderHome"><img src="https://raw.githubusercontent.com/ellmos-ai/FolderHome/main/assets/banner.png" alt="FolderHome" width="560" style="border:2px solid #fb923c;border-radius:8px;margin:0"></a><a href="https://youtu.be/wOToLqDBvvE"><img src="https://raw.githubusercontent.com/ellmos-ai/NemoFold/main/docs/media/nemofold-demo-video.jpg" alt="NemoFold — watch the video" width="400" style="border:2px solid #22d3ee;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/sentinel-fleet"><img src="https://raw.githubusercontent.com/ellmos-ai/sentinel-fleet/main/assets/banner.svg" alt="sentinel-fleet" width="560" style="border:2px solid #60a5fa;border-radius:8px;margin:0"></a><a href="https://youtu.be/QHfwyeGW1R0"><img src="https://raw.githubusercontent.com/ellmos-ai/roshambo/main/assets/roshambo-video-thumbnail.png" alt="roshambo — watch the video" width="400" style="border:2px solid #34d399;border-radius:8px;margin:0"></a><a href="https://github.com/ellmos-ai/roshambo-starmap"><img src="https://raw.githubusercontent.com/ellmos-ai/roshambo-starmap/master/assets/banner-starmap.png" alt="roshambo-starmap" width="560" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/cowork-protocol"><img src="https://raw.githubusercontent.com/ellmos-ai/cowork-protocol/main/design/banner.svg" alt="cowork-protocol" width="330"></a> <a href="https://github.com/ellmos-ai/FolderHome"><img src="https://raw.githubusercontent.com/ellmos-ai/FolderHome/main/assets/banner.png" alt="FolderHome" width="330"></a></p>
+<p align="center"><a href="https://youtu.be/wOToLqDBvvE"><img src="https://raw.githubusercontent.com/ellmos-ai/NemoFold/main/docs/media/nemofold-demo-video.jpg" alt="NemoFold — watch the video" width="330"></a> <a href="https://youtu.be/QHfwyeGW1R0"><img src="https://raw.githubusercontent.com/ellmos-ai/roshambo/main/assets/roshambo-video-thumbnail.png" alt="roshambo — watch the video" width="330"></a></p>
+<p align="center"><a href="https://github.com/ellmos-ai/sentinel-fleet"><img src="https://raw.githubusercontent.com/ellmos-ai/sentinel-fleet/main/assets/banner.svg" alt="sentinel-fleet" width="330"></a> <a href="https://github.com/ellmos-ai/roshambo-starmap"><img src="https://raw.githubusercontent.com/ellmos-ai/roshambo-starmap/master/assets/banner-starmap.png" alt="roshambo-starmap" width="330"></a></p>
 
 | Entry | Competition | What was submitted |
 |---|---|---|
