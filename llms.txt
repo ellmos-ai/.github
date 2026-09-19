@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-09-14 to include clip-storyboard-director. Live count verified via gh repo list on 2026-09-14: 68 active public repos, 1 archived (69 total).
+Public repository coverage: updated 2026-09-19 to include decision-clicker, session-checkpoint, prompt-evidence-collector and ellmos-unified-gui. Live count verified via gh repo list on 2026-09-19: 72 active public repos, 1 archived (73 total).
 
 ## Primary entry points
 
@@ -109,6 +109,14 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Role-based, staged source resolution ladder for skills (user config, own module, discovery proposal, foreign provider, dialogue) instead of hard-wiring information sources.
 - grounding-seed: https://github.com/ellmos-ai/grounding-seed
   Standalone-bootstrap template for isolated modules/skills/repos: self-knowledge, search, self-provisioning, migration on find; delegates to source-resolver when importable.
+- decision-clicker: https://github.com/ellmos-ai/decision-clicker
+  Local-first library, CLI and web UI for file-based decision chains with audit trails and guarded undo.
+- session-checkpoint: https://github.com/ellmos-ai/session-checkpoint
+  Local, application-neutral session checkpoint storage with integrity checks: snapshot a run and resume it later.
+- prompt-evidence-collector: https://github.com/ellmos-ai/prompt-evidence-collector
+  Audit-ready capture of LLM interactions with a cryptographic, hash-only prompt evidence store.
+- ellmos-unified-gui: https://github.com/ellmos-ai/ellmos-unified-gui
+  Unified desktop surface that brings the ellmos modules together in one local GUI.
 - system-explorer: https://github.com/ellmos-ai/system-explorer
   Evidence-based topology mapping, capability bounds, and communication edge discovery for modular agent and software systems.
 - ellmos-scheduler: https://github.com/ellmos-ai/ellmos-scheduler
@@ -263,4 +271,4 @@ sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 clip-storyboard-director local AI storyboard director scene continuity video production
 ```
 
-## Last-checked: 2026-09-14
+## Last-checked: 2026-09-19

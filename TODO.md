@@ -11,6 +11,16 @@ der Review-Nachweis.
 - [ ] #376 Reproduzierbaren Freshness- und Paritätscheck für den
   Organisationsindex ergänzen.
 - [x] #377 Community-Action-Referenzen auf verifizierte SHAs pinnen.
+- [x] Repository-Index nachgezogen: `decision-clicker`, `session-checkpoint`
+  und `prompt-evidence-collector` sind in beiden Profilseiten indexiert und in
+  der Galerie "Memory and Control" vertreten; Zaehlung auf 72 aktive, 1
+  archiviert, 73 gesamt aktualisiert (2026-09-19, Bannerkuratierung).
+- [ ] Standardbanner ersetzen: `GARDENER`, `ellmos`, `clirec`,
+  `ellmos-scheduler`, `ellmos-unified-gui`, `project-docs-template`,
+  `sqlite-transit-sync`, `system-explorer` und `ellmos-codecommander-mcp`
+  tragen nur den Open-Bricks-Vorlagenbanner ("Automated & standardized
+  software solution for X"). Sie bleiben deshalb bewusst aus der Galerie;
+  bei eigenem Banner aufnehmen (Befund 2026-09-19, Bannerkuratierung).
 
 ## TASKWRITER-Review — 2026-09-05
 

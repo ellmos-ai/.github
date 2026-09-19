@@ -23,6 +23,7 @@ PUBLIC_REPOS = [
     "clirec",
     "clutch",
     "coma",
+    "decision-clicker",
     "companion-for-agy",
     "compare-race",
     "connectors",
@@ -39,6 +40,7 @@ PUBLIC_REPOS = [
     "ellmos-servercommander-mcp",
     "ellmos-stack",
     "ellmos-tests",
+    "ellmos-unified-gui",
     "ellmos-voice-io",
     "grounding-seed",
     "hungrycall",
@@ -53,6 +55,7 @@ PUBLIC_REPOS = [
     "pasta-press",
     "policy-registry",
     "project-docs-template",
+    "prompt-evidence-collector",
     "prompt-listener",
     "rechtsabteilung",
     "recludos-legacy",
@@ -63,6 +66,7 @@ PUBLIC_REPOS = [
     "roshambo",
     "roshambo-starmap",
     "sentinel-fleet",
+    "session-checkpoint",
     "skills",
     "source-resolver",
     "sqlite-transit-sync",
@@ -88,7 +92,6 @@ PRIVATE_REPOS = [
     "condition-gates",
     "convergence-reconciler",
     "decimalai-skill-eval-monitor",
-    "decision-clicker",
     "doc-services",
     "ellmos-agent-bridge",
     "ellmos-chat",
@@ -98,7 +101,6 @@ PRIVATE_REPOS = [
     "ellmos-development-system",
     "ellmos-installer",
     "ellmos-market-data",
-    "ellmos-unified-gui",
     "file-collect-sort-action",
     "foerderplaner",
     "githubbot",
@@ -108,10 +110,8 @@ PRIVATE_REPOS = [
     "mediplaner",
     "memoryhooker-provenance",
     "paveman",
-    "prompt-evidence-collector",
     "roblox-studio-core",
     "routinika",
-    "session-checkpoint",
     "steuer-suite",
     "store-packager",
     "umbruch-social-media-runner",
@@ -157,7 +157,7 @@ def test_markdown_fence_balance():
 
 
 def test_public_repo_inventory():
-    """Verify all 69 public repos are cataloged in core profile documents."""
+    """Verify all 73 public repos are cataloged in core profile documents."""
     target_files = [
         "profile/README.md",
         "profile/README_de.md",
@@ -187,8 +187,8 @@ def test_private_repo_leak_guard():
 
 
 def test_check_timestamp_parity():
-    """Verify verification date 2026-09-14 across profile files."""
-    expected_iso = "2026-09-14"
+    """Verify verification date 2026-09-19 across profile files."""
+    expected_iso = "2026-09-19"
 
     en_content = get_file_content("profile/README.md")
     assert expected_iso in en_content, f"Date {expected_iso} missing from profile/README.md"
@@ -204,22 +204,22 @@ def test_check_timestamp_parity():
 
 
 def test_repo_counts_parity():
-    """Verify repository count assertions (68 active, 69 total) across documents."""
+    """Verify repository count assertions (72 active, 73 total) across documents."""
     en_content = get_file_content("profile/README.md")
-    assert "68 active" in en_content
-    assert "69 total" in en_content
+    assert "72 active" in en_content
+    assert "73 total" in en_content
 
     de_content = get_file_content("profile/README_de.md")
-    assert "68 aktive" in de_content
-    assert "69 gesamt" in de_content
+    assert "72 aktive" in de_content
+    assert "73 gesamt" in de_content
 
     root_content = get_file_content("README.md")
-    assert "68 active" in root_content
-    assert "69 repos total" in root_content
+    assert "72 active" in root_content
+    assert "73 repos total" in root_content
 
     llms_content = get_file_content("llms.txt")
-    assert "68 active" in llms_content
-    assert "69 total" in llms_content
+    assert "72 active" in llms_content
+    assert "73 total" in llms_content
 
 
 def test_clip_storyboard_director_indexing():

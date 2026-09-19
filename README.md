@@ -7,7 +7,7 @@ This repository maintains the public GitHub organization profile for **[ellmos-a
 
 ## Current public index
 
-Last checked against GitHub: 2026-09-14. The public organization currently has 68 active public repositories (including this profile repo, and including `clip-storyboard-director`, `grounding-seed`/`source-resolver`, `pasta-press`, `sentinel-fleet`, `cowork-protocol`, `FolderHome`, `NemoFold`, `ellmos-voice-io`, `open-ocean`, `ellmos-ai.github.io`) plus one archived legacy repository (69 repos total).
+Last checked against GitHub: 2026-09-19. The public organization currently has 72 active public repositories (including this profile repo, and including `clip-storyboard-director`, `grounding-seed`/`source-resolver`, `pasta-press`, `sentinel-fleet`, `cowork-protocol`, `FolderHome`, `NemoFold`, `ellmos-voice-io`, `open-ocean`, `ellmos-ai.github.io`) plus one archived legacy repository (73 repos total).
 
 | Area | Active public repositories |
 |---|---|
