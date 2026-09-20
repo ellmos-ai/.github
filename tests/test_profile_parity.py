@@ -107,7 +107,6 @@ PRIVATE_REPOS = [
     "hook-master",
     "mac-backup",
     "mail-connector",
-    "mediplaner",
     "memoryhooker-provenance",
     "paveman",
     "roblox-studio-core",
