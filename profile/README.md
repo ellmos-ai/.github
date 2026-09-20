@@ -75,7 +75,7 @@ Our recommended selection — building blocks that integrate into any ellmos OS 
 ## Bundles
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/bundles"><img src="https://raw.githubusercontent.com/ellmos-ai/bundles/main/assets/banner.png" alt="bundles — the recipe and composition layer" width="880" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a>
+  <a href="https://github.com/ellmos-ai/bundles"><img src="https://raw.githubusercontent.com/ellmos-ai/bundles/main/assets/banner-b.png" alt="bundles — the recipe and composition layer" width="880" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a>
 </p>
 
 Bundles declare *which module versions belong together*: versioned, compatibility-checked dependency trees.

@@ -71,7 +71,7 @@ Unsere Empfehlungen — Bausteine, die sich in jedes ellmos-OS einfügen oder al
 ## Bundles
 
 <p align="center">
-  <a href="https://github.com/ellmos-ai/bundles"><img src="https://raw.githubusercontent.com/ellmos-ai/bundles/main/assets/banner.png" alt="bundles — Rezept- und Kompositionsschicht" width="880" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a>
+  <a href="https://github.com/ellmos-ai/bundles"><img src="https://raw.githubusercontent.com/ellmos-ai/bundles/main/assets/banner-b.png" alt="bundles — Rezept- und Kompositionsschicht" width="880" style="border:2px solid #c084fc;border-radius:8px;display:block;margin:0 auto"></a>
 </p>
 
 Bundles deklarieren *welche Modulversionen zusammengehören*: versionierte, kompatibilitätsgeprüfte Dependency-Trees.
