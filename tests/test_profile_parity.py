@@ -111,7 +111,6 @@ PRIVATE_REPOS = [
     "memoryhooker-provenance",
     "paveman",
     "roblox-studio-core",
-    "routinika",
     "steuer-suite",
     "store-packager",
     "umbruch-social-media-runner",
