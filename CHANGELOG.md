@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-09-23
+
+### Added & Reconciled
+- Turnusgemäßer Health- und Paritäts-Audit für die `ellmos-ai`-Startseite (`.github`) durchgeführt.
+- `hook-master` (lokales Zeiger-Register und Materialisierung für Agent-Hooks, Geschwistermodul zu `policy-registry`) in allen Kerndokumenten (`profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`) indiziert.
+- Vollständige Parität mit 73 aktiven öffentlichen Repositories und 1 archivierten Legacy-Repo (`recludos-legacy`), 74 Repositories gesamt.
+- `profile/README.md` und `profile/README_de.md`: Banner-Galerie in der "Memory and Control"-Sektion um `hook-master` (pinker Rahmen `#ec4899`, Standardbreite 560px) sowie die Rollenbeschreibung in der Tabelle ergänzt.
+- Vertragstest-Suite in `tests/test_profile_parity.py` erweitert:
+  - `hook-master` in `PUBLIC_REPOS` überführt und aus `PRIVATE_REPOS` entfernt.
+  - Leak-Schutz in der Test-Suite gegen alle 33 privaten Repositories aktualisiert.
+  - Neuen Test `test_hook_master_indexing` zur Verifikation der lückenlosen Indizierung über alle 4 Kerndateien implementiert.
+  - Timestamp-Parität auf `2026-09-23` und Repo-Zählung auf 73/74 synchronisiert.
+- `TODO.md` bereinigt und anstehende Aufgaben aktualisiert.
+
 ## [1.0.6] - 2026-09-14
 
 ### Added & Reconciled

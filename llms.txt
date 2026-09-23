@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-09-19 to include decision-clicker, session-checkpoint, prompt-evidence-collector and ellmos-unified-gui. Live count verified via gh repo list on 2026-09-19: 72 active public repos, 1 archived (73 total).
+Public repository coverage: updated 2026-09-23 to include hook-master, decision-clicker, session-checkpoint, prompt-evidence-collector and ellmos-unified-gui. Live count verified via gh repo list on 2026-09-23: 73 active public repos, 1 archived (74 total).
 
 ## Primary entry points
 
@@ -105,6 +105,8 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Portable zero-dependency multi-agent file-lock system: exclusive and team locks (LOCK*.txt) with scopes, expiry, stale cleanup and cloud-sync support.
 - policy-registry: https://github.com/ellmos-ai/policy-registry
   Local-first registry for policies, rules, and governance decisions with metadata pointers to canonical sources.
+- hook-master: https://github.com/ellmos-ai/hook-master
+  Local-first pointer registry and materialization for agent hooks (sibling to policy-registry).
 - source-resolver: https://github.com/ellmos-ai/source-resolver
   Role-based, staged source resolution ladder for skills (user config, own module, discovery proposal, foreign provider, dialogue) instead of hard-wiring information sources.
 - grounding-seed: https://github.com/ellmos-ai/grounding-seed

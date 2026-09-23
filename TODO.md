@@ -6,10 +6,6 @@ der Review-Nachweis.
 
 ## Offene TASKPLAN-Aufgaben
 
-- [ ] #375 Live-Repository-Index auf 66 aktive und 1 archiviertes Repo
-  aktualisieren.
-- [ ] #376 Reproduzierbaren Freshness- und Paritätscheck für den
-  Organisationsindex ergänzen.
 - [ ] Standardbanner ersetzen: `GARDENER`, `ellmos`, `clirec`,
   `ellmos-scheduler`, `ellmos-unified-gui`, `project-docs-template`,
   `sqlite-transit-sync`, `system-explorer` und `ellmos-codecommander-mcp`
@@ -20,6 +16,22 @@ der Review-Nachweis.
 Die beiden bestätigten Abschlüsse stehen seit 2026-09-20 in [DONE.md](DONE.md).
 Die Aufgaben #375 und #376 bleiben gemäß TASKPLAN offen; ihre vorhandene
 Projektzuordnung `C:\_Local_DEV\repos\dotgithub` wurde nicht verändert.
+
+Die Nummern #375 und #376 bleiben nur als historische Referenzen sichtbar. Der
+aktuelle TaskPLAN-Readback ordnet diese IDs inzwischen dem Projekt
+`CultureEvolution` zu; sie werden für dieses Projekt nicht neu verwendet.
+
+## TASKWRITER-Review — 2026-09-20
+
+- Bundle: `0e1fc243-514d-49d6-bccb-e93aec227a7e`; selektierter Hash
+  `sha256-v1:369f0a69837a5686f85da6703b6261cc01b475d7242519e3aa963108a2ae04a8`.
+- Gelesene Steuerdateien: `TODO.md`, `README.md`, `profile/README.md`,
+  `profile/README_de.md`, `llms.txt`, `CHANGELOG.md`, `SECURITY.md`,
+  `CONTRIBUTING.md` und `tests/test_profile_parity.py`.
+- Ergebnis: keine neue Aufgabe; die zwei historischen offenen TODO-Punkte
+  wurden gegen den aktuellen Commit, Changelog und Testvertrag reconciliert.
+- `profile/README_de.md` hatte eine nutzereigene ungestagte Änderung; sie blieb
+  unverändert. Keine Aufgabe wurde ausgeführt, kein Push oder Release begonnen.
 
 ## TASKWRITER-Review — 2026-09-05
 
