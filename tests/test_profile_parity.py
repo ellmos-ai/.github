@@ -86,7 +86,6 @@ PUBLIC_REPOS = [
 
 PRIVATE_REPOS = [
     "AnliegenPilot",
-    "accounts-core",
     "agent-launcher",
     "assistant-core",
     "claude-bridge",
@@ -203,22 +202,22 @@ def test_check_timestamp_parity():
 
 
 def test_repo_counts_parity():
-    """Verify repository count assertions (74 active, 75 total) across documents."""
+    """Verify repository count assertions (75 active, 76 total) across documents."""
     en_content = get_file_content("profile/README.md")
-    assert "74 active" in en_content
-    assert "75 total" in en_content
+    assert "75 active" in en_content
+    assert "76 total" in en_content
 
     de_content = get_file_content("profile/README_de.md")
-    assert "74 aktive" in de_content
-    assert "75 gesamt" in de_content
+    assert "75 aktive" in de_content
+    assert "76 gesamt" in de_content
 
     root_content = get_file_content("README.md")
-    assert "74 active" in root_content
-    assert "75 repos total" in root_content
+    assert "75 active" in root_content
+    assert "76 repos total" in root_content
 
     llms_content = get_file_content("llms.txt")
-    assert "74 active" in llms_content
-    assert "75 total" in llms_content
+    assert "75 active" in llms_content
+    assert "76 total" in llms_content
 
 
 def test_hook_master_indexing():
@@ -258,6 +257,19 @@ def test_doc_services_indexing():
     for rel_path in target_files:
         content = get_file_content(rel_path)
         assert "doc-services" in content, f"doc-services missing from {rel_path}"
+
+
+def test_accounts_core_indexing():
+    """Verify accounts-core is indexed in all primary files."""
+    target_files = [
+        "README.md",
+        "profile/README.md",
+        "profile/README_de.md",
+        "llms.txt",
+    ]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "accounts-core" in content, f"accounts-core missing from {rel_path}"
 
 
 def test_ecosystem_cross_linking():
