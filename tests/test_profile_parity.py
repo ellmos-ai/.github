@@ -94,7 +94,6 @@ PRIVATE_REPOS = [
     "convergence-reconciler",
     "decimalai-skill-eval-monitor",
     "direct-beam",
-    "doc-services",
     "ellmos-agent-bridge",
     "ellmos-chat",
     "ellmos-code-tools",
@@ -187,8 +186,8 @@ def test_private_repo_leak_guard():
 
 
 def test_check_timestamp_parity():
-    """Verify verification date 2026-09-23 across profile files."""
-    expected_iso = "2026-09-23"
+    """Verify verification date 2026-09-27 across profile files."""
+    expected_iso = "2026-09-27"
 
     en_content = get_file_content("profile/README.md")
     assert expected_iso in en_content, f"Date {expected_iso} missing from profile/README.md"
@@ -204,22 +203,22 @@ def test_check_timestamp_parity():
 
 
 def test_repo_counts_parity():
-    """Verify repository count assertions (73 active, 74 total) across documents."""
+    """Verify repository count assertions (74 active, 75 total) across documents."""
     en_content = get_file_content("profile/README.md")
-    assert "73 active" in en_content
-    assert "74 total" in en_content
+    assert "74 active" in en_content
+    assert "75 total" in en_content
 
     de_content = get_file_content("profile/README_de.md")
-    assert "73 aktive" in de_content
-    assert "74 gesamt" in de_content
+    assert "74 aktive" in de_content
+    assert "75 gesamt" in de_content
 
     root_content = get_file_content("README.md")
-    assert "73 active" in root_content
-    assert "74 repos total" in root_content
+    assert "74 active" in root_content
+    assert "75 repos total" in root_content
 
     llms_content = get_file_content("llms.txt")
-    assert "73 active" in llms_content
-    assert "74 total" in llms_content
+    assert "74 active" in llms_content
+    assert "75 total" in llms_content
 
 
 def test_hook_master_indexing():
@@ -246,6 +245,19 @@ def test_clip_storyboard_director_indexing():
     for rel_path in target_files:
         content = get_file_content(rel_path)
         assert "clip-storyboard-director" in content, f"clip-storyboard-director missing from {rel_path}"
+
+
+def test_doc_services_indexing():
+    """Verify doc-services is indexed in all primary files."""
+    target_files = [
+        "README.md",
+        "profile/README.md",
+        "profile/README_de.md",
+        "llms.txt",
+    ]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "doc-services" in content, f"doc-services missing from {rel_path}"
 
 
 def test_ecosystem_cross_linking():
