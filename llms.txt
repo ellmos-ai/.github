@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-09-23 to include hook-master, decision-clicker, session-checkpoint, prompt-evidence-collector and ellmos-unified-gui. Live count verified via gh repo list on 2026-09-23: 73 active public repos, 1 archived (74 total).
+Public repository coverage: updated 2026-09-27 to include doc-services (fresh-start repo, published after a privacy-check history finding was resolved by archiving the original private repo). Previously updated 2026-09-23 to include hook-master, decision-clicker, session-checkpoint, prompt-evidence-collector and ellmos-unified-gui. Live count verified via gh repo list on 2026-09-27: 75 active public repos, 1 archived (76 total). Also added accounts-core (published the same day as doc-services).
 
 ## Primary entry points
 
@@ -151,6 +151,10 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
   Offline-first local worksheet for German employee income-related expenses (Werbungskosten): guided collection, plausibility checks, no cloud upload.
 - worksheet-generator: https://github.com/ellmos-ai/worksheet-generator
   Generates structured worksheets for pedagogical and therapeutic professionals from a local LLM agent - either from an ICF-aware support goal or from subject, grade and topic - rendered to Markdown, HTML or DOCX.
+- doc-services: https://github.com/ellmos-ai/doc-services
+  Document extraction to text/Markdown with a learning backend preference and honest fallback, AGPL-free OCR, and content-based privacy screening before handoff to third parties.
+- accounts-core: https://github.com/ellmos-ai/accounts-core
+  Neutral domain core for the account and bank-balance domain: bank account CRUD, CAMT balance import, and a privacy-safe read-only transit projection with strict IBAN masking.
 
 ## Media and content workflows
 
@@ -252,6 +256,8 @@ anonymizer pseudonymization fail-closed NER GDPR
 pasta-press local text refinement Ollama AI disclosure
 report-forge anonymizable report pipeline docx schema
 worksheet-generator ICF pedagogical therapeutic worksheets
+doc-services document extraction markdown ocr privacy screening
+accounts-core bank accounts camt balance import iban masking transit projection
 web-scraper SSRF guard get links forms extract screenshot
 clirec CLI agent GUI demonstration recordings
 CALL-E telephone agent Your Code Is Calling
