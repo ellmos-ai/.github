@@ -40,7 +40,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ellmos-ai/.github
-          ref: master
+          # Im .github-Repo selbst (PR/Push) das Werkzeug aus dem aktuellen Stand nutzen,
+          # externe Aufrufer (workflow_call) bekommen master.
+          ref: ${{ github.repository == 'ellmos-ai/.github' && github.sha || 'master' }}
           path: org-tools
 
       - name: Set up Python
