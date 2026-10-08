@@ -7,7 +7,7 @@ This repository maintains the public GitHub organization profile for **[ellmos-a
 
 ## Current public index
 
-Last checked against GitHub: 2026-09-27. The public organization currently has 75 active public repositories (including this profile repo, and including `hook-master`, `decision-clicker`, `session-checkpoint`, `prompt-evidence-collector`, `ellmos-unified-gui`, `clip-storyboard-director`, `grounding-seed`/`source-resolver`, `pasta-press`, `sentinel-fleet`, `cowork-protocol`, `FolderHome`, `NemoFold`, `ellmos-voice-io`, `open-ocean`, `ellmos-ai.github.io`, `doc-services`, `accounts-core`) plus one archived legacy repository (76 repos total).
+Last checked against GitHub: 2026-10-08. The public organization currently has 76 active public repositories (including this profile repo, and including `hook-master`, `decision-clicker`, `session-checkpoint`, `prompt-evidence-collector`, `ellmos-unified-gui`, `ellmos-system-gui`, `clip-storyboard-director`, `grounding-seed`/`source-resolver`, `pasta-press`, `sentinel-fleet`, `cowork-protocol`, `FolderHome`, `NemoFold`, `ellmos-voice-io`, `open-ocean`, `ellmos-ai.github.io`, `doc-services`, `accounts-core`) plus one archived legacy repository (77 repos total).
 
 | Area | Active public repositories |
 |---|---|
@@ -24,7 +24,7 @@ Last checked against GitHub: 2026-09-27. The public organization currently has 7
 | Competition entries | [hungrycall](https://github.com/ellmos-ai/hungrycall), [ringedingeding](https://github.com/ellmos-ai/ringedingeding), [researchcall](https://github.com/ellmos-ai/researchcall), [roshambo](https://github.com/ellmos-ai/roshambo), [roshambo-starmap](https://github.com/ellmos-ai/roshambo-starmap), [cowork-protocol](https://github.com/ellmos-ai/cowork-protocol), [FolderHome](https://github.com/ellmos-ai/FolderHome), [NemoFold](https://github.com/ellmos-ai/NemoFold), [sentinel-fleet](https://github.com/ellmos-ai/sentinel-fleet), [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind), [bach](https://github.com/ellmos-ai/bach) |
 | Domain tools | [law-checker](https://github.com/ellmos-ai/rechtsabteilung), [worksheet-generator](https://github.com/ellmos-ai/worksheet-generator), [steuer-assistent](https://github.com/ellmos-ai/steuer-assistent), [pasta-press](https://github.com/ellmos-ai/pasta-press), [doc-services](https://github.com/ellmos-ai/doc-services), [accounts-core](https://github.com/ellmos-ai/accounts-core) |
 | Media and content workflows | [ai-media-editor](https://github.com/ellmos-ai/ai-media-editor), [clip-storyboard-director](https://github.com/ellmos-ai/clip-storyboard-director) |
-| Evaluation, templates and maintenance | [ellmos-tests](https://github.com/ellmos-ai/ellmos-tests), [project-docs-template](https://github.com/ellmos-ai/project-docs-template), [system-explorer](https://github.com/ellmos-ai/system-explorer), [clirec](https://github.com/ellmos-ai/clirec) |
+| Evaluation, templates and maintenance | [ellmos-tests](https://github.com/ellmos-ai/ellmos-tests), [project-docs-template](https://github.com/ellmos-ai/project-docs-template), [system-explorer](https://github.com/ellmos-ai/system-explorer), [clirec](https://github.com/ellmos-ai/clirec), [ellmos-unified-gui](https://github.com/ellmos-ai/ellmos-unified-gui), [ellmos-system-gui](https://github.com/ellmos-ai/ellmos-system-gui) |
 
 Archived public reference: [recludos-legacy](https://github.com/ellmos-ai/recludos-legacy).
 

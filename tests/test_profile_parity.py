@@ -13,6 +13,7 @@ PUBLIC_REPOS = [
     "GARDENER",
     "NemoFold",
     "WORKFLOWHOOKER",
+    "accounts-core",
     "agent-ops-stack",
     "ai-media-editor",
     "anonymizer",
@@ -28,6 +29,7 @@ PUBLIC_REPOS = [
     "compare-race",
     "connectors",
     "cowork-protocol",
+    "doc-services",
     "ellmos",
     "ellmos-ai.github.io",
     "ellmos-blender-use-mcp",
@@ -39,6 +41,7 @@ PUBLIC_REPOS = [
     "ellmos-scheduler",
     "ellmos-servercommander-mcp",
     "ellmos-stack",
+    "ellmos-system-gui",
     "ellmos-tests",
     "ellmos-unified-gui",
     "ellmos-voice-io",
@@ -86,13 +89,16 @@ PUBLIC_REPOS = [
 
 PRIVATE_REPOS = [
     "AnliegenPilot",
+    "VisionFlow",
     "agent-launcher",
+    "ai-scripts",
     "assistant-core",
     "claude-bridge",
     "condition-gates",
     "convergence-reconciler",
     "decimalai-skill-eval-monitor",
     "direct-beam",
+    "doc-services-history",
     "ellmos-agent-bridge",
     "ellmos-chat",
     "ellmos-code-tools",
@@ -185,8 +191,8 @@ def test_private_repo_leak_guard():
 
 
 def test_check_timestamp_parity():
-    """Verify verification date 2026-09-27 across profile files."""
-    expected_iso = "2026-09-27"
+    """Verify verification date 2026-10-08 across profile files."""
+    expected_iso = "2026-10-08"
 
     en_content = get_file_content("profile/README.md")
     assert expected_iso in en_content, f"Date {expected_iso} missing from profile/README.md"
@@ -202,22 +208,22 @@ def test_check_timestamp_parity():
 
 
 def test_repo_counts_parity():
-    """Verify repository count assertions (75 active, 76 total) across documents."""
+    """Verify repository count assertions (76 active, 77 total) across documents."""
     en_content = get_file_content("profile/README.md")
-    assert "75 active" in en_content
-    assert "76 total" in en_content
+    assert "76 active" in en_content
+    assert "77 total" in en_content
 
     de_content = get_file_content("profile/README_de.md")
-    assert "75 aktive" in de_content
-    assert "76 gesamt" in de_content
+    assert "76 aktive" in de_content
+    assert "77 gesamt" in de_content
 
     root_content = get_file_content("README.md")
-    assert "75 active" in root_content
-    assert "76 repos total" in root_content
+    assert "76 active" in root_content
+    assert "77 repos total" in root_content
 
     llms_content = get_file_content("llms.txt")
-    assert "75 active" in llms_content
-    assert "76 total" in llms_content
+    assert "76 active" in llms_content
+    assert "77 total" in llms_content
 
 
 def test_hook_master_indexing():
@@ -270,6 +276,19 @@ def test_accounts_core_indexing():
     for rel_path in target_files:
         content = get_file_content(rel_path)
         assert "accounts-core" in content, f"accounts-core missing from {rel_path}"
+
+
+def test_ellmos_system_gui_indexing():
+    """Verify ellmos-system-gui is indexed in all primary files."""
+    target_files = [
+        "README.md",
+        "profile/README.md",
+        "profile/README_de.md",
+        "llms.txt",
+    ]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "ellmos-system-gui" in content, f"ellmos-system-gui missing from {rel_path}"
 
 
 def test_ecosystem_cross_linking():

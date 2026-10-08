@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-09-27 to include doc-services (fresh-start repo, published after a privacy-check history finding was resolved by archiving the original private repo). Previously updated 2026-09-23 to include hook-master, decision-clicker, session-checkpoint, prompt-evidence-collector and ellmos-unified-gui. Live count verified via gh repo list on 2026-09-27: 75 active public repos, 1 archived (76 total). Also added accounts-core (published the same day as doc-services).
+Public repository coverage: updated 2026-10-08 to include ellmos-system-gui (shared static Astro 7 GUI artifact for BACH and Ocean with version-bound backend contract and deterministic release packaging). Previously updated 2026-09-27 to include doc-services and accounts-core. Live count verified via gh repo list on 2026-10-08: 76 active public repos, 1 archived (77 total).
 
 ## Primary entry points
 
@@ -211,6 +211,8 @@ Projects built for public hackathons and competitions. Listed as entries; no pla
   B/O/E evaluation framework for SKILL.md-based LLM operating systems and agent hubs.
 - clirec: https://github.com/ellmos-ai/clirec
   Human-readable GUI demonstration recordings for CLI and agent workflows.
+- ellmos-system-gui: https://github.com/ellmos-ai/ellmos-system-gui
+  Shared static Astro 7 frontend artifact for BACH and Ocean with version-bound backend contract, deterministic release packaging and provenance receipts.
 - recludos-legacy: https://github.com/ellmos-ai/recludos-legacy
   Archived predecessor to BACH; kept as a historical reference.
 
@@ -277,6 +279,7 @@ ellmos-scheduler local task scheduler run recorder
 bundles manifest catalog composition knowledge
 sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 clip-storyboard-director local AI storyboard director scene continuity video production
+ellmos-system-gui shared static Astro 7 GUI BACH Ocean deterministic release provenance
 ```
 
-## Last-checked: 2026-09-19
+## Last-checked: 2026-10-08

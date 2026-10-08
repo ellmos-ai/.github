@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2026-10-08
+
+### Added & Reconciled
+- Turnusgemäßer Health- und Paritäts-Audit für die `ellmos-ai`-Startseite (`.github`) Stand 2026-10-08 durchgeführt.
+- `ellmos-system-gui` (gemeinsames statisches Astro 7 GUI-Artefakt für BACH und Ocean mit versionsgebundenem Backend-Vertrag und deterministischer Release-Paketierung) in allen Kerndokumenten (`profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`) vollständig indiziert.
+- Vollständige Parität mit 76 aktiven öffentlichen Repositories und 1 archivierten Legacy-Repo (`recludos-legacy`), 77 Repositories gesamt.
+- Live-Bestandsabgleich gegen GitHub API bestätigt 77 öffentliche und 32 private Repositories (strikte Zero-Leak-Invariante gewahrt).
+- `profile/README.md` und `profile/README_de.md`: Bereich "Evaluation, templates and maintenance" ("Evaluation, Vorlagen und Wartung") um `ellmos-system-gui` ergänzt.
+- Suchphrasen und Discoverability-Index in `profile/README.md`, `profile/README_de.md` und `llms.txt` aktualisiert.
+- Vertragstest-Suite in `tests/test_profile_parity.py` erweitert:
+  - `accounts-core`, `doc-services` und `ellmos-system-gui` in `PUBLIC_REPOS` überführt.
+  - Leak-Schutz gegen alle 32 privaten Repositories gehärtet.
+  - Neuen Vertragstest `test_ellmos_system_gui_indexing` hinzugefügt (13/13 Tests grün).
+  - Timestamp-Parität auf `2026-10-08` und Repository-Zählung auf 76/77 synchronisiert.
+
 ## [1.0.7] - 2026-09-23
 
 ### Added & Reconciled
