@@ -1,0 +1,60 @@
+name: Mermaid Diagram Lint
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+  schedule:
+    # Jeden Montag um 08:00 UTC pruefen
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+    inputs:
+      target_path:
+        description: 'Directory or file to lint'
+        required: false
+        default: '.'
+        type: string
+  workflow_call:
+    inputs:
+      target_path:
+        description: 'Directory or file to lint'
+        required: false
+        default: '.'
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint Mermaid Syntax
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          path: target-repo
+
+      - name: Checkout ellmos-ai/.github tools
+        uses: actions/checkout@v4
+        with:
+          repository: ellmos-ai/.github
+          # Im .github-Repo selbst (PR/Push) das Werkzeug aus dem aktuellen Stand nutzen,
+          # externe Aufrufer (workflow_call) bekommen master.
+          ref: ${{ github.repository == 'ellmos-ai/.github' && github.sha || 'master' }}
+          path: org-tools
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run Mermaid Linter
+        run: |
+          TARGET_PARAM="${{ inputs.target_path || '.' }}"
+          if [ "$TARGET_PARAM" = "." ]; then
+            python org-tools/tools/lint_mermaid.py target-repo
+          else
+            python org-tools/tools/lint_mermaid.py "target-repo/$TARGET_PARAM"
+          fi
