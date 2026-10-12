@@ -141,7 +141,7 @@ Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only d
 - ellmos-stack: https://github.com/ellmos-ai/ellmos-stack
   Self-hosted local-first AI research stack: Ollama, n8n, Rinnsal memory, KnowledgeDigest (file-bricks) search, and Docker Compose automation.
 - agent-ops-stack: https://github.com/ellmos-ai/agent-ops-stack
-  Manifest-driven composition of the local agent-ops ecosystem: ticket-master, lock-master, system-gap-master, build-your-users-mind, skills, and an MCP control plane for CLI coding agents.
+  Manifest-based Git fetch blueprint: clones the repositories listed in `agent-ops.manifest.json` and reports their declared wiring labels. Follow each module's own setup instructions.
 
 ## Domain tools
 
@@ -251,7 +251,7 @@ START STATE TODO DONE LLM project memory
 usmc gardener task-master memory pillar
 curated session memory organic cross-source FTS5 index SQLite task tracking
 task-master standalone SQLite task module
-ellmos-stack agent-ops-stack manifest-driven stack composition
+ellmos-stack local-first AI research stack; agent-ops-stack manifest-based Git fetch blueprint
 law-checker German legal AI first-look assessment
 steuer-assistent German Werbungskosten offline tax worksheet
 anonymizer pseudonymization fail-closed NER GDPR
