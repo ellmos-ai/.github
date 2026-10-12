@@ -159,7 +159,7 @@ The entries below include a stack catalog, an AI research stack, and a separate 
 
 | Stack | Purpose | Core modules |
 |---|---|---|
-| **[stacks](https://github.com/ellmos-ai/stacks)** | Catalog and shared manifest schema for every stack in the ellmos-ai family | — |
+| **[stacks](https://github.com/ellmos-ai/stacks)** | Stack catalog and documented shared schema | — |
 | **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Self-hosted, local-first AI research base: Ollama, n8n, Rinnsal memory, Docker Compose automation | Rinnsal · **[KnowledgeDigest](https://github.com/file-bricks/knowledgedigest)** (file-bricks) · Ollama · n8n |
 | **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Manifest-based Git fetch blueprint: clones the repositories listed in `agent-ops.manifest.json` and reports their declared wiring labels. Follow each module's own setup instructions. | **[ticket-master](https://github.com/ellmos-ai/ticket-master)** · **[lock-master](https://github.com/ellmos-ai/lock-master)** · **[system-gap-master](https://github.com/ellmos-ai/system-gap-master)** · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
 

@@ -161,7 +161,7 @@ Die Einträge unten umfassen einen Stack-Katalog, einen KI-Forschungsstack und e
 
 | Stack | Zweck | Kernmodule |
 |---|---|---|
-| **[stacks](https://github.com/ellmos-ai/stacks)** | Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie | — |
+| **[stacks](https://github.com/ellmos-ai/stacks)** | Stack-Katalog und dokumentiertes gemeinsames Schema | — |
 | **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Selbstgehostete, lokale KI-Forschungsbasis: Ollama, n8n, Rinnsal-Memory, Docker-Compose-Automatisierung | Rinnsal · **[KnowledgeDigest](https://github.com/file-bricks/knowledgedigest)** (file-bricks) · Ollama · n8n |
 | **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Manifestbasierte Git-Fetch-Vorlage: klont die in `agent-ops.manifest.json` gelisteten Repositories und meldet ihre deklarierten Wiring-Labels. Die Einrichtung folgt den Anweisungen der jeweiligen Module. | **[ticket-master](https://github.com/ellmos-ai/ticket-master)** · **[lock-master](https://github.com/ellmos-ai/lock-master)** · **[system-gap-master](https://github.com/ellmos-ai/system-gap-master)** · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
 
