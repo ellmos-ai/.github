@@ -155,7 +155,7 @@ Different philosophies, same goal — and [gardener](https://github.com/ellmos-a
   </a>
 </p>
 
-Stacks are manifest-driven compositions (`ellmos.stack.v2`) — no code copies, just declared components. Two active public stacks anchor the family, catalogued in a third:
+The entries below include a stack catalog, an AI research stack, and a separate manifest-based fetch blueprint; each project documents its own format and setup.
 
 | Stack | Purpose | Core modules |
 |---|---|---|
@@ -163,7 +163,7 @@ Stacks are manifest-driven compositions (`ellmos.stack.v2`) — no code copies, 
 | **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Self-hosted, local-first AI research base: Ollama, n8n, Rinnsal memory, Docker Compose automation | Rinnsal · **[KnowledgeDigest](https://github.com/file-bricks/knowledgedigest)** (file-bricks) · Ollama · n8n |
 | **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Manifest-based Git fetch blueprint: clones the repositories listed in `agent-ops.manifest.json` and reports their declared wiring labels. Follow each module's own setup instructions. | **[ticket-master](https://github.com/ellmos-ai/ticket-master)** · **[lock-master](https://github.com/ellmos-ai/lock-master)** · **[system-gap-master](https://github.com/ellmos-ai/system-gap-master)** · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
 
-A number of these modules are deliberately **both**: standalone dev tools you can adopt individually, and stack components you get automatically by installing the stack. That also applies to **[llm-note](https://github.com/doc-bricks/llm-note)** (doc-bricks) — local-first notebooks for LLM agents, built as a pluggable module for stack composition.
+The projects listed here can be used separately. Whether a module participates in a stack or is installed with it depends on that stack's own manifest and setup instructions. **[llm-note](https://github.com/doc-bricks/llm-note)** is a separate doc-bricks project for local-first notes and notebooks for LLM agents.
 
 ---
 

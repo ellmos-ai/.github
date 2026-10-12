@@ -134,7 +134,7 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
 
 ## Stacks
 
-Manifest-driven compositions (schema ellmos.stack.v2) — no code copies, only declared components.
+This section lists a stack catalog, a research stack, and a separate Git fetch blueprint; each project documents its own manifest format and setup.
 
 - stacks: https://github.com/ellmos-ai/stacks
   Catalog and shared manifest schema for every stack in the ellmos-ai family.
