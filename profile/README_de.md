@@ -104,7 +104,7 @@ flowchart TD
 |---|---|---|
 | **Modul** | Ein Baustein: eine eigenständige Fähigkeit, unabhängig versioniert und für sich allein nützlich. | [gardener](https://github.com/ellmos-ai/GARDENER), [clutch](https://github.com/ellmos-ai/clutch), jeder [MCP-Server](#mcp-servers) |
 | **Bundle** | Der Dependency-Tree aus Bausteinen — deklariert *was zusammengehört*, als versionierte, kompatibilitätsgeprüfte Menge. | Das .MEMORY-Säulen-Set: usmc + gardener + task-master ([Memory und Kontrolle](#memory-and-control)) |
-| **Stack** | Eine betreibbare Komposition mit Grenzen — deklariert *wie es zusammenläuft*: Daten, Netz, Mandanten, Ausführung. Größenklassen: `bundle`, `core`, `full`, `os-stack`. | [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack), [agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack) |
+| **Stack** | Eine betreibbare Komposition mit Grenzen — deklariert *wie es zusammenläuft*: Daten, Netz, Mandanten, Ausführung. Größenklassen: `bundle`, `core`, `full`, `os-stack`. | [ellmos-stack](https://github.com/ellmos-ai/ellmos-stack) |
 | **System / OS** | Der Governance-Rahmen über den Stacks: Policies, Identität und Lebenszyklus für eine Installation oder Edition. | [bach](https://github.com/ellmos-ai/bach), [rinnsal](https://github.com/ellmos-ai/rinnsal), [ellmos](https://github.com/ellmos-ai/ellmos) |
 | **Fleet** | Die Multi-Host-Gruppierung derselben System-Instanzen — ein System, viele Maschinen, synchron gehalten. | [roshambo](https://github.com/ellmos-ai/roshambo) mit [system-gap-master](https://github.com/ellmos-ai/system-gap-master) |
 
@@ -157,15 +157,15 @@ Verschiedene Philosophien, selbes Ziel — und [gardener](https://github.com/ell
   </a>
 </p>
 
-Stacks sind manifestgesteuerte Kompositionen (`ellmos.stack.v2`) — keine Code-Kopien, sondern deklarierte Komponenten. Zwei aktive öffentliche Stacks bilden den Kern der Familie, katalogisiert in einem dritten:
+Die Einträge unten umfassen einen Stack-Katalog, einen KI-Forschungsstack und eine separate manifestbasierte Fetch-Vorlage. Jedes Projekt dokumentiert sein eigenes Format und die dazugehörigen Einrichtungsschritte.
 
 | Stack | Zweck | Kernmodule |
 |---|---|---|
-| **[stacks](https://github.com/ellmos-ai/stacks)** | Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie | — |
+| **[stacks](https://github.com/ellmos-ai/stacks)** | Stack-Katalog und dokumentiertes gemeinsames Schema | — |
 | **[ellmos-stack](https://github.com/ellmos-ai/ellmos-stack)** | Selbstgehostete, lokale KI-Forschungsbasis: Ollama, n8n, Rinnsal-Memory, Docker-Compose-Automatisierung | Rinnsal · **[KnowledgeDigest](https://github.com/file-bricks/knowledgedigest)** (file-bricks) · Ollama · n8n |
-| **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Koordinationsschicht für CLI-Coding-Agenten: Ticket-Routing, Datei-Locking, maschinenübergreifende Synchronisation, Entscheidungs-Avatar, MCP-Control-Plane | **[ticket-master](https://github.com/ellmos-ai/ticket-master)** · **[lock-master](https://github.com/ellmos-ai/lock-master)** · **[system-gap-master](https://github.com/ellmos-ai/system-gap-master)** · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
+| **[agent-ops-stack](https://github.com/ellmos-ai/agent-ops-stack)** | Manifestbasierte Git-Fetch-Vorlage: klont die in `agent-ops.manifest.json` gelisteten Repositories und meldet ihre deklarierten Wiring-Labels. Die Einrichtung folgt den Anweisungen der jeweiligen Module. | **[ticket-master](https://github.com/ellmos-ai/ticket-master)** · **[lock-master](https://github.com/ellmos-ai/lock-master)** · **[system-gap-master](https://github.com/ellmos-ai/system-gap-master)** · [build-your-users-mind](https://github.com/ellmos-ai/build-your-users-mind) · [skills](https://github.com/ellmos-ai/skills) · ellmos-controlcenter-mcp · ellmos-homebase-mcp |
 
-Etliche dieser Module sind bewusst **beides**: eigenständige Dev-Tools, die man einzeln nutzen kann, und Stack-Komponenten, die man automatisch mit der Stack-Installation erhält. Das gilt auch für **[llm-note](https://github.com/doc-bricks/llm-note)** (doc-bricks) — lokale Notizbücher für LLM-Agenten, gebaut als steckbares Modul für Stack-Kompositionen.
+Die hier aufgeführten Projekte lassen sich separat nutzen. Ob ein Modul Teil eines Stacks ist oder mit ihm installiert wird, richtet sich nach dem Manifest und den Einrichtungshinweisen dieses Stacks. **[llm-note](https://github.com/doc-bricks/llm-note)** ist ein eigenständiges doc-bricks-Projekt für lokale Notizen und Notizbücher für LLM-Agenten.
 
 ---
 
