@@ -87,40 +87,11 @@ PUBLIC_REPOS = [
     "worksheet-generator",
 ]
 
+# Optional private inputs stay outside the public source tree.
 PRIVATE_REPOS = [
-    "AnliegenPilot",
-    "VisionFlow",
-    "agent-launcher",
-    "ai-scripts",
-    "assistant-core",
-    "claude-bridge",
-    "condition-gates",
-    "convergence-reconciler",
-    "decimalai-skill-eval-monitor",
-    "direct-beam",
-    "doc-services-history",
-    "ellmos-agent-bridge",
-    "ellmos-chat",
-    "ellmos-code-tools",
-    "ellmos-core",
-    "ellmos-delegation-authority",
-    "ellmos-development-system",
-    "ellmos-installer",
-    "ellmos-market-data",
-    "file-collect-sort-action",
-    "foerderplaner",
-    "githubbot",
-    "mac-backup",
-    "mail-connector",
-    "memoryhooker-provenance",
-    "paveman",
-    "roblox-studio-core",
-    "skills-maintainer-private",
-    "steuer-suite",
-    "store-packager",
-    "umbruch-social-media-runner",
-    "versicherungsmanager",
-    "workflowhooker-provenance",
+    name.strip()
+    for name in os.environ.get("PROFILE_PRIVATE_REPO_DENYLIST", "").split(";")
+    if name.strip()
 ]
 
 SISTER_ORGS = [
@@ -174,6 +145,23 @@ def test_public_repo_inventory():
             assert repo.lower() in content.lower(), f'Public repo "{repo}" missing from {rel_path}'
 
 
+
+def _assert_public_profile(content):
+    public_names = {name.lower() for name in PUBLIC_REPOS}
+    pattern = (
+        r"https://(?:github\.com/|raw\.githubusercontent\.com/|api\.github\.com/repos/)"
+        r"ellmos-ai/([A-Za-z0-9_.-]+)"
+    )
+    for name in re.findall(pattern, content, flags=re.IGNORECASE):
+        # A sentence-ending period is prose punctuation, not a repository suffix.
+        if name.rstrip(".").lower() not in public_names:
+            raise AssertionError("Non-public repository reference")
+    for private_name in PRIVATE_REPOS:
+        # Preserve the original case-insensitive substring guard.
+        if private_name.lower() in content.lower():
+            raise AssertionError("Non-public repository reference")
+
+
 def test_private_repo_leak_guard():
     """Verify 0 private/internal repos are leaked into public profile documents."""
     target_files = [
@@ -186,8 +174,7 @@ def test_private_repo_leak_guard():
     ]
     for rel_path in target_files:
         content = get_file_content(rel_path)
-        for priv in PRIVATE_REPOS:
-            assert priv.lower() not in content.lower(), f'Privacy leak violation: private repo "{priv}" found in {rel_path}'
+        _assert_public_profile(content)
 
 
 def test_check_timestamp_parity():
@@ -205,6 +192,32 @@ def test_check_timestamp_parity():
 
     llms_content = get_file_content("llms.txt")
     assert expected_iso in llms_content, f"Date {expected_iso} missing from llms.txt"
+
+
+@pytest.mark.parametrize("reference", [
+    "synthetic-denied-repo",
+    "prefix-SYNTHETIC-DENIED-REPO-suffix",
+    "https://github.com/ellmos-ai/synthetic-unlisted-repo",
+    "https://raw.githubusercontent.com/ellmos-ai/synthetic-unlisted-repo/main/x",
+    "https://api.github.com/repos/ellmos-ai/synthetic-unlisted-repo",
+])
+def test_private_guard_rejects_without_disclosing_identifier(monkeypatch, reference):
+    monkeypatch.setitem(globals(), "PRIVATE_REPOS", ["synthetic-denied-repo"])
+    monkeypatch.setitem(globals(), "get_file_content", lambda _path: reference)
+    with pytest.raises(AssertionError) as failure:
+        test_private_repo_leak_guard()
+    assert str(failure.value) == "Non-public repository reference"
+
+
+@pytest.mark.parametrize("reference", [
+    "https://github.com/ELLMOS-AI/skills.",
+    "https://raw.githubusercontent.com/ellmos-ai/skills/master/README.md",
+    "https://api.github.com/repos/ellmos-ai/skills",
+])
+def test_private_guard_accepts_public_references(monkeypatch, reference):
+    monkeypatch.setitem(globals(), "PRIVATE_REPOS", [])
+    monkeypatch.setitem(globals(), "get_file_content", lambda _path: reference)
+    test_private_repo_leak_guard()
 
 
 def test_repo_counts_parity():
