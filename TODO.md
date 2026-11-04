@@ -21,6 +21,16 @@ Die Nummern #375 und #376 bleiben nur als historische Referenzen sichtbar. Der
 aktuelle TaskPLAN-Readback ordnet diese IDs inzwischen dem Projekt
 `CultureEvolution` zu; sie werden für dieses Projekt nicht neu verwendet.
 
+## TASKWRITER-Review — 2026-11-04
+
+- Gelesene Steuerdateien: `TODO.md`, `README.md`, `profile/README.md`,
+  `profile/README_de.md`, `llms.txt`, `CHANGELOG.md`, `SECURITY.md`,
+  `CONTRIBUTING.md` und `tests/test_profile_parity.py`.
+- Live-Bestandsabgleich gegen GitHub API bestätigt 84 öffentliche Repositories (82 aktiv, 2 archiviert: `recludos-legacy`, `roshambo`) und 37 private Repositories (Zero-Leak-Invariante 100% gewahrt).
+- Indizierung von 8 neuen Repositories: `VisionFlow`, `clearance-skill`, `doc-keeper`, `ellmos-homecontrol`, `ellmos-robotics`, `ellmos-sensation`, `ellmos-talk`, `ellmos-tray`.
+- `companion-for-agy` Transfer zu `dev-bricks` harmonisiert (D-20261030-011).
+- Alle Vertragstests bestanden inklusive neuer Indizierungstests.
+
 ## TASKWRITER-Review — 2026-10-08
 
 - Gelesene Steuerdateien: `TODO.md`, `README.md`, `profile/README.md`,

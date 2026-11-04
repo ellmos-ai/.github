@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-10-08 to include ellmos-system-gui (shared static Astro 7 GUI artifact for BACH and Ocean with version-bound backend contract and deterministic release packaging). Previously updated 2026-09-27 to include doc-services and accounts-core. Live count verified via gh repo list on 2026-10-08: 76 active public repos, 1 archived (77 total).
+Public repository coverage: updated 2026-11-04 to include VisionFlow, clearance-skill, doc-keeper, ellmos-homecontrol, ellmos-robotics, ellmos-sensation, ellmos-talk, and ellmos-tray; companion-for-agy transferred to dev-bricks per D-20261030-011. Live count verified via gh repo list on 2026-11-04: 82 active public repos, 2 archived (84 total).
 
 ## Primary entry points
 
@@ -82,8 +82,10 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Standalone web scraper extracted from BACH: get/links/forms/headers/extract/screenshot, Python stdlib core with optional extras and an SSRF guard.
 - coma: https://github.com/ellmos-ai/coma
   COMAS (COMmunication for Autonomous Subagents): agent lifecycle layer (spawn, file protocol, status polling). Zero dependencies, standard library only.
-- companion-for-agy: https://github.com/ellmos-ai/companion-for-agy
-  PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction for Claude Code, Codex, and CI pipelines.
+- companion-for-agy: https://github.com/dev-bricks/companion-for-agy
+  Canonical PTY-based wrapper that captures agy (Gemini CLI) responses via ANSI color extraction for Claude Code, Codex, and CI pipelines (transferred from ellmos-ai to dev-bricks per D-20261030-011).
+- clearance-skill: https://github.com/ellmos-ai/clearance-skill
+  clearance-skill MCP tool and app-specific data handling notice for Jira agents.
 - pasta-press: https://github.com/ellmos-ai/pasta-press
   Local AI text press for Ollama: chunk-based style refinement, translation and cleanup of unintended AI-typical markers with lossless structure — paired with honest AI disclosure.
 - memoryhooker: https://github.com/ellmos-ai/memoryhooker
@@ -125,6 +127,14 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Standalone local-first task scheduler and run recorder for modular ellmos stacks and autonomous LLM agent execution loops.
 - ellmos-voice-io: https://github.com/ellmos-ai/ellmos-voice-io
   Local, LLM-neutral STT, TTS and wake-word pipeline for ellmos and standalone agents.
+- ellmos-homecontrol: https://github.com/ellmos-ai/ellmos-homecontrol
+  Local-first SmartHome and household appliance control bridge for BACH and Open Ocean.
+- ellmos-robotics: https://github.com/ellmos-ai/ellmos-robotics
+  Canonical MCP robotics standard (driver adapters, safety envelope) for LLM interaction with physical actuators.
+- ellmos-sensation: https://github.com/ellmos-ai/ellmos-sensation
+  Permission-governed device sensory perception (camera, ambient audio, sound synthesis) and presence gate for BACH and Open Ocean.
+- ellmos-talk: https://github.com/ellmos-ai/ellmos-talk
+  Dual-Loop (Reflex + Cortex) live conversation and visualization engine for BACH and Open Ocean.
 - bundles: https://github.com/ellmos-ai/bundles
   Recipe layer of the ellmos ecosystem: bundle manifests, catalogs, and composition knowledge.
 - llm-note: https://github.com/doc-bricks/llm-note
@@ -162,6 +172,8 @@ This section lists a stack catalog, a research stack, and a separate Git fetch b
   Local AI media-editing orchestrator for video, audio and podcasts with faster-whisper or WhisperX transcription, Scribe-compatible transcript JSON, video-use cuts, Hyperframes motion graphics and agent-guided edits.
 - clip-storyboard-director: https://github.com/ellmos-ai/clip-storyboard-director
   Local-first AI storyboard director and scene continuity orchestrator bridging video generation, CDP, and multitrack audio.
+- VisionFlow: https://github.com/ellmos-ai/VisionFlow
+  Configurable OpenCV 5 image, video, and camera vision workflows with evidence clips, bounded follow-up observation, and human review.
 - workflowhooker: https://github.com/ellmos-ai/WORKFLOWHOOKER
   Git hook and webhook event trigger automation engine.
 
@@ -213,6 +225,10 @@ Projects built for public hackathons and competitions. Listed as entries; no pla
   Human-readable GUI demonstration recordings for CLI and agent workflows.
 - ellmos-system-gui: https://github.com/ellmos-ai/ellmos-system-gui
   Shared static Astro 7 frontend artifact for BACH and Ocean with version-bound backend contract, deterministic release packaging and provenance receipts.
+- doc-keeper: https://github.com/ellmos-ai/doc-keeper
+  Deterministic 3-cause documentation audit and terraforming machine for Ocean, BACH, and arbitrary Git repositories.
+- ellmos-tray: https://github.com/ellmos-ai/ellmos-tray
+  Pluggable cross-platform system tray launcher and desktop quick-control client for ELLMOS, BACH, and Open Ocean.
 - recludos-legacy: https://github.com/ellmos-ai/recludos-legacy
   Archived predecessor to BACH; kept as a historical reference.
 
@@ -280,6 +296,14 @@ bundles manifest catalog composition knowledge
 sqlite-transit-sync local SQLite synchronization snapshots row-level merge
 clip-storyboard-director local AI storyboard director scene continuity video production
 ellmos-system-gui shared static Astro 7 GUI BACH Ocean deterministic release provenance
+VisionFlow OpenCV 5 computer vision video camera evidence clips
+doc-keeper deterministic 3-cause documentation audit terraforming machine
+clearance-skill Jira agent access authorization MCP skill data handling notice
+ellmos-homecontrol SmartHome IoT household appliance control
+ellmos-robotics MCP robotics standard physical actuator safety envelope
+ellmos-sensation device sensory perception camera audio presence gate
+ellmos-talk Dual-Loop Reflex Cortex live conversation visualization engine
+ellmos-tray pluggable cross-platform desktop system tray launcher quick-control
 ```
 
-## Last-checked: 2026-10-08
+## Last-checked: 2026-11-04
