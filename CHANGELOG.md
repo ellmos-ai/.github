@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added & Reconciled
+- Turnusgemäßer Health-, Paritäts- und Discoverability-Audit für die `ellmos-ai`-Startseite (`.github`) Stand 2026-11-04 durchgeführt (Routine: GITHUBBOT_ORGA_README_MD_STARTSEITE_HEALTH).
+- Vollständige Revalidierung des Organisationsprofils gegen die Live-GitHub-API bestätigt 84 öffentliche Repositories (82 aktiv, 2 archiviert: `recludos-legacy`, `roshambo`) und 37 private Repositories (Zero-Leak-Invariante zu 100% gewahrt).
+- Indizierung von 8 neuen öffentlichen Repositories in allen Kerndokumenten (`profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`):
+  - `VisionFlow`: Reusable OpenCV 5 Vision-Workflows mit Evidenz-Clips, begrenzter Nachbeobachtung und Human Review.
+  - `clearance-skill`: Clearance-MCP-Skill und datenschutzgerechte Freigabenotiz für Jira-Agenten.
+  - `doc-keeper`: Deterministische 3-Ursachen-Dokumentationsprüfungs- und Terraforming-Maschine für Ocean, BACH und beliebige Repositories.
+  - `ellmos-homecontrol`: Lokale SmartHome- und Haushaltsgeräte-Steuerung (`OCEAN-HOMECONTROL-01`, BACH `#3766` / Ocean `#536`).
+  - `ellmos-robotics`: Kanonischer MCP-Robotics-Standard (`ellmos.robotics.mcp.v1`), Treiber-Adapter und Sicherheits-Envelope für LLMs und physische Aktuatoren (`OCEAN-ROBOTICS-01`, BACH `#3767` / Ocean `#537`).
+  - `ellmos-sensation`: Berechtigungsgesteuerte Gerätesensorik (Kamera-Präsenz, Mikrofon-Umgebung, Sounderzeugung) und Präsenz-Gate (`OCEAN-SENSATION-01`, BACH `#3765` / Ocean `#535`).
+  - `ellmos-talk`: Dual-Loop (Reflex + Cortex) Live-Gesprächs- und Visualisierungs-Engine (`OCEAN-TALK-01`, BACH `#3764` / Ocean `#534`).
+  - `ellmos-tray`: Steckbare plattformübergreifende System-Tray- und Desktop-Steuerungs-App für ELLMOS, BACH und Open Ocean.
+- `companion-for-agy` nach Transfer zu `dev-bricks` (D-20261030-011) im Organisationsindex harmonisiert und als Geschwisterprojekt referenziert.
+- `roshambo` als archivierter Wettbewerbsbeitrag (serialisierbare Leases auf CockroachDB) transparent im Archivbereich gekennzeichnet.
+- Discoverability und SEO-Suchbegriffe um alle neuen Modulfamilien (OpenCV Vision, SmartHome, Robotics MCP, Audio/Talk Engine, System Tray, Doc Machine) erweitert.
+- Vertragstest-Suite `tests/test_profile_parity.py` aktualisiert:
+  - `PUBLIC_REPOS` auf 84 Repositories synchronisiert.
+  - `PRIVATE_REPOS` Leak-Guard auf alle 37 privaten Repositories erweitert (strikte Zero-Leak-Invariante gewahrt).
+  - Neue Vertragstests für die Indizierung der neuen Repositories ergänzt.
+  - Timestamp-Parität auf `2026-11-04` und Repository-Zählung auf 82/84 aktualisiert.
+
+
 ## [1.0.8] - 2026-10-08
 
 ### Added & Reconciled

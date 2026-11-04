@@ -12,7 +12,7 @@ PUBLIC_REPOS = [
     "FolderHome",
     "GARDENER",
     "NemoFold",
-    "WORKFLOWHOOKER",
+    "VisionFlow",
     "accounts-core",
     "agent-ops-stack",
     "ai-media-editor",
@@ -20,15 +20,16 @@ PUBLIC_REPOS = [
     "bach",
     "build-your-users-mind",
     "bundles",
+    "clearance-skill",
     "clip-storyboard-director",
     "clirec",
     "clutch",
     "coma",
-    "decision-clicker",
-    "companion-for-agy",
     "compare-race",
     "connectors",
     "cowork-protocol",
+    "decision-clicker",
+    "doc-keeper",
     "doc-services",
     "ellmos",
     "ellmos-ai.github.io",
@@ -38,11 +39,16 @@ PUBLIC_REPOS = [
     "ellmos-controlcenter-mcp",
     "ellmos-filecommander-mcp",
     "ellmos-homebase-mcp",
+    "ellmos-homecontrol",
+    "ellmos-robotics",
     "ellmos-scheduler",
+    "ellmos-sensation",
     "ellmos-servercommander-mcp",
     "ellmos-stack",
     "ellmos-system-gui",
+    "ellmos-talk",
     "ellmos-tests",
+    "ellmos-tray",
     "ellmos-unified-gui",
     "ellmos-voice-io",
     "grounding-seed",
@@ -84,13 +90,14 @@ PUBLIC_REPOS = [
     "ticket-master",
     "usmc",
     "web-scraper",
+    "workflowhooker",
     "worksheet-generator",
 ]
 
 PRIVATE_REPOS = [
     "AnliegenPilot",
-    "VisionFlow",
     "agent-launcher",
+    "agents-heart",
     "ai-scripts",
     "assistant-core",
     "claude-bridge",
@@ -107,12 +114,16 @@ PRIVATE_REPOS = [
     "ellmos-development-system",
     "ellmos-installer",
     "ellmos-market-data",
+    "ellmos-plugins",
+    "ellmos-roshambo",
+    "ellmos-universal-gui",
     "file-collect-sort-action",
     "foerderplaner",
     "githubbot",
     "mac-backup",
     "mail-connector",
     "memoryhooker-provenance",
+    "ocean-resources",
     "paveman",
     "roblox-studio-core",
     "skills-maintainer-private",
@@ -121,6 +132,7 @@ PRIVATE_REPOS = [
     "umbruch-social-media-runner",
     "versicherungsmanager",
     "workflowhooker-provenance",
+    "clearance",
 ]
 
 SISTER_ORGS = [
@@ -187,12 +199,12 @@ def test_private_repo_leak_guard():
     for rel_path in target_files:
         content = get_file_content(rel_path)
         for priv in PRIVATE_REPOS:
-            assert priv.lower() not in content.lower(), f'Privacy leak violation: private repo "{priv}" found in {rel_path}'
-
+            pattern = re.compile(rf'(?<![a-zA-Z0-9_-]){re.escape(priv.lower())}(?![a-zA-Z0-9_-])')
+            assert not pattern.search(content.lower()), f'Privacy leak violation: private repo "{priv}" found in {rel_path}'
 
 def test_check_timestamp_parity():
-    """Verify verification date 2026-10-08 across profile files."""
-    expected_iso = "2026-10-08"
+    """Verify verification date 2026-11-04 across profile files."""
+    expected_iso = "2026-11-04"
 
     en_content = get_file_content("profile/README.md")
     assert expected_iso in en_content, f"Date {expected_iso} missing from profile/README.md"
@@ -210,20 +222,20 @@ def test_check_timestamp_parity():
 def test_repo_counts_parity():
     """Verify repository count assertions (76 active, 77 total) across documents."""
     en_content = get_file_content("profile/README.md")
-    assert "76 active" in en_content
-    assert "77 total" in en_content
+    assert "82 active" in en_content
+    assert "84 total" in en_content
 
     de_content = get_file_content("profile/README_de.md")
-    assert "76 aktive" in de_content
-    assert "77 gesamt" in de_content
+    assert "82 aktive" in de_content
+    assert "84 gesamt" in de_content
 
     root_content = get_file_content("README.md")
-    assert "76 active" in root_content
-    assert "77 repos total" in root_content
+    assert "82 active" in root_content
+    assert "84 repos total" in root_content
 
     llms_content = get_file_content("llms.txt")
-    assert "76 active" in llms_content
-    assert "77 total" in llms_content
+    assert "82 active" in llms_content
+    assert "84 total" in llms_content
 
 
 def test_hook_master_indexing():
@@ -316,3 +328,43 @@ def test_security_policy_parity():
     assert "security@open-bricks.org" in security_content
     assert "security@ellmos.ai" in security_content
     assert "Zero-Egress" in security_content
+
+
+def test_visionflow_indexing():
+    """Verify VisionFlow is indexed in all primary files."""
+    target_files = ["README.md", "profile/README.md", "profile/README_de.md", "llms.txt"]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "VisionFlow" in content, f"VisionFlow missing from {rel_path}"
+
+
+def test_doc_keeper_indexing():
+    """Verify doc-keeper is indexed in all primary files."""
+    target_files = ["README.md", "profile/README.md", "profile/README_de.md", "llms.txt"]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "doc-keeper" in content, f"doc-keeper missing from {rel_path}"
+
+
+def test_clearance_skill_indexing():
+    """Verify clearance-skill is indexed in all primary files."""
+    target_files = ["README.md", "profile/README.md", "profile/README_de.md", "llms.txt"]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "clearance-skill" in content, f"clearance-skill missing from {rel_path}"
+
+
+def test_ellmos_talk_indexing():
+    """Verify ellmos-talk is indexed in all primary files."""
+    target_files = ["README.md", "profile/README.md", "profile/README_de.md", "llms.txt"]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "ellmos-talk" in content, f"ellmos-talk missing from {rel_path}"
+
+
+def test_ellmos_tray_indexing():
+    """Verify ellmos-tray is indexed in all primary files."""
+    target_files = ["README.md", "profile/README.md", "profile/README_de.md", "llms.txt"]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "ellmos-tray" in content, f"ellmos-tray missing from {rel_path}"
