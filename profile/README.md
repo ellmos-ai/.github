@@ -18,12 +18,12 @@
 
 ## Public Repository Index
 
-This index is complete for the public `ellmos-ai` repositories (82 active repos, 2 archived; 84 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-11-04.
+This index is complete for the public `ellmos-ai` repositories (83 active repos, 2 archived; 85 total). Archived repositories are marked explicitly. Last checked against GitHub: 2026-11-07.
 
 | Area | Repositories |
 |---|---|
 | Organization profile | **[.github](https://github.com/ellmos-ai/.github)** - org profile, community health files and `llms.txt`; **[ellmos-ai.github.io](https://github.com/ellmos-ai/ellmos-ai.github.io)** - interactive maps and ecosystem explorer |
-| Stack catalog & recipes | **[stacks](https://github.com/ellmos-ai/stacks)** - catalog and shared manifest schema for every stack in the ellmos-ai family; **[bundles](https://github.com/ellmos-ai/bundles)** - recipe layer of the ellmos ecosystem (bundle manifests, catalogs and composition knowledge) |
+| Stack catalog, recipes & plugins | **[stacks](https://github.com/ellmos-ai/stacks)** - catalog and shared manifest schema for every stack in the ellmos-ai family; **[bundles](https://github.com/ellmos-ai/bundles)** - recipe layer of the ellmos ecosystem (bundle manifests, catalogs and composition knowledge); **[ellmos-plugins](https://github.com/ellmos-ai/ellmos-plugins)** - Claude Code plugin marketplace of ellmos-ai: curated skill plugins for decisions and development quality |
 | Operating systems | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)**, **[open-ocean](https://github.com/ellmos-ai/open-ocean)** - plus **[gardener](https://github.com/ellmos-ai/GARDENER)** as the minimal OS tier when run standalone; it is indexed under [Memory and Control](#memory-and-control) below |
 | Memory pillar | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/GARDENER)**, **[task-master](https://github.com/ellmos-ai/task-master)** - curated session memory, organic cross-source index, and task tracking; see [Memory and Control](#memory-and-control) |
 | MCP servers | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
@@ -40,11 +40,13 @@ This index is complete for the public `ellmos-ai` repositories (82 active repos,
 
 ---
 
-## Skills
+## Skills & Plugins
 
 <p align="center">
   <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — pluggable skill library" width="720" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a>
 </p>
+
+*Explore our curated plugin marketplace: **[ellmos-plugins](https://github.com/ellmos-ai/ellmos-plugins)** — Claude Code skill plugins for high-stakes decisions and development quality.*
 
 ---
 
@@ -359,6 +361,7 @@ ellmos-robotics MCP robotics standard physical actuator safety envelope
 ellmos-sensation device sensory perception camera audio presence gate
 ellmos-talk Dual-Loop Reflex Cortex live conversation visualization engine
 ellmos-tray pluggable cross-platform desktop system tray launcher quick-control
+ellmos-plugins Claude Code plugin marketplace skill plugins decisions development quality
 ```
 
 ---

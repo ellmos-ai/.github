@@ -5,7 +5,7 @@ Organization profile repository: https://github.com/ellmos-ai/.github
 
 ellmos-ai builds local-first infrastructure for LLM operating systems, agent memory, model routing, multi-agent coordination and Model Context Protocol servers.
 The ecosystem is centered on Python 3.10+, SQLite and MIT-licensed tools with zero or minimal external dependencies.
-Public repository coverage: updated 2026-11-04 to include VisionFlow, clearance-skill, doc-keeper, ellmos-homecontrol, ellmos-robotics, ellmos-sensation, ellmos-talk, and ellmos-tray; companion-for-agy transferred to dev-bricks per D-20261030-011. Live count verified via gh repo list on 2026-11-04: 82 active public repos, 2 archived (84 total).
+Public repository coverage: updated 2026-11-07 to include ellmos-plugins, VisionFlow, clearance-skill, doc-keeper, ellmos-homecontrol, ellmos-robotics, ellmos-sensation, ellmos-talk, and ellmos-tray; companion-for-agy transferred to dev-bricks per D-20261030-011. Live count verified via gh repo list on 2026-11-07: 83 active public repos, 2 archived (85 total).
 
 ## Primary entry points
 
@@ -135,6 +135,8 @@ ellmos memory is a family of three modules, importable as a dependency by any OS
   Permission-governed device sensory perception (camera, ambient audio, sound synthesis) and presence gate for BACH and Open Ocean.
 - ellmos-talk: https://github.com/ellmos-ai/ellmos-talk
   Dual-Loop (Reflex + Cortex) live conversation and visualization engine for BACH and Open Ocean.
+- ellmos-plugins: https://github.com/ellmos-ai/ellmos-plugins
+  Claude Code plugin marketplace of ellmos-ai: skill plugins for decisions and development quality.
 - bundles: https://github.com/ellmos-ai/bundles
   Recipe layer of the ellmos ecosystem: bundle manifests, catalogs, and composition knowledge.
 - llm-note: https://github.com/doc-bricks/llm-note
@@ -306,4 +308,4 @@ ellmos-talk Dual-Loop Reflex Cortex live conversation visualization engine
 ellmos-tray pluggable cross-platform desktop system tray launcher quick-control
 ```
 
-## Last-checked: 2026-11-04
+## Last-checked: 2026-11-07

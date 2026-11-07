@@ -20,12 +20,12 @@
 
 ## Öffentliches Repository-Verzeichnis
 
-Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (82 aktive Repos, 2 archiviert; 84 gesamt). Archivierte Repositories sind ausdrücklich gekennzeichnet. Zuletzt mit GitHub abgeglichen: 2026-11-04.
+Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositories (83 aktive Repos, 2 archiviert; 85 gesamt). Archivierte Repositories sind ausdrücklich gekennzeichnet. Zuletzt mit GitHub abgeglichen: 2026-11-07.
 
 | Bereich | Repositories |
 |---|---|
 | Organisationsprofil | **[.github](https://github.com/ellmos-ai/.github)** - Org-Profil, Community-Health-Dateien und `llms.txt`; **[ellmos-ai.github.io](https://github.com/ellmos-ai/ellmos-ai.github.io)** - interaktive Karten und Ökosystem-Explorer |
-| Stack-Katalog & Rezepte | **[stacks](https://github.com/ellmos-ai/stacks)** - Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie; **[bundles](https://github.com/ellmos-ai/bundles)** - Rezept-Schicht des ellmos-Ökosystems (Bundle-Manifeste, Kataloge und Kompositionswissen) |
+| Stack-Katalog, Rezepte & Plugins | **[stacks](https://github.com/ellmos-ai/stacks)** - Katalog und gemeinsames Manifest-Schema für jeden Stack der ellmos-ai-Familie; **[bundles](https://github.com/ellmos-ai/bundles)** - Rezept-Schicht des ellmos-Ökosystems (Bundle-Manifeste, Kataloge und Kompositionswissen); **[ellmos-plugins](https://github.com/ellmos-ai/ellmos-plugins)** - Claude Code Plugin-Marketplace von ellmos-ai: kuratierte Skill-Plugins für Entscheidungen und Entwicklungsqualität |
 | Betriebssysteme | **[bach](https://github.com/ellmos-ai/bach)**, **[rinnsal](https://github.com/ellmos-ai/rinnsal)**, **[ellmos](https://github.com/ellmos-ai/ellmos)**, **[open-ocean](https://github.com/ellmos-ai/open-ocean)** - dazu **[gardener](https://github.com/ellmos-ai/GARDENER)** als minimale OS-Stufe im eigenständigen Betrieb; verzeichnet ist es unter [Memory und Kontrolle](#memory-and-control) unten |
 | Gedächtnis-Säule | **[usmc](https://github.com/ellmos-ai/usmc)**, **[gardener](https://github.com/ellmos-ai/GARDENER)**, **[task-master](https://github.com/ellmos-ai/task-master)** - kuratiertes Session-Gedächtnis, organischer Cross-Source-Index und Task-Tracking; siehe [Memory und Kontrolle](#memory-and-control) |
 | MCP-Server | **[ellmos-codecommander-mcp](https://github.com/ellmos-ai/ellmos-codecommander-mcp)**, **[ellmos-filecommander-mcp](https://github.com/ellmos-ai/ellmos-filecommander-mcp)**, **[ellmos-clatcher-mcp](https://github.com/ellmos-ai/ellmos-clatcher-mcp)**, **[n8n-manager-mcp](https://github.com/ellmos-ai/n8n-manager-mcp)**, **[ellmos-controlcenter-mcp](https://github.com/ellmos-ai/ellmos-controlcenter-mcp)**, **[ellmos-homebase-mcp](https://github.com/ellmos-ai/ellmos-homebase-mcp)**, **[ellmos-servercommander-mcp](https://github.com/ellmos-ai/ellmos-servercommander-mcp)**, **[ellmos-blender-use-mcp](https://github.com/ellmos-ai/ellmos-blender-use-mcp)**, **[open-compute-mcp](https://github.com/ellmos-ai/open-compute-mcp)** |
@@ -42,11 +42,13 @@ Dieses Verzeichnis ist vollständig für die öffentlichen `ellmos-ai`-Repositor
 
 ---
 
-## Skills
+## Skills & Plugins
 
 <p align="center">
   <a href="https://github.com/ellmos-ai/skills"><img src="https://raw.githubusercontent.com/ellmos-ai/skills/master/assets/banner_v2.svg" alt="skills — steckbare Skill-Bibliothek" width="720" style="border:2px solid #a78bfa;border-radius:8px;margin:0"></a>
 </p>
+
+*Entdecke unseren Plugin-Marketplace: **[ellmos-plugins](https://github.com/ellmos-ai/ellmos-plugins)** — Claude Code Skill-Plugins für fundierte Entscheidungen und Entwicklungsqualität.*
 
 ---
 
@@ -351,6 +353,7 @@ roshambo CockroachDB serialisierbare Leases Multi-Agenten-Koordinator
 ticket-master lock-master Agenten Betriebswerkzeuge
 kuratiertes Session-Gedächtnis organischer Cross-Source FTS5 Index
 ellmos-system-gui gemeinsames statisches Astro 7 GUI-Artefakt BACH Ocean versionsgebundener Backend-Vertrag
+ellmos-plugins Claude Code Plugin Marketplace Skill Plugins Entscheidungen Entwicklungsqualität
 ```
 
 ---
