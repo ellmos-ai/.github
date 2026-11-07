@@ -40,6 +40,7 @@ PUBLIC_REPOS = [
     "ellmos-filecommander-mcp",
     "ellmos-homebase-mcp",
     "ellmos-homecontrol",
+    "ellmos-plugins",
     "ellmos-robotics",
     "ellmos-scheduler",
     "ellmos-sensation",
@@ -114,7 +115,7 @@ PRIVATE_REPOS = [
     "ellmos-development-system",
     "ellmos-installer",
     "ellmos-market-data",
-    "ellmos-plugins",
+    "ellmos-plugins-archive",
     "ellmos-roshambo",
     "ellmos-universal-gui",
     "file-collect-sort-action",
@@ -204,7 +205,7 @@ def test_private_repo_leak_guard():
 
 def test_check_timestamp_parity():
     """Verify verification date 2026-11-04 across profile files."""
-    expected_iso = "2026-11-04"
+    expected_iso = "2026-11-07"
 
     en_content = get_file_content("profile/README.md")
     assert expected_iso in en_content, f"Date {expected_iso} missing from profile/README.md"
@@ -222,20 +223,20 @@ def test_check_timestamp_parity():
 def test_repo_counts_parity():
     """Verify repository count assertions (76 active, 77 total) across documents."""
     en_content = get_file_content("profile/README.md")
-    assert "82 active" in en_content
-    assert "84 total" in en_content
+    assert "83 active" in en_content
+    assert "85 total" in en_content
 
     de_content = get_file_content("profile/README_de.md")
-    assert "82 aktive" in de_content
-    assert "84 gesamt" in de_content
+    assert "83 aktive" in de_content
+    assert "85 gesamt" in de_content
 
     root_content = get_file_content("README.md")
-    assert "82 active" in root_content
-    assert "84 repos total" in root_content
+    assert "83 active" in root_content
+    assert "85 repos total" in root_content
 
     llms_content = get_file_content("llms.txt")
-    assert "82 active" in llms_content
-    assert "84 total" in llms_content
+    assert "83 active" in llms_content
+    assert "85 total" in llms_content
 
 
 def test_hook_master_indexing():
@@ -368,3 +369,9 @@ def test_ellmos_tray_indexing():
     for rel_path in target_files:
         content = get_file_content(rel_path)
         assert "ellmos-tray" in content, f"ellmos-tray missing from {rel_path}"
+def test_ellmos_plugins_indexing():
+    """Verify ellmos-plugins is indexed in all primary files."""
+    target_files = ["README.md", "profile/README.md", "profile/README_de.md", "llms.txt"]
+    for rel_path in target_files:
+        content = get_file_content(rel_path)
+        assert "ellmos-plugins" in content, f"ellmos-plugins missing from {rel_path}"

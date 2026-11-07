@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added & Reconciled [2026-11-07]
+- Turnusgemäßer Health-, Paritäts- und Discoverability-Audit für die `ellmos-ai`-Startseite (`.github`) Stand 2026-11-07 durchgeführt (Routine: GITHUBBOT_ORGA_README_MD_STARTSEITE_HEALTH).
+- Vollständige Revalidierung des Organisationsprofils gegen die Live-GitHub-API bestätigt 85 öffentliche Repositories (83 aktiv, 2 archiviert: `recludos-legacy`, `roshambo`) und 37 private Repositories (Zero-Leak-Invariante zu 100% gewahrt).
+- Indizierung des neuen öffentlichen Repositories `ellmos-plugins` in allen Kerndokumenten (`profile/README.md`, `profile/README_de.md`, `README.md`, `llms.txt`):
+  - `ellmos-plugins`: Claude Code Plugin-Marketplace von ellmos-ai (Skill-Plugins für Entscheidungen und Entwicklungsqualität).
+- Discoverability- und SEO-Suchbegriffe um Claude Code Plugins und Agenten-Marketplace erweitert.
+- Vertragstest-Suite `tests/test_profile_parity.py` aktualisiert:
+  - `PUBLIC_REPOS` auf 85 Repositories synchronisiert.
+  - `PRIVATE_REPOS` Leak-Guard aktualisiert (`ellmos-plugins` in Public-Index überführt; 0 private Repositories genannt).
+  - Neuer Vertragstest `test_ellmos_plugins_indexing` ergänzt (24/24 Tests grün).
+  - Timestamp-Parität auf `2026-11-07` und Repository-Zählung auf 83/85 synchronisiert.
+
 ### Added & Reconciled
 - Turnusgemäßer Health-, Paritäts- und Discoverability-Audit für die `ellmos-ai`-Startseite (`.github`) Stand 2026-11-04 durchgeführt (Routine: GITHUBBOT_ORGA_README_MD_STARTSEITE_HEALTH).
 - Vollständige Revalidierung des Organisationsprofils gegen die Live-GitHub-API bestätigt 84 öffentliche Repositories (82 aktiv, 2 archiviert: `recludos-legacy`, `roshambo`) und 37 private Repositories (Zero-Leak-Invariante zu 100% gewahrt).
