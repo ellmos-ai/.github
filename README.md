@@ -2,6 +2,8 @@
 
 This repository maintains the public GitHub organization profile for **[ellmos-ai](https://github.com/ellmos-ai)**.
 
+> Independent open-source/research organization — not affiliated with Elmos Semiconductor SE.
+
 > [!TIP]
 > **🗺️ Interactive maps:** module circuit map, skill library and stack composer live at **[ellmos-ai.github.io](https://ellmos-ai.github.io)**.
 

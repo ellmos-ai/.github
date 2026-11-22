@@ -368,3 +368,11 @@ def test_ellmos_tray_indexing():
     for rel_path in target_files:
         content = get_file_content(rel_path)
         assert "ellmos-tray" in content, f"ellmos-tray missing from {rel_path}"
+
+
+def test_independence_disclaimer_parity():
+    """Verify non-affiliation notice with Elmos Semiconductor SE across profile READMEs."""
+    notice = "not affiliated with Elmos Semiconductor SE."
+    for rel_path in ["README.md", "profile/README.md", "profile/README_de.md"]:
+        content = get_file_content(rel_path)
+        assert notice in content, f"Independence disclaimer missing from {rel_path}"
